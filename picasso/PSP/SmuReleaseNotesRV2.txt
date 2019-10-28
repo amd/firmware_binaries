@@ -1,0 +1,570 @@
++---------------------------------------+
+| SMU Firmware Release Notes - RAVEN2X  |
++---------------------------------------+
+
++---------------------------+
+| Version 37.27.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                15/03/19
+|
+|        * Changelist
+|                - DXIO FW version 31.425
+|                - [PMFW-1300] [NEW] Publsih BIOS/TEST messages to report overclocking capability
+|                - [PLAT-43459] [ETB] GFX driver is not loaded after iGPU overclock in BIOS setup
+|                - [PMFW-1230] [NEW] Add a PCD option to change AclkDpm0 from 200MHz to 400MHz
+|                - [PMFW-1313] [OPT] MP0CLK DS enable only for DC mode
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.26.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                07/03/19
+|
+|        * Changelist
+|                - DXIO FW version. 31.425
+|                - [PMFW-1263] [WKA] Discard CGPG enable if disable CGPG message is received during the delay
+|                - [PLAT-43239] [WKA] R3-3200U Flavor 2 Processor USB 2.0 Device Recognized again after Safely removed by Windows Icon
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.25.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                01/03/19
+|
+|        * Changelist
+|                - DXIO FW version. 31.425
+|                - [PLAT-41548] [ETB] FClk and UClk actual frequency ratio mismatch
+|                - [PMFW-1114] [IMP] Rv2 Fw needs to be updated to v027 Sw document sync
+|                - [PMFW-1213] [NEW] Add SMU get message for current CCLK Fmax
+|                - [PMFW-1215] [ETB] Rounding min/max GFXCLK return values to neareset 10s
+|                - [PMFW-1216] [ETB] Rounding min/max CCLK  return values to the nearest 10s
+|                - [PMFW-1221] [IMP] System show BSOD 0xEA when play video with Miracast connected at DC mode
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.24.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                28/01/19
+|
+|        * Changelist
+|                - DXIO FW version. 31.425
+|                - [PMFW-933] [IMP] Reallocate space from scratch section to .isr_data section
+|                - [PLAT-41596] [IMP] Publish OC messages to BIOS port
+|                - [PMFW-905] [IMP] System hang up when ping AP address for overnight (update)
+|                - [PMFW-909] [IMP] FUSE/Default Limits info of Power and Current required for Ryzen Master
+|                - [PMFW-961] [IMP] System hang when resume from S3 or press warm reset with 48MHz TMDP refclock off
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.23.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                22/01/19
+|
+|        * Changelist
+|                - DXIO FW version. 31.425
+|                - [PMFW-728] [OPT] Re-allocate .datatables space to .text section
+|                - [PMFW-701] [IMP] RV2 in PCO AM4: SMU Test Messages Required for Ryzen Master
+|                - [PMFW-726] [IMP] Enable continues data calculation when OC mode is enabled
+|                - [PLAT-41021] [IMP] Add fuse check for overclocking support
+|                - [PMFW-759] [UTB] Clean up debug_release file list for packaging
+|                - [PLAT-41396] [WKA] System doesn't update the freq of the SOC to 400 MHz after several times Prochot trigger event
+|                - [PMFW-905] [IMP] System hang up when ping AP address for overnight
+|                - [PMFW-907] [IMP] SVI2 resource protection missing
+|                - [PMFW-908] [IMP] CC6 Filter Gets Enabled on DC to AC Switch
+|                - [PMFW-911] [IMP] Bypass saving and restoring CAC weights for telemetry based products
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.22.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                07/01/19
+|
+|        * Changelist
+|                - DXIO FW version. 31.423
+|                - [PLAT-40266] [WKA] Move PCTL0_MISC programming to SMU for secure policy update
+|                - [PMFW-699] [IMP] Raven2x FP5: Bypass Precision Boost Overdrive (PBO) Implementation
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.21.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                18/12/18
+|
+|        * Changelist
+|                - DXIO FW version. 31.422
+|                - [PMFW-599] [IMP] PSI0 Workaround Code Cleanup
+|                - [PMFW-600] [IMP] Put PeAPM Code in EXT_SECTION
+|                - [PLAT-39838] [IMP] Add USB31 OVERCURRENT_MAP_1_CNTR0
+|                - [PMFW-623] [NEW] Add Managed Overclocking
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.20.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                10/12/18
+|
+|        * Changelist
+|                - DXIO FW version. 31.419
+|                - [PLAT-39615] [WKA] Found intermittent FPR device YB issue when resume from S0i3 (winbug 156508)
+|                - [PMFW-594] [IMP] STT Power Floor
+|                - [PMFW-595] [IMP] STT gain control
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.19.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                21/11/18
+|
+|        * Changelist
+|                - DXIO FW version. 31.419
+|                - [PLAT-38939] [ETB] Check MP2_FIRMWARE_FLAGS for MP2 handshake
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.18.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                08/11/18
+|
+|        * Changelist
+|                - DXIO FW version. 31.419
+|                - [PMFW-408] [IMP] Apply SMS repair for both FP5 and AM4
+|                - [PMFW-415] [IMP] Port PSI0 changes from PCO to RV2
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.17.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                06/11/18
+|
+|        * Changelist
+|                - DXIO FW version. 0.332
+|                - [PMFW-329] [UTB] Data structure is not DWORD aligned
+|                - [PMFW-314] [IMP] Fix SMU success monitor code for GFXOFF and CPUOFF
+|                - [PMFW-370] [IMP] Resource issue with GfxOff Entry during Gfx Dpm Clk Change
+|                - [PMFW-387] [WKA] RV2 USB PHY TX_VBOOST setting
+|                - [PMFW-393] [IMP] Move some Log routines to EXT_SECTION
+|                - [PLAT-37199] [IMP] Disable CC6 Filter for DC mode
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.16.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                12/10/18
+|
+|        * Changelist
+|                - DXIO FW version. 0.332
+|                - [PLAT-36333] [NEW] DisBypTgtDnDLowPower Settings in LP4 Mode
+|                - [PMFW-260] [IMP] Disable gfxoff race condition
+|                - [PMFW-261] [IMP] diff in PCO vs RV2 ppsmc headers
+|                - [PLAT-36710] [ETB] BSOD 0xEA and SMU hang at ChangeGfxDldoPlaneStateFromBypassToOn when running reboot and S4
+|                - [PMFW-303] [IMP] Move DV functions to EXT_SECTION to save TEXT space
+|                - [PLAT-31975] [WKA] Add MsgId handshake between RLC-MP1 to avoid mismatch in response register
+|                - [PMFW-294] [IMP] minimize no-abort vs nbif doorbell fence enable for gfxoff
+|                - [PMFW-309] [WKA] Add a Dummy Vid Change to Ensure PSI0 Assertion / Deassertion
+|                - [PMFW-310] [WKA] Sequence change for RLC safe mode in disabling GfxCGPG to mitigate deadlock
+|                - [PMFW-276] [IMP] RV2 CCLK DPM P-Gain for AC/FS-3D/VR change
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.15.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                04/09/18
+|
+|        * Changelist
+|                - DXIO FW version. 0.332
+|                - [PMFW-162] [UTB] Set DisBypTgtDnDLowPower Correction for D4 vs LPD4
+|                - [SMURVN2-90] [WKA] High temp failure - turned off dldo chopper recovery, dldo calibrate sequence to ON to BYPASS to OFF, removed MAFDD calibration changes
+|                - [PMFW-199] [ETB] Potential race condition for CGPG power status update
+|                - [PLAT-32828] [IMP] Force GFXOFF entry sequence for iGPU disabled case
+|                - [PLAT-33583] [IMP] Add register override for USB20 PHY 0 Lane 4/5 param 0 and 1
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.14.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                21/08/18
+|
+|        * Changelist
+|                - DXIO FW version. 0.332
+|                - [FEAT-23122] [IMP] Support memory clock up to 2000MHz and add 33MHz stepping support
+|                - [PMFW-114] [IMP] Add MP0_GFX_DISABLE to BIOS message 0x51
+|                - [PMFW-137] [IMP] Add CalculateIOPhyDataDis flag to BIOS table
+|                - [PMFW-153] [IMP] Add a Driver Message to Force GFX Content Save for GFXOFF
+|                - [PLAT-30866] [IMP] SHUBCLK Deep Sleep doesn't work
+|                - [PLAT-29360] [WKA] DL-6950 KGD will random renumerate on the USB3.1 USB port
+|                - [PMFW-160] [IMP] Manipulate power limit by a percentage
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.13.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                01/08/18
+|
+|        * Changelist
+|                - DXIO FW version. 0.332
+|                - [PMFW-73] CCLK Change DfCstate Disable Optimization
+|                - [PLAT-33665] [IMP] Updated to allow PLL4 only to turn off if not in use
+|                - [SMURVN2-90] [WKA] High temperature failure change is reverted
+|                - [PMFW-80] [NEW] Modify BIOS message OPN_SPARE for dual source
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.12.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                20/07/18
+|
+|        * Changelist
+|                - DXIO FW version. 0.332
+|                - [FEAT-22858] [OPT] Revert FP5 Fan Controller to RV1 Settings
+|                - [SMURVN2-79] [IMP] PSI0 workaround for VR going to two phases with any voltage increase
+|                - [SMURVN2-81] [NEW] Add delay and cancel options to SetGfxCGPG message
+|                - [SMURVN2-82] [UTB] DispClk entering/exiting the bypass mode
+|                - [PLAT-33665] [IMP] Allows PLL4 and PLL0 to be turned off if not in use, put slice into REFCLK if DFS slice is not in bypass and did is 0, except for GFxCLK
+|                - [SMURVN2-83] [ETB] Fix CState Residency Miscalculation with CPUOff
+|                - [SMURVN2-84] [IMP] Check CstateBoost Entry Condition on CPUOFF Exit
+|                - [SMURVN2-85] [IMP] Power off TMON in VDDOFF
+|                - [SMURVN2-86] [IMP] Implement DLDO WLB RV1 fix
+|                - [SMURVN2-87] [IMP] Enter GfxOff if GfxOffEnable message comes in after CgpgPwrDown
+|                - [SMURVN2-88] [IMP] Remove Gfx DLDO register programming from VddOff-GfxOff exit
+|                - [SMURVN2-89] [NEW] Add a message to read OPN_OPN_SPARE fuse for BIOS
+|                - [SMURVN2-90] [WKA] High temperature failure
+|                - [SMURVN2-80] [IMP] Update RV2 AC Offset for all AM4 package cases
+|                - [PMFW-21] Clear PMREG_INITPKG1[softrepair] on CpuOff exit
+|                - [PLAT-34238] [ETB] RV2 AM4 fail to shutdown - Skip checking MP2 responese register if MP2 is disabled in fuse
+|                - [PMFW-35] Whisper Mode add PSP stall request
+|                - [PMFW-37] VddOff exit memory repair not needed for FP5
+|                - [PMFW-38] Enable ATC for Picasso/Winston
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.11.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                29/05/18
+|
+|        * Changelist
+|                - DXIO FW version. 0.332
+|                - [SMURVN2-71] [IMP] Enable ACPI MP2 Messages
+|                - [SMURVN2-72] [ETB] SOC voltage not updating immediately
+|                - [SMURVN2-73] [ETB] System hangs when tried to OC by 25Mhz
+|                - [SMURVN2-74] [IMP] Updates to FP5 FIT limits and new CONFIG OPN
+|                - [SMURVN2-75] [IMP] Implement Softmax and Hardmin messages for stable Pstate support
+|                - [SMURVN2-76] [IMP] SOFTMIN/SOFTMAX CLK message
+|                - [PLAT-30559] [WKA] Disable DF Cstate before turn off PLL to workaround RV2 CLK PLL power down issue
+|                - [SMURVN2-77] [UTB] Fix for GetSustainedPowerAndThmLimit message
+|                - [PLAT-30862] [UTB] SMNCLK Deep Sleep doesn't work
+|                - [PLAT-31572] [IMP] Enable XGBE PG when XGBE is disabled
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.10.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                13/04/18
+|
+|        * Changelist
+|                - DXIO FW version. 0.332
+|                - [SMURVN2-58] [IMP] Update AM4 65W system config limits
+|                - [SMURVN2-59] [IMP] RV AM4 LCLK DPM optimization
+|                - [SMURVN2-60] [WKA] Sound doesn't output from HDMI monitor if boot into OS with DC mode
+|                - [SMURVN2-61] [WKA] Import RV1x fixes [PLAT-28597] and [PLAT-27197]
+|                - [SMURVN2-62] [OPT] RV AM4 CCLK DPM Busy Setpoint and P-Gain optimization AC/FS3D/VR
+|                - [SMURVN2-63] [OPT] AM4 CCLK DPM VIDEO Mode BUSY_SETPOINT
+|                - [SMURVN2-64] [OPT] Raven AM4 CCLK DPM Optimization (Full Screen 3D & VR)
+|                - [SMURVN2-65] [IMP] Fix Core IddMax Shows 0 on Active Cores
+|                - [SMURVN2-66] [IMP] Report 100% CState Boost Residency when NumEnabledCores <= CStateBoostActiveCoreThresh
+|                - [PLAT-30296] [PLAT-30383] [IMP] Add SizeFWSigned and FWType into SMU Header
+|                - [SMURVN-727] [BUG] Block BIOS DisableSmuFeature Message on secure parts
+|                - [SMURVN2-67] [IMP] Remove DfCstateExitDisable from S0i2
+|                - [SMURVN2-70] [WKA] Add Epyc/ZP Reset Bug Workaround to RV2x (PLAT-24972)
+|                - [FEAT-22570] [OPT] FP5 Fan Controller Updates
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.9.0            |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                23/03/18
+|
+|        * Changelist
+|                - DXIO FW version. 0.332
+|                - [PLAT-29635] [IMP] SMU USB Firmware programming for LLUCTL and GRXTHRCFG
+|                - [SMURVN2-48] [UTB] Resource protect DispClk change.
+|                - [SMURVN2-49] [IMP] Fix system hang issue when OS tries to boot with PLL_POWER_DOWN disabled.
+|                - [SMURVN2-50] [IMP] Increase precision for voltages in AGM.
+|                - [SMURVN2-51] Fixed issue GPU0 PLL not powered down after S3 resume.
+|                - [SMURVN2-52] [UTB] Correct max Gfx CU count
+|                - [SMURVN2-53] [IMP] Set VDDP_DDR voltage to 0.7v during S0i2
+|                - [SMURVN2-55] [IMP] RV AM4 FIT cntrl error coeff optimization and GFX FIT throttler active on VDD rail.
+|                - [SMURVN2-56] [OPT] Handle PROCHOT disable within LN2 message if already in OC.
+|                - [SMURVN2-57] [OPT] FP5 FIT Throttler Floor frequency.
+|                - [PLAT-29580] [IMP] Enable FCH RSMU Clock Gating
+|                - [PLAT-28169] [IMP] MP1 clk deep sleep enable when cpu idle
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.8.0            |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                06/03/18
+|
+|        * Changelist
+|                - DXIO FW version. 0.332
+|                - [PLAT-29426] [IMP] Remove the settings of MMHUB_DS.RAVEN2x.ini from SMU FW
+|                - [SMURVN2-45] [IMP] Add message response to ACP's Dram access messages
+|                - [PLAT-29479] [UTB] System boot up hung AF70 with iES1 sample
+|                - [SMURVN2-46] [UTB] Use GfxContextSaved flag in SaveGfxMicrocodes() instead of ExitAfterColdBoot
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.7.0            |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                27/02/18
+|
+|        * Changelist
+|                - DXIO FW version. 0.332
+|                - [SMURVN2-40] [IMP] Update RV2 AC offsets for ES1 sample
+|                - [SMURVN2-41] [IMP] Remove Ax Bx dependency
+|                - [SMURVN2-42] [IMP] Remove SVI2_CONTROL resource from RegisterSvi2Voltage()
+|                - [PLAT-28413] [NEW] Enable MMHUB PowerGating - SMU to program all PCTL settings (Improved)
+|                - [PLAT-28396] [NEW] USB controller hung when boot to Win10 desktop if any USB3.0 device attached
+|                - [SMURVN2-43] [IMP] Add delays in U0-in-D3 routine to avoid device hang during shut down
+|                - [PLAT-28391] [WKA] RV2 can't break into PDM mode after CPUOFF exit
+|                - [SMURVN2-44] [NEW] Enable CstateBoost
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.6.0            |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                09/02/18
+|
+|        * Changelist
+|                - DXIO FW version. 0.332
+|                - [PLAT-28439] [ETB] AGM reported GFX/SOC temperature are all zero
+|                - [SMURVN2-37] [IMP] Conditionalize core specific code
+|                - [PLAT-28413] [UTB] Enable MMHUB PowerGating - SMU to program all PCTL ini Settings_RV2x
+|                - [SMURVN2-38] [IMP] Move some code to EXT_SECTION to open up space in TEXT
+|                - [SMURVN2-35] [OPT] Update RV2 RM Setting to 0x3C
+|                - [SMURVN2-39] [IMP] MP1_PUB_SCRATCH0 must show SMU FW version
+|                - [SMURVN2-36] [OPT] Update GFX DLDO REG30
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.5.0            |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                22/01/18
+|
+|        * Changelist
+|                - DXIO FW version. 0.332
+|                - [PLAT-28158] [NEW] System Remains in FMIN 400 after ~few minutes of cold rest (Telemetry planes are swapped in RV2x)
+|                - [SMURVN2-34] [OPT] Update RV2 AC Offsets
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.4.0            |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                16/01/18
+|
+|        * Changelist
+|                - DXIO FW version. 0.328
+|                - Synced up to RV1 latest code around up to Jan 8, 2018.
+|                - Updated USB according to latest USB SW requirement.doc
+|                - [PLAT-28083] [NEW] BIOSSMC_MSG_SetupUSB31ControllerTrap message setup trap for USBC0 only
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.3.0            |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                11/01/18
+|
+|        * Changelist
+|                - DXIO FW version. 0.328
+|                - Corrected fclk fcstate setting for case switch from BYPASS to DFS.
+|                - bypass MP2 reg access in ACPI (workaround)
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.2.9            |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                11/12/17
+|
+|        * Changelist
+|                - Fixed accessing CLK1_CLK_PWR_MGMT_CONTROL register (0x5c14c) during initialization.
+|                - Fixed accessing PCIe instance 6 and 7, since RV2 has only 5 PCIe instances.
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.2.8            |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                29/11/17
+|
+|        * Changelist
+|                - Packed ucode.l0/1/2/3.dat and ucode.h0/1/2/3.dat in release package.
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.2.7            |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                10/11/17
+|
+|        * Changelist
+|                - Updated DXIO FW to v296 (CL3074120).
+|                - Fixed clk reset sequence during warn reset.
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.2.6            |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                21/09/17
+|
+|        * Changelist
+|                - Updated S0I2, WM and LIVMIN precondition.
+|                - Updated LIVMIN sequence with NBIO interlocked when disabling FCH arbiter
+|                - Updated LIVMIN sequence for LPDDR4 when setup ConvertD2ToPhyLP3 bit
+|                - Added test messages to set LPDDR4 retraining interval and allow timeout value
+|                - Added LivMINVid and LinMinEnable fuse
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.2.5            |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                29/08/17
+|
+|        * Changelist
+|                - Integrated latest RV1 code, up to August 28, 2017. Quite a lot of changes.
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.2.4            |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                14/08/17
+|
+|        * Changelist
+|                - Corrected an issue of accessing RSMU generic register. (Created release 37.2.3 in between)
+|                - Added LPDDR4 fastsim option for emulation
+|                - Updated LPDDR4 memory state
+|                - Updated GFX_DLDO_REG30 default value and gfxoff data save/restore
+|                - Generated ucore0.hbin and ucore1.hbin which added extra 256 bytes header on top of MP1 FW
+|                - Added 2 test messages for getting LPDDR4 retraining status.
+|                - Fixed a bug in DF Pstate change procedure.
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.2.3            |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                05/05/17
+|
+|        * Changelist
+|                - Fixed accessing RSMU_MGCG_CONTROL_GENERIC register cause access Violation on Address 0x01000228
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.2.2            |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                27/04/17
+|
+|        * Changelist
+|                - Integrated changes from RV1x up to CL2773697
+|                - Updated USB related function to new IP. USB watermark setting for LPDDR4 retraining is still outstanding.
+|                - Updated UMC related register settings for LivMin and LPDDR4 retraining.
+|                - Fixed pmfw_fastsim.sv to be synced with pmfw_fastsim.h and scratch_info.h in RV2. We need to variantize pmfw_fastsim.sv for FF and RV2 in the future.
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.2.1            |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                31/03/17
+|
+|        * Features enabled
+|                - LPDDR4 retraining (preliminary)
+|                - RLC PACE (preliminary)
+|
+|        * Changelist
+|                - Integrated changes from RV1x up to CL2726404
+|                - Included preliminary version of LPDDR4 retraining. Handling ZQCAL and USB watermark during
+|                  memory retraining is still outstanding.
+|                - Included preliminary version of RLC PACE feature
+|                - Code update for clocks change in RV2, include FCLK change, 2 slices of CLKB/CLKC and 2 DROOP detectors only.
+|                - Minor code update for 2 cores only (core 1 and core 3)
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.1.1            |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                28/02/17
+|
+|        * Features enabled
+|                - Long Idle vMIN
+|
+|        * Changelist
+|                - Integrated base code from RV1 and compiled them under RV2 environment.
+|                - Implemented preliminary version of Long Idle vMIN feature. For LPDDR4 system,
+|                  one caveat is that ConvertD2toPhyLp3 bit in UMC has not been set before entering LIVMIN.
+|                - Gated off unused/bypassed DFS slices.
+|
++-----------------------------------------------------------------------------------------------------------

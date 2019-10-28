@@ -1,0 +1,1065 @@
++---------------------------------------+
+| SMU Firmware Release Notes - PICASSO  |
++---------------------------------------+
+
++---------------------------+
+| Version 4.30.50.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                15/03/19
+|
+|        * Changelist
+|                - DXIO v31.427
+|                - [PMFW-1276] [IMP] S0i2 on DMCU PSR Interrupt
+|                - [PMFW-1284] [ETB] PCO Underflow after closing MTV video
+|                - [PLAT-37621] [IMP] On GFXOFF exit RLCV FW is not getting loaded (commented for record)
+|                - [PMFW-1300] [NEW] Publish BIOS/TEST message to report the overclocking capability
+|                - [PLAT-434599] [ETB] GFX driver is not loaded after iGPU overclock in BIOS setup
+|                - [PMFW-1313] [OPT] MP0CLK DS enable only for DC mode
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.50.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.50.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.49.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                08/03/19
+|
+|        * Changelist
+|                - DXIO v31.427
+|                - [PLAT-43213] [WKA] PCO Modern Standby system 100% can't resume from S0i3 update
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.49.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.49.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.48.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                06/03/19
+|
+|        * Changelist
+|                - DXIO v31.427
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.48.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.48.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.47.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                06/03/19
+|
+|        * Changelist
+|                - DXIO v31.426
+|                - [PMFW-1263] [WKA] Discard CGPG enable if CGPG disable message is received during the delay
+|                - [PLAT-43213] [WKA] PCO Modern Standby system 100% can't resume from S0i3
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.47.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.47.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.46.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                01/03/19
+|
+|        * Changelist
+|                - DXIO v31.426
+|                - [PMFW-1220] [IMP] Update STB (Smart Trace Buffer) filter masks and postcodes
+|                - [PMFW-1211] [UTB] BIOS option to Force VID is not working after DC BTC
+|                - [PLAT-42572] [UTB] PCO AM4: 35W OPNs frequency artificially limited
+|                - [PMFW-1230] [NEW] Add a PCD Option to Change AclkDpm0 from 200MHz to 400MHz
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.46.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.46.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.45.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                22/02/19
+|
+|        * Changelist
+|                - DXIO v31.426
+|                - [PLAT-42401] [ETB] Rounding min/max GFXCLK return values to neareset 10s
+|                - [PLAT-42738] [ETB] Rounding min/max CCLK  return values to the nearest 10s
+|                - [PMFW-1173] [IMP] GFX-Off exit pending during S0i3 resuming
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.45.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.45.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.44.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                15/02/19
+|
+|        * Changelist
+|                - DXIO v31.426
+|                - [PMFW-945] [NEW] Add SMU get message for current CCLK Fmax
+|                - [PMFW-1115] [ETB] Disable interrupt when enable smu features during S0i3 resume
+|                - [PMFW-1125] [IMP] Increase PSPSMC_MSG_DfCstateDisable priority to RTOS P5
+|                - [PMFW-977] [IMP] Dual source - Downgrade USB 3.1 5Gbps port to USB 2.0
+|                - [PMFW-1081] [IMP] Add Subprogram value to FW header
+|                - [PLAT-41137] [IMP] System show BSOD 0xEA when play video with Miracast connected at DC mode
+|                - [PMFW-1119] [OPT] Picasso "High" FCLK DPM Busy Setpoint from 10% to 5%
+|                - [PMFW-1134] [UTB] Picasso FW on RV1 part has CCLK Frequency Range Limited
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.44.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.44.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.43.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                08/02/19
+|
+|        * Changelist
+|                - DXIO v31.426
+|                - [PMFW-1016] [UTB] SOC Voltage is not updating immediately
+|                - [PLAT-40543] [WKA] Can not get USB wake event status from ACPI GPE register during S3 resume on R7 APU SKU
+|                - [PMFW-1075] [ETB] S0i3 resume part 2 to not continue until x86 is released
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.43.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.43.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.42.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                01/02/19
+|
+|        * Changelist
+|                - DXIO v31.426
+|                - [PMFW-955] [IMP] Message SetGenericPeRstGpioAddrOffset to Support 2 GPIOs from any Bank (Update)
+|                - [PLAT-42056] [IMP] Publish BIOS interface for ULV vid offset adjustment
+|                - [PLAT-41548] [ETB] Fclk and UClk actual frequency ratio mismatch
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.42.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.42.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.41.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                28/01/19
+|
+|        * Changelist
+|                - DXIO v31.426
+|                - [PLAT-41596] [IMP] Publsih OC messages to BIOS port
+|                - [PMFW-934] [NEW] Add DXIO Test Message to PSP MSG Port
+|                - [PMFW-904] [IMP] System hang up when ping AP address for overnight (update)
+|                - [PMFW-955] [IMP] Message SetGenericPeRstGpioAddrOffset to Support 2 GPIOs from any Bank
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.41.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.41.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.40.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                22/01/19
+|
+|        * Changelist
+|                - DXIO v31.425
+|                - [PMFW-894] [ETB] SVI2 Resource protection missing
+|                - [PMFW-904] [IMP] System hang up when ping AP address for overnight
+|                - [PMFW-910] [IMP] Bypass saving and restoring CAC weights for telemetry based products
+|                - [PLAT-41048] [WKA] USB flash key will recognize again after safely remove in Windows OS
+|                - [PMFW-912] [OPT] Lower IdleFreq to 1.4GHz to match VminFreq/OS P2 State
+|                - [PMFW-906] [WKA] Remove PMFW-748 workaround
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.40.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.40.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.39.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                17/01/19
+|
+|        * Changelist
+|                - DXIO v31.425
+|                - [PMFW-812] [UTB] CC6 Filter Gets Enabled on DC to AC Switch
+|                - [PMFW-857] [IMP] Telemetry SOC Current goes to zero
+|                - [PLAT-40636] [NEW] FUSE/Default Limits info of Power and Current required for Ryzen Master
+|                - [PLAT-41396] [WKA] System doesn't update the freq of the SOC to 400MHz after several times Prochot trigger event
+|                - [PLAT-41048] [WKA] USB flash key will recognize again after safely remove in Windows OS
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.39.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.39.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.38.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                10/01/19
+|
+|        * Changelist
+|                - DXIO v31.423
+|                - [PLAT-40804] [WKA] Goodix Finger Printer single sign on fail when S0i3 resume
+|                - [PLAT-40873] [IMP] 3D Mark performance dropped when System Configuration = 3 in AMD CBS menu (update)
+|                - [PMFW-748] [WKA] VRM hang workaround
+|                - [PLAT-39510] [WKA] System hang when resume from S3 or press warm reset with 48MHz TMDP refclock off
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.38.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.38.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.37.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                04/01/19
+|
+|        * Changelist
+|                - DXIO v31.423
+|                - [PMFW-684] [OPT] Re-allocate Datatable space to text
+|                - [PMFW-685] [OPT] Backward compatibility for AVFS fusing
+|                - [PLAT-40873] [IMP] 3D Mark performance dropped when System Configuration = 3 in AMD CBS menu
+|                - [PMFW-691] [IMP] Picasso FP5: Bypass Precision Boost Overdrive (PBO) Implementation
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.37.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.37.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.36.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                21/12/18
+|
+|        * Changelist
+|                - DXIO v31.423
+|                - [PLAT-35756] [New] TESTSMC Messages required for Ryzen Master (Adding GetTctlOffset Message)
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.36.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.36.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.35.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                18/12/18
+|
+|        * Changelist
+|                - DXIO v31.420
+|                - [PMFW-564] [IMP] Add ability to force SVI2 Voltages
+|                - [PMFW-643] [IMP] FSDL Code Clean Up (No Functional Change)
+|                - [PLAT-40367] [NEW] Modern Standby s0i3 - The external audio device can't be detected after resume from MS with external monitor connected. (winbug 159873)
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.35.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.35.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.34.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                12/12/18
+|
+|        * Changelist
+|                - DXIO v31.420
+|                - [PLAT-40308] [IMP] Systems Not Entering S0i3 in DC Mode
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.34.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.34.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.33.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                07/12/18
+|
+|        * Changelist
+|                - DXIO v31.420
+|                - [PMFW-532] [NEW] Allow controllers' limits to be set higher than platform limit on unlocked parts
+|                - [PLAT-40127] [NEW] Modern Standby S0i3: SSID of Host bridge doesn't save/restore
+|                - [PLAT-39934] [NEW] PCIEPORT::PCIE_ERR_CNTL_* registers not restored properly after S0i3
+|                - [PMFW-572] [NEW] Update FSDL reg list for ATHUB for secure policy update
+|                - [PLAT-39551] [WKA] Attach USB keyboard/mouse into USB Type-C port in S3, DUT can't recognize this device after resume from S3
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.33.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.33.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.32.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                02/12/18
+|
+|        * Changelist
+|                - DXIO v31.420
+|                - [PLAT-39590] [IMP] BIOS message to set Fit limit scalar
+|                - [PMFW-473] [NEW] GFX Fmax override
+|                - [PLAT-39812] [WKA] Modern Standby S0i3 FW TPM Error in Event Viewer / System Log
+|                - [PLAT-39410] [IMP] Check MP2_FIRMWARE_FLAGS for MP2 handshake
+|                - [PLAT-39702] [NEW] Modern Standby S0i3: SSID of LPC and SMBUS not save/restore
+|                - [PLAT-39349] [IMP] Add PostCode Level to CBS Option Enable SMU PostCode
+|                - [PMFW-519] [IMP] Update FIT Limits for 65W Config
+|                - [PLAT-37555] [WKA] System will auto wake from XHCI's interrupt pin GPIO58 and GPIO59
+|                - [PLAT-39615] [WKA] Found intermittent FPR device YB issue when resume from S0i3 (winbug 156508)
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.32.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.32.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.31.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                21/11/18
+|
+|        * Changelist
+|                - DXIO v31.420
+|                - [PMFW-478] [IMP] Add S0i3 CPUOFF Exit PostCodes
+|                - [PLAT-39458] [ETB] STAPM.PlatformLimit is not initializied
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.31.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.31.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.30.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                15/11/18
+|
+|        * Changelist
+|                - DXIO v31.420
+|                - [PLAT-35756] [NEW] TESTSMC Messages required for Ryzen Master
+|                - [PMFW-433] [UTB] DC BTC output saved at the incorrect stage of code sequence for usage in Modern Standby S0i3
+|                - [PMFW-442] [NEW] Add Restore LAPIC Timer PostCode for the Negative Value Case
+|                - [PMFW-443] [IMP] Change Minimum LAPIC Timer for the Negative Case to 10ms
+|                - [PMFW-450] [IMP] Add MP2 Handshake Postcodes for S0i3 Enter and Exit
+|                - [PMFW-451] [IVB] Move S0i3 MiscTimerData Structure from Stack to Globals to solve the TSC Misalignment
+|                - [PMFW-452] [IVB] Correction on S0i3 LAPIC Timer Count
+|                - [PMFW-434] [IMP] Integrate DXIO FW v31.420 - Requires NBIO_BIOS FSDL Change
+|                - [PMFW-468] [IMP] Add a Generic Function to Toggle GPIO during S0i3
+|                - [PLAT-37371] [NEW] Add Mid Temperature AVFS Capability for AM4
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.30.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.30.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.29.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                09/11/18
+|
+|        * Changelist
+|                - DXIO v31.419
+|                - [PMFW-402] [UTB] After Modern Standby S0i3, SATA is not getting disabled correctly
+|                - [PLAT-38691] [NEW] ACLK is out of DS and ACP is not PG after S0i3 resume
+|                - [PMFW-424] [NEW] Modern Standby S0i3 change for toggling PeRST for NVMe power down
+|                - [PMFW-220] [NEW] Add Managed Overclocking
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.29.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.29.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.28.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                06/11/18
+|
+|        * Changelist
+|                - DXIO v31.419
+|                - [PMFW-388] [UTB] Separate APU Only sPPT Arbiter from Platform sPPT
+|                - [PLAT-32660] [NEW] Continue SMU Data Calculation when in OC Mode
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.28.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.28.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.27.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                02/11/18
+|
+|        * Changelist
+|                - DXIO v31.416
+|                - [PLAT-32657] [NEW] TESTSMC message required to get core performance order
+|                - [PLAT-32662] Extend DDR support to 4400; in 33Mhz steps
+|                - [PLAT-32656] [NEW] Test messages for core overclocking support - EnableOverclocking/AllCoresOC/PerCoreOC/SetOCVID
+|                - [PMFW-368] [IMP] Resource issue with GfxOff Entry during Gfx Dpm Clk Change
+|                - [PLAT-38513] [WKA] PSI0 Residency for VDD_CR_SOC is Zero and System Power is High ~200mW in Idle
+|                - [PMFW-384] [IMP] Latest IOMMU and NBIO_BIOS FSDLs for S0i3 to Resolve the Hyper-V Issue
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.27.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.27.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.26.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                22/10/18
+|
+|        * Changelist
+|                - DXIO v31.416
+|                - [PMFW-216] [IMP] Full Adapter Reset - TDR Reset (Part 2)
+|                - [PMFW-279] [OPT] Update PPT limit for 65W OPN
+|                - [PLAT-36985] [WKA] 8888 Postcode (Voltage Regulator Shut Off) with PSI0 Enabled
+|                - [PMFW-248] [OPT] Update Winston Model ID opn.h Values
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.26.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.26.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.25.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                12/10/18
+|
+|        * Changelist
+|                - DXIO v31.416
+|                - [PLAT-35887] [IMP] Add option to program USB31PHY PHUG1
+|                - [PLAT-37399] [ETB] Disable Debug Trace during warm reset
+|                - [PLAT-37555] [NEW] System will auto wake from XHCI's interrupt pin GPIO58 and GPIO59
+|                - [PMFW-294] [IMP] Minimize no-abort vs nbif doorbell fence enable for gfxoff entry
+|                - [PLAT-31975] [WKA] Add MsgId handshake between MP1-RLC to avoid mismatch in response register
+|                - [PMFW-304] [WKA] Add a Dummy Vid Change to Ensure PSI0 Assertion / Deassertion
+|                - [PMFW-307] [WKA] S0i3 Resume WoV Amber LED Workaround
+|                - [PMFW-313] [IMP] Improve S0i3 Log
+|                - [PLAT-36504] [IMP] System wakes up Because of a timer. OS does some maintenance work and quickly wants to go back to S0i3 again
+|                - [PLAT-36112] [IMP] DF and NBIO keep awake after S0i3 resume from APIC timer
+|                - [PLAT-37627] [IMP] CPUOFF Optimziation Change is Causing Stability Issue
+|                - [PMFW-315] [IMP] Improve SMU PostCodes by Adding Levels
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.25.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.25.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.24.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                05/10/18
+|
+|        * Changelist
+|                - DXIO v31.416
+|                - [PMFW-228] [OPT] Picasso Should Lower the Core EDC CAC Scalar (Reverted)
+|                - [PMFW-272] [OPT] Updates for DLDO settings
+|                - [PMFW-277] [IMP] Update PSI0 Workaround to Avoid Extra Vid
+|                - [PLAT-36347] [IMP] Adding steps to work around multiple PME_STATUS issue
+|                - [PMFW-26] [NEW] Add APU Only Slow PPT Controller for PeAPM
+|                - [PMFW-25] [IMP] STT gain control
+|                - [PMFW-14] [NEW] Add APU sPPT APML Command for PeAPM
+|                - [PMFW-280] [NEW] Modern Standby Log
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.24.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.24.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.23.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                28/09/18
+|
+|        * Changelist
+|                - DXIO v31.416
+|                - [PLAT-37019] [IMP] BSOD0x9f (Driver Request to VBIOS Timeout) and 0x78 double exception for S3/Reboot/S4 in RS5
+|                - [PLAT-37199] [IMP] No CPUOFF/CC6 Residency in DC mode on WMC8926N
+|                - [PMFW-10] [IMP] Fix SMU success monitor code for GFXOFF and CPUOFF
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.23.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.23.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.22.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                28/09/18
+|
+|        * Changelist
+|                - DXIO v31.416
+|                - [PMFW-224] [IMP] Add ACP Off to S0i3 Entry Condition (Improved)
+|                - [PMFW-228] [OPT] Picasso Should Lower the Core EDC CAC Scalar
+|                - [PLAT-36691] [UTB] NVMe Save/Rrestore for S0i3
+|                - [PMFW-199] [ETB] Potential race condition for CGPG power status update
+|                - [PLAT-36063] [IMP] S0i3 idle mask does not update to disregard USB
+|                - [PMFW-204] [IMP] Add IdleMask to PostCodes after S0i3 OsHint (Improved)
+|                - [PMFW-256] [IMP] Disable gfxoff race condition
+|                - [PMFW-205] [IMP] Add MP1 FW logging code into release
+|                - [PMFW-263] [IMP] Remove NVMe Save and Restore from S0i3
+|                - [PMFW-15] [IMP] Park GfxClk into Bypass and turn off PLL when GfxClk Freq=200Mhz.
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.22.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.22.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.21.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                12/09/18
+|
+|        * Changelist
+|                - DXIO v0.411
+|                - [PMFW-222] [IMP] New Functions for Accessing MMIO Registers in FCH
+|                - [PMFW-223] [IMP] Save and Restore ClkCntrl.ClkRunEn on S0i3
+|                - [PMFW-140] [WKA] Trigger a SW Interrupt after S0i3 OS Resume (Reverted)
+|                - [PMFW-224] [IMP] Add ACP Off to S0i3 Entry Condition
+|                - [PMFW-225] [WKA] Fix for Scan Matrix Keyboard
+|                - [PMFW-204] [IMP] Add IdleMask to PostCodes after S0i3 OsHint (Modified)
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.21.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.21.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.20.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                07/09/18
+|
+|        * Changelist
+|                - DXIO v31.412
+|                - [PMFW-185] [WKA] Latest MMHUB FSDL for S0i3
+|                - [DESPCSOC-2199] [IMP] DF and NBIO keep awake after S0i3 resume from APIC timer
+|                - [PLAT-35809] [IMP] Battery Charge Completion (Didn't go to S0i3 when charging) / Battery Charge Threshold Change (MS to S4) are not working
+|                - [PLAT-35984] [UTB] System with NVMe but not SATA failing on S0i3 exit
+|                - [PLAT-32828] [IMP] Force GFXOFF entry sequence for iGPU disabled  case
+|                - [PMFW-204] [IMP] Add IdleMask to PostCodes after S0i3 OsHint
+|                - [PMFW-168] [NEW] Add HTFmax Control
+|                - [PLAT-29186] [NEW] Turn off 48MHz refclk during display off and PSR state
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.20.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.20.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.19.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                21/08/18
+|
+|        * Changelist
+|                - DXIO v0.411
+|                - [PMFW-145] [IMP] Allow CC6FilterEnable for FP5 package
+|                - [PMFW-146] [IMP] Do Not Apply Delay for SetGfxCGPG Message on S0i3 Resume
+|                - [PMFW-151] [IMP] Add a Driver Message to Force GFX Content Save for GFXOFF
+|                - [DESPCSOC-2179] [WKA] S0i3 Resume Occasionally Hanging at 750 Postcode
+|                - [PMFW-155] [WKA] Latest NBIO_DRV FSDL for S0i3
+|                - [PMFW-150] [IMP] Picasso Use SDMA Activity to Trigger SOCCLK DPM
+|                - [PMFW-156] [IMP] Request Highest DF Pstate on S0i3 Resume
+|                - [PMFW-157] [WKA] Send a Message to PSP to Program GcmEnable on S0i3 Resume
+|                - [PMFW-161] [IMP] Override SRAM_RM_GC Fuse Value to 0x1FF for iEVT Parts and Older
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.19.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.19.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.18.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                10/08/18
+|
+|        * Changelist
+|                - DXIO v0.411
+|                - [DESPCSOC-2207] [NEW] DF stays awake after S0i3 resume from APIC timer (Part 2)
+|                - [DESPCSOC-2195] [NEW] Generic interface between BIOS and SMU for NVMe save/restore
+|                - [PMFW-112] [UTB] nBIF Dstate change interrupt gets lost on S0i3 resume
+|                - [PMFW-113] [IMP] Add MP0_GFX_DISABLE to BIOS message 0x51
+|                - [PMFW-117] [NEW] Latest IH, IOMMU, SEM, and SDMA FSDLs for S0i3
+|                - [PMFW-136] [UTB] Move CclkInfo_t to Data/BSS Section
+|                - [PMFW-111] [OPT] Picasso VR Policy Increase CCLK & FCLK-GFX Busy Setpoint
+|                - [PMFW-138] [IMP] Latest MMHUB FSDL for S0i3
+|                - [PMFW-139] [IMP] Set MP0 Clock to Max Frequency on S0i3 Resume
+|                - [PMFW-140] [WKA] Trigger a SW Interrupt after S0i3 OS Resume
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.18.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.18.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.17.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                03/08/18
+|
+|        * Changelist
+|                - DXIO v0.411
+|                - [PMFW-19] [NEW] Correct Picasso FW for RV Model Case Statements
+|                - [PMFW-20] [NEW] AVFS GB represented by 4 segment piece-wise linear curve & PtoV encoding using sum of exponential
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.17.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.17.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.16.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                03/08/18
+|
+|        * Changelist
+|                - DXIO v0.411
+|                - [PMFW-76] [IMP] Move S0i3 PostCode enablement messages to part 1
+|                - [PMFW-77] [IMP] Latest NBIO_BIOS FSDL for S0i3
+|                - [DESPCSOC-2207] [IMP] DF stays awake after S0i3 resume from APIC timer
+|                - [PLAT-34568] [NEW] TESTSMC Messages required for Ryzen Master
+|                - [PMFW-82] [WKA] Check PMC_PMMR registers after DF interlock for OsCstate feature
+|                - [PMFW-84] [IMP] Add CalculateIOPhyDataDis flag to BIOS table
+|                - [PMFW-85] [IMP] Latest core DLDO modifications and settings
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.16.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.16.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.15.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                27/07/18
+|
+|        * Changelist
+|                - DXIO v31.412
+|                - [SMURVN-821] [IMP] VddOff exit memory repair not needed for FP5
+|                - [SMURVN-812] [IMP] Maintain backward compatibility with old BIOS table
+|                - [SMURVN-743] [OPT] STT Power Floor
+|                - [PMFW-27] [NEW] Add FP5 SystemConfigID 10
+|                - [PMFW-39] [IMP] Remove SetUlvVidOffset message from S0i3 table index
+|                - [SMURVN-728] [IMP] Telemetry Calibration Accuracy Improvements
+|                - [DESPCSOC-2105] [IMP] LAPIC timer check and save can be inconsistent if PC6 exit happens in between
+|                - [PMFW-43] [IMP] Restore NBIO pme before enabling DfCstate on S0i3 resume
+|                - [PMFW-40] [NEW] Picasso FW Needs to Distribute RM Values to GC RSMU
+|                - [PMFW-23] [IMP] Latest SATA FSDL for S0i3
+|                - [PMFW-48] [IMP] Add DisplayOff mask to idle power default mask
+|                - [PMFW-49] [IMP] Add DMA resource protection to DmaStartTransfer() function
+|                - [PMFW-44] [UTB] Do not save and restore APIC timers on disabled cores/threads
+|                - [DESPCSOC-2196] [IMP] SATA devSlp mode has a delayed exit onto desktop after S0i3 resume
+|                - [DESPCSOC-2183] [IMP] Partition of SMU message replay during S0i3 exit
+|                - [PMFW-75] [NEW] Modify BIOS message OPN_SPARE for dual source
+|                - [PMFW-13] [IMP] SMU PeAPM Firmware Modifications for Picasso/dGPU device ID
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.15.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.15.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.14.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                17/07/18
+|
+|        * Changelist
+|                - DXIO v0.411
+|                - [PLAT-32309] [IMP] 125mW power impact for Video Playback on SMU FW 4.30.6
+|                - [SMURVN-801] [IMP] ACPI timer fix for hardware bug (unscheduled wake up) (Improved)
+|                - [PLAT-33417] [NEW] Smu support for SB-TSI in alert comparator mode
+|                - [SMURVN-803] [UTB] Gfx dldo rvddoffset calculation broken with new AVFS curves
+|                - [DESPCSOC-2104] [UTB] Wrong LAPIC REFCLK for S0i3 - Should be 25MHz
+|                - [DESPCSOC-2105] [IMP] LAPIC timer checks for S0i3 can be inconsistent if PC6 exit happens in between
+|                - [SMURVN-716] [NEW] Apply Specific DPM Tuning Parameters Based on Part TDP
+|                - [SMURVN-814] [IMP] Latest NBIO_BIOS FSDL for S0i3
+|                - [SMURVN-755] [NEW] Add delay and cancel options to SetGfxCGPG message
+|                - [SMURVN-815] [ETB] DispClk entering/exiting the bypass mode
+|                - [PLAT-32287] [IMP] SYSHUB, SOCCLK, and SHUBCLK deep sleep masks not restored after S0i3 resume
+|                - [SMURVN-722] [NEW] Separate Cclk IdleFreq from VminFreq
+|                - [SMURVN-816] [NEW] Add a message to read OPN_OPN_SPARE fuse for BIOS
+|                - [SMURVN-818] [NEW] Add NBIO PME restore to S0i3 resume
+|                - [SMURVN-819] [IMP] Remove 4k from datatables and add it to text section
+|                - [SMURVN-763] [IMP] Enable ATC for Picasso/Winston
+|                - [SMURVN-764] [NEW] Manipulate power limit by a percentage
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.14.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.14.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.13.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                29/06/18
+|
+|        * Changelist
+|                - DXIO v0.411
+|                - [SMURVN-799] [IMP] Add WriteSystemTemperatureTrackingError command to APML
+|                - [SMURVN-800] [IMP] Add BIOS option to modify min S0i3 sleep time
+|                - [SMURVN-801] [WKA] ACPI timer fix for hardware bug (unscheduled wake up)
+|                - [PLAT-31710] [ETB] Prevent unnecessary ULV exits caused by SMURVN-646
+|                - [SMURVN-804] [UTB] Protect core and L3 register accesses on S0i3 resume
+|                - [SMURVN-778] [IMP] Remove GfxOff Hysteresis equal to 10000 from S0i3 resume (Part 2: code clean up)
+|                - [SMURVN-805] [UTB] IOHC Trap restore for S0i3
+|                - [SMURVN-806] [UTB] Initialize Cclk stretcher on S0i3 resume
+|                - [SMURVN-807] [IMP] LAPIC timer modifications for S0i3
+|                - [SMURVN-791] [IMP] Reallocate space to .isr_data from .scratch_data
+|                - [SMURVN-808] [UTB] Protect SetCstateWorkloadType() with CcxRegAccessDisabled on S0i3 resume
+|                - [SMURVN-809] [IMP] Remove redundant code in fit.c
+|                - [SMURVN-729] [NEW] SMU use OS C-state hint for CPUOFF/PC6 entry decision
+|                - [SMURVN-810] [IMP] Revert SMURVN-796 and enable DPM jobs at the end of S0i3 resume
+|                - [SMURVN-811] [UTB] Remove GC and RSMU reset before enabling SMN router port in GfxOff exit
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.13.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.13.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.12.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                15/06/18
+|
+|        * Changelist
+|                - DXIO v0.411
+|                - [SMURVN-728] [IMP] Telemetry Calibration Accuracy Improvements (BIOS interface part)
+|                - [SMURVN-788] [UTB] LAPIC Timer Fix
+|                - [SMURVN-776] [IMP] Add APML commands
+|                - [PLAT-27176] [IMP] updates to FP5 FIT limits and new CONFIG OPN - part2
+|                - [SMURVN-792] [IMP] Allow multiple one-shot unmasked timers for S0i3
+|                - [SMURVN-793] [IMP] Save and restore ThreadEnStat on S0i3
+|                - [SMURVN-794] [UTB] TSC sync after S0i3 resume
+|                - [SMURVN-751] [IMP] Remove 1394_debug FSDL from S0i3 save and restore (Remove from compilation)
+|                - [PLAT-32053] [ETB] Move SMNCLK DS exit later in interrupt handler
+|                - [SMURVN-795] [IMP] S0i3 CpuOff exit improvements
+|                - [SMURVN-796] [IMP] Move DPM job ennoblement to GfxOff exit in S0i3 resume
+|                - [SMURVN-719] [IMP] CCLK Change DfCstate Disable Optimization
+|                - [SMURVN-797] [IMP] Add NVMe FSDL to S0i3 save and restore
+|                - [SMURVN-798] [IMP] Update SATA FSDL for S0i3
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.12.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.12.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.11.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                04/06/18
+|
+|        * Changelist
+|                - DXIO v0.411
+|                - [PLAT-30858] [IMP] RT3663 VRM PSI0 Misbehaviour (BIOS interface part)
+|                  [SMURVN-759] [IMP] PSI0 workaround for VR going to two phases with any voltage increase (Adding BIOS interface)
+|                - [PLAT-31052] [WKA] High temperature failure
+|                - [SMURVN-786] [IMP] Remove Gfx DLDO register programming from VddOff-GfxOff exit
+|                - [SMURVN-787] [IMP] Latest SATA FSDL for S0i3
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.11.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.11.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.10.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                25/05/18
+|
+|        * Changelist
+|                - DXIO v0.411
+|                - [SMURVN-774] [UTB] Fix for GetSustainedPowerAndThmLimit message
+|                - [SMURVN-747] [IMP] Implement DLDO WLB RV1 fix
+|                - [SMURVN-699] [NEW] Softmin/Softmax CLK messages for Embedded
+|                - [SMURVN-777] [IMP] Latest SATA FSDL for S0i3
+|                - [SMURVN-778] [IMP] Remove GfxOff Hysteresis equal to 10000 from S0i3 resume
+|                - [SMURVN-779] [IMP] Latest NBIO_BIOS FSDL for S0i3
+|                - [SMURVN-780] [IMP] Clear FCH S5ResetStat in S0i3 entry
+|                - [SMURVN-782] [IMP] Enable DfCstate and allow Pc6Threshold interrupt on S0i3 resume
+|                - [SMURVN-783] [IMP] Prevent SATA save and restore in S0i3 when SATA controller is disabled
+|                - [SMURVN-784] [IMP] Enter GfxOff if GfxOffEnable message comes in after CgpgPwrDown
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.10.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.10.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.9.0          |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                17/05/18
+|
+|        * Changelist
+|                - DXIO v0.411
+|                - [SMURVN-733] [IMP] Power off TMON in VDDOFF
+|                - [PLAT-31586] [IMP] Hang at post code AC94 during S4/S5/Reboot
+|                - [SMURVN-766] [IMP] Picasso Bringup - LAPIC Timer
+|                - [SMURVN-769] [IMP] Latest SATA FSDLs for S0i3
+|                - [SMURVN-771] [IMP] Put DLDOs in bypass or regulation on S0i3 resume according to BIOS table
+|                - [SMURVN-772] [IMP] Disable SMU's postcodes by default and allow BIOS, PPLib, and Tools to enable it
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.9.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.9.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.8.0          |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                02/05/18
+|
+|        * Changelist
+|                - DXIO v0.400
+|                - [SMURVN-718] [IMP] RV/Picasso: Check CstateBoost Entry Condition on CPUOFF Exit
+|                - [SMURVN-736] [IMP] Whisper Mode add PSP stall request
+|                - [SMURVN-760] [IMP] Latest AtHub and NBIO_BIOS FSDLs for S0i3
+|                - [SMURVN-761] [IMP] Move MMHUB restore to S0i3 resume part 1
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.8.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.8.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.7.0          |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                27/04/18
+|
+|        * Changelist
+|                - DXIO v0.400
+|                - [SMURVN-750] [NEW] Add SetDispclkFreq message to S0i3 save and restore
+|                - [SMURVN-751] [IMP] Remove 1394_debug FSDL from S0i3 save and restore
+|                - [SMURVN-753] [IMP] S0i3 GfxOff exit improvement for RLC
+|                - [SMURVN-754] [IMP] Latest nbio_drv FSDL for S0i3
+|                - [SMURVN-756] [IMP] Clear PMREG_INITPKG1[softrepaire] on CpuOff exit
+|                - [SMURVN-717] [ETB] Fix CState Residency Miscalculation with CPUOff
+|                - [SMURVN-758] [IMP] Change S0i3 mask condition check to soft variable
+|                - [SMURVN-759] [IMP] PSI0 workaround for VR going to two phases with any voltage increase
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.7.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.7.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.6.0          |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                20/04/18
+|
+|        * Changelist
+|                - DXIO v0.400
+|                - [SMURVN-711] [OPT] Disable CC6 Filter when on Battery / PowerSource = DC
+|                - [SMURVN-712] [OPT] Decrease CC6 Filter value from 0.15 down to 0.10
+|                - [PLAT-29351] [IMP] Enable DFS internal clock gating
+|                - [PLAT-23568] [IMP] Program VCLK/DCLK/ACLK/ISPCLK to 1MHz when IP is power gated
+|                - [SMURVN-742] [IMP] Update RM_VALUE_CUSTOMs to 0x3C
+|                - Latest Modern Standby changes:
+|                   . Move DisablePSI message before feature enablement
+|                   . Do not send power source info to DXIO during S0i3 message replay
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.6.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.6.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.5.0          |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                16/04/18
+|
+|        * Changelist
+|                - DXIO v0.387
+|                - [SMURVN-723] [IMP] Report 100% CState Boost Residency when NumEnabledCores <= CStateBoostActiveCoreThresh
+|                - [SMURVN-740] [NEW] Add UsbXhciControllerDisabled message
+|                - [SMURVN-725] [WKA] Add Epyc/ZP Reset Bug Workaround to Picasso (PLAT-24972)
+|                - [SMURVN-741] [IMP] Expose the shared Dram address of all saved structures
+|                - [SMURVN-732] [NEW] AVFS: Add per Core PSM Offsets
+|                - Latest Modern Standby changes:
+|                   . Add Sata save to S0i3 entry
+|                   . Add the S0i3 save/restore attributes to DisableSataController message
+|                   . Temporary workaround for stack overflow issue (i.e. moving dxio call to another worker thread)
+|                   . ACP_OFF and SATA_OFF masks are temporarily removed from S0i3 conditions
+|                   . Save and restore DcBtcVoltageOffset in S0i3
+|                   . Set GfxContextSaved flag on S0i3 resume
+|                   . Add PopulateDramOffsets() to S0i3 resume
+|                   . Remove PspCgEnable message (PSP CG is enabled by default)
+|                   . Latest NBIO_BIOS, 1394_Debug, GPIO FCH, SDMA, and Mmhub FSDLs
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.5.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.5.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.4.0          |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                06/04/18
+|
+|        * Changelist
+|                - DXIO v0.387
+|                - [PLAT-21052] [UTB] Enable Fuse PG
+|                - [PLAT-30296] [PLAT-30383] [IMP] Add SizeFWSigned and FWType into SMU Header
+|                - [PLAT-27176] [IMP] updates to FP5 FIT limits and new CONFIG OPN
+|                - [SMURVN-724] [OPT] Apply FIT Optimizations (SMURVN-715, SMURVN-708) to new OPNs
+|                - [SMURVN-726] [IMP] Remove DfCstateExitDisable from S0i2
+|                - [SMURVN-727] [BUG] Block BIOS DisableSmuFeature Message on secure parts
+|                - Latest Modern Standby changes:
+|                   . Nbio Bios Fsdl Changes
+|                   . GPIO Fsdl Changes
+|                   . Clear Dram scratch area before saving messages
+|                   . Skip writing into core registers during EnableCoreCstates() on S0i3 resume
+|                   . Remove TrapSetup message from S0i3 message replay (Trap registers will be saved and restored in IOHC FSDL)
+|                   . Add IOHC and 1394_debug FSDLs. Latest Sata FSDL
+|                   . Update NBIO_END Group ID
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.4.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.4.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.3.0          |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                02/04/18
+|
+|        * Changelist
+|                - DXIO v0.387
+|                - Latest Modern Standby changes
+|                - [SMURVN-715] [IMP] FP5 45W - Remove GFX Throttling by FIT Controller
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.3.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.3.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.2.0          |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                18/03/18
+|
+|        * Changelist
+|                - DXIO v0.380
+|                - Latest Modern Standby changes
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.2.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.2.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.1.0          |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                06/03/18
+|
+|        * Changelist
+|                - DXIO v30.278
+|                - Initial Picasso firmware release - CL#3197479
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.1.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.1.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------

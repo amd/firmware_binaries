@@ -1,0 +1,174 @@
++-----------------------------------------+
+| MP2 SFI Firmware Release Notes - Picasso
++-----------------------------------------+
++----------------------------------------------------------------------------------------------
+| Version 2.0.0
++----------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           03/07/18
+|   * Features enabled
+|              - Accelerometer, Gyrometer, Magnetometer, Compass and Operating Mode Supported
+|              - On Tablet mode Keyboard disable is supported
+|              - Dynamic Calibration supported
+|              - LP Enabled
+|              - Sensors data is read after device discovery make gpio line low (if was high)
+|              - MH sdIntGet use GPIO1 input value instead of interrupt status
+|   * Issue resolved
+|              - Picasso released aligned with RV1 Release 1.2.22
+|
+|   * Change Log
+|              - Operating Mode output and Angle is produced always.
+|              - MP2 Version is written into MP2 public scratch register 2
+|
+|     Code base commit id:
+|          Change Id: I40647b1480175e3f0f99c5179c5e97abd29c261a
+|          Commit Id: f617543f48014d2fb841bbb26e58518ecd30e7e7
+|          Gerrit Id: 159030
+|
+|     Jira ID : [PLAT-32026] SFH shall support change in Operating Mode angle
+|
+|   * Limitation
+|               - I2C Read works on poll
+|               - Sensors should be disabled before S4 entry
+|
++----------------------------------------------------------------------------------------------
+| Version 2.0.0.1
++----------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           11/07/18
+|   * Features enabled
+|              - Accelerometer, Gyrometer, Magnetometer, Compass and Operating Mode Supported
+|              - On Tablet mode Keyboard disable is supported
+|              - Dynamic Calibration supported
+|              - LP Enabled
+|              - Sensors data is read after device discovery make gpio line low (if was high)
+|              - MH sdIntGet use GPIO1 input value instead of interrupt status
+|   * Issue resolved
+|              - Magnetometer not working after CB/WB
+|
+|   * Change Log
+|              - Set MP2 clock at 200 Mhz before device discovery
+|
+|     Code base commit id:
+|          Change Id: Ia552b0435074297c4b364c7b6c6edb519368df17
+|          Commit Id: 210a9d4af73aba2f94a144173821c9c3edbae0f9
+|          Gerrit Id: 161518
+|
+|     Jira ID : [PLAT-32026] SFH shall support change in Operating Mode angle
+|
+|   * Limitation
+|               - I2C Read works on poll
+|               - Sensors should be disabled before S4 entry
+|
++----------------------------------------------------------------------------------------------
+| Version 2.0.3.0
++----------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           14/08/18
+|   * Features enabled
+|              - Accelerometer, Gyrometer, Magnetometer, Compass, Operating Mode
+|                Ambient Light Sensor, Time Of Flight Sensors are supported
+|              - On Tablet mode Keyboard disable is supported
+|              - GPIO interrupt trigger if Brightness less than 200 lux
+|              - Dynamic Calibration supported
+|              - LP Enabled
+|              - Sensors data is read after device discovery make gpio line low (if was high)
+|              - MH sdIntGet use GPIO1 input value instead of interrupt status
+|              - Single Fimr
+|   * Features Added
+|              - Single Firmware binary supported with Config file support all customer sensors.
+|              - Customer specific config file to be used. Default support LSM6DS3 + LIS3MDL + LIS2DE12
+|
+|   * Change Log
+|              - Set MP2 clock at 200 Mhz before device discovery
+|
+|     Code base commit id:
+|          Change Id: I00f15b90164827ecca0ecab807f5f2826091002e
+|          Commit Id: 996d5685b3ec5fe5d5642f490da4ea59cea75133
+|          Gerrit Id: 167607
+|
+|     Jira ID : [PLAT-35329] [PCO] Support single firmware for all customer sensors
+|
+|   * Limitation
+|               - I2C Read works on poll
+|               - Sensors should be disabled before S4 entry
+|
++----------------------------------------------------------------------------------------------
+| Version 2.0.3.14
++----------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           15/11/18
+|   * Features enabled
+|              - Accelerometer, Gyrometer, Magnetometer, Compass, Operating Mode
+|                Ambient Light Sensor, Time Of Flight Sensors are supported
+|              - On Tablet mode Keyboard disable is supported
+|              - GPIO interrupt trigger if Brightness less than 200 lux
+|              - Dynamic Calibration supported
+|              - LP Enabled
+|              - Sensors data is read after device discovery make gpio line low (if was high)
+|              - MH sdIntGet use GPIO1 input value instead of interrupt status
+|              - Single Fimr
+|   * Features Added
+|              - Single Firmware binary supported with Config file support all customer sensors.
+|              - Customer specific config file to be used. Default support LSM6DS3 + LIS3MDL + LIS2DE12
+|              - Set MP2 clock at 200 Mhz before device discovery
+|
+|   * Change Log
+|              - Block SMN access during S0i3
+|
+|     Code base commit id:
+|          Change Id: I21c7a993b5c4c927794eb7ef11f2398ae8e1545a
+|          Commit Id: b62f5103a817694e703626ebf611c500f178b267
+|          Gerrit Id: 187219
+|
+|     Jira ID : [PLAT-39289] [PCO] S0i3 fails to resume
+|
+|   * Limitation
+|               - I2C Read works on poll
+|               - Sensors should be disabled before S4 entry
+|
++---------------------------------------------------------------------------------------------
+| Version 2.0.3.15
++---------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|          20/11/18
+|
+|   * Enabled Low power i.e 48MHz support.
+|   * Integrated the changes from RV1 to Rv2 for low power mode.
+|
+|   * Change:
+|              - PLAT-39408 Implement MP2_FIRMWARE_FLAG as MP2 FW loading indicator
+|              - Git Change-Id: I36865278f4ac37d7db2d84bfe21acad335fcb0df
+|              - Gerrit ID: 188070
+|              - Commit Id: 3af17da6978c329edaf06a3e7691aad8c8eddb20
+|   * Limitation
+|
++------------------------------------------
++---------------------------------------------------------------------------------------------
+| Version 2.0.3.17
++---------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|          20/11/18
+|
+|   * Enabled Low power i.e 48MHz support.
+|   * Integrated the changes from RV1 to Rv2 for low power mode.
+|
+|   * Change:
+|              - PLAT-40149 Add Book Mode Disable Support
+|              - Git Change-Id: Iaca6e2c793a22434041756dca85d2543bf926624
+|              - Gerrit ID: 191054
+|              - Commit Id: a73bf6d947540ab20125e4f4bd1179783cdcec33
+|   * Limitation
+|
++------------------------------------------
+
+
+
+
+
+
+
+
+
+
+

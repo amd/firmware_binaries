@@ -1,0 +1,791 @@
+//----------------------------------------------------------------------------
+// PSP FW Delivery Release Note
+//
+// Copyright 2019, Advanced Micro Devices, Inc.
+// Date:   January 09, 2019
+//----------------------------------------------------------------------------
+
+Content:
+	PSP FW Deliverables for Raven Ridge. Sync-up to HW register to RTL CL#570439
+	This Build is compiled using the ARM license from the AMD license server.
+
+Files:
+ PspBootLoader_prod_RV.sbin         [version: 0.8.3.59] - PSP off-chip BootLoader (entry type 0x1), signed with production key
+ PspRecoveryBootLoader_prod_RV.sbin [version: 0.8.3.59] - PSP off-chip Recovery BootLoader (entry type 0x3), signed with production key
+ secure_unlock_prod_RV.sbin         [version: 0.8.3.59] - PSP secure unlock (entry type 0x13), signed with production key
+ psp_os_combined_prod_RV.sbin       [version: 0.8.3.59] - PSP secure OS (entry type 0x2), signed with production key
+ drv_sys_prod_RV.sbin               [version: 0.8.3.59] - PSP system driver (entry type 0x28), signed with production key
+ dr_ftpm_prod_RV.csbin              [version: 3.22.0.4] - PSP fTPM (entry type 0xC), compressed and signed with production key
+ security_policy_RV1_FP5_AM4.sbin   [version: A.2.3.2]  - Raven1_Security_Policy for Raven1 program (entry type 0x24), signed with production key
+ security_policy_PCO_FP5_AM4.sbin   [version: A.2.3.27] - Raven1_Security_Policy for Picasso program (entry type 0x224), signed with production key
+ security_policy_RV2_FP5_AM4.sbin   [version: A.2.4.25] - Raven2_Security_Policy for Raven2 program (entry type 0x124), signed with production key
+
+ver 0.8.3.59
+00. Code base updated to CL#61260.
+01. PLAT-39742: Update RV2 security policy to 10.2.4.37 (Hex:0A020425)
+
+ver 0.8.2.59
+00. Code base updated to CL#60943.
+01. PLAT-39863: Fix in changes ported in 0.8.1.59, missing one line.
+02. PLAT-39987: [PCO] fTPM NVRAM getting corrupted on boot-up, fTPM version updated to 3.22.0.4.
+03. PLAT-39511: BSOD 0xEA when do Skype video chat.
+NOTE: This point release is not meant for PI w/ AM4 packaging and NPU support, as the team agreed.
+
+ver 0.8.1.59
+00. Code base updated to CL#60908, no update in fTPM version and updated PCO security policy.
+01. PLAT-39863: [PCO FP5 MS] SMNCLK and MP0CLK are not in DS after S0i3 resume - ~60mW increase on VDDSOC.
+02. PLAT-39535: [PCO] Update Security Policy of PCO to version 10.2.3.39 (Hex: A.2.2.27).
+NOTE: This point release is not meant for PI w/ AM4 packaging and NPU support, as the team agreed.
+
+ver 0.8.0.59
+00. Code base updated to CL#60036, no update in fTPM version
+01. SWDEV-168931: Add SPClient config for tOS Signing Key and modify Security Policy compiler.
+02. PSP-3507: [VG] Add new SysDrv service to allow XGMI TA reading specific registers.
+03. PLAT-38385: [PCO] PSP Fw need send out Cold Reset type for Thermtrip recovery.
+04. PLAT-38514: [VG20][SRIOV] Add L1 Security Policy compiler.
+05. PLAT-38233: [VG10][SRIOV] Program MEC Jump Table 1 as VF Trust Level when GRBM Virtualization Firewall gets enabled.
+06. PLAT-37318: [PCO] Adding specific ID to support PCO SMU/ MP2/SecurityPolicy FW in PSP directory.
+07. SWDEV-148328: [VG] XGMI support over Guest Gfx Interface.
+
+ver 0.8.0.58
+00. Code base updated to CL#53148, no update in fTPM version
+01. Reverting PLAT-37481 due to issue.
+
+ver 0.8.0.57
+00. Code base updated to CL#53109, fTPM version is updated to 3.21.0.4
+01. Update VG10 L1 Policy Compiler to v9.1.11.40 which is release candidate.
+02. SWDEV-168526: [VG20] Support for embedded security policy (header) and SRIOV L1 policy security concern.
+03. PSP-3516: Move AMD-TEE SysDrv library files out of 10-RV folder.
+04. SWDEV-162443: [VG20] SMU signed FW is using VG10 Key which needs to be replaced.
+05. PLAT-37960: PLAT-37953: PLAT-37972: Coverity CIDs 15771, 15875 & 15873 fixes.
+06. SWDEV-152309: [VG20] FLR is not working.
+07. SWDEV-168931: [VG20] Add SPClient Config for tOS Signing Key and modify Security Policy compiler.
+08. SWDEV-168403: [RV2] TMZ not configured correctly.
+09. PLAT-38036: [RV] Update PSP Authentication Requirements for Pro 560 (DID 0x43D2) and B550 (DID 0x43D1).
+
+ver 0.8.0.56:
+00. Code base updated to CL#52932, fTPM version is updated to 3.21.0.4
+01. SWDEV-162443: [VG20] SMU signed FW is using VG10 Key which needs to be replaced.
+02. PLAT-37772: [RV] Coverity CID 15772 & CID 15895 fixes.
+03. PLAT-35018: [RV] Observed FW_Status "0000010D" for Raven 0.8.0.4B recovery BIOS.
+04. PLAT-35972, PLAT-33143, PLAT-32476, PLAT-33063, PLAT-35487:[RV] RPMC support in fTPM and new NVRAM structure.
+05. PLAT-37481: [RV] Add support for multiple 0x62 entries loading to PSP BL
+
+ver 0.8.0.55:
+00. Code base updated to CL#52835, no update in fTPM version
+01. PLAT-37712: System does not boot to Windows with latest PSPFW on non-secure ASIC.
+02. PLAT-37664: PLAT-37658: [RV] Fixes for Coverity reported issues.
+03. PLAT-37602:[VG20] PSP Data Abort on reading from MM-SCH Mailbox on reporting VCE Periodic Validation violation.
+
+ver 0.8.0.54:
+00. Code base updated to CL#52797, no update in fTPM version
+01. PSP-3507: Add new SysDrv service to allow XGMI TA reading specific registers.
+02. PLAT-35152: Coverity 33156 - Uninitialized scalar variable.
+03. PLAT-37313: [VG20] Revert applied L0 Policy on Secure Debug Unlock.
+04. Back out of SWDEV-162443: [VG20] SMU signed FW is using VG10 Key which needs to be replaced.
+05. PLAT-37441: Remove older mechanism of loading security policy.
+06. SWDEV-157058:[VG20] Mode1 Reset - Unconfigure C2PMSG SRIOV registers.
+07. SWDEV-167192: [PCO][PlayReady] 80004005 error with multiple concurrent H.264 Netflix PlayReady HW DRM sessions.
+08. PLAT-37608:[VG10][SRIOV] Address Coverity issues associated with SR-IOV infrastructure.
+09. PLAT-37666: Update Security Policy to 10.2.3.34 for PCO.
+
+ver 0.8.0.53:
+00. Code base updated to CL#52660, no update in fTPM version
+01. PLAT-32908: AMD Field Fusing Tool - OEM/ODM/IVB Edition.
+02. SWDEV-162443: [VG20] SMU signed FW is using VG10 Key which needs to be replaced.
+03. SWDEV-164404: [VG20] Load L0 Security Policy through VBIOS instead of embedding PSP FW.
+04. SWDEV-136041: [VG20] Implement SR-IOV functionality in VG20 PSP Trusted OS.
+05. PLAT-33496: [PCO] Enable back DMCU FW loading for S0i3.
+06. PLAT-33493: [PCO] Resolve ASD driver dependency for S0i3.
+07. PLAT-37307: [PCO] DMCU firmware not loaded on S0i3 resume.
+
+ver 0.8.0.52:
+00. Code base updated to CL#52526, fTPM version was updated to 3.20.0.4
+01. PSP-3513: [AMD-TEE] Increase stack size of TA notification handler thread in tOS.
+02. PLAT-36798, PLAT-36800: [Vega10][SRIOV] Load L0/L1 Policy through VBIOS.
+03. RDAR-43003597: Fix HARD HANG Caused by HotPlugs/Unplugs multi 4K.
+04. PSP-3507: Add new SysDrv service to allow XGMI TA reading specific registers.
+05. PLAT-35966: PSP FW - SYS DRV - Coverity CID 472719.
+06. SWDEV-158866: [PCO][PlayReady] Encrypted PlayReady TA.
+07. SWDEV-156642 - VG10/12 Mode1 Reset - Unconfigure C2PMSG SRIOV registers.
+08. PLAT-37059: [PCO] Fix System cannot enter S0i3 (second cycle) with PSPFW 0.8.0.51.
+
+ver 0.8.0.51:
+00. Code base updated to CL#52361, no update in fTPM version
+01. SWDEV-163112: [Vega12/D20621-PCIE] The security policy was reset when GFXoff enabled.
+02. SWDEV-165013 - VG20 BACO/BAMACO SOS Implementation.
+03. PLAT-36563 - [Vega10][SRIOV]  Support IH_RB_CNTL Register Programming for VFs over the VF Ring.
+04. PLAT-36595: Add a new ATAG parameter to pass on IPv4 information to KVMOS.
+05. PLAT-35971: RPMC support needed in trustedOS.
+06. PLAT-35942: [PCO] System with Secure Part hangs when playing online video after resuming from S0i3.
+07. PLAT-36596: Fix reporting of Security Violations to C2P_MSG registers.
+08. PSP-3507: Add new SMU-to-PSP command for getting XGMI topology information.
+09. PLAT-36503: [PCO] DF Cstate is not getting re-enabled at the end of S0i3 cycle preventing S0i3 re-entry (postcode 0001).
+10. PLAT-36712: [PCO] TMR Regions integrity check on S0i3 cycle.
+11. PSP-3512 - [PlayReady] Implementation of SysDrv API for getting properties of other modules.
+12. PLAT-35435: Fixing RV2-specific PSP dir types issue.
+
+ver 0.8.0.50:
+00. Code base updated to CL#52164 and fTPM version updated to 3.19.0.4
+01. PLAT-35839: [RV] Fix AMD-TEE Secure OS bugs in mmu.c and bios_mailbox.c.
+02. PLAT-35905: [V10] PSP incorrectly resolves VF ID during Manual GPU Scheduling mode.
+03. PLAT-35968 - [VG10] GIM Hypervisor driver Mode1 Reset failure.
+04. DIAG-2503: PSP SDMA front door issue fixes.
+05. PLAT-34293: [VG10] Periodic MEC FW validation.
+06. PSP-3510: Fix PSP boot latency issue on dGPU.
+07. PSP-3509: AACS decryption prototyping.
+08. PLAT-34394:[VG10] PSP should check for illegal instruction execution of UVD/VCE FW for all Active VFs.
+09. PSP-3512: [RV] Implementation of SysDrv API for getting properties of other modules.
+10. PLAT-35435: [RV/PCO] Variable 2nd Storage Support in PSP BL.
+11. PLAT-36259: [VG10] Update L1 Security Policy to v9.1.1.26 and allow PSP section of L1 Policy to be reverted on Debug Unlock.
+12. PLAT-34830: [RV] fTPM Recovery Mechanism Requirement. VG20 boot fix.
+13. SWDEV-162566: [VG20] SMU hang waiting for PSP response to SMU2PSP_CMD_GFX_CONTEXT_SAVED message.
+14. PSP-3512: [RV] Bug fix in SysDrv API for getting properties as uint32.
+15. PLAT-35905:[VG10] Remove GetVfId Service call from PSP Kernel.
+16. SWDEV-160590: [VG20] Mode2 Reset Implementation.
+17. SWDEV-163478: [RV] Change in PSP to maintain patch level for non-PSP FW.
+18. SWDEV-160590: [VG20] Mode2 Reset - System Driver compiler warnings on non VG20 ASICs
+19. PLAT-35297: [PCO][PRD] Enable ASSR on VBIOS notification.
+20. PLAT-36409: Populate debugging information to C2P registers in case of Abort in BL.
+21. PLAT-36479: Enable Encryption of Security Policy binaries.
+22. PLAT-36295:  Merge Build related changes done in Secure OS and System Driver for MTS/CP
+23. PLAT-36509 : [PCO][PlayReady] Encrypted PlayReady TA Failure
+24. PLAT-35054: Fix errors in handling GfxOff command from SMU.
+
+ver 0.8.0.4F:
+00. Code base updated to CL#51870, no update in fTPM version.
+01. PLAT-35866: [RV] Remove DisableDfCstate from SaveTmrRegisters function and Use new Cmd for request to SMU for disabling/enabling DfCstate.
+02. PLAT-34293/PLAT-34295: [VG10] Periodic MEC FW validation and Evasive action for Virtual Functions
+
+ver 0.8.0.4E:
+00. Code base updated to CL#51848, no update in fTPM version.
+01. Back out change list 51830 PLAT-34293/PLAT-34295.
+
+ver 0.8.0.4D:
+00. Code base updated to CL#51835, fTPM version updated to 3.17.0.4 and PCO security policy is updated to 10.2.3.30
+01. SWDEV-156939: [VG20] Failed to playback Blue ray discs(HDCP).
+02. PLAT-32646: [VG20] Enable MP0/MP1 HS during WFI for SOC ULV.
+03. PLAT-34830: [RV] fTPM recovery mechanism requirements.
+04. PLAT-33119: [RV][VG] Security fixes in FindTaProperty.
+05. PSP-3507: Modify XGMI topology structure according to agreement between Boot Loader and XGMI TA.
+06. PLAT-35379: [PCO] Save/restore PSP only registers - for S0i3 Secure ASIC.
+07. PLAT-34742: [VG10] PSP applies the SR-IOV RSMU Security policy twice
+08. SWDEV-156599: [VG10] SRIOV bring-up tasks.
+09. PLAT-35008: [RV2] Enable KVM support for RV2.
+10. PSP-3458: Address Coverity issues.
+11. PLAT-35515: [VG] Enable Applying/Reverting of Security Policy using separate binary to dGPU platforms.
+12. PSP-3508: [RV] Modify PSP SRAM allocation for TA to allow multiple TAs to use SRAM.
+13. PLAT-35519: Update Security Policy to version 10.2.3.30 for Picasso program ONLY.
+14. PLAT-35520: Remove direct programming of DF:GCM_Enable and create new SMU cmd handler for programming register on S0i3 resume.
+15. SWDEV-152804: [RV1] WA for HW bug. Remove static disable DF CS data forwarding enabled.
+16. PLAT-35694: Latest PSP changes does not work - fails on S0i3 resume.
+17. PLAT-34293/PLAT-34295 - [Vega10][SRIOV] Periodic MEC FW validation and Evasive action for Virtual Functions.
+18. PLAT-33130: [fTPM] [RV] Insufficient Validation of fTPM Command Header Length.
+19. PLAT-33061: [fTPM] [RV] The assert macro is disabled in release builds in the fTPM.
+
+ver 0.8.0.4C:
+0. Code base updated to CL#51533 and fTPM version updated to 3.16.0.4.
+1. PLAT-34521: PSP should support separate GPCOM and RBI Destroy Ring commands
+2. PSP-3506: Initial implementation of handling of WLAN unified binary in tOS (disabled).
+3. PSP-3507: Implementation of SysDrv interfaces for XGMI TA to get XGMI topology info, enable/disable XGMI sharing, get current VF ID, get number of VFs.
+4. SWDEV-156939: VG20 Failed to playback Blue ray discs(HDCP).
+5. PLAT-34853: [PCO RV2 Combo] System hang at PC0026 with RV2 EVT-PCO dual source secure 1M25E5C4T2OFB.
+
+ver 0.8.0.4B:
+00. Code base updated to CL#51411 and fTPM version updated to 3.16.0.4.
+01. SWDEV-157058: [VG20] Code changes for Mode1 Reset.
+02. PLAT-34516: Fix - check conditions of saving data to MP2 RAM1.
+03. SWDEV-157991: GPU-P: PSP load UVD & VCE ucode fail.
+04. PLAT-33045: [PSP Phase II] The shared DLM buffer can be abused to corrupt TEE OS memory
+05. PLAT-34675: Allow replacement of data at the existing entry if the size is same in MP2 RAM1.
+06. PLAT-32478: [PSP Phase II] GPU IP firmware validation failure handling doesn’t return system to a safe state.
+07. PLAT-34795: Create new service call for AGESA run time driver and PSP for writing data to MP2 RAM1.
+08. DESPCSOC-2174: [Picasso Modern Standby] During S0i3 resume ABL binaries for memory and DF restore are getting loaded from SPI instead of POR MP2 SRAM.
+09. PLAT-34799: Fix DF_GCM_ENABLE register programming.
+10. PLAT-33492: Enabled back setting up of RSMU Interrupts (disabled for S0i3 during S0i3 bring-up)
+
+ver 0.8.0.4A:
+0. Code base updated to CL#51250 and no update in fTPM version.
+1. SWDEV-156939: Display additional debug information from secure OS.
+2. SWDEV-155084: [VG10][SRIOV] Fix SRIOV mode detection inside the IP FW loading.
+3. SWDEV-155523 [RV] HDCP Support for Mira-cast.
+4. PSP-3502: Implement DLM token validation.
+5. PLAT-34383: Create Security Policy binary v. 10.2.3.29 and allow only this or greater than 0.29 version to Picasso.
+
+ver 0.8.0.49:
+0. Code base updated to CL#50710 and no update in fTPM version.
+1. PSP-3503: Make local copy of Boot Loader mailbox buffer in SysDrv.
+2. SWDEV-136064: [VG20] Program the fabric ID to MMHUB1 and unit ID to 0x3 when setting-up TMR region for UVD0 FW loading.
+3. PLAT-33399: [RV] Picasso Modern Standby(S0i3), Save/Restore TMR registers and restore DF Late Security Policy
+4. SWDEV-151541: [VG20] Added support for Mode1 Reset.
+5. SWDEV-136058: [VG20] Multi-instance UVD FW loading and validation.
+6. SWDEV-155084: [VG10][SRIOV] Add support for multiple Memory Regions for IP loading depends on Vfid and fix bug for CL#50949.
+
+ver 0.8.0.48:
+0. Code base updated to CL#50710 and no update in fTPM version.
+1. PLAT-33037: [RV] Save ABL0 binary to MP2 RAM1 on S5 and read on S3 resume from RAM1 instead of SPI-ROM.
+2. PLAT-33184: [RV][VG] Boundary macros to prevent integer overflow, restricted buffer overlap and check white-list buffer.
+3. PLAT-31211: [VG20] Mapping TMR registers changed to index based indirect access.
+4. PLAT-33266: PSP Kernel hang while accessing TMR registers through SMN.
+5. PLAT-30616: [RV2] Update Reset & Loading sequence of MP2 firmware for RV2 only.
+6. PLAT-32664: Turn on eDP on S3 resume early as possible for quick boot and fast resume.
+7. PLAT-32445: [PSP Phase II] Arbitrary memory overwrite while loading components.
+8. PLAT-30983: Update Copyright header for files which are part of NDA package.
+
+ver 0.8.0.47:
+0. Code base updated to CL#50468 and no update in fTPM version.
+1. PLAT-32357: [RV][VG] Secure OS hangs at PC A5D5 with WMC8530N.
+2. SWDEV-153927: [VG12] PNP fix, re-applying security policy and restoring HCID & SIID values after GFX-OFF exit
+3. PLAT-32161: [RV] New mechanism of loading Rsmu_Security_Policy using separate binary in SPI-ROM.
+4. PLAT-32161: [RV] Add SysDrv service for getting RSMU security policy version.
+5. PSP-3496: Address security concern regarding issue with Panic() usage when getting Object and Operation handles in TEE I/F handlers.
+6. PSP-3496: Address security concern regarding TEE interface (use local copy of command buffer).
+7. PSP-3496: Address security concern regarding DLM interface (use local copy of Wptr value when writing DLM string to buffer).
+8. PSP-3496: Address security concern regarding loading MMSCH IP.
+
+ver 0.8.0.46:
+0. Code base updated to CL#50300 and no update in fTPM version.
+1. PSP-3458: [RV][VG] Address Coverity issues.
+2. SWDEV-155084: [VG10][SRIOV] New Gfx interface for SRIOV.
+3. SWDEV-153792: [VG12] Skipping SMU FW loading if firmware already loaded.
+4. PSP-3496: [RV][VG] Enable ARM stack protection in Trusted OS, Kernel, SysDrv, TAs and Drivers.
+5. PSP-3496: [VG12] Fix issue in GFXOFF exit handling.
+6. SWDEV-148450: [VG10][SRIOV] Fix SMN mapping logic to access to virtual copy of registers (to program IH_RB_CNTL registers).
+7. SWDEV-146174: [RV][VG] Support multiple invoke cmd handling in gfx interface.
+8. PLAT-32378: [RV] Changes to identify Picasso ASIC and latest S0i3 changes integration from bring-up branch.
+
+ver 0.8.0.45:
+0. Code base updated to CL#50054 and no update in fTPM version.
+1. PSP-3495: Address security concerns from customer review.
+2. PSP-3492: [SRIOV] Fix interrupt handling.
+3. PLAT-31141: Bug fix in Write TMZ keys to existing UMC channels.
+4. PLAT-31211: [VG20] Bring-up activity, Enable Secure Debug Unlock.
+5. PLAT-32034: Fix FwType mismatch issue for driver/ta binaries which are validated in sOS.
+
+ver 0.8.0.44:
+00. Code base updated to CL#49983 and no update in fTPM version.
+01. PLAT-31211: [VG20] Enable support of Vega20 in sOS.
+02. PSP-3492: [VG][SRIOV] New Gfx interface which uses only 3 registers and available only in SRIOV mode.
+03. PLAT-30790: Separate out Security Policy for RV1 AM4 platforms, currently same security policy as of RV1 FP5 platforms.
+04. PLAT-31322: [RV2] Some additional registers were found which have different addresses from RV1 spec.
+05. PLAT-31668: Support decryption of binaries in BL and enable encryption of PSP firmware binaries.
+06. PLAT-29590: [RV] Additional changes - power optimization of PSP FW in S0i2 state.
+07. PLAT-31758: New service calls in PSP BL for ABL. i) Calculate & Validate HMAC for ABL ii) Load APOB buffer from SPI-ROM to MP0 SRAM chunk by chunk.
+08. PLAT-31813: Bug fixes for i) System does not go to RecoveryMode in case of absence of binary ii) Copy data to local buffer before processing BiosCmd, was raised in code review.
+09. PSP-3458: PLAT-31881: Address Coverity issues.
+10. PSP-3495: Make local copy of FW header in Fw validation function, was raised in code review.
+
+ver 0.8.0.43:
+00. Code base updated to CL#49802 and no update in fTPM version.
+01. PLAT-30947: Updated PSP BL SVC call interface file to ABL to reflect correct definitions.
+02. PLAT-31047: Integrate S0i3 bing-up changes.
+03. PLAT-31513: Adding additional check conditions for MMHUB mapping against TMR registers.
+04. SWDEV-148450: [Vega10][SRIOV] Fix logic for MC_SPACE=3 case to program IH ring registers.
+05. PLAT-31613: Project006 - Add additional check conditions for BiosCmd 0x7.
+
+ver 0.8.0.42:
+00. Code base updated to CL#49631 and no update in fTPM version.
+01. SWDEV-148450: [Vega10][SRIOV] Provide PSP service to program IH ring registers. New interface with Vfid.
+02. DESPCSOC-1891: [S0i3 bring-up][RV] Modify RSMU security policy to 3.26 to allow SMU read-only access to MMHUB registers.
+03. PLAT-29590: [RV] Power optimization of PSP FW in S0i2 state.
+04. PLAT-31094: Add FwType checking in svc call for loading BIOS directory entries (PMU FW).
+05. PLAT-31212: KVM Nwd fails to come up due to the failure of SYSHUB mapping of NIC config space.
+
+ver 0.8.0.41:
+00. Code base updated to CL#49458 and no update in fTPM version.
+01. PLAT-30612: [RV] Fix bugs of the "Verify SYSHUB mapped address against sensitive areas."
+02. PLAT-30264: [RV] Enforce FwType check for all binaries loaded in PSP BL.
+03. SWDEV-149550: [RV] Brightness2 test fails with error "Back light optimization OFF failed".
+
+ver 0.8.0.40:
+00. Code base updated to CL#49323 and fTPM version updated to 3.15.0.4
+01. PLAT-30195: PLAT-30196: [RV] Add FwType in Psp Header field to PSP binaries.
+02. SWDEV-148450: [Vega10][SRIOV] Provide PSP service to program IH ring registers.
+03. PLAT-26070: [RV] Review design and correctly fixed uCode load in CL#46664 and CL#49012.
+04. PLAT-20554: [RV] PSP Boot Loader support for ABL FW Signing Key.
+05. PLAT-29925: [fTPM] Fix security issues.
+06. PLAT-30612: [RV] Verify SYSHUB mapped address against sensitive areas.
+07. PLAT-30919: [VG20] Integrate VG20 signing function into sOS build chain.
+08. SWDEV-149097: [RV][PlayReady] Added mechanism to populate version numbers of Non-PSP firmwares.
+09. PLAT-29846: [RV] Additional changes - removed not required service call.
+10. PLAT-30917: [RV] Set-up I2C3 channel clock to 100KHz for customer EC messages.
+
+ver 0.8.0.3F:
+00. Code base updated to CL#49179 and fTPM version updated to 3.14.0.4
+01. PLAT-30019: [RV] System hangs after HDT debug unlock.
+02. PLAT-29829: [RV2] Load RV2 MP2FW binary if ASIC is RV2.
+03. PLAT-29842: [RV] PSP BootLoader permits execution of unsigned data.
+04. PLAT-29685: [RV] ISP firmware loading on Raven.
+05. PSP-3485:   [RV] Add implementation of VirtToAxi() for shared memory buffers.
+06. PLAT-26070: [RV]Correctly fixed this issue in CL#46664. DMCU FW load bug fixes + GFX Save Restore Loading sequence fix.
+07. PLAT-30633: [Vega20] Bring-up activity, loaded PSP sOS up to SignOfLife update.
+08. SWDEV-149081: [RV] Add FwType value to the PSP FW header.
+09. PSP-3462: [RV] Fix a bug with saving Time Stamp over S3 cycling.
+10. SWDEV-146166: [RV][PlayReady] Fix CCP Pass Through API.
+11. [PlayReady]: Add ability for TA to use SRAM buffer.
+12. DESPCSOC-1862: [AMD-TEE kernel] Fix intermittent AMD-TEE data abort.
+13. PLAT-29842: Address security concirn regarding the fTPM uncompressed image could overwrite valuable data.
+14. PLAT-29846: [RV] Potential PSP User code privilege escalation.
+15. PLAT-28831: PLAT-28923: Implement correct UMC keys programming mechanism for RVx2 and Update Security policy for RVx2 with 10.2.3.26
+16. PLAT-30130: [RV][fTPM] Device level HLK Test "TPM Auxaillary Test" failing.
+
+ver 0.8.0.3E:
+0. Code base updated to CL#48879 and no update in fTPM version.
+1. PLAT-29836: PLAT-29837: PLAT-29384: [RV] Security fixes.
+2. PLAT-30027: [RV] Workaround for KVM Nwd soft lock up issue found on customer board.
+3. SWDEV-148447: [VG12] Clearing TMR buffer before loading FW and setup TMR fence only if in case of non-SRIOV.
+
+ver 0.8.0.3D:
+0. Code base updated to CL#48646 and fTPM version is updated to 3.13.0.4
+1. PLAT-29750: [RV]Skip loading of MP2 FW if requested using PSP Entry 0xB.
+2. PLAT-26822: [RV] Add support for Z490 promontory device connected behind PCIe switch.
+3. SWDEV-146166: [RV][PlayReady] Extra System Driver services to support Transcription optimization.
+4. PLAT-29498: [RV][fTPM]Fixes for issues reported by Coverity.
+5. PLAT-29693: [RV][fTPM] TPM 2.0 EK Certificate tests fails on Raven.
+6. DASH-485:[KVMOS] In case of crash, system does not reboots to normal OS. - updates after code review.
+7. [VG12] fixes include setting TMR fences regardless of FW loading and correction in reading RLC SRIOV control register.
+
+ver 0.8.0.3C:
+0. Code base updated to CL#48568 and fTPM version is updated to 3.12.0.4
+1. PLAT-28941: [RV] More updates to RV2 Deep Sleep settings.
+2. PLAT-29493: [RV] PSP BL does not support only Level1 directory structure.
+3. PLAT-29236: [RV] Add service call in BL for loading binary from BIOS entry (SPI-ROM) with attributes.
+4. PSP-3480: [RV][fTPM] Add handling of S0i3 suspend/resume commands in ASD and fTPM drivers.
+5. PSP-3482: [RV] Add DrvSys_CcpAesCtrEncrypt() implementation to SysDrv private APIs.
+6. PSP-3479: [RV][S0i3] Save SDMA and DMCU FWs in SysDrv memory when it is loaded and reload on S0i3 exit.
+7. PSP-3481: [RV][S0i3] Save/restore TMR register configurations in/from MP2 SRAM.
+8. PSP-3474: [RV][S0i3] Identify system is resuming from S0i3 in PSP BL from FCH register.
+9. PSP-3474: [RV][S0i3] Retrieve GPIOList from RAM1 and Turn on e-Display if required based on GPIO wake source list.
+
+ver 0.8.0.3B:
+00. Code base updated to CL#48444 and fTPM version is 3.11.0.4
+01. PLAT-28931: BUG FIX for CL48394: Base SMN addresses of UMC channels were same for both channels and SMN addresses were passed instead of indices.
+
+ver 0.8.0.3A: Not-Promoted by CQE team because of S4 resume issue and replaced by 0.8.0.3B
+00. Code base updated to CL#48403 and fTPM version is updated to 3.11.0.4
+01. PLAT-25293:[RV] Fix S3 hang when TSME is enabled.
+02. PLAT-28931:[RV] Generate UMC keys separately for Ch0 and Ch1.
+03. PSP-3476:[RV] Fix OP-TEE failures on secure parts caused by Panic() behavior.
+04. DASH-485:[KVMOS] In case of crash, system does not reboots to normal OS.
+05. PSP-3446:[RV][S0i3] Handler for BIOS cmd for power ON eDP wake source list.
+06. PSP-3480:[RV][S0i3] Add handling of S0i3 suspend/resume commands in SysDrv.
+07. PLAT-29165:[fTPM][RV] Non-volatile storage optimizations.
+08. PLAT-29170:[fTPM][RV] NVRAM corruption handling.
+09. [VG12] Adding illegal instructions fetch support for UVD/VCE.
+10. [VG12] Add support for signing Vega12 binaries.
+11. [VG12] Mode1 reset fixes so it is functional for both Vg10/Vg12.
+12. [VG20] Add new ASIC's registers definitions.
+
+ver 0.8.0.39:
+00. Code base updated to CL#48208 and no change in fTPM binary.
+01. PLAT-28979: Change RTM signature validation such that it is validating PEI+L1+L2 image rather than just PEI+L1.
+02. PLAT-16177: System cannot startup with SD card attached.
+03. PLAT-28941: RV2 Deep Sleep settings
+04. PLAT-28939: Fix RV2 SysHub / MMHub TLB distribution. Fix gAsicType type mismatches.
+05. PLAT-28905: Fix Cache  clean/invalidate related issues and fix incorrectly passed BIOS dest address rather than AXI address.
+06. PSP-3460: Create build target for VG20 in Trusted OS and SysDrv.
+07. PSP-3467: Increase PSP Kernel code area by 4 KB. Also, apply workaround for VG12 time stamp issue.
+08. PSP-3470: Add TA property to manifest file to indicate that TA doesn't need high performance.
+09. PSP-3445: MP2 RAM1 memory management for PSP/ABL region.
+10. PSP-3465: Add new SysDrv service for saving data to MP2 SRAM.
+11. PSP-3471: [S0i3] Additional changes for MP2 memory management.
+
+ver 0.8.0.38:
+0. Code base updated to CL#48039 and no change in fTPM binary.
+1. PLAT-28343: S3 UMC state info and In-line AES key is added to SUSPEND_DRAM and BL code clean up.
+2. SWDEV-143897: VG10 - DMCU FW load failure.
+3. PSP-3462: Power optimization of Trusted OS (assign DPM level for each thread). Change priority of PSP sign-of-life counter thread to LOW to avoid switching to DPM3 in idle state. Replace division of time-stamp value with multiply/shift to reduce code size.
+4. PSP-3464: After sending EC message to I2C3, switch GPIO pins 19/20 back to SMBUS.
+5. PSP-3458: Address Coverity issues in Trusted OS.
+
+ver 0.8.0.37:
+00. Code base updated to CL#47942 and fTPM binary is updated to 3.10.0.4
+01. PLAT-28447: Field upgrade to fTPM version 3.F.0.4 fails.
+02. PLAT-26766: System enters into recovery mode if more than 7 APCB binaries added into BIOS.
+03. PLAT-28417: With unconditional unlock, GC HW IP does not get unlocked.
+04. PLAT-28149: Reduce SMN timeout value to 0.1 sec for all HW IPs.
+05. PLAT-24722: Fix a bug in C2P command 0x1B to lock DF register handling.
+06. PSP-3436: Add changes to load & validate whitelisted binary and perform unconditional unlock based on serial numbers.
+07. PLAT-28277: Allow loading of security policy to non-secure parts based on flag in PSP Entry 0xB.
+08. PSP-3458: Address Coverity issues in Trusted OS.
+09. Add Encryption to fTPM and TA FW binary signing process.
+10. PLAT-28293: [RV2] MP2_SOFT_RESET_CTRL address is updated to RV2 spec registers.
+11. PSP-3455: [AMD-TEE] Add Svc_IsTaLoaded() service call.
+12. PSP-3447: Modify PSP Secure OS, restrict access of AGESA driver.
+13. PSP-3454: AMD-TEE write-once persistent storage implementation.
+14. Send a message to SMU containing shifted start of SMU DRAM ADDR for VG12.
+15. SWDEV-142588: Changes to support frontdoor FW load in VG12 for UVD/VCE.
+
+ver 0.8.0.36:
+0. Code base updated to CL#47537 and no change in fTPM binary.
+1. PLAT-27936: Fill status in Mailbox header before acknowledging START_KVM C2P command.
+2. PLAT-28027: Support plugging of 32MB SPI-ROM though it does not support BIOS image of 32MB, PSP BL will still allow to map to 16MB.
+3. PLAT-27796: Revert changes in PLAT-26632, which blocks customer system to boot.
+4. PLAT-28149: Reduce SMN timeout value to 0.5 sec
+5. [PSP 10 SysDrv]: performance optimization for handler of SMU command 0x09 (SMU_CMD_REPROG_GFXIP_SEC_SETTINGS).
+6. Diffie Hellman OPTEE test fix.
+7. PLAT-25732: [Trusted OS] Power optimization of SureStart solution.
+
+ver 0.8.0.35:
+0. Code base updated to CL#47537 and fTPM binary updated to 3.F.0.4.
+1. PLAT-27378: OPTEE: Illegal memory access from TA succeeds - handles undefined exception.
+2. PLAT-27177: Porting of 1.38 Errata and ProofSize Patch from Reference Codes to RV fTPM.
+3. PLAT-27634: PSP NVRAM clearing request is occurred during reboot long-run.
+
+ver 0.8.0.34:
+0. Code base updated to CL#47394 and fTPM binary updated to 3.E.0.04.
+1. PLAT-27075: Add MP0 revision ID to atag parameters to facilitate KVM OS to differentiate between Pinnacle and Raven.
+2. SWDEV-136613: Increased max TA sessions to 32 for Gfx I/F.
+3. PSP-3436: Submit skeleton of debug unlock whitelist.
+4. PLAT-26131: RV2 LIVMIN feature. This changelist implemented the skeleton for LIVMIN feature.
+5. PSP-3265: Updating PSP 10 Secure OS (add $PS1 cookie to the binary header).
+6. PLAT-26803:  Secure Part Authentication Issue (Frequency cannot be set above Fmax).
+7. PLAT-27038: [RV] SPI ROM protection with small range.
+8. PSP-3435: Address security concern of potential buffer overflow in KDF function.
+9. PSP-3435: Fix bug - caused VG10 build not able to boot to Trusted OS due to some pending interrupt left by Boot Loader.
+10. PLAT-27418: [fTPM] Remove simulation and debug flags.
+
+ver 0.8.0.33:
+0. Code base updated to CL#47194 and no change in fTPM binary.
+1. PLAT-26789: Clean RV/VG PSP10 FW code from CZ support.
+2. PLAT-26632: Match RV Post Codes to ZP.
+3. PSP-3435: Modify SysDrv I/F to address security issues found by customer program review.
+4. PLAT-27061: APOB HMAC validation optimization on S3 resume.
+5. PLAT-27057: Do not set Bios Mbox interface to Ready state in BL.
+6. PLAT-27060: Bug fix - incorrect type used when referencing external global variable.
+
+ver 0.8.0.32:
+0. Code base updated to CL#47003 and fTPM binary version updated to 3.D.0.4.
+1. PLAT-26720: [fTPM & sys_drv] Handling SPI operation when SPI is busy (FPR, Async).
+2. PLAT-21059: [fTPM] fTPM platform Spec Information incorrect.
+3. PLAT-25297: Raven AM4 Knoll device athentication.
+
+ver 0.8.0.31:
+0. Code base updated to CL#46899 and no change in fTPM binary.
+1. FEAT-11956: Fixes Raven1_2 unified branch for Vega build.
+2. PLAT-26130: MP0 MGCG feature configuration for RV2.
+3. PLAT-26126: RV Dibbler MCA_IPID[InsanceID] is not unique for each DF.
+4. PLAT-26076: Configuring TMZ registers in PSPFW (BL & secureOS).
+5. PLAT-25732: Implementation of SS3 - support for customer desktop systems which uses I2C3 controller instead of I2C1.
+6. PLAT-25297: Raven AM4 Promontory device athentication.
+7. PLAT-26368: MP0 not reporting version info in J2P_MBOX_1.
+
+ver 0.8.0.30:
+0. Code base updated to CL#46761 and fTPM binary version updated to 3.C.0.4.
+1. PLAT-26071: VCN non-RSMU Sec Gasket enablement bug fix + code clean up.
+2. PLAT-26065: Save/restore HSTI/PSB checking fuses result C2P  registers through S3 suspend/resume.
+3. PLAT-25865: KDF algorithm for RSA, ECC TPM Endorsement keys based on OTP in fTPM is not sync with KDS server implementation.
+4. PLAT-25499: [PSP Recovery]Corrupting fTPM binary in SPI-ROM, causes hang in sOS and does not allow user to recover the system.
+5. Code changes to support RV2 in same PSPFW binaries.
+
+ver 0.8.0.2F:
+0. Code base updated to CL#46667 and fTPM binary version updated to 3.B.0.4.
+1. PLAT-25425: Fix CPU swap problem in case of swapping between different platforms ASICs.
+2. PLAT-25732: Integrate SS3 I2C fix from release branch to staging.
+3. PLAT-26008: Enable ACP Security Policy - Raven Security Policy version 10.0.2.3.2
+4. PLAT-26010: DMCU FW loading enablement.
+5. PLAT-25754: System hang 000D on AM4 ASIC on Myrtle Rev E board.
+6. PLAT-23999: PSP Needs to Load MP2 Config file on boot.
+7. PLAT-26070: DMCU FW load bug fixes + GFX Save Restore Loading sequence fix.
+8. PLAT-23726: Unlock a Secure part causes SMU to hit double Excpetion.
+
+ver 0.8.0.2E:
+0. Code base updated to CL#46427 and no change in fTPM binary.
+1. PLAT-25732: Put back the PSP DPM control: when Idle thread is scheduled set to DPM0, othervise to DPM3.
+2. PLAT-25683: [RV-FP5] Post code will loop (0283-A5F3) after flash bios in OS.
+
+ver 0.8.0.2D:
+0. Code base updated to CL#46343 and no change in fTPM binary.
+1. PLAT-25585: ACP FWV hang on S3 resume fix + Re-enable ACP FW loading
+2. PLAT-25659: Customer Key Lock (CKL) not able to be fused.
+
+ver 0.8.0.2C:
+0. Code base updated to CL#46239 and fTPM version updated to 3.A.0.4
+1. PLAT-25437: Support SS3 TA signed with Leaf Token signed with Sub-CA Token.
+2. PLAT-25056: Support releasing x86 without secureOS for AFF tool (support BiosCmd 0x1A for fusing but conditionally compiled).
+3. PLAT-24743: Provide SVC call for ABL to read SRTC value
+4. PLAT-20830: Post code show 000d after changed silicon from Summit(Zeppelin) to Raven1
+5. PSP-3432: Fix issue which is causing fTPM crash during init time in some scenarios.
+
+ver 0.8.0.2B:
+0. Code base updated to CL#46084 and no change in fTPM binary.
+1. PLAT-25391: SS3 TA not able to load on secure ASIC.
+2. PLAT-24965: Fix a bug in SMI request interface between PSP & BIOS: use three C2PMSG registers instead of two.
+3. PSP-3432: Workaround for PSP clocks lowered to Deep Sleep due to WFI whie CCP is active.
+4. PLAT-25285: Fix the wrong buffer size causing buffer overflow in PSS verification
+5. PLAT-25058: [RV] Provide a new PSP service call to delay 1us.
+6. PLAT-25396: Fix SMNIF_TLB_n segment map
+
+ver 0.8.0.2A:
+1. DASH-619: Enable KVM support for Tambourine boards.
+2. PLAT-25006: Bug fix error code reporting when BIOS cannot be loaded.
+3. PLAT-25048: Added more BL sequence updates in PSPFW_Status register after releasing x86.
+4. Code base updated to CL#45879 and fTPM version updated to 3.9.0.4
+
+ver 0.8.0.29:
+01. SWDEV-131055: Fix VCN Re-init of illegal instr fetch registers - setup after cold reset is released.
+02. PLAT-24780: Port SM CL#44244 bug fix: wrong order of Vendor ID and Model ID in the header structure.
+03. PLAT-24133:	SWDEV-131237 - The bug fix for the TMR physical address used in the TMR destroy function
+04. SWDEV-131817: Enable the UVD/VCE runtime validation
+05. PLAT-24646: Reflect the HSTISTATE_PSP_DEBUG_LOCK_ON bit in the C2PMSG_38 after debug unlock.
+06. PLAT-24792:	Separate parameters from ATAG structure to avoid open usage of these parameters in KVMOS.
+07. PLAT-24611: PSB - Disable Secure Unlock not being enforced
+08. PLAT-21614:	Request SMU to raise MP0 DPM level and controlled by BIOS PSP Entry 0xB - bit 28
+09. PLAT-24565:	ABL request - enhance Svc_LoadBinary to support loading of APOB entry 0x63.
+10. PLAT-24541:	Allow ABL to use GFX IOMMU to program UMC registers - which is blocked by security policy.
+11. PLAT-24605: PLAT-24822: Update Security Policy to Phase1 + PWR - equivalent to 0.8.2.26
+12. PLAT-23449: Cannot use debug features on RV B0 on secure unlocking ASIC
+13. PLAT-24722: Add RsmuLateSecurityPolicy to C2P mailbox Command 0x1B handling.
+14. PLAT-22775: [RV-AM4] System hang at PC:AC94 after any CBS option changed with RMR1000A.0119
+15. PLAT-23991: Provide secure unlock version number when system is unlocked.
+16. PLAT-24826: Revert ACP FW loading to older mechanism
+17. PLAT-24856:For security reason disable handling BIOS-2-PSP command 0x1A in the PSP Secure OS on Raven
+18. Code base updated to CL45714 and fTPM version is 3.7.0.4
+
+ver 0.8.0.27:
+1. Update Security Policy to 10.0.2.3.1
+2. Enable Save/Restore and setup illegal instruction fetch detection for VCN FW
+3. PLAT-24260: Support Platform Secure Boot (PSB) - partial not validated fully
+4. Bug fix - System not getting locked back on WarmReset with debug unlock request
+5. PLAT-20396: Support Recovery Boot Loader and 2nd level PSP entries changes
+6. Fixes and improvements in fTPM code and version updated to 3.7.0.4
+7. Improvements and fixes for SS3
+8. Bug fixes and improvements in AMDTEE OS
+9. Code base updated to CL#45365
+
+ver 0.8.0.26: (Urgent release)
+1. SWDEV-127891: Bug fix is sOS when thread switching did not update driver's page table which causes execution of incorrect code.
+2. Code base updated to CL#44916
+
+ver 0.8.0.25:
+1. KVM change - NetCardMmioBase, Frame Buffer and Bar 2 register addresses to 64 bit from 32 bit
+2. Raven ACP FWV fixes
+3. PLAT-20456: Support Boot from SPI-ROM
+4. Fixes and improvements in fTPM code version updated to 3.6.0.4
+5. Bug fixes and improvements in AMDTEE OS
+6. Code base updated to CL#44882
+
+ver 0.8.0.24:
+1. PLAT-19057: Fix PSP ROM-SIG address on Raven FP5
+2. PLAT-23009: [RV-FP5] System hang with PC:A5d3 when running S3 test on Win RS2 15063 x64 bit.
+3. SWDEV-127538 - Put the VCN in the cold reset state to protect the VCN to run the un-validated FW by PSP.
+4. Fix - request of debug unlock could not be processed after S3 resume
+5. Programs RSMU Timeout enable and RSMU Inetrrupt for GC HW block when it is powered ON
+6. Fixes and improvements in fTPM code, and version updated to 3.5.0.4
+7. Code base updated to CL#44725
+
+ver 0.8.0.23:
+1. Do not access GCEA_SECURE_CTRL regiser in early boot, GC is power gated.
+2. Work-around for 0xA5D3 seen on S3, disable waiting for GFX thread.
+3. PLAT-23265 - System hangs at SMU value 17751 - SendMessageToPspRx
+4. Code base updated to CL#44515
+
+ver 0.8.0.22:
+1. PLAT-19057: Patch to enable customer request to change PSP ROM-SIG address on Raven FP5
+2. PLAT-23225: Check-in modified Security Policy 10.0.1.9
+3. Code base updated to CL#44303
+
+ver 0.8.0.21:
+1. PLAT-22579: RV PSP BL to support 0x68 as APCB recovery copy
+2. PLAT-23115: Fix NV Storage failure due to race condition between PSP and BIOS
+3. Update TMR addressing for APU/dGPU
+4. Fixes/improvements in fTPM
+5. Bug fixes in AMDTEE OS
+6. Code base updated to CL#44259
+
+ver 0.8.0.20:
+1. Bug fix in AMDTEE OS
+2. Code base updated to CL#44093
+
+ver 0.8.0.1F:
+1. Bug fix in AMDTEE OS
+2. Code base updated to CL#44005
+
+ver 0.8.0.1E:
+1. PLAT-19057: HP request to change PSP ROM-SIG address on Raven FP5 and beyond silicon design
+2. PLAT-16373: Support compress type BIOS image
+3. PLAT-19840: Workaround changes to enable HW_PG_EN for RV1
+4. PLAT-20681: Unconditionally clear SMMLOCK bit for RV on BootDone cmd from BIOS
+5. PLAT-19552: Do not load MP2 FW during S4 resume
+6. PLAT-20592: New Secure Unlock sequence to fetch serial number from PSP FW
+7. Enable fTPM on Raven
+8. Enhancements and Bug fixes in AMDTEE OS
+9. Code base updated to CL#43983
+
+ver 0.8.0.1D:
+1. PLAT-20399: Add Smm region information to MboxBiosCmdSmmInfo
+2. Enable secure_unlock feature
+3. PLAT-14743: Hanged at 0x00BD when LPC to serial out debugger is connected
+4. Enhancements and Bug fixes in AMDTEE OS
+5. Code base updated to CL#43462
+
+ver 0.8.0.1C:
+1. PLAT-20399: Add Smm region information to MboxBiosCmdSmmInfo
+2. PLAT-14743: Hanged at 0x00BD when LPC to serial out debugger is connected
+3. Enhancements and Bug fixes in AMDTEE OS
+4. Code base updated to CL#43136
+
+ver 0.8.0.1B:
+1. Disable sanity check conditions on S3 suspend request from BIOS.
+
+ver 0.8.0.1A:
+1. PLAT-21079: SST.IOHC <--RSMU (90) HARD_RESETB = 0 (PLAT-19731).
+2. PLAT-21080: SST::SION_WRAPPER_CFG_SSTSION_GLUE_CG_LCLK_CTRL_SOFT_OVERRIDE_CLK = 0x3FF for both SST0 and SST1 (PLAT-19731)
+3. PLAT-19840: All the PMM features are enabled in PSP Bootloader except for the problematic "Set HW_PG_EN for MP0CCP_REGS:Mp0CcpPg_Control"
+4. Enhancements and Bug fixes in AMDTEE OS
+5. Code base updated to CL#42823
+
+ver 0.8.0.19:
+1. PLAT-19620: Enable S4 reporting in Svc_GetBootMode call from ABL.
+2. Enhancements and Bug fixes in AMDTEE OS
+3. Code base updated to CL#42392
+
+ver 0.8.0.18:
+1. PLAT-15265: Set RSMU Timeout Value and Enable.
+2. Added additional debug prints for intermittent issues.
+3. Addressed multiple NCC security review concerns
+4. Enhancements and Bug fixes in AMDTEE OS
+5. Code base updated to CL#42150
+
+ver 0.8.0.17:
+1. PLAT-3265: Added core sequence of VMIN feature
+2. PLAT-15125, PLAT-18616, 18426
+3. FEAT-6163, 6203,6204, 6205, 6207, 7388. Enabled MP0 Power management feature
+4. Addressed multiple NCC security review concerns
+5. Enhancements and Bug fixes in AMDTEE OS
+6. Code base updated to CL#41734
+
+ver 0.8.0.16:
+1. Workaround of Hang 0xD on Secure ASICs
+2. PLAT-17552: SMU Double exception on S3-Resume with MP0 enabled
+3. Ported Level 2 Directory support changes from PSP 3.1 to PSP 10
+4. Enhancements and Bug fixes in AMDTEE OS
+5. Code base updated to CL# 41115
+
+ver 0.8.0.15:
+1. Support of new SPI-ROM type
+2. Handle START_KVM commands from BIOS
+3. Support RV1 and RV2 in BL
+4. Bug fixes
+
+ver 0.8.0.14:
+1. TMZ implementation
+2. Changes for MCA programming
+3. Support unsigned fw loading on non-secure part
+4. Fix VBIOS mailbox handler for S3-resume
+5. Bug fixes.
+6. Code base update to CL#39714
+
+ver 0.8.0.13:
+1. Enabled AEB's for all IPs on Raven A0 asic only.
+2. Code base update to CL#38988
+
+ver 0.8.0.12:
+1. PSP cycle of S3 suspend/resume can be successfully conducted
+2. re-enable platform validate
+3. update MP2 SRAM usage for fast S3 resume
+4. fixes on AME-TEE for S3 resume
+5. changes in PSP FW for Gfx interface
+6. Code base update to CL#38714
+
+ver 0.8.0.11:
+1. Implement new SPI-ROM speed & mode detection mechanism and boost mechanism, allow FCH team to dynamically adjust SPI-ROM mode and speed to apply
+2. Add support to load Diag PSP BL
+3. Update MP0-MP1 message IDs
+4. Fixes on Syshub mapping functionalites
+5. Code base update to CL#38436
+
+ver 0.8.0.10:
+1. Enable Serial Port debugging in PSP Bootloader
+2. Fix MP2 FW validation in case if the signature & token are not aligned
+3. Disable MP0 to MP2 for S3 message until MP2 FW has the proper support
+4. Code base update to CL#38259
+
+ver 0.8.0.0F:
+1. Enable S3 suspend resume sequence support in PSP Bootloader
+2. Enable MBAT programming in S5 boot
+3. Add rsmu HW workaround for rsmu sata HW bug.
+4. Update service calls for ABL
+5. Add additional fuse detection features in S5 boot
+6. Enable PSP Diag Bootloader loading in entry 0x29
+7. Code base update to CL#38084
+
+ver 0.8.0.0E:
+1. Enable PM LPC Gating Bits setting
+2. Enable Disable Boot Timer setting
+3. Enable SMU-PSP message communication
+4. Fixes existing S2P attribute issues
+5. Add the support of S5 cold and warm boot mode
+6. Update svc call handlers
+7. fix existing bugs
+8. Code base update to CL#37784
+
+ver 0.8.0.0D:
+1. code base update to CL#37584
+2. change the SPI-ROM signature address for Raven to 0x1C to accomodate combo BIOS requirement
+3. fix MCA register programming
+
+ver 0.8.0.0C:
+1. code base update to CL#37071
+
+ver 0.8.0.0B:
+1. Added S3 save state to MP2 Sram.
+2. Added secure os and application driver loading.
+3. Added latest bugfixes from ZP branch.
+
+ver 0.8.0.0A:
+1. Added handling of BIOS commands.
+2. Added copy MP2 FW to the MP2 SRAM start address
+
+ver 0.8.0.09:
+1. MP2 FW validation and loading.
+2. I-cache disabled.
+3. Add cache cleaning prior to submitting CCP command
+
+ver 0.8.0.08
+1. Removed any residual code paths from ZP.
+2. integrated stability fixes from FW version 0.8.0.07_3
+     - Updated HW register usage.
+     - Fixed data abort at end of PSP Bootloader sequence.
+     - Temporarily removed write to VDCI2 register.
+
+ver 0.8.0.07
+1. Plat-2408 - Updated to latest HW register spec CL#570439
+2. Plat-2408 - Synchronized with with latest bug fixes and updated from PSP ZP branch CL # 33697
+
+ver 0.8.0.06
+1. Plat-2408 - Update the version number to 0.8.0.6
+2. Plat-2408 - Raven release X86 core, allow syshub to map 0 DRAM address
+
+ver 0.8.0.05
+1. Plat-2408: Plat-2408: update HW register files to RTL CL# 546297
+2. Plat-2408: Plat-2408: update the CCP reserved field to zero.
+3. Plat-2408  Integration from PSP 3.0 (Zeppelin) to PSP 10-RV (Raven) upto CL#32296
+4. Plat-2408: update the MCA bank address list as per the confirmation from Simnow and HW team.
+5. Plat-2408: remove the PSP and SMU MCA bank programming as requested/confirmation from Raven HW team.
+6. Plat-2408: Two important changes to PSP FW: 1. update the MCA address for HW IPs to be programmed into Mbat table; 2. update the routing table field to zero
+
+Note that due to unavailability of updated PSP BootRom and Simnow, there is no test coverage.
+
+ver 0.8.0.04
+1. Plat-2408: Internal test version
+
+ver 0.8.0.03
+1. Plat-2408: Internal test version
+
+ver 0.8.0.02
+1. Plat-2408: Fix the MCA addresses for Mbat tables for HW IPs
+2. Plat-2408: Plat-2408: update to the new HW register files
+3. Plat-2408: Fix the ccx instances issue.
+
+ver 0.8.0.01
+1. Plat-2408: Remove all MCM related codes unrelated to RV
+2. Plat-2408: update the HW registers header files to use RV version
+3. Plat-2408: update the HW registers header files to use RV version
+4. Plat-2408: Change signing key to use RV signing key via KDS server
+5. Plat-2408: Change the make file to generate the final PSP Bootloader in final production name, save extra effort to always change the file name when releasing PSP FW
+6. Plat-2408: Change the make file to call new signing .xml file
+7. Plat-2408: remove Diffie-Hellman key exchange since Raven does not have MCM configuration, no need to encrypt WAFL link between sockets
+8. Plat-2408: disable the loading of HW IP configuration FW as per the request from Alex Cejkov since it is not ready from HW team
+9. Code base branch from ZP up to CL#3908.
+

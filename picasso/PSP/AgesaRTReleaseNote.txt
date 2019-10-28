@@ -1,0 +1,65 @@
+----------------------------------------------------------------------------
+ABL RT Delivery Release Notes
+
+Copyright 2018, Advanced Micro Devices, Inc.
+
+Version: ABL RT WABLRTRV18080800 for Picasso
+
+Date:   Aug 8 2018
+
+----------------------------------------------------------------------------
+Contact: David Chang
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                    AGESA V9 Destination Folder     Description
+  AblPostCode.h               AgesaModulePkg\Firmwares\RV\    ABL/ABL RT Post Code Definitions
+  AgesaRTReleaseNote.txt      AgesaModulePkg\Firmwares\RV\    This Release notes file
+  dr_agesa_prod_RV.sbin       AgesaModulePkg\Firmwares\RV\    Main AGESA Runtime Driver
+
+Based On:
+  Initial version
+
+ABL RT Version String:
+  None
+
+ABL RT Features and Fixes:
+
+  PLAT-34981: [PCO] Update DF s0i3 save / restore list
+
+Known Issue(s):
+
+----------------------------------------------------------------------------
+ABL RT Delivery Release Notes
+
+Copyright 2018, Advanced Micro Devices, Inc.
+
+Version: ABL RT WABLRTRV18041700 for Raven
+
+Date:   April 17 2018
+
+----------------------------------------------------------------------------
+Contact: David Chang
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                    AGESA V9 Destination Folder     Description
+  AblPostCode.h               AgesaModulePkg\Firmwares\RV\    ABL/ABL RT Post Code Definitions
+  AgesaRTReleaseNote.txt      AgesaModulePkg\Firmwares\RV\    This Release notes file
+  dr_agesa_prod_RV.sbin       AgesaModulePkg\Firmwares\RV\    Main AGESA Runtime Driver
+
+Based On:
+  Initial version
+
+ABL RT Version String:
+  None
+
+ABL RT Features and Fixes:
+
+  Initial ABL RT Modern Standby support
+
+Known Issue(s):
