@@ -14,7 +14,7 @@
  */
 /*****************************************************************************
  *
- * Copyright 2008 - 2018 ADVANCED MICRO DEVICES, INC.  All Rights Reserved.
+ * Copyright 2008 - 2019 ADVANCED MICRO DEVICES, INC.  All Rights Reserved.
  *
  * AMD is granting you permission to use this software and documentation (if
  * any) (collectively, the "Materials") pursuant to the terms and conditions of

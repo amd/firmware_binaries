@@ -2,7 +2,7 @@
 // PSP FW Delivery Release Note
 //
 // Copyright 2019, Advanced Micro Devices, Inc.
-// Date:   January 09, 2019
+// Date:   April 16, 2019
 //----------------------------------------------------------------------------
 
 Content:
@@ -10,15 +10,21 @@ Content:
 	This Build is compiled using the ARM license from the AMD license server.
 
 Files:
- PspBootLoader_prod_RV.sbin         [version: 0.8.3.59] - PSP off-chip BootLoader (entry type 0x1), signed with production key
- PspRecoveryBootLoader_prod_RV.sbin [version: 0.8.3.59] - PSP off-chip Recovery BootLoader (entry type 0x3), signed with production key
- secure_unlock_prod_RV.sbin         [version: 0.8.3.59] - PSP secure unlock (entry type 0x13), signed with production key
- psp_os_combined_prod_RV.sbin       [version: 0.8.3.59] - PSP secure OS (entry type 0x2), signed with production key
- drv_sys_prod_RV.sbin               [version: 0.8.3.59] - PSP system driver (entry type 0x28), signed with production key
+ PspBootLoader_prod_RV.sbin         [version: 0.8.4.59] - PSP off-chip BootLoader (entry type 0x1), signed with production key
+ PspRecoveryBootLoader_prod_RV.sbin [version: 0.8.4.59] - PSP off-chip Recovery BootLoader (entry type 0x3), signed with production key
+ secure_unlock_prod_RV.sbin         [version: 0.8.4.59] - PSP secure unlock (entry type 0x13), signed with production key
+ psp_os_combined_prod_RV.sbin       [version: 0.8.4.59] - PSP secure OS (entry type 0x2), signed with production key
+ drv_sys_prod_RV.sbin               [version: 0.8.4.59] - PSP system driver (entry type 0x28), signed with production key
  dr_ftpm_prod_RV.csbin              [version: 3.22.0.4] - PSP fTPM (entry type 0xC), compressed and signed with production key
  security_policy_RV1_FP5_AM4.sbin   [version: A.2.3.2]  - Raven1_Security_Policy for Raven1 program (entry type 0x24), signed with production key
  security_policy_PCO_FP5_AM4.sbin   [version: A.2.3.27] - Raven1_Security_Policy for Picasso program (entry type 0x224), signed with production key
  security_policy_RV2_FP5_AM4.sbin   [version: A.2.4.25] - Raven2_Security_Policy for Raven2 program (entry type 0x124), signed with production key
+
+ver 0.8.4.59
+00. Code base updated to CL#63198
+01. SWDEV-182169: Mfpmp.exe is observed while playing the content in Netflix after resuming from sleep
+02. PLAT-44084:[RVx][AM4] Bug check when resume from sleep and Netflix open
+03. SWDEV-184767: [PCO/RVx][AM4] Wireless display HDCP fail after S4 and reconnected
 
 ver 0.8.3.59
 00. Code base updated to CL#61260.

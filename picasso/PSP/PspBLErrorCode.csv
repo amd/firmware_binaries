@@ -126,4 +126,5 @@
 0xF3,PSP BL identified resuming from S4   
 0xF4,PSP BL identified previous reset S5 - Cold boot
 0xF5,PSP BL identified previious reset S5 - Warm boot
+0xF6,Updated only PSPFW Status when all IPs are set to static VC1 Channel
 0xFF,Bootloader sequence finished

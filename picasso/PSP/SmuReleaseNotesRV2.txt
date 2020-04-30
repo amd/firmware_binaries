@@ -3,6 +3,153 @@
 +---------------------------------------+
 
 +---------------------------+
+| Version 37.38.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                17/09/19
+|
+|        * Changelist
+|                - DXIO FW version 31.436
+|                - [PMFW-2631] [IMP] RV2 DXIO v31.436 Polling PSPP
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.37.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                20/08/19
+|
+|        * Changelist
+|                - DXIO FW version 31.433
+|                - [WSNPLAT-252][IMP]TDR during PST S4 test
+|                - [PMFW-2211] [IMP] Skip DF Pstate switching in warm reset to avoid syncflood failure
+|                - [PMFW-2405] [NEW] Support 10W OPN for RV2x/Dali
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.36.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                24/07/19
+|
+|        * Changelist
+|                - DXIO FW version 31.433
+|                - [PMFW-2204] Update memory mapping for RV2 to obtain more text and extended space
+|                - [PMFW-2182] Disable VOTFC when CBS option WaitVidCompDis is set
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.35.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                16/07/19
+|
+|        * Changelist
+|                - DXIO FW version 31.433
+|                - [PMFW-2122] [NEW] Support Dali 6W OPN
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.34.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                27/06/19
+|
+|        * Changelist
+|                - DXIO FW version 31.433
+|                - [PMFW-1801] [IMP] Fix release makefile to be consistent with source makefile
+|                - [PMFW-2013] [WKA] VCN Video Encoding Voltage Marginality Issue in DC mode
+|                - [PLAT-43640] [WKA] USB port reset fail after KB S3 resume, Yellow band in Device Manage
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.33.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                11/06/19
+|
+|        * Changelist
+|                - DXIO FW version 31.433
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.32.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                03/06/19
+|
+|        * Changelist
+|                - DXIO FW version 31.429
+|                - [PMFW-1739] [IMP] Move some codes to EXT section to create more TEXT space
+|                - [PMFW-1727] [WKA] USB YB when wake up system from S3 by KB behind USB HUB
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.31.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                22/05/19
+|
+|        * Changelist
+|                - DXIO FW version 31.429
+|                - [PMFW-1300] [OPT] Publish BIOS/TEST msg to report OC capability - Expose CPU/iGPU direct OC cap and MOC cap
+|                - [PMFW-1221] [IMP] System show BSOD 0xEA when play video with Miracast connected at DC mode (reverted)
+|                - [PMFW-1330] [NEW] define new handshake for amdgpu_pm_info Linux
+|                - [PMFW-1677] [OPT] PCO AM4: 35W OPNs frequency artificially limited, SOC EDC limiting GFX Frequencies
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.30.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                03/05/19
+|
+|        * Changelist
+|                - DXIO FW version 31.429
+|                - [PMFW-941] [NEW] Add DXIO Test Message to PSP MSG Port
+|                - [PMFW-1513] [NEW] itemp support for RV embedded
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.29.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                16/04/19
+|
+|        * Changelist
+|                - DXIO FW version 31.429
+|                - [PMFW-1386] [NEW] BIOS-SMU message for writing into SBTSIx07 registers
+|                - [PMFW-1390] [ETB] Release CstateBoost resource in PC6 exit when warm reset is triggered
+|                - [PMFW-1402] [ETB] Enable HTC after Prochot variables are initialized
+|                - [PMFW-1416] [NEW] Add new PPSMC messages to notify AC/DC switch
+|                - [PMFW-1466] [UTB] BIOS Option for L3StretchThreshold Changes CoreStretchThreshold
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.28.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                22/03/19
+|
+|        * Changelist
+|                - DXIO FW version 31.425
+|                - [PMFW-1131] [NEW] Add Subprogram value to the FW Header
+|                - [PMFW-1357] [OPT] Move feature disable fucntions to EXT_SECTION
+|                - [PMFW-728] [OPT] Re-allocate .datatables space to .text section is reverted
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
 | Version 37.27.0           |
 +---------------------------+-------------------------------------------------------------------------------
 |        * Date (dd/mm/yy)

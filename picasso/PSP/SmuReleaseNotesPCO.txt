@@ -3,6 +3,282 @@
 +---------------------------------------+
 
 +---------------------------+
+| Version 4.30.66.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                10/09/19
+|
+|        * Changelist
+|                - DXIO v31.435
+|                - [PMFW-2308] [NEW] Requesting PM Logging FW for Mero Customer for RV1
+|                - [PMFW-2581] [IMP] s0i3 resume black screen
+|                - [PMFW-2022] [IMP] PCO DXIO v31.435 polling PSPP dpmHandler (updated)
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.66.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.66.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.65.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                04/09/19
+|
+|        * Changelist
+|                - DXIO v31.432
+|                - [PMFW-2259] [ETB] Enable MP0 to clock at 800 MHz operation
+|                - [PLAT-48052] [OPT] 3DMark11 performance drop to P4943 when set system configuration=4 on 19H1 OS
+|                - [PLAT-37275] [ETB] CStateboost show 100% when set inhibit to 100 in the AVT tool
+|                - [WSNPLAT-252] [IMP] TDR during PST S4 test
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.65.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.65.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.64.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                30/07/19
+|
+|        * Changelist
+|                - DXIO v31.432
+|                - [PMFW-2022] [IMP] PCO DXIO v31.435 polling PSPP dpmHandler (reverted)(continued)
+|                - [PMFW-2022] [IMP] PCO DXIO v31.435 polling PSPP dpmHandler (reverted)(continued1)
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.64.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.64.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.63.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                29/07/19
+|
+|        * Changelist
+|                - DXIO v31.432
+|                - [PMFW-2022] [IMP] PCO DXIO v31.435 polling PSPP dpmHandler (reverted)
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.63.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.63.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.62.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                23/07/19
+|
+|        * Changelist
+|                - DXIO v31.435
+|                - [PMFW-2175] [WKA] Disable VOTFC when CBS option WaitVidCompDis is set
+|                - [PMFW-2022] [IMP] PCO DXIO v31.435 polling PSPP dpmHandler
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.62.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.62.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.61.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                21/06/19
+|
+|        * Changelist
+|                - DXIO v31.432
+|                - [PMFW-1857] [WKA] VCN Video Encoding Voltage Marginality Issue in DC mode
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.61.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.61.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.60.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                31/05/19
+|
+|        * Changelist
+|                - DXIO v31.432
+|                - [PLAT-46357] [NEW] Modern Standby Save/Restore PCIe EP device configuration space register during S0i3 entry/exit
+|                - [PLAT-46160] [ETB] Cstateboost show 100 when Overclocking by RyzenMaster
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.60.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.60.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.59.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                23/05/19
+|
+|        * Changelist
+|                - DXIO v31.432
+|                - [PMFW-1330] [NEW] define new handshake for amdgpu_pm_info Linux
+|                - [PMFW-1688] [IMP] Minor adjustment to accommodate more tasks in TEXT space
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.59.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.59.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.58.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                16/05/19
+|
+|        * Changelist
+|                - DXIO v31.428
+|                - [PMFW-1300] [OPT] Publish BIOS/TEST msg to report OC capability - Expose CPU/iGPU direct OC cap and MOC cap
+|                - [PMFW-1571] [IMP] MS Logger reset is not zeroing out the whole data structure
+|                - [PLAT-45960] [ETB] The unexpected event triggered CPUOFF exit during S0i3 entry
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.58.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.58.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.57.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                03/05/19
+|
+|        * Changelist
+|                - DXIO v31.428
+|                - [PLAT-45024] [IMP] Dibbler and Bilby System Hang during XGBE driver installation
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.57.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.57.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.56.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                26/04/19
+|
+|        * Changelist
+|                - DXIO v31.428
+|                - [PMFW-1513] itemp support for RV embedded
+|                - [PLAT-42572][OPT]PCO AM4: 35W OPNs frequency artificially limited
+|                  [PLAT-43955][OPT]PCO AM4: SOC EDC limiting GFX Frequencies
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.56.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.56.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.55.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                24/04/19
+|
+|        * Changelist
+|                - DXIO v31.428
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.55.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.55.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.54.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                18/04/19
+|
+|        * Changelist
+|                - DXIO v31.429
+|                - [PMFW-1298] [ENH] Update STB filter masks and GfxOff Scratch7 indicators
+|                - [PMFW-1485] [ETB] Add DMA resource protection in PowerSourceAc/Dc routines
+|                - [PLAT-41137] [IMP] System show BSOD 0xEA when play video with Miracast connected at DC mode reverted
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.54.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.54.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.53.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                16/04/19
+|
+|        * Changelist
+|                - DXIO v31.429
+|                - [PMFW-1415] [NEW] Add new PPSMC messages to notify AC/DC switch
+|                - [PMFW-1437] [ETB] GFX CLK is not throttled when TDC_SOC hit the limit in PCO AM4 system
+|                - [PMFW-1464] [UTB] BIOS Option for L3StretchThreshold Changes CoreStretchThreshold
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.53.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.53.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.52.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                02/04/19
+|
+|        * Changelist
+|                - DXIO v31.427
+|                - [PMFW-1402] [ETB] Enable HTC after Prochot variables are initialized
+|                - [PLAT-42578][OPT] PCO AM4: FIT overshoot observed that significantly affect 1T Performance
+|                - [PLAT-43955][OPT] PCO AM4: SOC EDC limiting GFX Frequencies
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.52.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.52.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4.30.51.0         |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                29/03/19
+|
+|        * Changelist
+|                - DXIO v31.427
+|                - [PMFW-1388] [NEW] BIOS-SMU message for writing into SBTSIx07 registers
+|                - [PMFW-1315] [IMP] Update the RM Value in Picasso FW for RV1 B0 chip
+|                - [PMFW-1390] [ETB] Release CstateBoost resource in PC6 exit when warm reset is triggered
+|
+|        * Files
+|                - /proj/smu_rel/smu10/picasso/picasso.rev4.30.51.0.zip
+|                - /proj/smu_rel/smu10/picasso/picasso_sources.rev4.30.51.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
 | Version 4.30.50.0         |
 +---------------------------+-------------------------------------------------------------------------------
 |        * Date (dd/mm/yy)
