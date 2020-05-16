@@ -3,6 +3,121 @@
 +---------------------------------------+
 
 +---------------------------+
+| Version 37.46.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                17/04/20
+|
+|        * Changelist
+|                - DXIO FW version 31.444
+|                - [PLAT-61072] [IMP] MCLK clocks values are zero
+|                - [PLAT-59143] [IMP] Request to build a test Bios for Pollock on Cereme platform
+|                - [PMFW-4181] [IMP] NVMe PCIE SSD link width will change to x1 when resume from MS
+|                - [PLAT-59194] [IMP] RV2 Dali s0i3 resume latency is long
+|                - [PLAT-59865] [IMP] Internal keyboard doesn't work after system resume from S0i3
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.45.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                26/03/20
+|
+|        * Changelist
+|                - DXIO FW version 31.441
+|                - [PMFW-3993] [IMP] [PLK FT5] CCLK arbiter slow reponse from idle
+|                - [PMFW-3994] [IMP] Change Min Active Frequency of FCLK on Pollock
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.44.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                09/03/20
+|
+|        * Changelist
+|                - DXIO FW version 31.441
+|                - [PLAT-59063] [IMP] System cannot enter S0I3 from 2nd loop using AMD suspend tool
+|                - [PMFW-3884] [IMP] C0 residency is incorrect when PC6 is enabled
+|                - [PLAT-59221] [IMP] System hang 00b1 after resume from s0i3 on secured part
+|                - [PMFW-3923] [IMP] Disable Sparse Control Transaction Enable bit by default for RV2/Dali/Pollock
+|                - [PMFW-3926] [IMP] Pollock GFX versus CORE clocks throttling
+|                - [PMFW-3925] [IMP] Pollock Cac Weight Update
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.43.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                21/02/20
+|
+|        * Changelist
+|                - DXIO FW version 31.441
+|                - [PMFW-3704] [NEW] Dali and Pollock MS Feature Baseline
+|                - [PMFW-3753] [IMP] SMU removal of PPSMC_MSG_SetGfxCGPG message in S0i3 resume
+|                - [PMFW-3793] [IMP] MMHUB not entering DS after s0i3 resume
+|                - [PLAT-58811] [IMP] Dali and Pollock NBIO FSDL list to be reviewed
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.42.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                27/01/20
+|
+|        * Changelist
+|                - DXIO FW version 31.436
+|                - [PLAT-57280] [IMP] Smu support for SB-TSI in alert comparator mode
+|                - [PMFW-3620] [IMP] Allows negative temperature in CalculateSocketData routine
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.41.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                16/12/19
+|
+|        * Changelist
+|                - DXIO FW version 31.436
+|                - [PMFW-1727] [WKA] USB YB when wake up system from S3 by KB behind USB HUB(reverted)
+|                - [PMFW-3243] [ETB] RAPL power correction vs APU socket power
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.40.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                21/11/19
+|
+|        * Changelist
+|                - DXIO FW version 31.436
+|                - [PLAT-54314] [NEW] Add Pollock support
+|                - [PLAT-54347] [NEW] Add FT5 system config ID 1/2/4 support
+|                - [PLAT-54675] [WKA] Package Type workaround for Pollock
+|                - [PMFW-2914] [OPT] exp_slow function optimization
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.39.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                08/10/19
+|
+|        * Changelist
+|                - DXIO FW version 31.436
+|                - [PMFW-2685] [NEW] Add 8W systemconfig to RV2x
+|                - [PLAT-52041] [NEW] Add 6W Fan Setting
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
 | Version 37.38.0           |
 +---------------------------+-------------------------------------------------------------------------------
 |        * Date (dd/mm/yy)
