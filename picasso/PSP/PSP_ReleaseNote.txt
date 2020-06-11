@@ -2,7 +2,7 @@
 // PSP FW Delivery Release Note
 //
 // Copyright 2016-2020, Advanced Micro Devices, Inc.
-// Date:   June 6, 2020
+// Date:   June 9, 2020
 //----------------------------------------------------------------------------
 
 Content:
@@ -10,34 +10,43 @@ Content:
 	This Build is compiled using the ARM license from the AMD license server.
 
 Files:
- PspBootLoader_prod_RV.sbin                      [version: 0.8.1.7B] - PSP off-chip BootLoader (entry type 0x1), signed with production key
- PspRecoveryBootLoader_prod_RV.sbin              [version: 0.8.1.7B] - PSP off-chip Recovery BootLoader (entry type 0x3), signed with production key
- secure_unlock_prod_RV.sbin                      [version: 0.8.1.7B] - PSP secure unlock (entry type 0x13), signed with production key
- psp_os_combined_prod_{RV, VG, VG12, VG20}.sbin  [version: 0.8.1.7B] - PSP secure OS (entry type 0x2), signed with production key
- drv_sys_prod_{RV, VG, VG12, VG20}.sbin          [version: 0.8.1.7B] - PSP system driver (entry type 0x28), signed with production key
+ PspBootLoader_prod_RV.sbin                      [version: 0.8.2.7B] - PSP off-chip BootLoader (entry type 0x1), signed with production key
+ PspRecoveryBootLoader_prod_RV.sbin              [version: 0.8.2.7B] - PSP off-chip Recovery BootLoader (entry type 0x3), signed with production key
+ secure_unlock_prod_RV.sbin                      [version: 0.8.2.7B] - PSP secure unlock (entry type 0x13), signed with production key
+ psp_os_combined_prod_{RV, VG, VG12, VG20}.sbin  [version: 0.8.2.7B] - PSP secure OS (entry type 0x2), signed with production key
+ drv_sys_prod_{RV, VG, VG12, VG20}.sbin          [version: 0.8.2.7B] - PSP system driver (entry type 0x28), signed with production key
  dr_ftpm_prod_RV.csbin                           [version: 3.26.0.4] - PSP fTPM (entry type 0xC), compressed and signed with production key
  security_policy_RV1_FP5_AM4.sbin                [version: A.2.3.2]  - Raven1 APU Security Policy for Raven1 APU programs (entry type 0x24), signed with production key
  security_policy_RV1_NPU_FP5_AM4.sbin            [version: A.2.5.23] - Raven1 NPU Security Policy for Raven1 NPU programs (entry type 0x8024), signed with production key
- security_policy_PCO_FP5_AM4.sbin                [version: A.2.3.27] - Raven1 APU Security Policy for Picasso APU programs (entry type 0x224), signed with production key
- security_policy_RV2_FP5_AM4.sbin                [version: A.2.4.25] - Raven2 APU Security Policy for Raven2 APU programs (entry type 0x124), signed with production key
+ security_policy_PCO_FP5_AM4.sbin                [version: A.2.3.D2] - Raven1 APU Security Policy for Picasso APU programs (entry type 0x224), signed with production key
+ security_policy_RV2_FP5_AM4.sbin                [version: A.2.4.26] - Raven2 APU Security Policy for Raven2 APU programs (entry type 0x124), signed with production key
+
+ver 0.8.2.7B
+00. PLAT-64770:[Chrome]: IsChromePlatform() is based on Chrome OPN only
+01. PLAT-64770:[Chrome]: Rename gVerstageLoaded flag to gUnsignedOemAppLoaded
+02. PLAT-64770:[Chrome]: TOS: Remove the BUILD_CHROME compilation flag
+03. PLAT-64770:[Chrome]: DrsSys: Remove the BUILD_CHROME compilation flag
+04. PLAT-64818:[Chrome]: Do not set recovery flag on vestage failures
+05. PLAT-64694:[Chrome]: Update bl_errorcodes_public.h
 
 ver 0.8.1.7B
 00. Code base updated to CL#66575
 01. FEAT-30961: PLAT-63910: Fixed build issues
 02. SWDEV-229327: HDMI Certification HDCP 1.4 1A-08 item error
-03. PLAT-59833: [RV2] Update RV2 Security Policy to version 10.2.4.38
-04. PLAT-63853:[Chrome]: Bug fix in OPN check for svc call
-05. PLAT-63810:[Chrome]: Bug fix in GPIO locking routine
-06. PLAT-64377:[Chrome]: Copy Bios Directory to Sram after verstage
-07. PLAT-61962:[Chrome]: Reload coreboot from spi rom in s3 resume path
-08. PLAT-63085: [Chrome]: Copy bios directory table only key is valid
-09. PLAT-64694: Created public part of the bl_errorcodes.h
+03. PLAT-59833: Update RV2 Security Policy to version 10.2.4.26
+04. PLAT-59833: Update PCO Security Policy to version 10.2.3.D2
+05. PLAT-63853:[Chrome]: Bug fix in OPN check for svc call
+06. PLAT-63810:[Chrome]: Bug fix in GPIO locking routine
+07. PLAT-64377:[Chrome]: Copy Bios Directory to Sram after verstage
+08. PLAT-61962:[Chrome]: Reload coreboot from spi rom in s3 resume path
+09. PLAT-63085:[Chrome]: Copy bios directory table only key is valid
+0A. PLAT-64694:[Chrome]: Created public part of the bl_errorcodes.h
 
 ver 0.8.D.77
 00. PLAT-63811:[Chrome]: Add chrome OPN check in TOS
 01. PLAT-63810:[Chrome]: Enhance GPIO Lock to be dynamic
-02. PLAT-63853: [Chrome]: Add Chrome OPN check for SVC calls
-03. PLAT-63919: [Chrome]: Update the MP2 memory availability
+02. PLAT-63853:[Chrome]: Add Chrome OPN check for SVC calls
+03. PLAT-63919:[Chrome]: Update the MP2 memory availability
 
 ver 0.8.C.77
 00. PLAT-62737:[Chrome]: Check and apply for updated security policy after loading Verstage
@@ -48,7 +57,7 @@ ver 0.8.C.77
 05. PLAT-63312:[Chrome]: Perform Copy of workbuf to main memory post bios load
 
 ver 0.8.B.77
-00. PLAT-61663:[PCO Chrome]: Move Workbuf copy code before BIOS loading
+00. PLAT-61663:[Chrome]: Move Workbuf copy code before BIOS loading
 01. PLAT-62027:[Chrome]: Set recovery mode and error status when PSP fails to copy workbuf
 02. PLAT-62032:[Chrome]: Remove DBG_PRINT of MP0SecureFuseVal in IsPlatformChromeBook
 03. PLAT-62210:[Chrome]: Add support for 32KB workbuffer
@@ -59,11 +68,11 @@ ver 0.8.A.77
 02. PLAT-61663:[Chrome]: Add SVC API to return MAX workbuf size supported by PSP BL
 
 ver 0.8.9.77
-00. PLAT-60823::[Chrome]: SVC API to compute HASH incrementally
+00. PLAT-60823:[Chrome]: SVC API to compute HASH incrementally
 01. PLAT-61665:[Chrome]: Enable SRAM caching for user app
-02. PLAT-61663: Add test case to psp_bl_uapp for testing Svc_GetMaxWorkbufSize
-03. PLAT-61546: [BootLoader User App]: Sample Application for multipass SHA operation
-04. PLAT-61551: [BootLoader User App]: Sample Application for timer operation
+02. PLAT-61663:[BootLoader User App]: Add test case to psp_bl_uapp for testing Svc_GetMaxWorkbufSize
+03. PLAT-61546:[BootLoader User App]: Sample Application for multipass SHA operation
+04. PLAT-61551:[BootLoader User App]: Sample Application for timer operation
 
 ver 0.8.8.77
 00. PLAT-60815:[Chrome]: Export monotonic timer API to UAPP
