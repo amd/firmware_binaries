@@ -1,8 +1,8 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 // PSP FW Delivery Release Note
 //
-// Copyright 2019, Advanced Micro Devices, Inc.
-// Date:   April 16, 2019
+// Copyright 2016-2020, Advanced Micro Devices, Inc.
+// Date:   June 6, 2020
 //----------------------------------------------------------------------------
 
 Content:
@@ -10,38 +10,292 @@ Content:
 	This Build is compiled using the ARM license from the AMD license server.
 
 Files:
- PspBootLoader_prod_RV.sbin         [version: 0.8.4.59] - PSP off-chip BootLoader (entry type 0x1), signed with production key
- PspRecoveryBootLoader_prod_RV.sbin [version: 0.8.4.59] - PSP off-chip Recovery BootLoader (entry type 0x3), signed with production key
- secure_unlock_prod_RV.sbin         [version: 0.8.4.59] - PSP secure unlock (entry type 0x13), signed with production key
- psp_os_combined_prod_RV.sbin       [version: 0.8.4.59] - PSP secure OS (entry type 0x2), signed with production key
- drv_sys_prod_RV.sbin               [version: 0.8.4.59] - PSP system driver (entry type 0x28), signed with production key
- dr_ftpm_prod_RV.csbin              [version: 3.22.0.4] - PSP fTPM (entry type 0xC), compressed and signed with production key
- security_policy_RV1_FP5_AM4.sbin   [version: A.2.3.2]  - Raven1_Security_Policy for Raven1 program (entry type 0x24), signed with production key
- security_policy_PCO_FP5_AM4.sbin   [version: A.2.3.27] - Raven1_Security_Policy for Picasso program (entry type 0x224), signed with production key
- security_policy_RV2_FP5_AM4.sbin   [version: A.2.4.25] - Raven2_Security_Policy for Raven2 program (entry type 0x124), signed with production key
+ PspBootLoader_prod_RV.sbin                      [version: 0.8.1.7B] - PSP off-chip BootLoader (entry type 0x1), signed with production key
+ PspRecoveryBootLoader_prod_RV.sbin              [version: 0.8.1.7B] - PSP off-chip Recovery BootLoader (entry type 0x3), signed with production key
+ secure_unlock_prod_RV.sbin                      [version: 0.8.1.7B] - PSP secure unlock (entry type 0x13), signed with production key
+ psp_os_combined_prod_{RV, VG, VG12, VG20}.sbin  [version: 0.8.1.7B] - PSP secure OS (entry type 0x2), signed with production key
+ drv_sys_prod_{RV, VG, VG12, VG20}.sbin          [version: 0.8.1.7B] - PSP system driver (entry type 0x28), signed with production key
+ dr_ftpm_prod_RV.csbin                           [version: 3.26.0.4] - PSP fTPM (entry type 0xC), compressed and signed with production key
+ security_policy_RV1_FP5_AM4.sbin                [version: A.2.3.2]  - Raven1 APU Security Policy for Raven1 APU programs (entry type 0x24), signed with production key
+ security_policy_RV1_NPU_FP5_AM4.sbin            [version: A.2.5.23] - Raven1 NPU Security Policy for Raven1 NPU programs (entry type 0x8024), signed with production key
+ security_policy_PCO_FP5_AM4.sbin                [version: A.2.3.27] - Raven1 APU Security Policy for Picasso APU programs (entry type 0x224), signed with production key
+ security_policy_RV2_FP5_AM4.sbin                [version: A.2.4.25] - Raven2 APU Security Policy for Raven2 APU programs (entry type 0x124), signed with production key
 
-ver 0.8.4.59
-00. Code base updated to CL#63198
-01. SWDEV-182169: Mfpmp.exe is observed while playing the content in Netflix after resuming from sleep
-02. PLAT-44084:[RVx][AM4] Bug check when resume from sleep and Netflix open
-03. SWDEV-184767: [PCO/RVx][AM4] Wireless display HDCP fail after S4 and reconnected
+ver 0.8.1.7B
+00. Code base updated to CL#66575
+01. FEAT-30961: PLAT-63910: Fixed build issues
+02. SWDEV-229327: HDMI Certification HDCP 1.4 1A-08 item error
+03. PLAT-59833: [RV2] Update RV2 Security Policy to version 10.2.4.38
+04. PLAT-63853:[Chrome]: Bug fix in OPN check for svc call
+05. PLAT-63810:[Chrome]: Bug fix in GPIO locking routine
+06. PLAT-64377:[Chrome]: Copy Bios Directory to Sram after verstage
+07. PLAT-61962:[Chrome]: Reload coreboot from spi rom in s3 resume path
+08. PLAT-63085: [Chrome]: Copy bios directory table only key is valid
+09. PLAT-64694: Created public part of the bl_errorcodes.h
 
-ver 0.8.3.59
-00. Code base updated to CL#61260.
-01. PLAT-39742: Update RV2 security policy to 10.2.4.37 (Hex:0A020425)
+ver 0.8.D.77
+00. PLAT-63811:[Chrome]: Add chrome OPN check in TOS
+01. PLAT-63810:[Chrome]: Enhance GPIO Lock to be dynamic
+02. PLAT-63853: [Chrome]: Add Chrome OPN check for SVC calls
+03. PLAT-63919: [Chrome]: Update the MP2 memory availability
 
-ver 0.8.2.59
-00. Code base updated to CL#60943.
-01. PLAT-39863: Fix in changes ported in 0.8.1.59, missing one line.
-02. PLAT-39987: [PCO] fTPM NVRAM getting corrupted on boot-up, fTPM version updated to 3.22.0.4.
-03. PLAT-39511: BSOD 0xEA when do Skype video chat.
-NOTE: This point release is not meant for PI w/ AM4 packaging and NPU support, as the team agreed.
+ver 0.8.C.77
+00. PLAT-62737:[Chrome]: Check and apply for updated security policy after loading Verstage
+01. PLAT-63207:[chrome]: Enable RtcIORange needed to access RTC IO
+02. PLAT-63179:[Chrome]: Add BIOS-PSP command 0x3A and lock GPIO
+03. PLAT-63250:[Chrome]: Copy Verstage Workbuf to main memory on S3 resume
+04. PLAT-63207:[BootLoader UApp]: Sample Application to test access of RTC IO Port
+05. PLAT-63312:[Chrome]: Perform Copy of workbuf to main memory post bios load
 
-ver 0.8.1.59
-00. Code base updated to CL#60908, no update in fTPM version and updated PCO security policy.
-01. PLAT-39863: [PCO FP5 MS] SMNCLK and MP0CLK are not in DS after S0i3 resume - ~60mW increase on VDDSOC.
-02. PLAT-39535: [PCO] Update Security Policy of PCO to version 10.2.3.39 (Hex: A.2.2.27).
-NOTE: This point release is not meant for PI w/ AM4 packaging and NPU support, as the team agreed.
+ver 0.8.B.77
+00. PLAT-61663:[PCO Chrome]: Move Workbuf copy code before BIOS loading
+01. PLAT-62027:[Chrome]: Set recovery mode and error status when PSP fails to copy workbuf
+02. PLAT-62032:[Chrome]: Remove DBG_PRINT of MP0SecureFuseVal in IsPlatformChromeBook
+03. PLAT-62210:[Chrome]: Add support for 32KB workbuffer
+
+ver 0.8.A.77
+00. Added SHA-512 HASH support for existing SHA SVC API.
+01. PLAT-61663:[Chrome]: Correct the max workbuf size
+02. PLAT-61663:[Chrome]: Add SVC API to return MAX workbuf size supported by PSP BL
+
+ver 0.8.9.77
+00. PLAT-60823::[Chrome]: SVC API to compute HASH incrementally
+01. PLAT-61665:[Chrome]: Enable SRAM caching for user app
+02. PLAT-61663: Add test case to psp_bl_uapp for testing Svc_GetMaxWorkbufSize
+03. PLAT-61546: [BootLoader User App]: Sample Application for multipass SHA operation
+04. PLAT-61551: [BootLoader User App]: Sample Application for timer operation
+
+ver 0.8.8.77
+00. PLAT-60815:[Chrome]: Export monotonic timer API to UAPP
+01. PLAT-60812:[Chrome]: SVC API to allow UAPP to initiate warm/cold reset
+02. PLAT-61117:[Chrome]: Add serial debug print for PSP Version
+03. PLAT-61116:[Chrome]: Do not reset remote terminal on serial port initialization
+04. PLAT-61182:[Chrome]: Add SVC_DEBUG build option to enable entry/exit SVC debug
+05. PLAT-59121:[Chrome]: Copy workbuf from PSPBL to Main memory before x86 release.
+
+ver 0.8.0.77
+00. Code base updated to CL#66177
+01. SWDEV-220098: [VG10] Data-abort in MMFW validation due to PSP info struct not being ready
+02. PLAT-57668: [RVx/PCO] Add API fuction to access CcpModExp
+03. EMBSWDEV-8942: Add RPMC support for Raven
+04. FEAT-29982: [VG10] Integrate new requirements (gating, DFC, CAP)
+
+ver 0.8.0.76
+00. Code base updated to CL#65978
+01. PLAT-57376: Fixed build issues
+
+ver 0.8.0.75 - Cancelled
+00. Code base updated to CL#65978
+01. PLAT-52328: [RVx/PCO] Modify DrvSys dispatcher function to adjust to the changes made in DrvSys-library
+02. PLAT-47428: [RVx/PCO] DASH & ASF Support
+03. SWDEV-191806: [RVx/PCO] Fix issues in loading IP-FW
+04. PLAT-55287: [RVx/PCO] Bug in logging of RSMU violations
+05. FEAT-29964: [dGPU] SRIOV Mailbox Gating
+06. DIAG-6427: [dGPU] xGMI-TA to support xGMI loopback registers accesses
+07. FEAT-29980: [dGPU][Vega10][SRIOV][Azure] Move Compatibility Table to TMR and Introduce New Struct Format
+08. FEAT-29981 [dGPU] Support for driver capability table (CAP), front-door loading support and encoding
+09. PLAT-56860: [RVx/PCO] Fix bug in BIOS location/size validation
+10. PLAT-50447: [RVx/PCO] Assign C2P-63 register to indicate TEE capability
+11. PLAT-51833: [RVx/PCO] Support printing serial-out through eSPI
+
+ver 0.8.0.74
+00. Code base updated to CL#65367
+01. PLAT-52428: [RVx/PCO][dGPU] Add support for DSA signature verification
+02. PLAT-52429: [RVx/PCO] Failure to flush HDP Fifo during driver to/from TA / tOS communication
+03. PLAT-41307: [RVx/PCO] GFX CP MEC uCode should have read-only access into uCode source TMR
+05. SWDEV-203693: [dGPU] Guest driver TDR, due to VF load failure in libgv scheduler
+
+ver 0.8.0.73
+00. Code base updated to CL#65281
+01. PLAT-50639: [RVx/PCO] BIOS init with bad performance when run ADK tool
+02. FEAT-27057: Updated fTPM binary with feature supporting other platforms - no functional change for RVx/PCO
+
+ver 0.8.0.72
+00. Code base updated to CL#65184
+PLAT-47125: [PCO][Bixby] BIOS code stops at A59E when insert NVidia graphic card
+SWDEV-193816: [RVx/PCO]Netflix App closing when perform S3 cycle
+SWDEV-194465: [XGMI] Migrate to generic topology structure
+SWDEV-201308: [Mi100] ASD service_init does not initialize Mi100
+FEAT-26875: [VG10][SRIOV] Add Front-door loading support for FW Compatibility table
+SWDEV-197072: [dGPU] PSP timeout during multi VM VF FLR test
+SWDEV-197663: Double-read race condition on shared memory during µcode/firmware downgrade validation
+
+ver 0.8.0.71
+00. Code base updated to CL#64814
+01. SWDEV-181915: Fix PlayReady playback issue after S3 resume
+02. PLAT-45827: Changes for adding new cmd at TEE interface for informing tOS that CCP is being used by x86.
+03. PLAT 46938: Add support for printing DLM messages from fTPM.
+
+ver 0.8.0.70
+00. Code base updated to CL#64565
+01. SWDEV-193017: [VG20] Wrong register offsets in mode1 reset sequence
+02. FEAT-27281: [VG10][SRIOV] Extend PSP Dynamic Register programming interface to support 48 bit PA address values
+03. PLAT-48670: Fix failure reported when invalid key used
+04. PLAT-47955: Check RouteTpm2Spi register value when resume from S0i3
+
+ver 0.8.0.6F
+00. Code base updated to CL#64178
+01. PLAT-47163: [RVx/PCO] System driver call parameter pointer validation
+02. PLAT-47365: [RVx] Fixing regression in custom microcode loading
+03. PLAT-46189: [PCO] Update PSP authentication for PROM19 variants
+04. PLAT-47645 :[KVM] Enforce loading of encrypted KVM FW binary
+
+ver 0.8.0.6E
+00. Code base updated to CL#63985
+01. PLAT-45941: [RVx/PCO]The BSS section is incorrectly named and is not getting zero-initialized
+02. SWDEV-185681: [VG10] SRIOV Live Migration - Save VF Property
+03. PLAT-46395, PLAT-46396: [RVx/PCO] Fix CCP Queue alignment
+04. PLAT-33045: [RVx/PCO] The shared DLM buffer can be abused to corrupt TEE OS memory
+05. SWDEV-190741 [VG10][SRIOV] Provide PSP service to program MC_VM_FB_LOCATION_* registers
+06. PLAT-32237: [RVx/PCO] Enforce firmware image type check
+
+ver 0.8.0.6D
+00. Code base updated to CL#63638
+01. Back out changes made in PLAT-32237.
+
+ver 0.8.0.6C
+00. Code base updated to CL#63599
+01. PLAT-45827: [RVx/PCO] Adds new cmd at TEE client interface for informing tOS about CCP being used by x86
+02. PLAT-32445: [RVx/PCO] Arbitrary memory overwrite in validation function
+03. PLAT-46081: [RVx/PCO][Bixby] Resume from S3 fails
+04. PLAT-32237: [RVx/PCO] Update BL firmware image to avoid confusion in firmware type
+
+ver 0.8.0.6B
+00. Code base updated to CL#63511
+01. PLAT-45473: [RVx/PCO] BIOS-PSP SMI Mutex C2PMSG_23 attributes bug
+02. PLAT-45461: [RV2] Observing PSP debug serial logs in release image
+03. PLAT-45641: [VG20] [RAS] Add sys-drv API to get dGPU SKU info
+04. PLAT-45705: [RVx/PCO] Fix a bug in RSMU security interrupt clearing
+05. PLAT-32090: [PSP Phase II] Race condition leads to memory corruption in BIOS2PSP command dispatcher
+06. PLAT-45543: [PCO][Bixby] Code refactoring for BIXBY changes
+
+ver 0.8.0.6A
+00. Code base updated to CL#63319
+01. PLAT-45281: [Bixby][PCO] Make changes in SoC PSP to support protocol changes made in Bixby 0.15.0.4
+
+ver 0.8.0.69
+00. Code base updated to CL#63300
+01. PLAT-43850: Add multiple SPI-ROM read modes support
+02. PLAT-45207: [Bixby] Add support of secure PCO + secure Bixby
+03. PLAT-45208: [Bixby] Adapt PLAT-44494 changes (review id=98943) made in Bixby firmware
+04. PLAT-44680: [Bixby][PCO] MasterKey1 Privilege Escalation Attack Failure on RV/RV2/PCO - PSP FW 0.8.1.66
+05. PLAT-44682: [Bixby][PCO] FW Status observed is different for Recovery OS & Driver Sys - PSP FW 0.8.1.66
+06. PLAT-44998: [Bixby] PSPFW 0.8.3.66 didn't set ChipsetAuthenticated properly
+07. PLAT-45224: [Bixby] Adapt spec changes correctly and fix build issue
+
+ver 0.8.0.68:
+00. Code base updated to CL#63150
+01. PLAT-44524: [RVx/PCO] RyzenFall test failures on RV/RV2/PCO
+02. SWDEV-183202: [RVx] S3 fails at 25th cycle every time
+03. SWDEV-184767: [PCO/RVx AM4] Wireless display HDCP fails after S4 & reconnect
+
+ver 0.8.0.67: (Released only for dGPUs)
+00. SWDEV-183316: PPtable Changes make DF Indirect Registers inaccessible
+
+ver 0.8.0.66
+00. PLAT-41559: [VG20]Create XGMI TA entrypoint to provide users access to the whitelisted XGMI SMN registers
+01. PLAT-43904: MSFT Level3 - DRTM Service TA - TMR region setup API implementation in System Driver
+02. PLAT-44076: Report to BIOS about tOS fails to load any of the critical FW modules
+03. PLAT-44084: [IQE][IQE-NPI][iRV2AM4] [PCO] Bug check when resume from sleep and Netflix app open
+04. PLAT-44188: MSFT Level3 - DRTM Service TA. Support DRTM signing key on RV/PCO platform
+05. PLAT-44288 - [VG10 SR-IOV][Azure L1] PSP shows data abort when unloading GIM
+06. PLAT-43521: Add range validation for SPI-ROM Signature data speed and dummy cycle
+07. PLAT-44089: SMU RAS Fatal Error triggered during SMU FW load causing PSP Hard Hang
+08. Back out changelist 62401 - Support NS PCO + NS Bixby
+09. SWDEV-181125 [Vega20]: [XGMI]: TMR Limit Address spans remote FB causing DF Remote Write Fence failure
+
+ver 0.8.0.65
+00. PLAT-43596: MSFT Level3 - DRTM Service TA - Address mapping API (Physical to Virtual) in System Driver
+01. PLAT-43743: [PCO][MTS] - Change Driver Syscall API to avoid returned error code look like valid return parameter.
+02. PLAT-43499: SMU should get notified after the SMU FW was copied into DRAM rather than before that.
+03. PLAT-43719 : [MTS] - Change fTPM signing key from root key to AMDTEE TA key, fTPM version updated to 3.23.0.4/5
+
+
+ver 0.8.0.64 - will be dropped due to a misalignment with SMU team that affects RV2 stack.
+00. SWDEV-182169: Mfpmp.exe is observed while playing the content in netflix app after resuming from sleep
+01. PLAT-42770: Extend checking for FwType to include Subprogram
+
+ver 0.8.0.63
+00. Code base updated to CL#62419
+01. PLAT-42198:[VG20][NV10] Fix FLR implementation in tOS.
+02. PLAT-34257:[RV] Sign/validate APOB buffer with dedicated key.
+03. PLAT-35971: RPMC support needed in trusted OS.
+04. PLAT-41308: GFX CP MEC uCode should have Read-Only access into uCode source TMR region.
+
+ver 0.8.0.62
+00. Code base updated to CL#61959
+01. PLAT-42116:[RV] Fix issue in DeriveKeyUsingPRF function
+02. SWDEV-162866: [VG] Skip SMU FW loading after BACO sequence
+03. SWDEV-179339: [VG10] Enable all RSMU IP timeouts to prevent MMIO attack
+04. PLAT-35971:[RV] RPMC support needed in trustedOS
+
+ver 0.8.0.61 (Released only for dGPUs)
+00. Code base updated to CL#61852
+01. PLAT-41794: [RV] Implement DrvSys private APIs to support DRTM Function Driver
+02. SWDEV-162866: [VG20] Skip SMU FW loading after BACO sequence
+03. SWDEV-171051: [VG20 RAS] Handling of WAFL Fatal errors from WAFLC RSMU
+04. PLAT-41962: CCP Queue buffer is not properly aligned in memory
+05. SWDEV-172622, SWDEV-171250: [VG20] SMU RAS enablement
+06. PSP-3518: Add Asic Types for Navi12/14 to match Git repo
+07. SWDEV-177051: [VG20] PSP doesn't register for GC RSMU Interrupts as part of general RSMU Registration
+08. PLAT-38915: Not using return value of function call
+09. PLAT-4214: Coverity 10-RV bl fw CERT DCL37 violation
+
+ver 0.8.0.60
+00. Code base updated to CL#61343
+01. PSP-3515: Address Coverity checker DCL37-C
+
+ver 0.8.0.5F (Not pushed to CQE for testing/release)
+00. PLAT-38191: [RV] Remove unnecessary header file includes in RV boot loader
+01. SWDEV-172219: [VG20] Compute TA wrapping key on demand
+02. PLAT-39511: [RV/PCO] BSOD 0xEA when do Skype video chat
+03. SWDEV-174189: [VG20] XGMI Chain Reset support
+04. SWDEV-174287: [VG20] Mode1, Mode 2 Reset Regression
+05. PLAT-40081: [Matisse] Add support for MTS and CP in Sys_Drv
+06. SWDEV-175499: [VG20] FLR failure on A1
+07. SWDEV-173641: [VG20] The access to RSMU VF_EN Registers are still locked after Secure Unlock
+08. PLAT-39742: [RV2] Update RV2 Security Policy to version 10.2.4.37
+
+ver 0.8.0.5E
+00. Code base updated to CL#60924
+01. PLAT-40290: Solve boot failure issue reported on RV1 NPU.
+02. PLAT-40095: Add register definition file for Matisse/Castle Peak.
+03. SWDEV-174276:[VG20][SR-IOV] Guest driver fence value timeout on TA invoke commands.
+
+ver 0.8.0.5D
+00. Code base updated to CL#60807, no update in fTPM version & reverted RV2 Security Policy.
+01. PLAT-36296: Add support for MTS/CP build in Secure OS
+02. PLAT-39985: [VG20] WFI State Postcode
+03. SWDEV-162443: [VG20] SMU signed FW is using VG10 Key which needs to be replaced
+04. PLAT-39863: [PCO FP5 MS] SMNCLK and MP0CLK are not in DS after S0i3 resume - ~60mW increase on VDDSOC.
+05. Back out changes in PLAT-39742: Revert back RV2 policy to 10.2.3.26.
+
+ver 0.8.0.5C
+00. Code base updated to CL#60712, update in fTPM version and updated PCO & RV2 Security Policies.
+01. SWDEV-170705: [VG20][SRIOV] Data Abort in L1 Security Policy & Update VG20 Security Policy.
+02. SWDEV-165387: [VG] UVD doesn't work on slave GPU of XGMI configuration.
+03. SWDEV-171176: [RV] Use CCP DMA to load TA firmware in PSP.
+04. PLAT-39742: [RV2] Update Security Policy for RV2 to version 10.2.4.37
+05. PLAT-39535: [PCO] Update Security Policy of PCO to version 10.2.3.39
+06. PLAT-39982: [RV] Support both APU and NPU programs in one sBIOS image.
+07. SWDEV-172948: [VG] Extend IH Programming Ring interface to allow PF Programming for IH Redirection Ring.
+08. PLAT-39987: [PCO] fTPM NVRAM getting corrupted on boot-up, fTPM version updated to 3.22.0.4
+
+ver 0.8.0.5B
+00. Code base updated to CL#60409, update in fTPM version and added RV1 NPU Security Policy binary.
+01. PLAT-39195: [VG10][SRIOV] Periodic MEC Validation improvements.
+02. PLAT-38287: Remove potential issue in Level2 0x62 Entry loading.
+03. PLAT-38247: Updating version number and binary of RV1 NPU security policy to 10.2.5.35
+
+ver 0.8.0.5A
+00. Code base updated to CL#60128, no update in fTPM version
+01. PLAT-38973: [RV] System hangs with white-listed binary.
+02. PLAT-36844: PLAT-36468: [RV] Incorrect InstanceId populated in MBATRegister_n15 and PIE_IP_ID.
+03. SWDEV-168876: [VG10] FB-scan failed to fill pattern at FB address.
+04. SWDEV-148328: [VG20] Code cleanup for XGMI support over Guest Gfx Interface.
+05. PLAT-38381: [PCO/RV2] AM4 A1 secured part failing post code x804D.
+06. PLAT-38344: Add support for ASIC subtype into security policy header and its validation; introduce NPU subtype (0x1).
+07. SWDEV-170705: [VG20] Debug Unlock - Revert Security Policy.
 
 ver 0.8.0.59
 00. Code base updated to CL#60036, no update in fTPM version
