@@ -3,6 +3,126 @@
 +---------------------------------------+
 
 +---------------------------+
+| Version 37.54.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                31/08/20
+|
+|        * Changelist
+|                - DXIO FW version 31.445
+|                - [PLAT-67992][IMP]GPU usage up to very high(50%-100%) in AMD Radeon Software control panel
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.53.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                18/08/20
+|
+|        * Changelist
+|                - DXIO FW version 31.445
+|                - [PMFW-4853] [IMP] Ext pcie FSDL porting avoid repetitive func and merge imp of NVME shutdown sequence
+|                - [PMFW-5264] [IMP] Log error if a new message is sent to a busy message port
+|                - [PMFW-5289] [IMP] Poll for Boost requests instead of interrupts
+|                - [PMFW-5287] [IMP] S0i3 Abort checks in entry sequence
+|                - [PMFW-5307] [IMP] NVMe unsafe shutdown fix
+|                - [PLAT-66402] [IMP] Video Garbage when play YouTube HDR video by extend HDR monitor
+|                - [PMFW-5324][IMP] FCH doesn't assert SLP_S3# in the end of S0i3 entry
+|                - [PMFW-5336] [IMP] GFXOFF when using dGPU connected to monitor [headless APU] is preventing S0i3 entry
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.52.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                23/07/20
+|
+|        * Changelist
+|                - DXIO FW version 31.445
+|                - [PMFW-5028] [IMP] PC6Entry Dma Hang Race Condition
+|                - [PMFW-5034] [IMP] RV2 Use SDMA Activity to Trigger SOCCLK DPM
+|                - [PMFW-5036] [ETB] Dali black screen with 0x19c BSOD when run WinPVT11.0.0+AP/LAN+ACDC test
+|                - [PMFW-5052] [IMP] Run warmboot longrun occured BSOD (BUGCHECK:0xEA)
+|                - [PMFW-5054] [IMP] Remove LogMailboxMessage from ProcessMessage as per PCO
+|                - [PMFW-5055] [IMP] Underflow after closing MTV video
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.51.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                13/07/20
+|
+|        * Changelist
+|                - DXIO FW version 31.445
+|                - [PLAT-65881] [IMP] System can't enter S0i3 when camera app is opening
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.50.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                07/07/20
+|
+|        * Changelist
+|                - DXIO FW version 31.445
+|                - [PMFW-4946] [IMP] Ext audio device cannot be detected after MS resume with external monitor connected
+|                - [PLAT-64415] [IMP] MultiBitHitCause Exception with Embedded RV2 Silicon
+|                - [PLAT-65220] [IMP] Set OC_ROLARITY_CONTROL cause other registers change in PORT_CONTROL_CNTR0
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.49.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                03/06/20
+|
+|        * Changelist
+|                - DXIO FW version 31.444
+|                - [PMFW-4405] [IMP] Enable DPM at end of s0i3 resume
+|                - [PLAT-59271] [IMP] S0i3 ACP does not entering D3
+|                - [PMFW-4240] [UTB] EDC SOC Iddmax Vcn Cac value too large
+|                - [PLAT-61732] [IMP] ComboAM4 1006 RC1 bad word
+|                - [PLAT-62108] [IMP] UPEP Message 9 no response when running reboot 1000 cycles, fail 1/20
+|                - [PLAT-63560] [IMP] Internal keyboard has no function while resume from S0i3
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.48.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                06/05/20
+|
+|        * Changelist
+|                - DXIO FW version 31.444
+|                - [PMFW-4234] [IMP] PostCodeLevel is not working
+|                - [PMFW-4221] [IMP] Change STAPM Time Constant on Dali ULP and Pollock
+|                - [PLAT-59194] [IMP] RV2 Dali s0i3 resume latency is long (update)
+|                - [PLAT-62130] [IMP] SPI_TPM failed to start after resume from S0i3
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 37.47.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                23/04/20
+|
+|        * Changelist
+|                - DXIO FW version 31.444
+|                - [PMFW-61130] [IMP] Set the scratch bit during s0i3 resume
+|                - [PMFW-4220] [IMP] System cannot auto re-enter S0i3 while headphone/microphone/USB device hotplug
+|                - [PMFW-4225] [IMP] At negative temperature AGM shows 0 for PeakTemperature
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
 | Version 37.46.0           |
 +---------------------------+-------------------------------------------------------------------------------
 |        * Date (dd/mm/yy)
@@ -164,7 +284,7 @@
 |
 |        * Changelist
 |                - DXIO FW version 31.433
-|                - [PMFW-2122] [NEW] Support Dali 6W OPN
+|                - [PMFW-2122] [NEW] Support Dali 6W OPN 
 |
 +-----------------------------------------------------------------------------------------------------------
 
@@ -176,9 +296,9 @@
 |
 |        * Changelist
 |                - DXIO FW version 31.433
-|                - [PMFW-1801] [IMP] Fix release makefile to be consistent with source makefile
+|                - [PMFW-1801] [IMP] Fix release makefile to be consistent with source makefile 
 |                - [PMFW-2013] [WKA] VCN Video Encoding Voltage Marginality Issue in DC mode
-|                - [PLAT-43640] [WKA] USB port reset fail after KB S3 resume, Yellow band in Device Manage
+|                - [PLAT-43640] [WKA] USB port reset fail after KB S3 resume, Yellow band in Device Manage 
 |
 +-----------------------------------------------------------------------------------------------------------
 
@@ -201,7 +321,7 @@
 |
 |        * Changelist
 |                - DXIO FW version 31.429
-|                - [PMFW-1739] [IMP] Move some codes to EXT section to create more TEXT space
+|                - [PMFW-1739] [IMP] Move some codes to EXT section to create more TEXT space 
 |                - [PMFW-1727] [WKA] USB YB when wake up system from S3 by KB behind USB HUB
 |
 +-----------------------------------------------------------------------------------------------------------
@@ -216,7 +336,7 @@
 |                - DXIO FW version 31.429
 |                - [PMFW-1300] [OPT] Publish BIOS/TEST msg to report OC capability - Expose CPU/iGPU direct OC cap and MOC cap
 |                - [PMFW-1221] [IMP] System show BSOD 0xEA when play video with Miracast connected at DC mode (reverted)
-|                - [PMFW-1330] [NEW] define new handshake for amdgpu_pm_info Linux
+|                - [PMFW-1330] [NEW] amdgpu_pm_info sysfs doesn't show GPU load info
 |                - [PMFW-1677] [OPT] PCO AM4: 35W OPNs frequency artificially limited, SOC EDC limiting GFX Frequencies
 |
 +-----------------------------------------------------------------------------------------------------------
@@ -259,7 +379,7 @@
 |        * Changelist
 |                - DXIO FW version 31.425
 |                - [PMFW-1131] [NEW] Add Subprogram value to the FW Header
-|                - [PMFW-1357] [OPT] Move feature disable fucntions to EXT_SECTION
+|                - [PMFW-1357] [OPT] Move feature disable fucntions to EXT_SECTION 
 |                - [PMFW-728] [OPT] Re-allocate .datatables space to .text section is reverted
 |
 +-----------------------------------------------------------------------------------------------------------
@@ -273,7 +393,7 @@
 |        * Changelist
 |                - DXIO FW version 31.425
 |                - [PMFW-1300] [NEW] Publsih BIOS/TEST messages to report overclocking capability
-|                - [PLAT-43459] [ETB] GFX driver is not loaded after iGPU overclock in BIOS setup
+|                - [PLAT-43459] [ETB] GFX driver is not loaded after iGPU overclock in BIOS setup 
 |                - [PMFW-1230] [NEW] Add a PCD option to change AclkDpm0 from 200MHz to 400MHz
 |                - [PMFW-1313] [OPT] MP0CLK DS enable only for DC mode
 |
@@ -287,7 +407,7 @@
 |
 |        * Changelist
 |                - DXIO FW version. 31.425
-|                - [PMFW-1263] [WKA] Discard CGPG enable if disable CGPG message is received during the delay
+|                - [PMFW-1263] [WKA] Discard CGPG enable if disable CGPG message is received during the delay 
 |                - [PLAT-43239] [WKA] R3-3200U Flavor 2 Processor USB 2.0 Device Recognized again after Safely removed by Windows Icon
 |
 +-----------------------------------------------------------------------------------------------------------
@@ -300,7 +420,7 @@
 |
 |        * Changelist
 |                - DXIO FW version. 31.425
-|                - [PLAT-41548] [ETB] FClk and UClk actual frequency ratio mismatch
+|                - [PLAT-41548] [ETB] FClk and UClk actual frequency ratio mismatch 
 |                - [PMFW-1114] [IMP] Rv2 Fw needs to be updated to v027 Sw document sync
 |                - [PMFW-1213] [NEW] Add SMU get message for current CCLK Fmax
 |                - [PMFW-1215] [ETB] Rounding min/max GFXCLK return values to neareset 10s
@@ -317,7 +437,7 @@
 |
 |        * Changelist
 |                - DXIO FW version. 31.425
-|                - [PMFW-933] [IMP] Reallocate space from scratch section to .isr_data section
+|                - [PMFW-933] [IMP] Reallocate space from scratch section to .isr_data section 
 |                - [PLAT-41596] [IMP] Publish OC messages to BIOS port
 |                - [PMFW-905] [IMP] System hang up when ping AP address for overnight (update)
 |                - [PMFW-909] [IMP] FUSE/Default Limits info of Power and Current required for Ryzen Master
@@ -333,7 +453,7 @@
 |
 |        * Changelist
 |                - DXIO FW version. 31.425
-|                - [PMFW-728] [OPT] Re-allocate .datatables space to .text section
+|                - [PMFW-728] [OPT] Re-allocate .datatables space to .text section 
 |                - [PMFW-701] [IMP] RV2 in PCO AM4: SMU Test Messages Required for Ryzen Master
 |                - [PMFW-726] [IMP] Enable continues data calculation when OC mode is enabled
 |                - [PLAT-41021] [IMP] Add fuse check for overclocking support
@@ -355,7 +475,7 @@
 |        * Changelist
 |                - DXIO FW version. 31.423
 |                - [PLAT-40266] [WKA] Move PCTL0_MISC programming to SMU for secure policy update
-|                - [PMFW-699] [IMP] Raven2x FP5: Bypass Precision Boost Overdrive (PBO) Implementation
+|                - [PMFW-699] [IMP] Raven2x FP5: Bypass Precision Boost Overdrive (PBO) Implementation 
 |
 +-----------------------------------------------------------------------------------------------------------
 
@@ -368,7 +488,7 @@
 |        * Changelist
 |                - DXIO FW version. 31.422
 |                - [PMFW-599] [IMP] PSI0 Workaround Code Cleanup
-|                - [PMFW-600] [IMP] Put PeAPM Code in EXT_SECTION
+|                - [PMFW-600] [IMP] Put PeAPM Code in EXT_SECTION 
 |                - [PLAT-39838] [IMP] Add USB31 OVERCURRENT_MAP_1_CNTR0
 |                - [PMFW-623] [NEW] Add Managed Overclocking
 |
@@ -585,7 +705,7 @@
 |        * Changelist
 |                - DXIO FW version. 0.332
 |                - [PLAT-29635] [IMP] SMU USB Firmware programming for LLUCTL and GRXTHRCFG
-|                - [SMURVN2-48] [UTB] Resource protect DispClk change.
+|                - [SMURVN2-48] [UTB] Resource protect DispClk change. 
 |                - [SMURVN2-49] [IMP] Fix system hang issue when OS tries to boot with PLL_POWER_DOWN disabled.
 |                - [SMURVN2-50] [IMP] Increase precision for voltages in AGM.
 |                - [SMURVN2-51] Fixed issue GPU0 PLL not powered down after S3 resume.
@@ -686,7 +806,7 @@
 |
 |        * Changelist
 |                - DXIO FW version. 0.328
-|                - Corrected fclk fcstate setting for case switch from BYPASS to DFS.
+|                - Corrected fclk fcstate setting for case switch from BYPASS to DFS. 	
 |                - bypass MP2 reg access in ACPI (workaround)
 |
 +-----------------------------------------------------------------------------------------------------------
@@ -740,7 +860,7 @@
 |                - Added LivMINVid and LinMinEnable fuse
 |
 +-----------------------------------------------------------------------------------------------------------
-
+ 
 +---------------------------+
 | Version 37.2.5            |
 +---------------------------+-------------------------------------------------------------------------------
@@ -790,7 +910,7 @@
 |                - Integrated changes from RV1x up to CL2773697
 |                - Updated USB related function to new IP. USB watermark setting for LPDDR4 retraining is still outstanding.
 |                - Updated UMC related register settings for LivMin and LPDDR4 retraining.
-|                - Fixed pmfw_fastsim.sv to be synced with pmfw_fastsim.h and scratch_info.h in RV2. We need to variantize pmfw_fastsim.sv for FF and RV2 in the future.
+|                - Fixed pmfw_fastsim.sv to be synced with pmfw_fastsim.h and scratch_info.h in RV2. We need to variantize pmfw_fastsim.sv for FF and RV2 in the future.     
 |
 +-----------------------------------------------------------------------------------------------------------
 
@@ -801,16 +921,16 @@
 |                31/03/17
 |
 |        * Features enabled
-|                - LPDDR4 retraining (preliminary)
+|                - LPDDR4 retraining (preliminary) 
 |                - RLC PACE (preliminary)
 |
 |        * Changelist
 |                - Integrated changes from RV1x up to CL2726404
-|                - Included preliminary version of LPDDR4 retraining. Handling ZQCAL and USB watermark during
+|                - Included preliminary version of LPDDR4 retraining. Handling ZQCAL and USB watermark during 
 |                  memory retraining is still outstanding.
 |                - Included preliminary version of RLC PACE feature
-|                - Code update for clocks change in RV2, include FCLK change, 2 slices of CLKB/CLKC and 2 DROOP detectors only.
-|                - Minor code update for 2 cores only (core 1 and core 3)
+|                - Code update for clocks change in RV2, include FCLK change, 2 slices of CLKB/CLKC and 2 DROOP detectors only. 
+|                - Minor code update for 2 cores only (core 1 and core 3)     
 |
 +-----------------------------------------------------------------------------------------------------------
 
@@ -825,8 +945,8 @@
 |
 |        * Changelist
 |                - Integrated base code from RV1 and compiled them under RV2 environment.
-|                - Implemented preliminary version of Long Idle vMIN feature. For LPDDR4 system,
-|                  one caveat is that ConvertD2toPhyLp3 bit in UMC has not been set before entering LIVMIN.
+|                - Implemented preliminary version of Long Idle vMIN feature. For LPDDR4 system, 
+|                  one caveat is that ConvertD2toPhyLp3 bit in UMC has not been set before entering LIVMIN. 
 |                - Gated off unused/bypassed DFS slices.
 |
 +-----------------------------------------------------------------------------------------------------------
