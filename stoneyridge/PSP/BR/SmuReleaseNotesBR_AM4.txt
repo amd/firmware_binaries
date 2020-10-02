@@ -1,0 +1,317 @@
++------------------------------------------+
+| SMU Firmware Release Notes - BRISTOL AM4 |
++------------------------------------------+
+
++----------------------------+
+| Version 1.27.19.0           |
++----------------------------+------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                05/08/16
+|
+|        * Features enabled
+|
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                Workaround to fix A12 no margin issue on P0
+|
++------------------------------------------------------------------------------------------------------------
+
+
++----------------------------+
+| Version 1.27.18.0           |
++----------------------------+------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                07/06/15
+|
+|        * Features enabled
+|
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                Remove rule that will only allow the top two states to be disabled for EDC checking
+|
++------------------------------------------------------------------------------------------------------------
+
+
++----------------------------+
+| Version 1.27.17.0           |
++----------------------------+------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                05/06/15
+|
+|        * Features enabled
+|
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRSAM4-38: Workaround fusing issue and use GFXIDDx instead of NBIDDx for clipping
+|
++------------------------------------------------------------------------------------------------------------
+
+
++----------------------------+
+| Version 1.27.16.0           |
++----------------------------+------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                01/04/15
+|
+|        * Features enabled
+|
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRSAM4-37: Fix/workaround for S3 issues when iGPU are disabled
+|
++------------------------------------------------------------------------------------------------------------
+
+
++----------------------------+
+| Version 1.27.15.0           |
++----------------------------+------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                29/01/15
+|
+|        * Features enabled
+|
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRSAM4-36: Fuse check for Overclocking EN & re-enable OC via authentication
+|
++------------------------------------------------------------------------------------------------------------
+
+
++----------------------------+
+| Version 1.27.14.0           |
++----------------------------+------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                18/01/15
+|
+|        * Features enabled
+|
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRSAM4-34: ShadowPstate Vid needs a bound
+|                SMUBRSAM4-35: AVFS: AvfsVID change for DVT
+|                SMUBRS-78: Secure SMN writes/read for Telemetry registers
+|
++------------------------------------------------------------------------------------------------------------
+
+
++----------------------------+
+| Version 1.27.13.0           |
++----------------------------+------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                22/12/15
+|
+|        * Features enabled
+|
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRSAM4-32: No GPU VDDNB Power estimate bug
+|                SMUBRSAM4-33: No GPU VDDNB High VDDNB Power Observed
+|                SMUBRS-77: Deadlock prevention
+|
++------------------------------------------------------------------------------------------------------------
+
++----------------------------+
+| Version 1.27.11.0           |
++----------------------------+------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                14/12/15
+|
+|        * Features enabled
+|
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRSAM4-27: SCLK stretcher parameter indexing error.
+|                SMUBRSAM4-29: BRS AM4 SCLK stretcher parameter update.
+|
++------------------------------------------------------------------------------------------------------------
++----------------------------+
+| Version 1.27.10.0           |
++----------------------------+------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                11/12/15
+|
+|        * Features enabled
+|
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRS-76: Accidentally OC enabled all the time
+|
++------------------------------------------------------------------------------------------------------------
++----------------------------+
+| Version 1.27.9.0           |
++----------------------------+------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                23/11/15
+|
+|        * Features enabled
+|
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRSAM4-25: Taking ACP out of reset for NPU parts
+|
++------------------------------------------------------------------------------------------------------------
++----------------------------+
+| Version 1.27.8.0           |
++----------------------------+------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                16/11/15
+|
+|        * Features enabled
+|
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRSAM4-23: BR AM4 GFX CU Throttling not working fine
+|                SMUBRSAM4-19: BAPM Pcalc needs tweaks to over-estimate power at lower cpu pstates
+|
++------------------------------------------------------------------------------------------------------------
++----------------------------+
+| Version 1.27.7.0           |
++----------------------------+------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                10/11/15
+|
+|        * Features enabled
+|
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRSAM4-8: Support for CPU Overclocking protection based on authentication
+|
++------------------------------------------------------------------------------------------------------------
++----------------------------+
+| Version 1.27.6.0           |
++----------------------------+------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                5/11/15
+|
+|        * Features enabled
+|
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRSAM4-18: Updating AC BTC weights based on charz data
+|
++------------------------------------------------------------------------------------------------------------
++----------------------------+
+| Version 1.27.5.0           |
++----------------------------+------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                26/10/15
+|
+|        * Features enabled
+|                SCLK Stretcher
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRSAM4-14: System hang with SCLK Stretcher enabled in 35W cTDP configuration
+|                Port over SMUBRS-67: ACC feature causing large run to run perf variation for IOMeter tests
+|                Port over SMUBRS-69: BR FP4 Porting SMUCZ-535: Drop GFX CUs on PROCHOT
+|
++------------------------------------------------------------------------------------------------------------
++----------------------------+
+| Version 1.27.4.0           |
++----------------------------+------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                19/10/15
+|
+|        * Features enabled
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRSAM4-11: Porting over SMUBRS-63
+|                SMUBRSAM4-13: BR AM4 Make GFX a sub-block of GNB for better VDDNB BAPM power estimation and throttling
+|                SMUBRSAM4-15: Port over No GPU support from CZ FP4 branch
+|
++------------------------------------------------------------------------------------------------------------
++----------------------------+
+| Version 1.27.3.0           |
++----------------------------+------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                12/10/15
+|
+|        * Features enabled
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRSAM4-10: BR AM4: Change PPT Limit for 35W TDP to 42W
+|                Following fix ported from FP4 to AM4
+|                SMUBRS-50: Fix for PLAT-1978 [BR] Lower Stutter Efficiency (Pre Self Refresh UNB) on WGR5722N BIOS
+|
++------------------------------------------------------------------------------------------------------------
++----------------------------+
+| Version 1.27.2.0           |
++----------------------------+------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                21/09/15
+|
+|        * Features enabled
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                Following AVFS fixes ported from FP4 to AM4
+|                SMUBRS-60: Nested Force/Unforce Wake
+|
++------------------------------------------------------------------------------------------------------------
++----------------------------+
+| Version 1.27.1.0           |
++----------------------------+------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                31/08/15
+|
+|        * Features enabled
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                Following AVFS fixes ported from FP4 to AM4
+|                SMUBRS-49: Fix for PLAT-2006: [GR] System hangs at PC: A0d5 with external weekly BIOS imtermittently.
+|                SMUBRS-53: Disable 2CP shadow Pstates for 12W
+|                SMUBRS-56: Extension of SMUBRS-52
+|
++------------------------------------------------------------------------------------------------------------
++----------------------------+
+| Version 1.27.0.0           |
++----------------------------+------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                17/08/15
+|
+|        * Features enabled
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                BR AM4 SMU FW for Bringup
+|                SMUBRSAM4-1: BR AM4 Implement combined VDDNB and VDDGFX rail
+|                SMUBRSAM4-2: BR AM4 Implement new system configurations specific to AM4
+|                SMUBRSAM4-3: BR AM4 Remove A0 silicon version related workarounds
+|
++------------------------------------------------------------------------------------------------------------
+

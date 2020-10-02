@@ -1,0 +1,52 @@
+============================ Raven2 114 VBIOS release  ========================================
+Raven2  generic Baseline VBIOS 114
+Raven2 B0 0x15DD 113-RAVEN2-114  Raven2GenericVbios.114   01/03/19,10:04:58 AM 17255561@16.2.0.10  ATOMBuild #438488
+
+Major changes:
+1. Due to the change of security policy, PCTL0_MISC is removed from VBIOS GDB and would be programed by SMU
+
+============================ Raven2 113 VBIOS release  ========================================
+Raven2  generic Baseline VBIOS 113
+Raven2 B0 0x15DD 113-RAVEN2-113  Raven2GenericVbios.113   11/05/18,05:59:48 AM 1702205@16.2.0.10  ATOMBuild #434043
+
+Major changes:
+1. fix ulSupportedDPLinkRate in device info is not correct if DPCD_SUPPORTED_LINK_RATE0/7 support in eDP DPCD(1.4)
+2. when the OTG timing changed, the DP_MSA_PARAMETERSx should be reprogrammed.
+3. fix wrong offset when get edptolvdsrxid and stereopinid setting from integrated system info table.
+
+============================ Raven2 112 VBIOS release  ========================================
+Raven2  generic Baseline VBIOS 112
+Raven2 B0 0x15DD 113-RAVEN-112  Raven2GenericVbios.112   09/17/18,09:24:31 AM 16063731@16.2.0.7  ATOMBuild #429980
+
+Major changes:
+1. Update to support playready
+
+============================ Raven2 111 VBIOS release  ========================================
+Raven2  generic Baseline VBIOS 111
+Raven2 B0 0x15DD 113-RAVEN-111  Raven2GenericVbios.111   08/26/18,21:49:15 PM 15981601@16.2.0.7  ATOMBuild #428294
+
+Major changes:
+1. Update the PN to sync with RV1`s
+2. Fix issue:  MC_VM_APT_CNTL is not programmed properly
+3. Fix issue:  DP_VS_0.4v_0dB will be over written if enable DP customized tuning set even DP_VS_0.4v_0dB no need to be tuned
+
+============================ Raven2 X06 VBIOS release  ========================================
+Raven2  generic Baseline VBIOS X06
+Raven2 B0 0x15DD 105-D00100-00A  Raven2GenericVbios.X06   5/10/2018,11:28 PM 1553338@16.2.0.7  ATOMBuild #415353
+
+Major changes:
+1. In retimer feature, add the logic to check the EXT_DISPLAY_PATH_CAPS__HDMI20_TISN65DP159RSBT flag in the atom_ext_display_path.caps. if this flag is not set, check the next path. X05 would lead to no display on the type-c port in certain cases.
+2. Fix issue:Bootup corrupted or no display with BenQ 2k freesync DP panel
+
+============================ Raven2 X05 VBIOS release  ========================================
+Raven2  generic Baseline VBIOS X05
+Raven2 B0 0x15DD 105-D00100-00A  Raven2GenericVbios.X05   5/2/2018,5:54 AM 1548712@16.2.0.7  ATOMBuild #414558
+
+Major changes:
+1. Support the GFX9 enhanced data fill mode for the DMA to clear memory. It sustains 32B per clock writes, when the source is a constant.
+   This is to fix the increased additional 60ms boot time issue.
+2. Remove connector 4 since there is only 3 on RV2
+3. Apply the change of PCTL_MISC in GDB
+
+
+

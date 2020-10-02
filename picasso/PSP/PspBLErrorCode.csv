@@ -1,0 +1,130 @@
+0x00,General - Success
+0x01,Generic Error Code
+0x02,Generic Memory Error
+0x03,Buffer Overflow
+0x04,Invalid Parameter(s)
+0x05,Invalid Data Length
+0x06,Data Alignment Error
+0x07,Null Pointer Error
+0x08,Unsupported Function
+0x09,Invalid Service ID
+0x0A,Invalid Address
+0x0B,Out of Resource Error
+0x0C,Timeout 
+0x0D,Data Abort exception
+0x0E,Prefetch Abort exception
+0x0F,Out of boundary condition reached
+0x10,Data corruption
+0x11,Unknown ASIC type
+0x13,Failure in retrieving firmware header
+0x14,Key size not supported
+0x15,Entry not found at requested location
+0x18,Generic FW Validation error
+0x19,RSA operation fail - bootloader
+0x1A,CCP Passthrough operation failed
+0x1B,AES operation failed
+0x1D,CCP state restore failed
+0x1E,SHA256 operation failed
+0x1F,ZLib Decompression operation fail
+0x20,HMAC-SHA256 operation fail - internal status
+0x21,Booted from boot source not recognized by PSP
+0x22,PSP directory entry not found
+0x23,PSP failed to set the write enable latch
+0x24,PSP timed out because spirom took too long
+0x25,General - Hmac validation failed
+0x26,Security_Policy binary does not match to ASIC
+0x2C,Valid boot mode wasn't detected
+0x2D,Unconditional unlock based on serial numbers failed
+0x35,No physical x86 cores were found on die 
+0x37,SYSHUB mapping memory target type is not supported
+0x38,Attempt to unmap permanently mapped TLB to PSP secure region
+0x39,Unable to map an SMN address to AXI space
+0x3A,Unable to map a SYSHUB address to AXI space
+0x3E,Fuse info on all dies don't match
+0x3F,PSP sent message to SMU; SMU reported an error
+0x46,validation of the PSP SRAM image failed on HMAC compare
+0x49,Error in Validate and Loading AGESA APOB SVC call
+0x4C,Secure unlock error 
+0x60,Error with applying security gasket
+0x62,Reading fuse failed 
+0x63,The BIOS OEM public key of the BIOS was revoked for this platform
+0x64,Fuse sense operation timed out
+0x65,Fuse burn sequence/operation timed out waiting for burn done
+0x66,Fuse burn sequence/operation timed out waiting for burn done
+0x67,Fuse invalid operation
+0x68,Fuse burn sequence/operation failed due to internal SOC error
+0x69,AGESA driver binary size is exceeded limit allocated in DRAM, need to increase limit
+0x6A,The Diag Bootloader is not present in SPI-ROM
+0x6B,Failed to load PSP Diag BL
+0x6C,Failed to verify CS_SEED
+0x6D,Failed to verify CS_SEED, BootRom portion
+0x6E,Failed to verify CS_SEED, Lower portion
+0x70,PSP level 2 directory not match expected value.
+0x71,BIOS level 2 directory not match expected value.
+0x72,FCH programming error
+0x73,Failed while disabling boot timer
+0x74,Failure in mapping syshub with inline AES  
+0x76,Debug unlock disabled by fuses
+0x77,Missing binary at PSP Entry 0x9 in SPI-ROM 
+0x78,Programming RSMU timeout failed
+0x79,Missing binary at PSP Entry 0x13 in SPI-ROM
+0x80,fTPM binary size exceeds limit allocated in Private DRAM, need to increase the limit
+0x81,Invalid key usage flag
+0x82,Bootloader failed to find OEM signature
+0x83,Error copying BIOS to DRAM
+0x84,Error validating BIOS image signature
+0x85,The validation of the OEM public key token failed
+0x86,The BIOS binding to the fused vendor/model id failed
+0x87,Bootloader detects BIOS request boot from SPI-ROM, which is unsupported for PSB.
+0x88,Reset image not found
+0x91,FW type mismatch between the requested FW type and the FW type embedded in the FW binary header
+0x9F,The maximum allowable error post code
+0xA0,Bootloader successfully entered C Main
+0xA2,HMAC key successfully derived
+0xA3,Master got Boot Mode and sent boot mode to all slaves
+0xA4,SpiRom successfully initialized
+0xA5,BIOS Directory successfully read from SPI to SRAM
+0xA6,Early unlock check  
+0xA8,Inline-AES key programming is done
+0xAB,Bootloader successfully programmed MBAT table
+0xAC,Bootloader successfully configured security gasket
+0xAD,Bootloader successfully loaded SMU FW
+0xAE,BL_SUCCESS_WAIT_SMU_INTERRUPT
+0xAF,Bootloader successfully loaded MP2 FW
+0xB0,Bootloader loaded Agesa0 from SpiRom
+0xB1,AGESA phase has completed
+0xB2,Indicates security policy loaded in DRAM from SPI-ROM
+0xB3,SMU FW Successfully loaded to SMU Secure DRAM
+0xB4,MP2 FW not loaded on S4 resume as requested by MP2 team
+0xB6,UMC Keys generated and programmed
+0xB7,Inline AES key wrapper stored in DRAM
+0xB8,Completed FW Validation step
+0xBC,BIOS load process fully complete 
+0xBD,Bootloader successfully release x86
+0xC1,Successfully entered WarmBootResume()
+0xD5,Successfully load Diag Bootloader into DRAM
+0xD6,Successfully verified CS-SEED
+0xD7,Entered recovery mode due to failure in fw validation of any component binary
+0xD8,Entered idle loop defined for special bootloader versions
+0xD9,SendMessage to SMUFW successful
+0xE0,MP2 Block is disabled in MP2_RSMU_FUSESTRAPS or soft fuse in PSP entry 0xB
+0xE1,Updated only PSPFW Status when enetered in BL
+0xE2,Updated only PSPFW Status when FCH programmed
+0xE3,Updated only PSPFW Status when boot timer disabled
+0xE4,Updated only PSPFW Status when derived and programmed syshub inline AES
+0xE5,Updated only PSPFW Status when enabled logging
+0xE6,Updated only PSPFW Status when RSMU timeout enabled registers programmed
+0xE7,Updated only PSPFW Status when SST reset registers programmed
+0xE8,Updated only PSPFW Status when passed SS3 loading
+0xE9,Updated only PSPFW Status when passed fTPM loading
+0xEA,Updated only PSPFW Status when passed loading sys_drv
+0xEB,Updated only PSPFW Status when passed loading secure OS
+0xEC,Updated only PSPFW Status when passed validation of S3 suspend data on resume
+0xED,Updated only PSPFW Status when it is about to transfer control to secureOS
+0xF1,PSP BL identified resuming from S0i3
+0xF2,PSP BL identified resuming from S3  
+0xF3,PSP BL identified resuming from S4   
+0xF4,PSP BL identified previous reset S5 - Cold boot
+0xF5,PSP BL identified previious reset S5 - Warm boot
+0xF6,Updated only PSPFW Status when all IPs are set to static VC1 Channel
+0xFF,Bootloader sequence finished
