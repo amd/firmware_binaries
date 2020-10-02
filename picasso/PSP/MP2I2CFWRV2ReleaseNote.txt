@@ -1,0 +1,86 @@
++-----------------------------------------+
+| MP2 I2C Firmware Release Notes - RAVEN2X
++---------------------------------------------------------------------------------------------
+| Version 1.2.0
++---------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|          09/03/18
+|
+|   * The MP2 I2C firmware is enabled for Picasso Platform with S0i2 and S0i3 support
+|     The firmware shall support Touch Pad, NFC Devices and certain Touch Panel device
+|     connected with I2C0 and I2C1
+|
+|   * Features enabled
+|              - Enable I2C Read/Write for devices connected with i2c0,1
+|              - Max Read supported 2k bytes
+|              - Max write supported 32 bytes
+|              - Add Support for NFC and Touch Pad on I2Cx
+|              - Add MP2 Diag Support
+|              - Read DRAM data in the main thread instead of Interrupt Thread
+|              - Add Lock after each 32 byte read and write
+|              - MP2 I2C PCIe Device Id 0x15E6.
+|              - MP2 Deep Sleep (48Mhz)
+|              - MP2 S0i2 support (Available and Disabled)
+|
+|   * Change:
+|              - PLAT-28199 : [RV2X][MP2]See MP2 mailbox registers couldn't be accessed from host
+|              - Git Change-Id: I827b3331c26db8551b1f218a498d17fa6352f049
+|              - Gerrit ID: 135791
+|              - Commit Id: bae849be50145e551dbaf6a9f82e91e566c34380
+|   * Limitation
+|
++---------------------------------------------------------------------------------------------
+| Version 1.2.1
++---------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|          23/04/18
+|
+|   * Taken the changes from RV1 master branch.
+|   * MP2 Reference clock is set at 200MHz on load by setting SEL_MP2CLK, SOC_CLK, SMN_CLK.
+|   * Commented the preprocessor macro LP_626 in project settings to disable low power.
+|   * Enabled the register C2PM12/15 in main.
+|
+|   * Change:
+|              - PLAT-30616 : [RV2-FP5] The SFH device will lost and device ID
+|                     change from 15E6 to 15E4 after running S4 or S3 test RS3.
+|              - Git Change-Id:  I5da0fc644c457b039936027115e707bf5b65b303
+|              - Gerrit ID: 144325
+|              - Commit Id: 21508b30f7cd2562227d6bb09e235570cdfeefdb
+|   * Limitation
+|
++---------------------------------------------------------------------------------------------
+| Version 1.2.2.0
++---------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|          10/07/18
+|
+|   * Enabled Low power i.e 48MHz support.
+|   * Integrated the changes from RV1 to Rv2 for low power mode.
+|
+|   * Change:
+|              - PLAT-33860 : [RV2] Enable Low power support
+|              - Git Change-Id:  Ifb946babde6f52e02654ae5ab8a0bfcf591d07dc
+|              - Gerrit ID: 160642
+|              - Commit Id: 5d4ee51bb22c19369c6bec4540f90130874b5edd
+|   * Limitation
+|
++---------------------------------------------------------------------------------------------
+| Version 1.2.2.3
++---------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|          10/07/18
+|
+|   * Enabled Low power i.e 48MHz support.
+|   * Integrated the changes from RV1 to Rv2 for low power mode.
+|
+|   * Change:
+|              - PLAT-39408 Implement MP2_FIRMWARE_FLAG as MP2 FW loading indicator
+|              - Git Change-Id: I85e79f15db98a371d96381b5039c2d9fb671b8ba
+|              - Gerrit ID: 188035
+|              - Commit Id: 5ab5e8d269c5bbd6526f95c01324ed412a0e8f6b
+|   * Limitation
+|
++---------------------------------------------------------------------------------------------
+
+
+

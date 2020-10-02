@@ -1,0 +1,113 @@
++---------------------------------------------------------------------------------------------
+| Version 1.1.0
++---------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           09/03/18
+|   * The MP2 I2C firmware is enabled for Picasso Platform with S0i2 and S0i3 support
+|     The firmware shall support Touch Pad, NFC Devices and certain Touch Panel device
+|     connected with I2C0 and I2C1
+|
+|   * Features enabled
+|              - Enable I2C Read/Write for devices connected with i2c0,1
+|              - Max Read supported 2k bytes
+|              - Max write supported 32 bytes
+|              - Add Support for NFC and Touch Pad on I2Cx
+|              - Add MP2 Diag Support
+|              - Read DRAM data in the main thread instead of Interrupt Thread
+|              - Add Lock after each 32 byte read and write
+|              - MP2 I2C PCIe Device Id 0x15E6.
+|              - MP2 Deep Sleep
+|              - MP2 S0i2 support (Available and Enabled)
+|              - MP2 S0i3 support (Available and Enabled)
+|
+|   * Change:
+|              - PLAT-29483 : Enable S0i2, S0i3 in MP2 Firmware
+|              - Git Change-Id: I3c0d11d98a3ff5678f3ea92f2fdc0d82ca49e92f
+|              - Gerrit ID: 134888
+|              - Commit Id: 1450e0eeb41e6b975df16fe42713455fd3e1745f
+|   * Limitation
+|
++---------------------------------------------------------------------------------------------
+| Version 1.1.1
++---------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           27/04/18
+|   * New Header Field, FW Type for MP2 Fw .
+|
+|   * Change:
+|              - PLAT-30716 : New Header Field, FW Type, Needed for MP2 FW
+|              - Git Change-Id: I3c0d11d98a3ff5678f3ea92f2fdc0d82ca49e92f
+|              - Gerrit ID: 134888
+|              - Commit Id: 1450e0eeb41e6b975df16fe42713455fd3e1745f
+|   * Limitation
+|
++---------------------------------------------------------------------------------------------
+| Version 1.1.2
++---------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           05/06/18
+|   * Enable 48Mhz LowPower Deep Sleep
+|   * Aligned with RV1 release
+|
+|   * Change:
+|              - PLAT-31000: MP2CLK not entering deep sleep starting from WMD8322N BIOS
+|              - Git Change-Id: I1d10e41512a764ad92495c476b2995e2658bd845
+|              - Gerrit ID: 153195
+|              - Commit Id: db065617f4c0c826873dc5c9a24bfd68adb8ce83
+|   * Limitation
+|
++---------------------------------------------------------------------------------------------
+| Version 1.1.2.1
++---------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           07/05/18
+|   * Features enabled
+|              - Added support for firmware version information.
+|
+|   * Change:
+|              - [PLAT-33691] Version information support in the mp2 firmware
+|              - Git Change-Id: I53e48e49101c7e36738adb0266af076426ddf731
+|              - Gerrit ID: 158990
+|              - Commit Id: fa69ec432bdccb957f34d222fd0b2bb29ab7871a
+|   * Limitation
+|
++---------------------------------------------------------------------------------------------
+| Version 1.1.2.3
++---------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           28/08/18
+|   * Features enabled
+|              - Optimised the read function.
+|              - Added error handling, i.e for faulty case MP2 will not hang.
+|
+|   * Change:
+|              - [SWDEV-162698] NFC, functionality is not working on enabling I2C1 under BIOS
+|              - Git Change-Id: I060483887ba5f4a0d9464b5f5dc97868d9c54418
+|              - Gerrit ID: 169962
+|              - Commit Id: aad62923274be1961bb804e73403621c4fc31016
+|   * Limitation
+|
++---------------------------------------------------------------------------------------------
+| Version 1.1.2.4
++---------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           21/11/18
+|   * Features enabled
+|              - Optimised the read function.
+|              - Added error handling, i.e for faulty case MP2 will not hang.
+|
+|   * Change:
+|              - Update MP2 Firmware Flag
+|
+|              - [PLAT-39408] PCO I2C Implement MP2_FIRMWARE_FLAG as MP2 FW loading indicator
+|              - Git Change-Id: Idaeee9abd78955d447ad44b2d6c09c4df242fc9b
+|              - Gerrit ID: 188087
+|              - Commit Id: 13e1b53b05223a04ec43566de14f5a7a2ba3aee8
+|   * Limitation
+|
++---------------------------------------------------------------------------------------------
+
+
+
+
+

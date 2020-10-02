@@ -1,0 +1,27 @@
+============================ BR AM4 003 VBIOS release  ========================================
+Bristol AM4 generic Baseline VBIOS 003
+Bristol A11 0x9870 109-C95010-003 BristolAM4GenericVbios.002 09/13/16,06:02:48 CL#1313643 15.48.0.70  ATOMBuild #358759
+
+Major Changes included:
+1.  Get boot up display devices from integrated system info table instead of call back INT15 function
+
+============================ BR AM4 002 VBIOS release  ========================================
+Bristol AM4 generic Baseline VBIOS 002
+Bristol A11 0x9870 109-C95010-002 BristolAM4GenericVbios.002 04/05/16,22:36:40 CL#1253653 15.48.0.69  ATOMBuild #342219
+
+Major Changes included:
+1.  Support ext HDMI chip initialization per port initialization.
+
+============================ BR AM4 001 VBIOS release  ========================================
+Bristol AM4 generic Baseline VBIOS 001
+Bristol A11 0x9870 109-C95010-001 BristolAM4GenericVbios.001 03/17/16,04:01:41 CL#1248329 15.48.0.69  ATOMBuild #340774
+
+Major Changes included:
+1. Need to separate AM4 VBIOS from CZ/BR generic VBIOS due to DP SI issue.
+   Change UNIPHY_TX_CONTROL3 from 0x18000000 to 0x16000000 at HBR2, swing 0.8v and pre-emphasis 3.5dB
+   Change UNIPHY_TX_CONTROL3 from 0x04000000 to 0x03000000 at HBR2, swing 0.4v and pre-emphasis 9.5dB
+   Change UNIPHY_TX_CONTROL3 from 0x00000000 to 0x01000000 at HBR,  swing 0.4v and pre-emphasis 9.5dB
+   Change UNIPHY_TX_CONTROL3 from 0x00000000 to 0x01000000 at RBR,  swing 0.4v and pre-emphasis 9.5dB
+   Change UNIPHY_TMDP_REG3   from 0x000e0001 to 0x000F8001 at HBR,  swing 0.4v and pre-emphasis 9.5dB
+   Change UNIPHY_TMDP_REG3   from 0x000e0001 to 0x000F8001 at RBR,  swing 0.4v and pre-emphasis 9.5dB
+

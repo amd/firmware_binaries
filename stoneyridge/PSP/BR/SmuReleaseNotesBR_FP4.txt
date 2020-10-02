@@ -1,0 +1,293 @@
++------------------------------------------+
+| SMU Firmware Release Notes - BRISTOL FP4 |
++------------------------------------------+
+
++--------------------------+
+| Version 27.17.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                20/11/16
+|
+|        * Features enabled
+|
+|        * FuseDoc
+|
+|        * Change Log
+|               - remove reset to enable Audio Pin Offload on Quanta
+|
++------------------------------------------------------------------------------------------------------------
+
+
++--------------------------+
+| Version 27.16.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                22/08/16
+|
+|        * Features enabled
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                PLAT-6481 - pstate limit after S3 is not set up properly after exit - need to double toggle that register
+|                JIRA SMUBRS-79 - VPU recovery is fixed.
+|
++------------------------------------------------------------------------------------------------------------
+
+
++--------------------------+
+| Version 27.15.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                22/12/15
+|
+|        * Features enabled
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRS-77: DEADLOCK prevention code
+|
++------------------------------------------------------------------------------------------------------------
+
++--------------------------+
+| Version 27.14.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                16/11/15
+|
+|        * Features enabled
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRS-73: BR FP4 GFX CU Throttling not working fine
+|
++------------------------------------------------------------------------------------------------------------
+
++--------------------------+
+| Version 27.13.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                12/10/15
+|
+|        * Features enabled
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRS-67: ACC feature causing large run to run perf variation for IOMeter tests
+|                SMUBRS-69: BR FP4 Porting SMUCZ-535: Drop GFX CUs on PROCHOT
+|
++------------------------------------------------------------------------------------------------------------
++--------------------------+
+| Version 27.12.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                5/10/15
+|
+|        * Features enabled
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRS-63: Avfs change for CPU P7 product defn. change
+|                SMUBRS-66: BR FP4 Core Power underestimation observed on ThermNow (HotDog15h)
+|
++------------------------------------------------------------------------------------------------------------
++--------------------------+
+| Version 27.11.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                21/09/15
+|
+|        * Features enabled
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRS-50: Fix for PLAT-1978 [BR] Lower Stutter Efficiency (Pre Self Refresh UNB) on WGR5722N BIOS
+|
++------------------------------------------------------------------------------------------------------------
++--------------------------+
+| Version 27.10.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                16/09/15
+|
+|        * Features enabled
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRS-60: Nested Force/Unforce Wake
+|                Pulled out SMUBRS-58 since not needed
+|
++------------------------------------------------------------------------------------------------------------
++--------------------------+
+| Version 27.9.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                08/09/15
+|
+|        * Features enabled
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRS-58: AVFS pings to UNB clash with big hammer workaround in 4K/ high res display situation
+|
++------------------------------------------------------------------------------------------------------------
++--------------------------+
+| Version 27.8.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                31/08/15
+|
+|        * Features enabled
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRS-54: BR FP4 remove A0 version checks to alleviate code space issue
+|                SMUBRS-56: Extension of SMUBRS-52
+|
++------------------------------------------------------------------------------------------------------------
++--------------------------+
+| Version 27.7.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                24/08/15
+|
+|        * Features enabled
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRS-52 15W/12W instability - UNB related issue
+|                SMUBRS-53 Disable 2CP shadow Pstates for 12W
+|
++------------------------------------------------------------------------------------------------------------
++--------------------------+
+| Version 27.6.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                19/08/15
+|
+|        * Features enabled
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRS-12: Low MBB Performance fixed
+|                SMUBRS-49: Fix for PLAT-2006: [GR] System hangs at PC: A0d5 with external weekly BIOS imtermittently
+|
++------------------------------------------------------------------------------------------------------------
++--------------------------+
+| Version 27.5.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                26/07/15
+|
+|        * Features enabled
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRS-43: AVFS: shadowPstates code: update to BTCGBV, 3sigma addition for sP0
+|                SMUBRS-44: ShadowPstates: bug in lowerMax function
+|                SMUBRS-45: Set CBB NBPState to NBP2 based on BR 35W B10 and 15W B10 CBB charz
+|
++------------------------------------------------------------------------------------------------------------
++--------------------------+
+| Version 27.4.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                13/07/15
+|
+|        * Features enabled
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRS-40 BR MBB Optimization - CBB cases should go to NBP3
+|                SMUBRS-34 Bug in C1 CState BAPM Power Estimation
+|                SMUBRS-8  NTE Leakage Scaling (coefficients updated)
+|                SMUBRS-41 Reevaluate Core estimated power guardbands for BR
+|                SMUBRS-35 BTC/AVFS weights tuning
+|		 SMUBRS-36 AVFS/ShadowPstates related
+|
++------------------------------------------------------------------------------------------------------------
++--------------------------+
+| Version 27.3.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                29/06/15
+|
+|        * Features enabled
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRS-31 BIOS option not availiable to enable Adaptive C states and LDO C States
+|		 Added FW support for feature enable/disable option for ACC
+|
++------------------------------------------------------------------------------------------------------------
++--------------------------+
+| Version 27.2.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                22/06/15
+|
+|        * Features enabled
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRS-29 Porting late CZ bug fixes to BR
+|		 SMUBRS-21 Change the application of CKS settings to be based on frequency
+|		 SMUBRS-28 AVFS changes according to recent BR Charz data
+|
++------------------------------------------------------------------------------------------------------------
++--------------------------+
+| Version 27.1.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                15/06/15
+|
+|        * Features enabled
+|                -SHADOW P-STATES
+|                -45W CTDP SUPPORT
+|
+|        * FuseDoc
+|
+|        * Change Log
+|                SMUBRS-13: Enable Shadow Pstates
+|		 SMUBRS-14: Cleanup of BTC Code
+|		 SMUBRS-20: BTC to account for T2P shifts with variation in Sidd
+|		 SMUBRS-25: Enhancement to SMUBRS-13 to save space in the boot section
+|		 SMUBRS-26: Add support for 45W cTDP to BR FP4
+|		 SMUBRS-27: Porting CZ Bug fix "SMUCZ-529" to BR
+|                SMUBRS-23: Porting CZ bug fix "SMUCZ-525" to BR
+|
++------------------------------------------------------------------------------------------------------------
++--------------------------+
+| Version 19.0.0           |
++---------------------------+-------------------------------------------------------------------------------
+|        * Date (dd/mm/yy)
+|                20/05/15
+|
+|        * Features enabled
+|                -RELIABILITY
+|                -ACC
+|
+|        * FuseDoc
+|                1.30
+|
+|        * Change Log
+|                SMUBRS-2 - Adaptive C-state Configuration
+|                SMUBRS-6 - Reliability Tracker
+|                SMUBRS-7 - Fine-grained Leakage Accounting
+|
++------------------------------------------------------------------------------------------------------------
+

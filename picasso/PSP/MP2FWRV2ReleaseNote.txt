@@ -1,0 +1,90 @@
++-----------------------------------------+
+| MP2 SFI Firmware Release Notes - RAVEN2X
++-----------------------------------------+
++----------------------------------------------------------------------------------------------
+| Version 3.0.0
++----------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           24/05/18
+|   * Features enabled
+|              - Accelerometer, Gyrometer, Magnetometer, Compass and Operating Mode Supported.
+|              - On Tablet mode Keyboard disable is supported
+|              - Dynamic Calibration supported
+|              - LP disabled
+|              - Sensors data is read after device discovery make gpio line low (if was high)
+|              - MH sdIntGet use GPIO1 input value instead of interrupt status
+|   * Issue resolved
+|              - RV2 released aligned with RV1 Release 1.2.21
+|
+|   * Change Log
+|              - Operating Mode output and Angle is produced always.
+|
+|     Code base commit id:
+|          Change Id: Iaff94aeb13ca7dbcc4adb4b2f089245ad99d4bc9
+|          Commit Id: f4aacddb7f05d3ddc49d6ec49ae7d52881bc8103
+|          Gerrit Id: 151081
+|
+|     Jira ID : [PLAT-32026] SFH shall support change in Operating Mode angle
+|
+|   * Limitation
+|               - I2C Read works on poll
+|               - Sensors should be disabled before S4 entry
+|
++----------------------------------------------------------------------------------------------
+| Version 3.0.2.5
++----------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           21/11/18
+|   * Features enabled
+|              - Accelerometer, Gyrometer, Magnetometer, Compass and Operating Mode Supported.
+|              - On Tablet mode Keyboard disable is supported
+|              - Dynamic Calibration supported
+|              - LP disabled
+|              - Sensors data is read after device discovery make gpio line low (if was high)
+|              - MH sdIntGet use GPIO1 input value instead of interrupt status
+|   * Issue resolved
+|              - Aligned with PCO branch.
+|
+|   * Change Log
+|              - Update MP2 FW Flags
+|              - Block SMN access during S0i3
+|
+|     Code base commit id:
+|          Change Id: I19f23b942ce07a303c00a241935c13ba57e8b54b
+|          Commit Id: 8268706bd684a001bd899e0c16a48f0da49834be
+|          Gerrit Id: 188364
+|
+|     Jira ID : [PLAT-39408] SFH RV2 Implement MP2_FIRMWARE_FLAG as MP2 FW loading indicator
+|
+|   * Limitation
+|               - I2C Read works on poll
+|               - Sensors should be disabled before S4 entry
+|
++---------------------------------------------------------------------------------------------
+| Version 3.0.2.6
++---------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|          20/11/18
+|
+|   * Enabled Low power i.e 48MHz support.
+|   * Integrated the changes from RV1 to Rv2 for low power mode.
+|
+|   * Change:
+|              - PLAT-40149 Add Book Mode Disable Support
+|              - Git Change-Id: I19f23b942ce07a303c00a241935c13ba57e8b54b
+|              - Gerrit ID: 188364
+|              - Commit Id: 8268706bd684a001bd899e0c16a48f0da49834be
+|   * Limitation
+|
++------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
