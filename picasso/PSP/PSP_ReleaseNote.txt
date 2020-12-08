@@ -1,8 +1,8 @@
 ﻿//----------------------------------------------------------------------------
 // PSP FW Delivery Release Note
-//
+// 
 // Copyright 2016-2020, Advanced Micro Devices, Inc.
-// Date:   Oct 1, 2020
+// Date:   Oct 29, 2020
 //----------------------------------------------------------------------------
 
 Content:
@@ -10,16 +10,19 @@ Content:
 	This Build is compiled using the ARM license from the AMD license server.
 
 Files:
- PspBootLoader_prod_RV.sbin                      [version: 0.8.B.7B] - PSP off-chip BootLoader (entry type 0x1), signed with production key
- PspRecoveryBootLoader_prod_RV.sbin              [version: 0.8.B.7B] - PSP off-chip Recovery BootLoader (entry type 0x3), signed with production key
- secure_unlock_prod_RV.sbin                      [version: 0.8.B.7B] - PSP secure unlock (entry type 0x13), signed with production key
- psp_os_combined_prod_{RV, VG, VG12, VG20}.sbin  [version: 0.8.B.7B] - PSP secure OS (entry type 0x2), signed with production key
- drv_sys_prod_{RV, VG, VG12, VG20}.sbin          [version: 0.8.B.7B] - PSP system driver (entry type 0x28), signed with production key
+ PspBootLoader_prod_RV.sbin                      [version: 0.8.C.7B] - PSP off-chip BootLoader (entry type 0x1), signed with production key
+ PspRecoveryBootLoader_prod_RV.sbin              [version: 0.8.C.7B] - PSP off-chip Recovery BootLoader (entry type 0x3), signed with production key
+ secure_unlock_prod_RV.sbin                      [version: 0.8.C.7B] - PSP secure unlock (entry type 0x13), signed with production key
+ psp_os_combined_prod_{RV, VG, VG12, VG20}.sbin  [version: 0.8.C.7B] - PSP secure OS (entry type 0x2), signed with production key
+ drv_sys_prod_{RV, VG, VG12, VG20}.sbin          [version: 0.8.C.7B] - PSP system driver (entry type 0x28), signed with production key
  dr_ftpm_prod_RV.csbin                           [version: 3.26.0.4] - PSP fTPM (entry type 0xC), compressed and signed with production key
  security_policy_RV1_FP5_AM4.sbin                [version: A.2.3.2]  - Raven1 APU Security Policy for Raven1 APU programs (entry type 0x24), signed with production key
  security_policy_RV1_NPU_FP5_AM4.sbin            [version: A.2.5.23] - Raven1 NPU Security Policy for Raven1 NPU programs (entry type 0x8024), signed with production key
  security_policy_PCO_FP5_AM4.sbin                [version: A.2.3.D2] - Raven1 APU Security Policy for Picasso APU programs (entry type 0x224), signed with production key
  security_policy_RV2_FP5_AM4.sbin                [version: A.2.4.26] - Raven2 APU Security Policy for Raven2 APU programs (entry type 0x124), signed with production key
+
+ver 0.8.C.7B
+PLAT-71327:[Chrome]: Validate Agesa while wait for SMU interrupt to be ready
 
 ver 0.8.B.7B
 PLAT-70669:[Chrome]: Update chromebook boot mode and opn info in pspbl oem app info structure
