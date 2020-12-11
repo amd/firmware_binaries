@@ -1,0 +1,261 @@
+============================ Cezanne 17.10.0.26 VBL release  ========================================
+Cezanne generic  VBL 17.10.0.26
+Cezanne A0 0x1636 105_D27000_00A
+
+The VbiosBootLoader_prod.sbin is the FW sign.
+
+Major feature:
+1. PLAT-67393[CZN][ComboAM4v2][Artic]: SUT will hang PC 20A0/2097 when flash Capsule BIOS with 64G memory installed
+
+============================ Cezanne 17.10.0.25 VBL release  ========================================
+Cezanne generic  VBL 17.10.0.25
+Cezanne A0 0x1636 105_D27000_00A
+
+The VbiosBootLoader_prod.sbin is the FW sign.
+
+Major feature:
+1. PLAT-67659:Increment SPL value to support firmware anti rollback feature for production
+
+============================ Cezanne 17.10.0.24 VBL release  ========================================
+Cezanne generic  VBL 17.10.0.24
+Cezanne A0 0x1636 105_D27000_00A
+
+The VbiosBootLoader_prod.sbin is the FW sign.
+
+Major feature:
+1. Changing GCEA SDP tag limit for CZN LPDDR4 system.
+
+============================ Cezanne 17.10.0.23 VBL release  ========================================
+Cezanne generic  VBL 17.10.0.23
+Cezanne A0 0x1636 105_D27000_00A
+
+The VbiosBootLoader_prod.sbin is the FW sign.
+
+Major feature:
+1. Update the LANEx_ANA_TX_LP_ATT setting to improve SI
+
+============================ Cezanne 17.10.0.22 VBL release  ========================================
+Cezanne generic  VBL 17.10.0.22
+Cezanne A0 0x1636 105_D27000_00A
+
+The VbiosBootLoader_prod.sbin is the FW sign.
+
+Major feature:
+1. Update the eDP/DP/HDMI MPLLb settings for CZN/LCN
+
+============================ Renoir 17.10.0.21 VBL release  ========================================
+Renoir generic  VBL 17.10.0.21
+Renoir A0 0x1636 105_D27000_00A
+
+The VbiosBootLoader_prod.sbin is the FW sign.
+
+Major feature:
+1. Update the MMEA/GCEA shadow registers settings
+
+============================ Renoir 17.10.0.20 VBL release  ========================================
+Renoir generic  VBL 17.10.0.20
+Renoir A0 0x1636 105_D27000_00A
+
+The VbiosBootLoader_prod.sbin is the FW sign.
+
+Major feature:
+1. Update the DAGB0_WR_DATA_CREDIT[16:23]MIDDLE_BURST_CREDITS setting to 0x62 for PLAT-62751
+
+============================ Renoir 17.10.0.19 VBL release  ========================================
+Renoir generic  VBL 17.10.0.19
+Renoir A0 0x1636 105_D27000_00A
+
+The VbiosBootLoader_prod.sbin is the FW sign.
+
+Major feature:
+1. Update the vboost_lvl setting and enable tx_vboost_lvl override in SUP_DIG_LVL_OVRD_IN
+
+============================ Renoir 17.10.0.18 VBL release  ========================================
+Renoir generic  VBL 17.10.0.18
+Renoir A0 0x1636 105_D27000_00A
+
+The VbiosBootLoader_prod.sbin is the FW sign.
+
+Major feature:
+1. Set bit 14 & bit 13 @LANEX_DIG_ASIC_TX_OVRD_IN_1 to 0x1 for eDP only; others keep as H/W default 0
+
+============================ Renoir 17.10.0.17 VBL release  ========================================
+Renoir generic  VBL 17.10.0.17
+Renoir A0 0x1636 105_D27000_00A
+
+The VbiosBootLoader_prod.sbin is the FW sign.
+
+Major feature:
+1. Set bit 14 & bit 13 @LANEX_DIG_ASIC_TX_OVRD_IN_1 to 0x1 for eDP/DP; others(HDMI/DVI) keep as H/W default setting 0.
+
+============================ Renoir 17.10.0.16 VBL release  ========================================
+Renoir generic  VBL 17.10.0.16
+Renoir A0 0x1636 105_D27000_00A
+
+The VbiosBootLoader_prod.sbin is the FW sign.
+
+Major feature:
+1. Set bit 14 & bit 13 @LANEX_DIG_ASIC_TX_OVRD_IN_1 to 0x1 to fix eDP PHY Power is really high issue.
+
+============================ Renoir 17.10.0.15 VBL release  ========================================
+Renoir generic  VBL 17.10.0.15
+Renoir A0 0x1636 105_D27000_00A
+
+The VbiosBootLoader_prod.sbin is the FW sign.
+
+Major feature:
+1. it's GFX only and for DEGSIGMH10-933<- these are the ones we just asked to add
+   +ATC_L2_DEBUG2.DISABLE_2M_CACHE=0x1
+   +ATC_L2_CNTL2.BANK_SELECT=0x9
+   +ATC_L2_CNTL2.L2_BIGK_FRAGMENT_SIZE=0x9
+2. PLAT-53684 [RN] Renoir 0090RC3 MMHUB registers init value fail
+   Description:DAGB0 write data credits
+
+   PreS3 Value = 6C6C6C70h (_aliasSMN=>MMHUBx000020C)
+     [24:31]SMALL_BURST_CREDITS
+   PreS3 Value = 6Ch (_aliasSMN)
+    Fail. Expected Value = Init:68h(Read:6Ch) (_aliasSMN)
+     [8:15]LARGE_BURST_CREDITS
+   PreS3 Value = 6Ch (_aliasSMN)
+    Fail. Expected Value = Init:60h(Read:6Ch) (_aliasSMN)
+
+============================ Renoir 17.10.0.14 VBL release  ========================================
+Renoir generic  VBL 17.10.0.14
+Renoir A0 0x1636 105_D27000_00A
+
+The VbiosBootLoader.sbin is the test key 2K sign.
+The VbiosBootLoader_FW.sbin is the FW sign.
+
+Major feature:
+1. Get customized tx_term_ctrl from static info tabe
+2. PLAT-49688 BME fault after BIOS posts, clear ATHUB fault status by ATC_ATS_FAULT_DEBUG[1]CLEAR_FAULT_STATUS_ADDR=0x1
+
+============================ Renoir 17.10.0.13 VBL release  ========================================
+Renoir generic  VBL 17.10.0.13
+Renoir A0 0x1636 105_D27000_00A
+
+The VbiosBootLoader.sbin is the test key 2K sign.
+The VbiosBootLoader_FW.sbin is the FW sign.
+
+Major feature:
+1. Get customized tx_vboost_lvl from static info tabe
+2. RTGPLAT-2317 Updates to MMEA&GCEA shadow register
+
+============================ Renoir 17.10.0.12 VBL release  ========================================
+Renoir generic  VBL 17.10.0.12
+Renoir A0 0x1636 105_D27000_00A
+
+The VbiosBootLoader.sbin is the test key 2K sign.
+The VbiosBootLoader_FW.sbin is the FW sign.
+
+Major feature:
+1. Update new eDP early on sequence
+
+============================ Renoir 17.10.0.10 VBL release  ========================================
+Renoir generic  VBL 17.10.0.10
+Renoir A0 0x1636 105_D27000_00A
+
+The VbiosBootLoader.sbin is the test key 2K sign.
+The VbiosBootLoader_FW.sbin is the FW sign.
+
+Major feature:
+1. Sync the Phy settings to the 015 Vbios which takes the GDB updated till August 23, 2019.
+
+
+============================ Renoir 17.10.0.9 VBL release  ========================================
+Renoir generic  VBL 17.10.0.9
+Renoir A0 0x1636 105_D27000_00A
+
+The VbiosBootLoader.sbin is the test key 2K sign.
+The VbiosBootLoader_FW.sbin is the FW sign.
+
+Major feature:
+1. Move the display PHY FW loading from VBios back to Vbl.
+2. Fix to (PLAT-49161) (Workflow Issue Updated) [RN] GCEA shadow registers are not programmed correctly
+
+============================ Renoir 17.10.0.8 VBL release  ========================================
+Renoir generic  VBL 17.10.0.8
+Renoir A0 0x1636 105_D27000_00A
+
+The VbiosBootLoader.sbin is the test key 2K sign.
+The VbiosBootLoader_FW.sbin is the FW sign.
+
+Major feature:
+1. Move the display PHY FW loading from VBL to Vbios.
+
+============================ Renoir 17.10.0.7 VBL release  ========================================
+Renoir generic  VBL 17.10.0.7
+Renoir A0 0x1636 105_D27000_00A  VbiosBootLoader.sbin
+
+Major feature:
+1. Remove the following mirroe registers from VBL, Sbios will take care of them.
+  COPY# +MC_VM_NB_LOWER_TOP_OF_DRAM2.LOWER_TOM2=NB_LOWER_TOP_OF_DRAM2
+  COPY# +MC_VM_NB_MMIOBASE.MMIOBASE=NB_MMIOBASE
+  COPY# +MC_VM_NB_MMIOLIMIT.MMIOLIMIT=NB_MMIOLIMIT
+  COPY# +MC_VM_NB_PCI_ARB.VGA_HOLE=NB_PCI_ARB
+  COPY# +MC_VM_NB_PCI_CTRL.MMIOENABLE=NB_PCI_CTRL
+  COPY# +MC_VM_NB_TOP_OF_DRAM_SLOT1.TOP_OF_DRAM=NB_TOP_OF_DRAM_SLOT1
+  COPY# +MC_VM_NB_UPPER_TOP_OF_DRAM2.UPPER_TOM2=NB_UPPER_TOP_OF_DRAM2
+2. Support the static info table.
+3. Sign Renoir test key 2K with out compress and encrypt.
+4. Change the revision number to 17.10.0.7.
+
+============================ Renoir 17.10.0.6 VBL release  ========================================
+Renoir generic  VBL 17.10.0.6
+Renoir A0 0x1636 105_D27000_00A  VbiosBootLoader.bin
+
+Major feature:
+1. Display PHY FW updated to dwc_usbc31dptxphy_phy_x4_ns_pcs_raw_sram.renoir_bringup.fw received from Joanne on June 23.
+2. Sign Renoir test key 2K with out compress and encrypt.
+3. Change the revision number to 17.10.0.6.
+
+============================ Renoir 17.10.0.5 VBL release  ========================================
+Renoir generic  VBL 17.10.0.5
+Renoir A0 0x1636 105_D27000_00A  VbiosBootLoader.bin
+
+Major feature:
+1. Golden settings updated to PPR rev 103 released on June 7.
+2. Sign Renoir test key 2K with out compress and encrypt.
+3. Change the revision number to 17.10.0.5.
+
+============================ Renoir 17.10.0.4 VBL release  ========================================
+Renoir generic  VBL 17.10.0.4
+Renoir A0 0x1636 105_D27000_00A  VbiosBootLoader.bin
+
+Major feature:
+1. Change the revision number to 17.10.0.4.
+2. VBL DP Phy Static Info Table
+
+============================ Renoir 17.10.0.3 VBL release  ========================================
+Renoir generic  VBL 17.10.0.3
+Renoir A0 0x1636 105_D27000_00A  VbiosBootLoader.bin
+
+Major feature:
+1. Change the revision number to 17.10.0.3.
+2. load display PHY firmware and phy init.
+
+
+============================ Renoir 17.10.0.2 VBL release  ========================================
+Renoir generic  VBL 17.10.0.2
+Renoir A0 0x1636 105_D27000_00A  VbiosBootLoader.bin
+
+Major feature:
+1. Change the revision number to 17.10.0.2.
+2. ASIC init is moved from Vbios to VBL
+
+============================ Renoir 17.10.0.1 VBL release  ========================================
+Renoir generic  VBL 17.10.0.1
+Renoir A0 0x1636 105_D27000_00A  VbiosBootLoader.bin
+
+Major feature:
+1. Change the revision number to 17.10.0.1.
+2. enable VBL GFX power up sequence by sending message ID VBIOSSMC_MSG_PowerUpGfx to SMU.
+
+
+============================ Renoir 004 VBL release  ========================================
+Renoir generic  VBL 004
+Renoir A0 0x1636 105_D27000_00A  VbiosBootLoader.bin
+
+Major feature:
+1. Prototype Renoir PSP Vbios boot loader for Simnow and HWE.
+2. Part of the Asic init is moved from  Legacy Vbios, including Nbif init, AThub init, GMHub init, HDP init. This VBL should work together with Leagcy Vbios 004.

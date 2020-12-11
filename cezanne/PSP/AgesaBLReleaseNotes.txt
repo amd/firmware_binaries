@@ -1,0 +1,2385 @@
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: RABLCZN0B036070 for Cezanne
+
+Date:   November 03 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN0B036070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x0B036070
+
+Features and Fixes:
+project Program/
+  PLAT-72212 CZN: ABL Release RABLCZN0B036070
+  PLAT-68263 [CZN] [ABL] Increase SPL for production
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: RABLCZN0A196070 for Cezanne
+
+Date:   October 19 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN0A196070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x0A196070
+
+Features and Fixes:
+project Memory/
+  PLAT-71128 [DDR4 tSYNC_GEAR] Update the value of tSync Gear to tMod + 4
+  PLAT-70899 [CZN] Correcting tXSR timing
+
+project Program/
+  PLAT-71402 CZN: ABL Release RABLCZN0A196070
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: RABLCZN0A126070 for Cezanne
+
+Date:   October 12 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN0A126070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x0A126070
+
+Features and Fixes:
+project FCH/
+  PLAT-70317 Update ESPI initialization sequence in CZN
+
+project Program/
+  PLAT-71052 CZN: ABL Release RABLCZN0A126070
+  PLAT-68581: [CZN][PSP] CfgRegInstAccRegLock set to 0 after windows sleep and wakup
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: RABLCZN09286070 for Cezanne
+
+Date:   September 28 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN09286070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x09286070
+
+Features and Fixes:
+project APCB/
+  PLAT-69931 [CZN] Pass PSP-fTPM NVstorage size info to PSP
+
+project APOB/
+  PLAT-69940 S0i3 ABL: APCB table load time optimization (S3 APCB restore)
+
+project FCH/
+  PLAT-69987 Set APCB_TOKEN_UID_ESPI_IORANGEx_SIZE_VALUE to 0 ABL will skip IORANGx decode
+
+project Lib/
+  PLAT-69940 S0i3 ABL: APCB table load time optimization (S3 APCB restore)
+
+project Memory/
+  PLAT-68554 [CZN] Remove Presilicon skip of Program UMC Keys
+
+project Program/
+  PLAT-70498 CZN: ABL Release RABLCZN09286070
+  PLAT-69940 S0i3 ABL: APCB table load time optimization (S3 APCB restore)
+  PLAT-69931 [CZN] Pass PSP-fTPM NVstorage size info to PSP (patch 1)
+  PLAT-69931 [CZN] Pass PSP-fTPM NVstorage size info to PSP
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: RABLCZN09216070 for Cezanne
+
+Date:   September 21 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Path to files:
+  \\atlcorpnetfs\Biosonly\simulation\Cezanne\RABLCZN09216070
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN09216070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x09216070
+
+Features and Fixes:
+project Lib/
+  PLAT-69940 S0i3 ABL: APCB table load time optimization, part2
+project Memory/
+  PLAT-69999 [RN][CZN] - Changing Vref CA Seed for LPDDDR4x
+project Program/
+  PLAT-70145 CZN: ABL Release RABLCZN09216070
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: RABLCZN09176070 for Cezanne
+
+Date:   September 17 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Path to files:
+  \\atlcorpnetfs\Biosonly\simulation\Cezanne\RABLCZN09176070
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN09176070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x09176070
+
+Features and Fixes:
+project APCB/
+  PLAT-69912 [CZN] Create new ABL interface for laptop platform to adjust VDDIO before training
+project APOB/
+  PLAT-69940 S0i3 ABL: APCB table load time optimization
+project Lib/
+  PLAT-69940 S0i3 ABL: APCB table load time optimization
+  PLAT-69912 [CZN] Create new ABL interface for laptop platform to adjust VDDIO before training
+project Program/
+  PLAT-69841 CZN: ABL Release RABLCZN09146070
+  PLAT-69940 S0i3 ABL: APCB table load time optimization
+  PLAT-69912 [CZN] Create new ABL interface for laptop platform to adjust VDDIO before training
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: RABLCZN09146070 for Cezanne
+
+Date:   September 14 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Path to files:
+  \\atlcorpnetfs\Biosonly\simulation\Cezanne\RABLCZN09146070
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN09146070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x09146070
+
+Features and Fixes:
+project FCH/
+  Revert "PLAT-68659 [CZN]Code enhencement to mask eSPI slave IO/MMIO decode during eSPI initialization"
+  PLAT-69221 [CZN]eSPI/ACPI module implementation in ABL
+
+project NBIO/
+  PLAT-69697 [RyzenMaster][VMR/CZN] Max allowed Fabric clock speed should be increased to 4000MHz
+
+project Program/
+  PLAT-69841 CZN: ABL Release RABLCZN09146070
+  PLAT-68263 [CZN] [ABL] Increase SPL for production
+  PLAT-64342 [CZN] ABL needs to pass TPM config to PSP (Cover Context Restore path)
+  PLAT-69221 [CZN]eSPI/ACPI module implementation in ABL
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN09076070 for Cezanne
+
+Date:   September 07 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Path to files:
+  \\atlcorpnetfs\Biosonly\simulation\Cezanne\WABLCZN09076070
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m WABLCZN09076070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x09076070
+
+Features and Fixes:
+project APOB/
+  PLAT-66640:[CZN] Replicate to Cezanne Report fixed 1T hole above 4G as reserved to OS
+
+project CCX/
+  PLAT-67685: [CZN_AM4][Farm] system hang with PC:A59E while running S5*1000. PC stuck at 206C1 #ChangeCorePllFreq(): .Fail rate:1/24
+
+project FCH/
+  PLAT-68659 [CZN]Code enhencement to mask eSPI slave IO/MMIO decode during eSPI initialization
+
+project Lib/
+  PLAT-69202 [CZN] Data abort when triggering error out script
+  PLAT-68984 [CZN] Add EcRamAccessLib for OC and Board ID detection
+  PLAT-68827 [VanGogh] Split OC help function from APCB to OverclockingMiscLib
+
+project Program/
+  PLAT-69303 CZN: ABL Release WABLCZN09076070
+  PLAT-68984 [CZN] Add EcRamAccessLib for OC and Board ID detection
+  PLAT-68827 [VanGogh] Split OC help function from APCB to OverclockingMiscLib
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN08316070 for Cezanne
+
+Date:   August 31 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                                AGESA V9 Destination Folder          Description
+  AgesaBLReleaseNotes.txt                 AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Path to files:
+  \\atlcorpnetfs\Biosonly\simulation\Cezanne\WABLCZN08316070
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m WABLCZN08316070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x08316070
+
+Features and Fixes:
+project Lib/
+  PLAT-67466 [VanGogh] Split SPD read function from APCB to SpdReadPlatformLib
+project Memory/
+  PLAT-68714 [CZN] DllGain update to support Fast CLDO Bypass
+project Program/
+  PLAT-67466 [VanGogh] Split SPD read function from APCB to SpdReadPlatformLib
+  PLAT-66952:(CZN AM4) when disabling igpu and using dgpu, sdma0 halt blocks s0i3 entry (missing call in ABL)
+  PLAT-68743 CZN: ABL Release WABLCZN08266070
+project Tools/
+  PLAT-68917 [CZN] Update ABL signed with new signing keys
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN08266070 for Cezanne
+
+Date:   August 26 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Path to files:
+  \\atlcorpnetfs\Biosonly\simulation\Cezanne\WABLCZN08266070
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m WABLCZN08266070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x08266070
+
+Features and Fixes:
+project Lib/
+  PLAT-61090 [RN] System hang when write 0xE to Port CF9h to initiate a cold reset
+  PLAT-68575 [CZN] Enhance memory copy and memory fill to reduce post-time
+
+project Memory/
+  PLAT-68714 [CZN] DllGain update to support Fast CLDO Bypass
+  PLAT-68557 [CZN] Enhance PIE programming to reduce post-time
+
+project Program/
+  PLAT-68743 CZN: ABL Release WABLCZN08266070
+  PLAT-68214 [CZN][ComnoAM4v2][Artic]: BIOS can not auto load default when run Memory OC Failure Recovery.
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN08246070 for Cezanne
+
+Date:   August 24 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Path to files:
+  \\atlcorpnetfs\Biosonly\simulation\Cezanne\WABLCZN08246070
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m WABLCZN08246070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x08246070
+
+Features and Fixes:
+
+project Lib/
+  PLAT-67856 [CZN-FP6]DataCtrl bit 19:16 and bit 0 not change for TSME enable/disable
+  PLAT-68150 [CZN] Reduce post-time when Abl Console out disabled
+
+project Program/
+  PLAT-68552 CZN: ABL Release WABLCZN08246070
+  PLAT-68238: [CZN] Remove ABL RT global build file dependency
+  PLAT-68220 ComboAM4v2 1082RC1 BadWord issue - PSP
+  PLAT-64962 [RN] Script Opcode does not work when PMU training fail
+  PLAT-68211: [CZN] ABL RT Release RABLRTCZN20081800
+  PLAT-68151: [CZN] Increment SPL value to support firmware anti rollback feature for production
+  PLAT-68150 [CZN] Reduce post-time when Abl Console out disabled
+
+project Tools/
+  PLAT-68238: [CZN] Remove ABL RT global build file dependency
+  PLAT-68151: [CZN] Increment SPL value to support firmware anti rollback feature for production
+
+"This document refers to the AMD Secure Processor technology as Platform Security Processor (PSP)."
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN08176070 for Cezanne
+
+Date:   August 17 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Path to files:
+  \\atlcorpnetfs\Biosonly\simulation\Cezanne\WABLCZN08176070
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m WABLCZN08176070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x08176070
+
+project Lib/
+  PLAT-68015 [CZN] Enhance interface for MCM Sync Function
+  PLAT-58658: [CZN] Unified BIOS - Skip APCB recovery dynamically
+
+project Memory/
+  PLAT-68015 [CZN] Enhance interface for MCM Sync Function
+
+project Program/
+  PLAT-68133 CZN: ABL Release WABLCZN08176070
+  PLAT-68015 [CZN] Enhance interface for MCM Sync Function
+  PLAT-58658: [CZN] Unified BIOS - Skip APCB recovery dynamically
+  PLAT-58658: [CZN] Unified BIOS - Skip APCB recovery dynamically
+
+project Tools/
+  PLAT-67928 [ABL TOOLS] Updates to PMU FW Signing Script for CZN
+
+"This document refers to the AMD Secure Processor technology as Platform Security Processor (PSP)."
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN08106070 for Cezanne
+
+Date:   August 10 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Path to files:
+  \\atlcorpnetfs\Biosonly\simulation\Cezanne\WABLCZN08106070
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m WABLCZN08106070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x08106070
+
+project Memory/
+  PLAT-67289 [CZN] Disabling PPT when reducing speed to 1600
+
+project Program/
+  PLAT-67740 CZN: ABL Release WABLCZN08106070
+  PLAT-67004 [Cezanne AM4/FP6] Memory training fail after VDDIO and Overclocking change
+  PLAT-67266: [CZN] Update build flow to support Security Patch Level (SPL) value
+
+project Tools/
+  PLAT-67266: [CZN] Update build flow to support Security Patch Level (SPL) value
+
+"This document refers to the AMD Secure Processor technology as Platform Security Processor (PSP)."
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN08036070 for Cezanne
+
+Date:   August 03 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Path to files:
+  \\atlcorpnetfs\Biosonly\simulation\Cezanne\WABLCZN08036070
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m WABLCZN08036070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x08036070
+
+project Memory/
+  PLAT-66712 CZN FP6: Support BIOS automatic Memory OC Failure Recovery
+
+project Program/
+  PLAT-67387 CZN: ABL Release WABLCZN08036070
+  PLAT-66712 CZN FP6: Support BIOS automatic Memory OC Failure Recovery
+
+"This document refers to the AMD Secure Processor technology as Platform Security Processor (PSP)."
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN07276071 for Cezanne
+
+Date:   July 27 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Path to files:
+  \\atlcorpnetfs\Biosonly\simulation\Cezanne\WABLCZN07276071
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m WABLCZN07276071.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x07276071
+
+project Lib/
+  PLAT-59907 BIOS: CBS options to set UMC::DataCtrl rigister fileds are not workingble/Disable
+
+project Memory/
+  PLAT-59907 BIOS: CBS options to set UMC::DataCtrl rigister fileds are not workingble/Disable
+
+project Program/
+  PLAT-67107 CZN: ABL Release WABLCZN07276071
+  PLAT-59907 BIOS: CBS options to set UMC::DataCtrl rigister fileds are not workingble/Disable
+
+"This document refers to the AMD Secure Processor technology as Platform Security Processor (PSP)."
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN07276070 for Cezanne
+
+Date:   July 27 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Path to files:
+  \\atlcorpnetfs\Biosonly\simulation\Cezanne\WABLCZN07276070
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m WABLCZN07276070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x07276070
+
+project APCB/
+  PLAT-66912 [ABL][CZN FP6/AM4] Add APCB token to control RPMC
+
+project CCX/
+  PLAT-66756: [CZN] BIOS: Please use attached S3 image (ID = 19506dac) to the BIOS
+
+project Lib/
+  PLAT-65840 [CZN] Memory token get method convert into APCB V3 native interface
+
+project Memory/
+  PLAT-66606 [CZN FP6] termination was incorrect when under OC mode
+
+project NBIO/
+  PLAT-62412 CZN AM4 BIOS lacks a way to disable ChldxHash (Auto=Enable)
+  PLAT-66195 [IQE][CZN-FP6][20H1]cannot resume HWDRM playback on Netflix/PRDJS after S3
+
+project Program/
+  PLAT-67091 CZN: ABL Release WABLCZN07276070
+  PLAT-66912 [ABL][CZN FP6/AM4] Add APCB token to control RPMC
+
+"This document refers to the AMD Secure Processor technology as Platform Security Processor (PSP)."
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN07206070 for Cezanne
+
+Date:   July 20 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Path to files:
+  \\atlcorpnetfs\Biosonly\simulation\Cezanne\WABLCZN07206070
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m WABLCZN07206070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x07206070
+
+project DF/
+  PLAT-66405: [CZN] ComboAM4v2 1080 RC3 DF registers init value fail
+
+project Lib/
+  PLAT-66453 [CZN] Enable Fuse control Pro checking
+
+project Program/
+  PLAT-66778 CZN: ABL Release WABLCZN07206070
+
+"This document refers to the AMD Secure Processor technology as Platform Security Processor (PSP)."
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN07136070 for Cezanne
+
+Date:   July 13 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Path to files:
+  \\atlcorpnetfs\Biosonly\simulation\Cezanne\WABLCZN07136070
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m WABLCZN07136070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x07136070
+
+project APCB/
+  PLAT-65987 [CZN] APCB Token to override Maximum Activity Count (MAC) for memory
+  PLAT-65981 [CZN] Add AGESA MEM Option for SubUrgRefLowerBound, UrgRefLimit Platform Settings
+
+project Lib/
+  PLAT-56480 [RN_AM4] DDR4 Overclocking Range to DDR8000 (4000MHz)
+  PLAT-66152 [CZN] ABL serial out function fail on FCH UART0
+
+project Memory/
+  PLAT-65987 [CZN] APCB Token to override Maximum Activity Count (MAC) for memory
+  PLAT-65981 [CZN] Add AGESA MEM Option for SubUrgRefLowerBound, UrgRefLimit Platform Settings
+  PLAT-65867 - [CZN] CZN LP4/4x - Disabling DBI by default
+
+project Program/
+  PLAT-66380 CZN: ABL Release WABLCZN07136070
+
+"This document refers to the AMD Secure Processor technology as Platform Security Processor (PSP)."
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN07066070 for Cezanne
+
+Date:   July 06 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Path to files:
+  \\atlcorpnetfs\Biosonly\simulation\Cezanne\WABLCZN07066070
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m WABLCZN07066070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x07066070
+
+project Memory/
+  PLAT-65455 [CZN] LP4 RFM - using the correct RAAIMT increment for new Tref
+  PLAT-65487 [CZN][LPDDR4] Setup option for MBIST Vref step not working
+
+project Program/
+  PLAT-65976 CZN: ABL Release WABLCZN07066070
+
+"This document refers to the AMD Secure Processor technology as Platform Security Processor (PSP)."
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN06296070 for Cezanne
+
+Date:   June 29 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt           AgesaModulePkg\Firmwares\VMR\    This Release notes file for AM4
+  AgesaBootloader_U_prod_VMR        AgesaModulePkg\Firmwares\VMR\    Main AGESA Bootloader
+
+DXIO Version:      v
+DXIO PHY Version:  v
+
+Path to files:
+  \\atlcorpnetfs\Biosonly\simulation\Vermeer\WABLCZN06296070
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m WABLCZN06296070.xml
+
+Based On:
+  master
+
+ABL Version String:
+  0x06296070
+
+project Memory/
+  PLAT-65744 [CZN] Margin test fail when power optimize enabled with SR+DR dimm
+
+project NBIO/
+  PLAT-62412 CZN AM4 BIOS lacks a way to disable ChldxHash (called before ConfigSocRail)
+
+project Program/
+  PLAT-65768 CZN: ABL Release WABLCZN06296070
+
+"This document refers to the AMD Secure Processor technology as Platform Security Processor (PSP)."
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN06226070 for Cezanne
+
+Date:   June 22 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt           AgesaModulePkg\Firmwares\VMR\    This Release notes file for AM4
+  AgesaBootloader_U_prod_VMR        AgesaModulePkg\Firmwares\VMR\    Main AGESA Bootloader
+
+DXIO Version:      v
+DXIO PHY Version:  v
+
+Path to files:
+  \\atlcorpnetfs\Biosonly\simulation\Vermeer\WABLCZN06226070
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m WABLCZN06226070.xml
+
+Based On:
+  master
+
+ABL Version String:
+  0x06226070
+
+project Lib/
+  PLAT-64962 [RN] Script Opcode does not work when PMU training fail
+
+project Memory/
+  PLAT-64579 [CZN] LP4 - need DFECtrl=0 when Power Optimization enabled
+
+project Program/
+  PLAT-65479 CZN: ABL Release WABLCZN06226070
+  PLAT-64962 [RN] Script Opcode does not work when PMU training fail
+
+"This document refers to the AMD Secure Processor technology as Platform Security Processor (PSP)."
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN06156070 for Cezanne
+
+Date:   June 15 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt           AgesaModulePkg\Firmwares\VMR\    This Release notes file for AM4
+  AgesaBootloader_U_prod_VMR        AgesaModulePkg\Firmwares\VMR\    Main AGESA Bootloader
+
+DXIO Version:      v
+DXIO PHY Version:  v
+
+Path to files:
+  \\atlcorpnetfs\Biosonly\simulation\Vermeer\WABLCZN06156070
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m WABLCZN06156070.xml
+
+Based On:
+  master
+
+ABL Version String:
+  0x06156070
+
+project Memory/
+  PLAT-64091 [CZN] LP4 - DDR PHY Power Saving
+  PLAT-64393 [CZN AM4/RN AM4] Disable 'Memory Power Optimized Settings' on AM4 program
+
+project Program/
+  PLAT-65090 CZN: ABL Release WABLCZN06156070
+
+"This document refers to the AMD Secure Processor technology as Platform Security Processor (PSP)."
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN06086070 for Cezanne
+
+Date:   June 08 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt           AgesaModulePkg\Firmwares\VMR\    This Release notes file for AM4
+  AgesaBootloader_U_prod_VMR        AgesaModulePkg\Firmwares\VMR\    Main AGESA Bootloader
+
+DXIO Version:      v
+DXIO PHY Version:  v
+
+Path to files:
+  \\atlcorpnetfs\Biosonly\simulation\Vermeer\WABLCZN06086070
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m WABLCZN06086070.xml
+
+Based On:
+  master
+
+ABL Version String:
+  0x06086070
+
+project Memory/
+  PLAT-64717 [CZN ]need to add offset for M1 & M3 on CPU side at speed 3200 & 2933 Single Rank
+  PLAT-63893 Renior FP6 DDR4 BIOS's MBIST data eye function is abnormal
+  PLAT-64124 [Renoir] DRAM ECC Symbol Size setting mismatching
+  PLAT-64050 [CZN AM4] Post Code stuck at AC90 with 4GB 2133 UDIMMs
+
+project Program/
+  PLAT-64741 CZN: ABL Release WABLCZN06086070
+  PLAT-64342 [CZN] ABL needs to pass TPM config to PSP
+
+"This document refers to the AMD Secure Processor technology as Platform Security Processor (PSP)."
+--------------------------------------------------------------------------------
+
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN05256070 for Cezanne
+
+Date:   May 25, 2020
+
+--------------------------------------------------------------------------------
+
+Content:
+Filename                                       AGESA V9 Destination Folder         Description
+  AblPostCode.h                                AgesaModulePkg\Firmwares\CZN\       ABL Post Code Definitions
+  AgesaBLReleaseNotes.txt                      AgesaModulePkg\Firmwares\CZN\       This Release notes file
+  TypeId0x30_AgesaBootloaderU_CZN.csbin        AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  TypeId0x30_AgesaBootloaderU_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  APCB.h                                       Include\APCB.h                      AGESA PSP Configuration Block Definition
+  APOB.h                                       Include\APOB.h                      AGESA PSP Output Block Definition
+
+Path to files:
+
+XML Path:
+  /BIOS/ec/Client/Components/AGESA/ABL-V2/manifest/Custom/WABLCZN05256070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x05256070
+
+Features and Fixes:
+project APCB/
+  PLAT-63830 [VanGogh] Remove unsupported feature Conditional Pso
+  PLAT-59099 [CZN] PSP BL loads either MP2-SFH or MP2-I2C based on AMD PBS option - ABL
+project APOB/
+  PLAT-63699: [VanGogh] MEM - Update ABL-to-PMFW Handshake for LPDDR5
+project CCX/
+  PLAT-63716 [GN B0] BIOS: Please include attached S3 Image (S3 Image ID = 190134f6) for B0 bringup
+  PLAT-61461 BIOS: S3 Image for DSM A0 BIOS
+project DF/
+  PLAT-63771 DramContentionMonitor[DramContentionMonEn] should be cleared for SpecDramRd optimised settings
+  PLAT-63714 GN B0 PPR has incorrect init for Floss widget config
+project Lib/
+  PLAT-63830 [VanGogh] Remove unsupported feature Conditional Pso
+  PLAT-63699: [VanGogh] MEM - Update ABL-to-PMFW Handshake for LPDDR5
+project Memory/
+  PLAT-63124 [CZN_FP6]change "Memory power optimized setting" to enable as the default setting(enable lpddr4)
+  PLAT-63572 [CZN] Incorrect MemClkFreq above DDR-5000
+  PLAT-63776: Extend the refresh off delay in Memory Healing BIST
+  PLAT-63830 [VanGogh] Remove unsupported feature Conditional Pso
+  PLAT-61267: [VanGogh] MEM - UMC Turn around timings
+  PLAT-62341 DFE and VrefDac1 Off For Power Savings
+  PLAT-63699: [VanGogh] MEM - Update ABL-to-PMFW Handshake for LPDDR5
+project NBIO/
+  PLAT-59099 [CZN] PSP BL loads either MP2-SFH or MP2-I2C based on AMD PBS option - ABL
+  PLAT-63699: [VanGogh] MEM - Update ABL-to-PMFW Handshake for LPDDR5
+project Program/
+  PLAT-64007 CZN: ABL Release WABLCZN05256070
+  PLAT-63873:CBS Option and APCB token requested for X3D Disable
+  PLAT-63830 [VanGogh] Remove unsupported feature Conditional Pso
+  PLAT-59099 [CZN] PSP BL loads either MP2-SFH or MP2-I2C based on AMD PBS option - ABL
+  PLAT-63726 [VanGogh] ABL Release MABLMV05196010
+  PLAT-63699: [VanGogh] MEM - Update ABL-to-PMFW Handshake for LPDDR5
+
+--------------------------------------------------------------------------------
+
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN05186070 for Cezanne
+
+Date:   May 18, 2020
+
+--------------------------------------------------------------------------------
+
+Content:
+Filename                                       AGESA V9 Destination Folder         Description
+  AblPostCode.h                                AgesaModulePkg\Firmwares\CZN\       ABL Post Code Definitions
+  AgesaBLReleaseNotes.txt                      AgesaModulePkg\Firmwares\CZN\       This Release notes file
+  TypeId0x30_AgesaBootloaderU_CZN.csbin        AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  TypeId0x30_AgesaBootloaderU_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  APCB.h                                       Include\APCB.h                      AGESA PSP Configuration Block Definition
+  APOB.h                                       Include\APOB.h                      AGESA PSP Output Block Definition
+
+Path to files:
+
+XML Path:
+  /BIOS/ec/Client/Components/AGESA/ABL-V2/manifest/Custom/WABLCZN05186070.xml
+
+Based On:
+  master
+
+ABL Version String:
+  0x05186070
+
+Features and Fixes:
+project APCB/
+  MERO-628:[Mero] Add support for enabling all PCIe links before x86 for Chachani SLT - ABL
+  PLAT-61324, [Milan] ABL Support for pre-x86 dTPM
+  PLAT-63356: Milan MEM - Add support for staggering LRDIMM Refresh after Exit Self-Refresh
+project APOB/
+  PLAT-61223: [VanGogh] MEM - UMC AMD Timings
+project CCX/
+  PLAT-54775:Replicate to Van Gogh [VMR] Clear SmmLock at the beginning of S3 resume
+  PLAT-63218 [GN B0] BIOS: Please include attached S3 Image (S3 Image ID =190194b4) for B0 bring
+  PLAT-61260: Set InitPkg7[2] = 0 and disable Enhanced Bus Lock
+  PLAT-63221 [VMR B0] Use attached S3 image (ID=19211ba4) for B0 bring up BIOS
+project DF/
+  PLAT-63585 [VN] DF registers init value fail
+  Mero-673 [Mero-ABL] Adjust FMR base address
+  PLAT-61260: Set InitPkg7[2] = 0 and disable Enhanced Bus Lock
+project Lib/
+  PLAT-61223: [VanGogh] MEM - UMC AMD Timings
+  PLAT-63093: [Milan] "DRAM Hardware History Mechanism" CBS option not functional
+  MERO-151 [Mero-ABL] Boot.cfg.500 Boot config table definies multiple memory configurations chosen during boot
+  PLAT-63474: PLAT-[MR][VN] Update Memory Symbols to 'FF3' from 'RN'
+  PLAT-63218 [GN B0] BIOS: Please include attached S3 Image (S3 Image ID =190194b4) for B0 bring
+  PLAT-63356: Milan MEM - Add support for staggering LRDIMM Refresh after Exit Self-Refresh
+  Mero-635 [Mero-Platform] Merge code from MVG to client master
+  PLAT-63221 [VMR B0] Use attached S3 image (ID=19211ba4) for B0 bring up BIOS
+project Memory/
+  PLAT-63124 [CZN_FP6]change "Memory power optimized setting" to enable as the default setting
+  PLAT-63670 [VMR]interleaving data is incorrect for one DIMM single rank memory on Artic
+  PLAT-63459 [RN AM4]interleaving data is incorrect for one DIMM single rank memory on Artic
+  PLAT-61223: [VanGogh] MEM - UMC AMD Timings
+  PLAT-63093: [Milan] "DRAM Hardware History Mechanism" CBS option not functional
+  PLAT-61221: [VanGogh] MEM - PMU Handshake with ABL
+  PLAT-61220: [VanGogh] MEM - Load PMU FW and mapping images
+  MERO-151 [Mero-ABL] Boot.cfg.500 Boot config table definies multiple memory configurations chosen during boot
+  PLAT-61377 [MVG-ABL] ABL error to load/verify PMU FW
+  PLAT-63474: PLAT-[MR][VN] Update Memory Symbols to 'FF3' from 'RN'
+  PLAT-62418: Milan MEM - Replicate fix in Plat-57708 to Milan
+  PLAT-63356: Milan MEM - Add support for staggering LRDIMM Refresh after Exit Self-Refresh
+  PLAT-63354: Milan - Mem - Dram timing tables have old value for tDLLk for >DDR2400
+project NBIO/
+  MERO-587:[Mero][CVIP] S-PCIe: CVIP PCIe bridge hotplug enabling
+  MERO-646:Add new SVC call for reporting empty NVMe disk
+project Program/
+  PLAT-61223: [VanGogh] MEM - UMC AMD Timings
+  PLAT-61223: [VanGogh] MEM - UMC AMD Timings
+  Prepare and Release WABLGN05205010 for Milan Weekly BIOS
+  Update release note for 0050 release
+  MERO-151 [Mero-ABL] Boot.cfg.500 Boot config table definies multiple memory configurations chosen during boot
+  PLAT-63523: [MR][VN] Update ABL Build script to point to correct version of Python
+  PLAT-63474: PLAT-[MR][VN] Update Memory Symbols to 'FF3' from 'RN'
+  MERO-628:[Mero] Add support for enabling all PCIe links before x86 for Chachani SLT - ABL
+  PLAT_63400 VMR: ABL Release WABLVM05124010
+  PLAT-63444 [VanGogh] ABL Release MABLMV05136010
+  PLAT-63439 [VN] Unsigned ABL can't boot due to FwID mismatch
+  MERO-587:[Mero][CVIP] S-PCIe: CVIP PCIe bridge hotplug enabling
+  PLAT-63218 [GN B0] BIOS: Please include attached S3 Image (S3 Image ID =190194b4) for B0 bring
+  PLAT-61324, [Milan] ABL Support for pre-x86 dTPM
+  Mero-673 [Mero-ABL] Adjust FMR base address
+  MERO-646:Add new SVC call for reporting empty NVMe disk
+  PLAT-63221 [VMR B0] Use attached S3 image (ID=19211ba4) for B0 bring up BIOS
+  Mero-635 [VN-ABL] Merge code from MVG to client master
+project Tools/
+  PLAT-61220: [VanGogh] MEM - Load PMU FW and mapping images
+  Update MR to support signing
+
+--------------------------------------------------------------------------------
+
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN05116070 for Cezanne
+
+Date:   May 11, 2020
+
+--------------------------------------------------------------------------------
+
+Content:
+Filename                                       AGESA V9 Destination Folder         Description
+  AblPostCode.h                                AgesaModulePkg\Firmwares\CZN\       ABL Post Code Definitions
+  AgesaBLReleaseNotes.txt                      AgesaModulePkg\Firmwares\CZN\       This Release notes file
+  TypeId0x30_AgesaBootloaderU_CZN.csbin        AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  TypeId0x30_AgesaBootloaderU_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  APCB.h                                       Include\APCB.h                      AGESA PSP Configuration Block Definition
+  APOB.h                                       Include\APOB.h                      AGESA PSP Output Block Definition
+
+Path to files:
+
+XML Path:
+  /BIOS/ec/Client/Components/AGESA/ABL-V2/manifest/Custom/WABLCZN05116070.xml
+
+Based On:
+  master
+
+ABL Version String:
+  0x05116070
+
+Features and Fixes:
+project APCB/
+  PLAT-62734: [VanGogh] MEM - Add a CBS option to enable/disable RFM
+  PLAT-61862: New CBS option (internal) required in BIOS
+project CCX/
+  PLAT-62347 Failures seen in modules in BTS test
+project DF/
+  PLAT-62347 Failures seen in Modules in BTS Test
+  MERO-635:[MERO-ABL] Seperate Mero ABL specific code from client master
+  PLAT-60848 Milan Disable C2Cxferwidget
+  PLAT-61862: New CBS option (internal) required in BIOS
+  PLAT-62388: [CZN] Update UMA size
+project FCH/
+  MERO-635:[MERO-ABL] Seperate Mero ABL specific code from client master
+project Lib/
+  PLAT-63124 [CZN_FP6]change "Memory power optimized setting" to enable as the default setting
+  PLAT-61222: [VanGogh] MEM - UMC Jedec Timings
+  PLAT-63097: [VanGogh] MEM - Add back end code to enable/disable RFM
+  PLAT-62355: [VanGogh] MEM - Add back end code to enable/disable Link ECC
+  MERO-635:[MERO-ABL] Seperate Mero ABL specific code from client master
+  Changes required to boot through ABL.
+  PLAT-62388: [CZN] Update UMA size
+project Memory/
+  Revert "PLAT-63124 [CZN_FP6]change "Memory power optimized setting" to enable as the default setting"
+  Mero-635 [Mero-ABL] Merge code from MVG to client master
+  PLAT-63124 [CZN_FP6]change "Memory power optimized setting" to enable as the default setting
+  PLAT-60945 [CZN] DDR4 - Enabling Power Savings Optimization
+  PLAT-62397 [CZN AM4] BankGroupSwap overrided by BankGroupSwapAlt
+  PLAT-61222: [VanGogh] MEM - UMC Jedec Timings
+  PLAT-53584: [VanGogh] MEM - Basic UMC/SPD init
+  PLAT-63097: [VanGogh] MEM - Add back end code to enable/disable RFM
+  PLAT-62355: [VanGogh] MEM - Add back end code to enable/disable Link ECC
+  PLAT-63084 [CZN] Boot hang with master ABL
+  VN - Changes required to boot through the ABL
+project NBIO/
+  MERO-635:[MERO-ABL] Seperate Mero ABL specific code from client master
+  PLAT-62412 CZN AM4 BIOS lacks a way to disable ChldxHash
+project Program/
+  PLAT-63324 [CZN] ABL Release WABLCZN05116070
+  Revert "PLAT-63124 [CZN_FP6]change "Memory power optimized setting" to enable as the default setting"
+  PLAT-63124 [CZN_FP6]change "Memory power optimized setting" to enable as the default setting
+  MERO-635:[MERO-ABL] Merge code from MVG to client master
+  MERO-635:[MERO-ABL] Seperate Mero ABL specific code from client master
+  Prepare and Release WABLGN05135010 for Milan Weekly BIOS
+  PLAT-63255 [VanGogh] ABL Release MABLMV05086010
+  MERO-635:[MERO-ABL] Seperate Mero ABL specific code from client master
+  PLAT-63184 [CZN] Memory context save restore support
+  PLAT-63065 [CZN] S3 Resume hang on Majolica @ EA00E101
+  PLAT-62412 CZN AM4 BIOS lacks a way to disable ChldxHash
+  VN - Changes to get through the ABL
+
+--------------------------------------------------------------------------------
+
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN05046070 for Cezanne
+
+Date:   May 04, 2020
+
+--------------------------------------------------------------------------------
+
+Content:
+Filename                                       AGESA V9 Destination Folder         Description
+  AblPostCode.h                                AgesaModulePkg\Firmwares\CZN\       ABL Post Code Definitions
+  AgesaBLReleaseNotes.txt                      AgesaModulePkg\Firmwares\CZN\       This Release notes file
+  TypeId0x30_AgesaBootloaderU_CZN.csbin        AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  TypeId0x30_AgesaBootloaderU_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  APCB.h                                       Include\APCB.h                      AGESA PSP Configuration Block Definition
+  APOB.h                                       Include\APOB.h                      AGESA PSP Output Block Definition
+
+Path to files:
+
+XML Path:
+  /BIOS/ec/Client/Components/AGESA/ABL-V2/manifest/Custom/WABLCZN05046070.xml
+
+Based On:
+  master
+
+ABL Version String:
+  0x05046070
+
+Features and Fixes:
+project APCB/
+  PLAT-61526: [Milan] External CBS Option to override Maximum Activity Count (MAC) for memory
+  PLAT-62209: [VanGogh] MEM - Add new APCB Tokens for CBS UMC Options
+  PLAT-61613: New DF BIOS option (internal) required
+  PLAT-62085 [CZN] BIOS Option for UMC Powergating
+  PLAT-61828: Replicate to VN: APCB sync with CBS variable - APCB token update
+  PLAT-51675: Implement MATs memory test for DDR4
+  PLAT-61577 [RN] Add token to control Wifi OTA override
+  PLAT-61454: [Mero][VanGogh][ABL] Merge from SCBU repo to Client Master
+  PLAT-61033: Add AGESA MEM Option for SubUrgRefLowerBound, UrgRefLimit Platform Settings, part 2
+  PLAT-60945 [CZN] DDR4 - Enabling Power Savings Optimization
+project APOB/
+  PLAT-61065: [VanGogh/Mero] Merge code back to ABLmaster - DF
+project CCX/
+  PLAT-62215: [CZN] Update S3 image to CL321652
+  PLAT-49878: Core failures in BTS 15.1.36.0397
+  PLAT-61442: [VanGogh/Mero] Merge code back to AGESA master - CCX
+  PLAT-61368: [BA] update S3 image
+  [BA ABL] merge code from E010 to master
+  PLAT-61075: Automatically reduce the max ASID count available when 8TB of DRAM is detected
+project DF/
+  PLAT-62352: [Mero/VanGogh] PSP region has incorrect RngId
+  PLAT-61613: New DF BIOS option (internal) required
+  PALT-62378: [CZN] Limiting TSME to Ryzen Pro OPNs - ABL
+  PLAT-62308: [CZN] Incorrect Core bit on S0i3 resume
+  PLAT-62308: [CZN] Incorrect Core bit on S0i3 resume
+  PLAT-61911 S0i3: ABL initialization of DF:PIE0->PspSmuId_n0->SmuUnitId
+  PLAT-62080: [CZN] Correct CoherentSlaveModeCtrlA0 Init value
+  PLAT-62079: [CZN] Correct DisPrbMig
+  PLAT-62078:[CZN] Update D18F1x274 (CcdUnitIdMask) bit[4:0]=0x1 to latest PPR
+  PLAT-61713 [CZN] Update DF::PspSmuId_instPIE_n0[SmuUnitId]
+  PLAT-61719 [CZN] Failed to enable SMT through AOD module
+  PLAT-61720 ABL Restore DfCstateClkPwrDnEn to 0 during S0i3 Resume on LPDDR4 config
+  PLAT-61716 [CZN] Workaround for S0i3 resume DRAM access stuck
+  PLAT-61715 When disabling iGPU and using dGPU, sdma0 halt blocks s0i3 entry
+  PLAT-61712 [CZN] F1x300[PhysicalCoreEn] is not restored on S3
+  PLAT-61061: [VanGogh/Mero] Merge code back to AGESA master - DF
+  PLAT-61061: [VanGogh/Mero] Merge code back to AGESA master - DF
+  PLAT-61367: [BA] update MMIO register
+  [BA ABL] merge code from E010 to master
+  PLAT-61075: Automatically reduce the max ASID count available when 8TB of DRAM is detected
+  PLAT-61219 - (RN AM4) when disabling igpu and using dgpu, sdma0 halt blocks s0i3 entry
+project FCH/
+  PLAT-60777 [MVG] AGESA FCH: merge MVG AGESA/ABL change back to trunk
+project Lib/
+  PLAT-61526: [Milan] External CBS Option to override Maximum Activity Count (MAC) for memory
+  PALT-62378: [CZN] Limiting TSME to Ryzen Pro OPNs - ABL
+  PLAT-62215: [CZN] Update S3 image to CL321652
+  PLAT-62124: Add additional option in CBS::ABL BreakPoint (internal) item
+  PLAT-61426 [RN] Remove degrade to 1866 for some selective DIMM
+  PLAT-61587 [RN AM4] Open decode of non-standard IO port for Error Indicator
+  PLAT-51675: Implement MATs memory test for DDR4
+  PLAT-61581: [ABL] [Lib] Build error in common code
+  PLAT-61454: [Mero][VanGogh][ABL] Merge from SCBU repo to Client Master
+  PLAT-61442: [VanGogh/Mero] Merge code back to AGESA master - CCX
+  [BA ABL] merge code from E010 to master
+  PLAT-61075: Automatically reduce the max ASID count available when 8TB of DRAM is detected
+project Memory/
+  PLAT-61526: [Milan] External CBS Option to override Maximum Activity Count (MAC) for memory
+  PLAT-59547: VanGogh Secure Boot Support - ABL
+  PLAT-61335 [Renoir]Memory run to 1600MHz after change memory speed to 3466MHz
+  PLAT-53557 [RN] [AM4] Extend tRcdRd, tRcdWr, and tRP CBS settings
+  PLAT-62086 [CZN] DF data mask setting not in sync with UMC data mask set by memory ABL
+  PLAT-59851 [CZN] Add AGESA MEM Support for LPDDR4 RFM Identifier
+  PLAT-59852 [CZN] Add AGESA MEM Support for LPDDR4x tWR Scaling
+  PLAT-61426 [RN] Remove degrade to 1866 for some selective DIMM
+  PLAT-60569 [CZN] DDR4 PIE Update
+  PLAT-51675: Implement MATs memory test for DDR4
+  PLAT-61521: Improve 2R Nvdimm-N support
+  PLAT-61427 Replicate to Vermeer Milan SP3 MEM - Remove workaround Plat-58035 for B0 IOD(build issue)
+  PLAT-61427 Replicate to Vermeer Milan SP3 MEM - Remove workaround Plat-58035 for B0 IOD.
+  PLAT-60411 [VMR]MBIST fails acrross memory configurations when set test mode as both.
+  PLAT-61454: [Mero][VanGogh][ABL] Merge from SCBU repo to Client Master
+  PLAT-60620 [CZN] Updating termination/drive strength for LP4x DRx8 (Bug Fix)
+  PLAT-61186 [RN]DDR4 Program Optimal Phy PLL Settings update
+  PLAT-61033: Add AGESA MEM Option for SubUrgRefLowerBound, UrgRefLimit Platform Settings, part 2
+  PLAT-61075: Automatically reduce the max ASID count available when 8TB of DRAM is detected
+  PLAT-60620 [CZN] Updating termination/drive strength for LP4x DRx8
+  PLAT-60052 [CZN] Power optimization for lower MPstates for LP4/LP4x
+project NBIO/
+  PLAT-61335 [Renoir]Memory run to 1600MHz after change memory speed to 3466MHz
+  PLAT-61518 White Line Flash/Video Corruption if overclocking with XMP enabled DIMM
+  PLAT-61577 [RN] Add token to control Wifi OTA override
+  PLAT-58611: Remove PCIe Gen3/4 capabilities from PCIe Core2
+  PLAT-61062 - [VanGogh/Mero] Merge code back to AGESA master - NBIO
+  [BA ABL] merge code from E010 to master
+  PLAT-61218 - (RN AM4) when disabling igpu and using dgpu, sdma0 halt blocks s0i3 entry
+  PLAT-61247: Add SOC check to Milan CPU WAFL bridge Device ID
+project Program/
+  Prepare and Release WABLGN06055010 for Milan Weekly BIOS
+  PLAT-59547: VanGogh Secure Boot Support - ABL
+  PLAT-62306 [CZN] Enable build flag of ABL debug print
+  PLAT-62215: [CZN] Update S3 image to CL321652
+  PLAT-62140: [BA] enable sign with BADAMI's own key
+  Prepare and Release WABLGN04295010 for Milan Weekly BIOS
+  PLAT-62013:[CZN] Add Bixby early training support for CZN AM4
+  PLAT-61717: [CZN] Add ABL RT driver for s0i3 support
+  PLAT-61725 VMR: ABL Release WABLVM04204010
+  PLAT-61650 [CZN] Add token to control Wifi OTA override
+  PLAT-61369 VMR: ABL Release WABLVM04134010
+  Prepare and Release WABLGN04225010 for Milan Weekly BIOS
+  PLAT-61577 [RN] Add token to control Wifi OTA override
+  PLAT-59888 [RN] ABL needs to pass TPM config to PSP (Cover Context Restore path)
+  PLAT-61519 - Sync RN/CZN ABL changes to master
+  PLAT-61454: [Mero][VanGogh][ABL] Merge from SCBU repo to Client Master
+  PLAT-59918: Renoir PMFW Release version 55.53.0 (Update PSPSMC definition)
+  PLAT-61368: [BA] update S3 image
+  Prepare and Release WABLGN04155010 for Milan Weekly BIOS
+  PLAT-61118 VMR: ABL Release WABLVM04054010
+  [BA ABL] merge code from E010 to master
+  PLAT-61218 - (RN AM4) when disabling igpu and using dgpu, sdma0 halt blocks s0i3 entry
+project Tools/
+  PLAT-59547: VanGogh Secure Boot Support - ABL
+  PLAT-62140: [BA] enable sign with BADAMI's own key
+  PLAT-61649: [Mero/VanGogh] Build failure - ABL SPClient config missing
+  [BA ABL] merge code from E010 to master
+
+----------------------------------------------------------------------------
+
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN04076070 for Cezanne
+
+Date:   April 07, 2020
+
+----------------------------------------------------------------------------
+
+Content:
+Filename                                       AGESA V9 Destination Folder         Description
+  AblPostCode.h                                AgesaModulePkg\Firmwares\CZN\       ABL Post Code Definitions
+  AgesaBLReleaseNotes.txt                      AgesaModulePkg\Firmwares\CZN\       This Release notes file for AM4
+  TypeId0x30_AgesaBootloaderU_CZN.csbin        AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  TypeId0x30_AgesaBootloaderU_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  APCB.h                                       Include\APCB.h                      AGESA PSP Configuration Block Definition
+  APOB.h                                       Include\APOB.h                      AGESA PSP Output Block Definition
+
+
+Path to files:
+
+
+XML Path:
+  /BIOS/ec/Client/Components/AGESA/ABL-V2/manifest/Custom/WABLCZN04076070.xml
+
+Based On:
+  master
+
+ABL Version String:
+  0x04076070
+
+Features and Fixes:
+project APCB/
+  PLAT-61033: Add AGESA MEM Option for SubUrgRefLowerBound, UrgRefLimit Platform Settings
+  PLAT-60860 [RN][ABL]Beep Sound cannot Work with All DIMMs Unplugged
+  PLAT-60550: Need Power Down delay configuration under UMC common options
+  PLAT-60716 RN AM4: Boot after VDDIO and Memory OC change fails memory training
+  PLAT-41658, Respond to SoC BIST failures by downcoring and continuing to boot
+  PLAT-60518 [RN] Create APCB token to control DPM level trimming
+  PLAT-59888 [RN] ABL needs to pass TPM config to PSP
+  PLAT-55478 [RN] Provide error indicator opcode table for customization (Implement filter)
+  PLAT-59623 Update DDR OC available Settings for VMR
+project APOB/
+  PLAT-41658, Respond to SoC BIST failures by downcoring and continuing to boot
+  PLAT-56402 [RN] [LPDDR4] S3 Resume does not restore PPT
+project CCX/
+  PLAT-60621: [CZN] Clear SmmBaseLock on S3 Resume
+  PLAT-60621:[VMR] Clear SmmBaseLock on S3 resume
+project DF/
+  PLAT-59486 DF BTS has revealed some mismatches which does not match PPR values
+  PLAT-60957 DF Debug Option-> SPF -> Clean Victim vs Probe interlock Control issue
+  PLAT-49879: DF failures in BTS 15.1.36.0397
+  PLAT-60383 Increase the size in the call to load Phy FW binary
+  PLAT-59992 [GN]API change for DXIO call "pspMp0_dxio_loadPhyFirmware_WAFLAndPCIe"
+  [PLAT-54251]ABL reserved DRAM for RAS Error injection
+project FCH/
+  PLAT-58989 [ComboAM4V2] [Vermeer] System will spend about 1s at post code 0xE092 after warm reset with VMR on Qogir board -- to clear/set SATA_Dis before/after DXIO early training when SATA disabled
+project Lib/
+  PLAT-60906: [RN] Rollback PLAT-54637 xGMI 3-link Configuration Link Distribution Update
+  PLAT-61033: Add AGESA MEM Option for SubUrgRefLowerBound, UrgRefLimit Platform Settings
+  PLAT-60860 [RN][ABL]Beep Sound cannot Work with All DIMMs Unplugged
+  PLAT-60716 RN AM4: Boot after VDDIO and Memory OC change fails memory training
+  PLAT-41658, Respond to SoC BIST failures by downcoring and continuing to boot
+  PLAT-60274, When appending tokens, the coreApcbSet routines do not clear existing data prior to writing the token value.
+  PLAT-56402 [RN] [LPDDR4] S3 Resume does not restore PPT
+  PLAT-58989 [ComboAM4V2] [Vermeer] System will spend about 1s at post code 0xE092 after warm reset with VMR on Qogir board -- to clear/set SATA_Dis before/after DXIO early training when SATA disabled
+  PLAT-56539 [Renoir] Limiting TSME to Ryzen Pro OPNs - ABL (Default enable TSME)
+  PLAT-59187 [RN] Reduce resume time when Abl Console out disabled
+  PLAT-59181 [RN] Reduce resume time by updating native APCB v3 interface
+  PLAT-55478 [RN] Provide error indicator opcode table for customization (Implement filter)
+  PLAT-60013 [RN][Renoir]Memory Safe Mode support on Artic
+project Memory/
+  PLAT-54558: NVDIMM fail S5 shutdown push to persistence test, part 2
+  PLAT-61033: Add AGESA MEM Option for SubUrgRefLowerBound, UrgRefLimit Platform Settings
+  PLAT-61035: Milan SP3 MEM - Remove workaround Plat-58035 for B0 IOD
+  PLAT-59935 [VMR]C- of P0 got low margin with D die 3200 @ VDDIO derate to 1.14v.
+  PLAT-60550: Need Power Down delay configuration under UMC common options
+  PLAT-56172 [RN][LP4] Enable ppt by default in BIOS
+  PLAT-52232 [VMR] Enable Memory Context Save and Restore Function(Add 3-step MR6)
+  PLAT-60810, [Milan] SCMTool.efi LIST not shows "PERSISTENT RAM" with 128GB RDIMM x12 + 32GB NVDIMM x4
+  PLAT-56402 [RN] [LPDDR4] S3 Resume does not restore PPT
+  PLAT-56247 [RN] [LPDDR4] MR12 Input converting Range1
+  PLAT-56330 [RN][LP4] Add SMU call for starting timer based periodic re-training in the restore path
+  PLAT-56041 [RN][LPDDR4] Set Seed Vref CA (MR12) for LP4 (Not LP4x)
+  PLAT-56313 [RN][LP4] Revise RN LPDDR4 Mop sequence for Mission mode and Context-restore
+  PLAT-55881 [RN] Celadon Write margin issue - MR6 read value is 0 in srsm index 0x1E
+  PLAT-51727: [RN] [LPDDR4] MBIST Data Eye Test
+  PLAT-55917 [RN] [LP4] Disable Valid_D1 bit in MOP Array for MR12/MR14 after StartupPState
+  PLAT-56318 [RN][LP4] Software DRAM reset sequence for Context-restore
+  PLAT-56402 [RN] [LPDDR4] S3 Resume does not restore PPT
+  PLAT-55995: [RN][LPDDR4] PPT Workaround incorrectly applied
+  PLAT-60479: MBIST RX dataeyes broken on 0071 BIOS
+  PLAT-58835: [Milan] NVDIMM_N failed training in Windows OS
+  PLAT-56539 [Renoir] Limiting TSME to Ryzen Pro OPNs - ABL (Default enable TSME)
+  PLAT-48575 [RN DDR4] Update SRSM Tzqoper/Tzoper per Latest Recommendation for DLL Reset on MPxExit
+  PLAT-54508 [RN AM4]Phy power saving settings are not programed correctly
+  PLAT-56693 [RN] [LPDDR4/4x] SRx16 fail S3 resume/Context Restore with ppt
+  PLAT-58888 [RN] Per P-State Uclk DivMode to apply CWL set
+  PLAT-59623 Update DDR OC available Settings for VMR
+  PLAT-60573, [Milan] System hangs or gets into a continuous reboot loop when setting to NPS0
+  PLAT-57471: NVDIMM fail S5 shutdown push to persistence test
+  PLAT-57768 RegClkGateEn bit should be set in UmcCtrlMiscCfg
+  PLAT-59557: LRDIMM/LRDIMM3DS fail the RRW test when RCD parity disabled
+  [PLAT-54251]ABL reserved DRAM for RASError Injection
+  PLAT-59620 Update RxDatChnDly programming for VMR (same as was done on MTS/MTS2)
+project NBIO/
+  PLAT-59859: Milan CPU WAFL bridge Device ID is different with PPR PCI Device ID Assignments
+  PLAT-60971: [RMB] SMU FW 69.0.3 release
+  PLAT-60518 [RN] Create APCB token to control DPM level trimming
+  PLAT-59181 [RN] Reduce resume time by updating native APCB v3 interface
+project Program/
+  PLAT-61105: Milan][GN] Prepare and Release RABLGN00725010 for MilanPI_SP3_0072
+  PLAT-60716 RN AM4: Boot after VDDIO and Memory OC change fails memory training
+  PLAT-60971: [RMB] SMU FW 69.0.3 release
+  PLAT-41658, Respond to SoC BIST failures by downcoring and continuing to boot
+  PLAT-60862 VMR: ABL Release WABLVM03304010
+  PLAT-60866 Renoir 1003RC4 bad word - ABL
+  Prepare and Release WABLGN04015010 for Milan Weekly BIOS
+  PLAT-58649: [RN][ComboAM4v2][Qogir]: System hang at PC:0300 when resume from S3.
+  PLAT-58487: [RN AM4][Qogir] System stunk at PC 0x7 or A930 when warm reset
+  PLAT-58989 [ComboAM4V2] [Vermeer] System will spend about 1s at post code 0xE092 after warm reset with VMR on Qogir board -- to clear/set SATA_Dis before/after DXIO early training when SATA disabled
+  PLAT-59181 [RN] Reduce resume time by updating native APCB v3 interface
+  PLAT-59888 [RN] ABL needs to pass TPM config to PSP
+  [CZN] Reduce resume time by updating native APCB v3 interface
+  PLAT-59186 [RN] Terminate loop invalid replay buffer to reduce resume time
+  PLAT-59186 [CZN] Terminate loop invalid replay buffer to reduce resume time
+  PLAT-60583 VMR: ABL Release WABLVM03234010
+  Prepare and Release WABLGN03255010 for Weekly BIOS
+  PLAT-60459 [CZN] Assert on S3 Resume path
+  [PLAT-54251]ABL reserved DRAM for RAS Error Injection
+
+----------------------------------------------------------------------------
+
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN03166070 for Cezanne
+
+Date:   March 16, 2020
+
+----------------------------------------------------------------------------
+
+Content:
+Filename                                       AGESA V9 Destination Folder         Description
+  AblPostCode.h                                AgesaModulePkg\Firmwares\CZN\       ABL Post Code Definitions
+  AgesaBLReleaseNotes.txt                      AgesaModulePkg\Firmwares\CZN\       This Release notes file for AM4
+  TypeId0x30_AgesaBootloaderU_CZN.csbin        AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  TypeId0x30_AgesaBootloaderU_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  APCB.h                                       Include\APCB.h                      AGESA PSP Configuration Block Definition
+  APOB.h                                       Include\APOB.h                      AGESA PSP Output Block Definition
+
+
+Path to files:
+
+
+XML Path:
+  /BIOS/ec/Client/Components/AGESA/ABL-V2/manifest/Custom/WABLCZN03166070.xml
+
+Based On:
+  master
+
+ABL Version String:
+  0x03166070
+
+Features and Fixes:
+project APCB/
+  PLAT-57713: [RMB] Add existing NBIO Support
+  PLAT-59098: [Milan] Missing some checks for early training of two links
+project CCX/
+  PLAT-59538 Workarounds lost in SMT Disabled config
+project DF/
+  PLAT-60001, [Milan] Enhance the mechanism for bad DIMM handling
+  PLAT-59829 [CZN] Remove GcmEnable from s0i3 resume path
+  PLAT-59627 Change SPF replacement policy to LRT for better performance
+  PLAT-59295 EnExtSpfARC needs conditional initialization for workaround in GN B0
+project Lib/
+  PLAT-57713: [RMB] Add existing NBIO Support
+project Memory/
+  PLAT-59988: Milan - 3DS LRDIMM mix(slot0-2S2R, slot1-2S4R & visa-versa) hangs at post code 001F
+  PLAT-60268, Milan Ethanol-X hangs at post code E316 with internal bios
+  PLAT-49459 [Milan] Limiting the number of memory controllers in 2P mode hangs simnow in ABL (separate workaround)
+  PLAT-54263: Milan placeholder to track SSP plat-47624
+  PLAT-60001, [Milan] Enhance the mechanism for bad DIMM handling
+  PLAT-59635, [GN] Error logs along with APCB_TOKEN_UID_FCH_CONSOLE_OUT_BASIC_ENABLE = 1
+project NBIO/
+  PLAT-57713: [RMB] Add existing NBIO Support
+  PLAT-57713: [RMB] Add existing NBIO Support
+  PLAT-59098: [Milan] Missing some checks for early training of two links
+project Program/
+  PLAT-59994 [VMR] WABLVM03134010 release
+  PLAT-49459 [Milan] Limiting the number of memory controllers in 2P mode hangs simnow in ABL (separate workaround)
+  Prepare and Release WABLGN03185010 for Milan Weekly BIOS
+  PLAT-57713: [RMB] Add existing NBIO Support
+  PLAT-57713: [RMB] Add existing NBIO Support
+  Prepare and Release WABLGN03115010 for Milan Weekly BIOS
+  PLAT-59624 [CZN] Remove ABL6 from s0i3 resume flow
+
+----------------------------------------------------------------------------
+
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: WABLCZN03056070 for Cezanne
+
+Date:   March 05, 2020
+
+----------------------------------------------------------------------------
+
+Content:
+Filename                                       AGESA V9 Destination Folder         Description
+  AblPostCode.h                                AgesaModulePkg\Firmwares\CZN\       ABL Post Code Definitions
+  AgesaBLReleaseNotes.txt                      AgesaModulePkg\Firmwares\CZN\       This Release notes file for AM4
+  TypeId0x30_AgesaBootloaderU_CZN.csbin        AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  TypeId0x30_AgesaBootloaderU_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  APCB.h                                       Include\APCB.h                      AGESA PSP Configuration Block Definition
+  APOB.h                                       Include\APOB.h                      AGESA PSP Output Block Definition
+
+
+Path to files:
+
+
+XML Path:
+  /BIOS/ec/Client/Components/AGESA/ABL-V2/manifest/Custom/WABLCZN03056070.xml
+
+Based On:
+  master
+
+ABL Version String:
+  0x03056070
+
+Features and Fixes:
+
+project APCB/
+  PLAT-59301: [GN] Add interface to disable NVDIMM feature for memory margin test
+  PLAT-59203 Hot Temperature causes memory issues for 128GB and 256GB LRDIMM, lower the DIMM sensor upper temp for 3DS memory.
+  PLAT-58600 [CZN] Add customizable ABL breakpoints
+project CCX/
+  PLAT-59401 [CZN] Update S3 image to CL312339
+  PLAT-56220:[ComboAM4v2][VMR_Qogir]: MSR 0xC001_0015 bit 25 is set to 0 (correct should be 1) after Core Performance Boost disabled in BIOS setup
+  PLAT-58816: [Milan] Workarounds lost in SMT Disabled config
+  PLAT-55218: [RMB] Port Vermeer Zen3 Cerberus support to RMB
+project DF/
+  PLAT-58449 NPS1/Auto not honored when down CCD to 2CCD
+  PLAT-55219: [RMB] Port Cezanne DF support to RMB
+project Lib/
+  PLAT-59401 [CZN] Update S3 image to CL312339
+  PLAT-59301: [GN] Add interface to disable NVDIMM feature for memory margin test
+   PLAT-59203 Hot Temperature causes memory issues for 128GB and 256GB LRDIMM.
+  PLAT-59108 [Renoir_AM4] Serial out can't output when connected with SIO
+  Revert "PLAT-58600 [CZN] Add customizable ABL breakpoints"
+  PLAT-58600 [CZN] Add customizable ABL breakpoints
+  PLAT-58854: [CZN] Unified BIOS - C2PMSG_98 [11] EnableIoRedirect support
+project Memory/
+  PLAT-58175 [RN] [LPDDR4/X] Power Savings Update for Lower MPStates
+  PLAT-59445, [GN] System hung postcode AC90 with bad Dimm populated
+  PLAT-59301: [GN] Add interface to disable NVDIMM feature for memory margin test
+  PLAT-59297: [GN] Output more NVDIMM status register contents to console log for debugging
+  PLAT-59203 Hot Temperature causes memory issues for 128GB and 256GB LRDIMM, lower the DIMM sensor upper temp for 3DS memory.
+  PLAT-59147 Reduplicate to RNAM4: [MTS] Remove error level of CAS Latency
+  PLAT-52892: Early page activate is not getting disabled at BIOS
+  PLAT-58403: Daytonax shows different channel locations when bad dimm is inserted in channel-D
+  PLAT-58114: [Ryzen Master] [RN] Applied RttPark values are not reflecting after restart
+project Program/
+  PLAT-59401 [CZN] Update S3 image to CL312339
+  PLAT-56220:[ComboAM4v2][VMR_Qogir]: MSR 0xC001_0015 bit 25 is set to 0 (correct should be 1) after Core Performance Boost disabled in BIOS
+  setup Prepare and Release WABLGN03045010 for Milan Weekly BIOS
+  PLAT-59095: [RMB] Update ABL SRAM Layout to match Vangogh
+  Revert "PLAT-58600 [CZN] Add customizable ABL breakpoints"
+  Prepare and Release WABLGN02265010 for Milan Weekly BIOS
+  PLAT-58600 [CZN] Add customizable ABL breakpoints
+  PLAT-58963: [Milan][GN] Prepare and Release RABLGN00715010 for MilanPI_SP3_0071
+  Prepare and Release WABLGN02195010 for Milan Weekly BIOS
+  PLAT-57363: [Milan] Release ABL FW in encrypted form
+
+----------------------------------------------------------------------------
+
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: RABLCZN02146010 for Cezanne
+
+Date:   Feb 14, 2020
+
+----------------------------------------------------------------------------
+
+Content:
+Filename                                      AGESA V9 Destination Folder         Description
+  AblPostCode.h                               AgesaModulePkg\Firmwares\CZN\       ABL Post Code Definitions
+  AgesaBLReleaseNotes.txt                     AgesaModulePkg\Firmwares\CZN\       This Release notes file for AM4
+  TypeIdx30_AgesaBootloader_U_CN.csbin        AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  APCB.h                                      Include\APCB.h                      AGESA PSP Configuration Block Definition
+  APOB.h                                      Include\APOB.h                      AGESA PSP Output Block Definition
+
+
+Path to files:
+
+
+XML Path:
+  /BIOS/ec/Client/Components/AGESA/ABL-V2/manifest/Custom/RABLCZN02146010.xml
+
+Based On:
+  master
+
+ABL Version String:
+  0x02146010
+
+Features and Fixes:
+
+APCB/
+  PLAT-57617: Allow customers to relocate the ROM3 base address via an APCB token
+  PLAT-46844: Milan - MEM - Enablement for DDR4 UDIMM/RDIMM CTLE with Pstates enabled
+  PLAT-57908: CBS Option and APCB token requested for X3D Disable
+  PLAT-41658, Respond to SoC BIST failures by downcoring and continuing to boot
+  PLAT-48155 [SSP] Pre-dram early video hangs when accessing legacy video I/O
+  PLAT-47592 Add new APCB token to control Display Splash Screen
+
+APOB/
+  PLAT-49888 Need a BIOS which supports loading APCB based on SubProgram
+  PLAT-56222 [RN] Unified Phy Save List
+
+CCX/
+  PLAT-58109 S3 Image for DistributedTriggering_v4 and IC_HWAMASK
+  PLAT-58108: [RMB] Rembrandt ABL initial support
+  PLAT-58110 [GN] BIOS: S3 Image for DistributedTriggering_v4 and IC_HWAMASK + S3 Image ID
+  PLAT-57246 S3 Image for IC_HWAMASK and older fixes
+  PLAT-57172 [CZN] Add S3 image for pre LSF
+  PLAT-57247: [GN] BIOS: S3 Image for IC_HWAMASK[2:1] = 0x3 + older fixes
+  PLAT-56031:[VMR] Enable Memory Context Save and Restore Function - CPU
+  PLAT-56569: [VMR] BIOS: S3 Image with Fix for EX SCHQ MCA (updated Int Sched Token fix) + FPPRF
+  PLAT-56567 [GN] BIOS: S3 Image with Fix for EX SCHQ MCA (updated Int Sched Token fix) + FPPRF
+  PLAT-49888 Need a BIOS which supports loading APCB based on SubProgram
+  PLAT-56190 [VMR] S3 Image with fix for int scheduler + FPPRF + DE_DBGCFG0 bits 28/30 cleared
+  PLAT-56191 [GN] BIOS: S3 Image with Fix for Int Scheduler + FPPRF + DE_DBGCFG0 bits 28/30 cleared
+
+DF/
+  PLAT-58699: [CZN] replication [RN] DRTM abnormal during context restore mode
+  PLAT-57108 change DF CAKE component map register value
+  PLAT-58108: [RMB] Rembrandt ABL initial support
+  PLAT-57427: [Replicated][GN][ABLv2] Assertion when xGMI 3-Link is selected
+  PLAT-56632 Replicate to [Milan] FuseDisable_CAKE must be set for XGMI 3-link config
+  PLAT-56904: [RN] CBS option 'Disable DF to external downstream IP SyncFloodPropagation' doesn't work
+  Revert "PLAT-52985: [RN-FP6] Get wrong Carve Out size with iGPU Configuration selcet UMA_AUTO and UMA Version select Auto, and Display Resulotion selcet 1920x 1080 and below"
+
+FCH/
+
+Lib/
+  PLAT-54351 [CZN] ABL memory update changes from RN
+  PLAT-46844: Milan - MEM - Enablement for DDR4 UDIMM/RDIMM CTLE with Pstates enabled
+  PLAT-58108: [RMB] Rembrandt ABL initial support
+  PLAT-41658, Respond to SoC BIST failures by downcoring and continuing to boot
+  PLAT-53804 Vermeer: Updated BIOS / SMU DDR Overclocking Range to DDR8000 (4000MHz)
+  PLAT-57401 [ComboAM4v2][VMR] System can't boot up and hang @PC: 0xEE00000d
+  PLAT-57172 [CZN] Add S3 image for pre LSF
+  PLAT-56031:[VMR] Enable Memory Context Save and Restore Function - CPU
+  PLAT-56480 [RN_AM4] DDR4 Overclocking Range to DDR8000 (4000MHz) (Fix E0d0 issue)
+  PLAT-49888 Need a BIOS which supports loading APCB based on SubProgram
+  PLAT-56222 [RN] Unified Phy Save List
+
+Memory/
+  PLAT-56168: RegClkGateEn bit should be set in MiscCfg and UmcCtrlMiscCfg
+  PLAT-54263: Genesis placeholder to track SSP plat-47624
+  PLAT-56477: SUT waiting at POST code E325 for more than 24 hours when MBIST mode is Data Eye
+  PLAT-46844: Milan - MEM - Enablement for DDR4 UDIMM/RDIMM CTLE with Pstates enabled
+  PLAT-39994, [Milan] MBIST - Static and Target Static Lanes Select Control Setup not working as expected
+  PLAT-56261: [GN] Implement Thermometer Rounding Error Workaround for DDR PHY
+  PLAT-58035: Milan PI - Revert PLAT-52852 to re-enable Rome workaround on Milan A0
+  PLAT-58081: Update PMU 1D and 2D message block settings
+  PLAT-57980: [GN] ABL remove some commented out code, no functional change
+  PLAT-41658, Respond to SoC BIST failures by downcoring and continuing to boot
+  Revert "PLAT-50885 [RN] [DDR4] Optimize DDR4 drive strength & ODT settings (Update DRAM Drv, DFE and FFE default policy)"
+  PLAT-57401 [ComboAM4v2][VMR] System can't boot up and hang @PC: 0xEE00000d
+  PLAT-49459: [Milan] Limiting the number of memory controllers in 2P mode hangs simnow in ABL
+  PLAT-57137 [VMR/Qogir] System will hang at PC 0x00B0 on Qogir when only build VMR BIOS not Combo MTS and VMR
+  PLAT-52232 [VMR] Enable Memory Context Save and Restore Function (S3 issue)
+  PLAT-49888 Need a BIOS which supports loading APCB based on SubProgram
+  PLAT-54946 [VMR]Tristate C[2:0] setting for power saving is not correct.
+  PLAT-56222 [RN] Unified Phy Save List
+
+NBIO/
+  PLAT-57908: CBS Option and APCB token requested for X3D Disable
+  PLAT-57979: [GN] ABL does not pass CBS internal item 'DF PState FClk Limit' settings to SMU
+  PLAT-55308 [Milan] Early VGA fail when ASPEED demo card insert in Slot2/Slot3/Slot4
+  PLAT-48241 Early video feature request for Pilot4
+  PLAT-48155 [SSP] Pre-dram early video hangs when accessing legacy video I/O
+  PLAT-47592 Add new APCB token to control Display Splash Screen
+
+Program/
+  PLAT-57617: Allow customers to relocate the ROM3 base address via an APCB token
+  PLAT-54351 [CZN] ABL memory update changes from RN
+  PLAT-58694 [CZN] Apply VBL data config routine during Memory Context Save/Restore feature enable.
+  PLAT-58690 [CZN] Remove redundant ABL
+  PLAT-58672 [CZN] Rename ABL binary
+  PLAT-58574 VMR: ABL Release WABLVM02094010
+  Prepare and Release WABLGN02125010 for Milan Weekly BIOS
+  PLAT-57908: CBS Option and APCB token requested for X3D Disable
+  PLAT-55463 Invoke ABL binaries/indicate resume for s0i3
+  Prepare and Release WABLGN02055010 for Milan Weekly BIOS
+  PLAT-58108: [RMB] Rembrandt ABL initial support
+  Prepare and Release WABLGN01295010 for Milan Weekly BIOS
+  PLAT-57980: [GN] ABL remove some commented out code, no functional change
+  PLAT-41658, Respond to SoC BIST failures by downcoring and continuing to boot
+  PLAT-57802 VMR: ABL Release WABLVM01194010
+  PLAT-57863: [Milan][GN] Prepare and Release RABLGN00705010 for MilanPI_SP3_0070
+  Prepare and Release WABLGN01225010 for Milan Weekly BIOS
+  PLAT-57172 [CZN] Add S3 image for pre LSF
+  PLAT-57433 VMR: ABL Release WABLVM01134010
+  PLAT-57426 [VMR] ABL need to retrain when mem save/restore boot fail
+  PLAT-57137 [VMR/Qogir] System will hang at PC 0x00B0 on Qogir when only build VMR BIOS not Combo MTS and VMR
+  Prepare and Release WABLGN01155010 for Milan Weekly BIOS
+  PLAT-56618 [CZN] Update ABL to compressed binary
+  PLAT-57075 VMR: ABL Release WABLVM01064010
+  PLAT-56031:[VMR] Enable Memory Context Save and Restore Function - CPU
+  PLAT-56707 [RN] ABL need to retrain when mem save/restore boot fail
+  PLAT-56719 VMR: ABL Release WABLVM9C234010
+  Prepare and Release WABLGN9C255010 for Milan Weekly BIOS
+  PLAT-56372 VMR: ABL Release WABLVM9C164010
+  PLAT-49888 Need a BIOS which supports loading APCB based on SubProgram
+  Prepare and Release WABLGN9C185010 ABL for Milan Weekly BIOS
+  PLAT-56222 [RN] Unified Phy Save List
+
+Tools/
+  PLAT-58672 [CZN] Rename ABL binary
+  PLAT-58108: [RMB] Rembrandt ABL initial support
+  PLAT-56659 [CZN] Compressed ABL binary fails to load by PSP BL
+
+----------------------------------------------------------------------------
+
+ABL Delivery Release Notes
+
+Copyright 2019, Advanced Micro Devices, Inc.
+
+Version: RABLCZN9C0A6010 for Cezanne
+
+Date:   Dec 10, 2019
+
+----------------------------------------------------------------------------
+
+Content:
+Filename                                      AGESA V9 Destination Folder         Description
+  AblPostCode.h                               AgesaModulePkg\Firmwares\CZN\       ABL Post Code Definitions
+  AgesaBLReleaseNotes.txt                     AgesaModulePkg\Firmwares\CZN\       This Release notes file for AM4
+  TypeIdx30_AgesaBootloader_U_CN.csbin        AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  APCB.h                                      Include\APCB.h                      AGESA PSP Configuration Block Definition
+  APOB.h                                      Include\APOB.h                      AGESA PSP Output Block Definition
+
+
+Path to files:
+
+
+XML Path:
+  /BIOS/ec/Client/Components/AGESA/ABL-V2/manifest/Custom/RABLCZN9C0A6010.xml
+
+Based On:
+  master
+
+ABL Version String:
+  0x9C0A6010
+
+Features and Fixes:
+
+APCB/
+  PLAT-46188 Add APCB token to control PCIe GEN2 De-emphasis in ABL for Early Trained BMC link via WAFL
+  PLAT-55478 [RN] Provide error indicator opcode table for customization (Part 2)
+  PLAT-55075: [RN]LPDDR4] Add function to send SMU Message to Enable Timer-based Periodic Retraining
+  PLAT-51770: [Milan] Memory MBIST Feature Enabling
+  PLAT-50610 Need a BIOS PCD option that exposes CCMConfig:ForceRdBlkLToC to address customer performance observation
+  PLAT-54490 [RN] Cache Mapped SMN address to speed up ABL post
+
+APOB/
+  PLAT-54000: [RN] [LP4] DQSPreambleControl.LP4SttcPreBridgeRxEn setting is not matching to MR1 OP[3]
+  PLAT-46419: RN - Memory Context Save/Restore support in LPDDR4/ DDR4
+
+CCX/
+  PLAT-50648: [RN_FP6]System auto restart when boot to Ubuntu with mem_encrypt=on in kernel command line
+  PLAT-55441: [RN][ComboAM4v2][Artic]: MSR 0xC001_0015 bit 25 is set to 0 (should be 1) for core1/2/3 after disable CPB in BIOS setup.
+  PLAT-55190 [GN] BIOS: S3 image update for BIOS --> FPPRF and Integer Sch token (V2 IPC improvement)
+  PLAT-54353: [VMR] Clear SmmLock at the beginning of S3 resume
+  PLAT-55192 [VMR] BIOS: S3 image update for BIOS --> FPPRF and Integer Sch token (V2 IPC improvement)
+  PLAT-46419: RN - Memory Context Save/Restore support in LPDDR4/ DDR4 (Fix build issue)
+  PLAT-54639: [VMR] BIOS: S3 image update for BIOS --> FPPRF and Integer Sch token
+  PLAT-54383: RN - Memory Context Save/Restore support in LPDDR4/ DDR4 (DF)
+  PLAT-54005 [CZN] E030/LSD stuck at x86 release
+  PLAT-53936 [GN] BIOS: S3 image update for BIOS
+  PLAT-53938: [VMR] BIOS: S3 image update for BIOS
+  PLAT-53938: [VMR] BIOS: S3 image update for BIOS
+  PLAT-44566: BIOS: Provide BIOS setup option to Enable/Disable -VMGuard3
+
+DF/
+  PLAT-52985: [RN-FP6] Get wrong Carve Out size with iGPU Configuration selcet UMA_AUTO and UMA Version select Auto, and Display Resulotion selcet 1920x 1080 and below
+  PLAT-55161: Replicate to Vermeer RN - Memory Context Save/Restore support in LPDDR4/ DDR4 (DF)
+  PLAT-55160: Replicate to Cezanne RN - Memory Context Save/Restore support in LPDDR4/ DDR4 (DF)
+  PLAT-55563: [RN] DRTM abnormal during context restore mode
+  PLAT-54637 xGMI 3-link Configuration Link Distribution Update
+  PLAT-50610 Need a BIOS PCD option that exposes CCMConfig:ForceRdBlkLToC to address customer performance observation
+  PLAT-54325 Badami initial support
+  PLAT-52606 System unable to re-enter s0i3 after autowake
+  PLAT-54383: RN - Memory Context Save/Restore support in LPDDR4/ DDR4 (DF)
+  PLAT-54489 [VMR] DXIO v46.597: GMI2 OTP Update
+  PLAT-54038 [CZN] Disable Loadstep and Loadrelease in DF
+  PLAT-53901: [RN] Disable Loadstep and Loadrelease in DF
+  PLAT-54013 [RN] Turn off Memory Clear by default
+  PLAT-53060: DF register system value do not match PPR value
+
+FCH/
+
+Lib/
+  PLAT-54765 [CZN] Unified BIOS - No ABL debug log when environment flag is set to 0
+  PLAT-52232 [VMR] Enable Memory Context Save and Restore Function
+  PLAT-55770: [Milan PI 0.0.6.1. RC1] Milan Daytona-X platform hangs at post code E2C5 or E0BB
+  PLAT-55188 - [BA] Initial creation of NBIO code for Badami
+  PLAT-55190 [GN] BIOS: S3 image update for BIOS --> FPPRF and Integer Sch token (V2 IPC improvement)
+  PLAT-55478 [RN] Provide error indicator opcode table for customization (Part 2)
+  PLAT-55478 [RN] Provide error indicator opcode table for customization (Part 1)
+  PLAT-54826: Replicate to Vermeer Choose unsupported 'Memory Clock Speed' BIOS setup item will hang at POST 0xD4.
+  PLAT-54637 xGMI 3-link Configuration Link Distribution Update
+  PLAT-55273 :[RN] Apply VBL data config routine during Memory Context Save/Restore feature enable.
+  PLAT-54000: [RN] [LP4] DQSPreambleControl.LP4SttcPreBridgeRxEn setting is not matching to MR1 OP[3]
+  SWDEV-209716: Catch the APCB corruption in ABL and return error code BL_ERR_DATA_CORRUPTION (0x10) to PSP
+  PLAT-51770: [Milan] Memory MBIST Feature Enabling
+  PLAT-53036, Dmidecode unable to read smbios type 17-Memory Device information for populated DIMM Channels for Socket 1
+  PLAT-54325 Badami initial support
+  PLAT-54876 [RN]ABL and APOB won't return correct Module Manufacturing Location and date
+  PLAT-53340 Trace to dram address maps are not getting setup for CS (GN)
+  PLAT-46419: RN - Memory Context Save/Restore support in LPDDR4/ DDR4 (Fix build issue)
+  PLAT-46419: RN - Memory Context Save/Restore support in LPDDR4/ DDR4
+  PLAT-50869: LRDIMM gets ECC errors after clock stop exit
+  PLAT-54608: [RN] Correct ABL1 post code
+  PLAT-54490 [RN] Cache Mapped SMN address to speed up ABL post (temporarily disable SMN cache)
+  PLAT-54490 [RN] Cache Mapped SMN address to speed up ABL post
+  PLAT-46410: Unsupported config error incorrectly given for a supported ChA RDIMM/Ch B LRDIMM config
+  PLAT-50759: [RN] LPDDR4 - Enabling DDR PHY Lane
+
+Memory/
+  PLAT-55148: [RN] [LPDDR4] Update PIE initialization for x8 devices for PPT
+  PLAT-52232 [VMR] Enable Memory Context Save and Restore Function
+  PLAT-55194: [GN] Channel Disable - Remove extra write to UMC::Phy::SequencerOverride
+  PLAT-55389 [RN] Updating PMU fw for LPDDR4 (Revert WA:PLAT-52510)
+  PLAT-55212 [RN][LP4] Change Drive strength for DDR1600 to save memory power
+  PLAT-50885 [RN] [DDR4] Optimize DDR4 drive strength & ODT settings (Update DRAM Drv, DFE and FFE default policy)
+  PLAT-54010 [RN DDR4] GlobalVrefInSel mess up after training when PHY vref seed <0x52
+  PLAT-54137: [VMR]Margining failed on nominal voltage when VDDIO decrease to 1.14v with DR 3200 1DPC.
+  PLAT-55478 [RN] Provide error indicator opcode table for customization (Part 2)
+  PLAT-46419: RN - Memory Context Save/Restore support in LPDDR4/ DDR4 (Fix S3 issue)
+  PLAT-55164 [RN][LP4] Update MR22 settings for LP4 DR, LP4 definitions are inverted for CS and CLK ODT as compared to LP4x (patch 1)
+  PLAT-46419: RN - Memory Context Save/Restore support in LPDDR4/ DDR4
+  PLAT-55164 [RN][LP4] Update MR22 settings for LP4 DR, LP4 definitions are inverted for CS and CLK ODT as compared to LP4x
+  PLAT-55075: [RN]LPDDR4] Add function to send SMU Message to Enable Timer-based Periodic Retraining
+  PLAT-54495: [RN] [LPDDR4] ABL workaround for per mempstate ppt support
+  PLAT-53842: RN - MEM - LPDDR4 Mop array changes to support S3/Context-Restore with new PPT Mop format, Memeye and Mbist.
+  PLAT-55077: [RN][LPDDR4] Remove Software DFI Init Sequence, Issue PSPSMC_MSG_SwitchToStartupDfPstate to last trained PState
+  Revert "PLAT-51421: Update PIE to skip PPT correctly on DFI_FREQ = 0x1[3:0]"
+  PLAT-55076: [RN][LPDDR4] ABL Should not disable Hclk
+  PLAT-55078: [RN][LPDDR4] Disable LPDDR Frequency Set Point Optimization for PPT
+  PLAT-55091: [RN][LPDDR4] AcsmPlayback registers must be programmed per-pstate
+  PLAT-55093: [RN][LPDDR4] DRAM Phy bitfield RdDbiEnabled must be consistent with UMC/MRS Setting
+  PLAT-54000: [RN] [LP4] DQSPreambleControl.LP4SttcPreBridgeRxEn setting is not matching to MR1 OP[3]
+  PLAT-55036 [RN][LP4x] DRx16 and SRx16 VrefCA Seed Value Changes (MR12)
+  PLAT-51770: [Milan] Memory MBIST Feature Enabling
+  PLAT-53036, Dmidecode unable to read smbios type 17-Memory Device information for populated DIMM Channels for Socket 1
+  PLAT-52103: ABL_MEM_ERROR_LRDIMM_MIXMFG should be an ALERT not an ERROR
+  PLAT-48723: [SSP] NVDIMM-N  failed training after warm reset (CF9_06), part 3
+  PLAT-46419: RN - Memory Context Save/Restore support in LPDDR4/ DDR4 (Fix build issue)
+  PLAT-46419: RN - Memory Context Save/Restore support in LPDDR4/ DDR4
+  PLAT-50869: LRDIMM gets ECC errors after clock stop exit
+  PLAT-54651: [GN] Should not override return value from SMU PSPSMC_MSG_GetStartupDfPstate
+  PLAT-46839: SP3 3DS RDIMM mix (slot0=2S2R slot1=2S4R) 2 of 2 failed to boot
+  PLAT-54490 [RN] Cache Mapped SMN address to speed up ABL post
+  PLAT-53652: [GN] Dram addressing: BankBit incorrect for LRDIMM 4DR when disable all feature in DRAM memory Mapping
+  PLAT-53965 [RN] UMC uses indexed address mode
+  PLAT-53558 [RN] [LPDDR4] Global DAC MP1-2 + Min function
+  PLAT-46410: Unsupported config error incorrectly given for a supported ChA RDIMM/Ch B LRDIMM config
+  PLAT-51825: [RN DDR4] MBIST fails across memory configurations
+  PLAT-50759: [RN] LPDDR4 - Enabling DDR PHY Lane
+  PLAT-51595 [RN] [LPDDR4] Convert User Input MR12/14
+
+NBIO/
+  PLAT-46188 Add APCB token to control PCIe GEN2 De-emphasis in ABL for Early Trained BMC link via WAFL
+  PLAT-55188 - [BA] Initial creation of NBIO code for Badami
+  PLAT-53898: [RN] Customized TX_VBOOST_LVL and TX_TERM_CTRL setting for combo phy in SMU (Update SMU ID)
+  PLAT-55075: [RN]LPDDR4] Add function to send SMU Message to Enable Timer-based Periodic Retraining
+  PLAT-53898: [RN] Customized TX_VBOOST_LVL and TX_TERM_CTRL setting for combo phy in SMU
+  PLAT-54672:[VRM] Need to seperate BIOS option for VDDG into VDDG IOD and VDDG CCD
+  PLAT-54204: Move Bixby training after memory initialization in ABL
+
+Program/
+  PLAT-52232 [VMR] Enable Memory Context Save and Restore Function
+  PLAT-55188 - [BA] Initial creation of NBIO code for Badami
+  PLAT-55190 [GN] BIOS: S3 image update for BIOS --> FPPRF and Integer Sch token (V2 IPC improvement)
+  PLAT-55563: [RN] DRTM abnormal during context restore mode
+  PLAT-55478 [RN] Provide error indicator opcode table for customization (Part 2)
+  PLAT-55478 [RN] Provide error indicator opcode table for customization (Part 1)
+  PLAT-55211: PMFW Release version 55.34.0 (Update CZN PSP Message header)
+  PLAT-55273 [RN] Apply VBL data config routine during Memory Context Save/Restore feature enable. (WA size issue on LPDDR4 image)
+  PLAT-46419: RN - Memory Context Save/Restore support in LPDDR4/ DDR4
+  PLAT-55273 :[RN] Apply VBL data config routine during Memory Context Save/Restore feature enable.
+  PLAT-55211: Renoir PMFW Release version 55.34.0 (Update PSP Message header)
+  PLAT-53842: RN - MEM - LPDDR4 Mop array changes to support S3/Context-Restore with new PPT Mop format, Memeye and Mbist.
+  PLAT-54672:[VRM] Need to seperate BIOS option for VDDG into VDDG IOD and VDDG CCD
+  PLAT-54672:[VRM] Need to seperate BIOS option for VDDG into VDDG IOD and VDDG CCD
+  PLAT-54325 Badami initial support
+  PLAT-54546 [CZN] Update ABL for new naming rule
+  PLAT-46419: RN - Memory Context Save/Restore support in LPDDR4/ DDR4 (Fix build issue)
+  PLAT-46419: RN - Memory Context Save/Restore support in LPDDR4/ DDR4
+  PLAT-54608: [RN] Correct ABL1 post code
+  PLAT-54490 [RN] Cache Mapped SMN address to speed up ABL post
+  PLAT-54204: Move Bixby training after memory initialization in ABL
+
+Tools/
+
+----------------------------------------------------------------------------
+
+ABL Delivery Release Notes
+
+Copyright 2019, Advanced Micro Devices, Inc.
+
+Version: MABLCZN9A286010 for Cezanne
+
+Date:   Oct 28, 2019
+
+----------------------------------------------------------------------------
+
+Content:
+Filename                              AGESA V9 Destination Folder         Description
+  AblPostCode.h                       AgesaModulePkg\Firmwares\CZN\       ABL Post Code Definitions
+  AgesaBLReleaseNotes.txt             AgesaModulePkg\Firmwares\CZN\       This Release notes file for AM4
+  AgesaBootloader_U_prod_CN.bin       AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  APCB.h                              Include\APCB.h                      AGESA PSP Configuration Block Definition
+  APOB.h                              Include\APOB.h                      AGESA PSP Output Block Definition
+
+
+Path to files:
+
+
+XML Path:
+  /BIOS/ec/Client/Components/AGESA/ABL-V2/manifest/Custom/MABLCZN9A286010.xml
+
+Based On:
+  master
+
+ABL Version String:
+  0x9A286010
+
+Features and Fixes:
+  PLAT-53386: [CZN] update S3 image to CL299145
+  PLAT-52326 L3 config bits set incorrectly in GN A0 silicon
+  PLAT-53711: [GN] Integrate DXIO FW version 45.632 into ABL
+  PLAT-53471 [CZN] Incorrect cores per CCX
+  PLAT-53776 [RN] Reduce smn remapping
+  PLAT-48594 [RN] PMU FW loading timesink
+  PLAT-53408 [RN] ABL serial out function fail on FCH UART0 after PI0081
+  PLAT-53146: [RNAM4] Mapping of Channel and UMC is incorrect
+  PLAT-53778 [RN] Reduce polling interval to 1ms for UMC registers
+  PLAT-53777 [RN] Optimize PMU FW loading process
+  PLAT-53365 [RN] LPDDR4 Performance Optimization
+  PLAT-52669: [RN] LPDDR4 - Update on PerBankRefEn in CBS
+  PLAT-52824: [VMR] APCB code should not include internal files
+  PLAT-53437: Milan SP3 MEM - Remove unnecessary Manual DFI_Init_start after Dram Training
+  PLAT-53147 [RN] [LP4] Set bit time =4 in 2D Msg Blk control for PMU training
+  PLAT-53138 [RN][LPDDR4X][DRx8] Please increase the speed limit to 3733MT/s from 2666MT/s (issue fix)
+  PLAT-52938: [VMR]VDDP voltage cannot adjust by AOD.
+  PLAT-53637 [CZN] Fix S0i3 resume path in ABL
+  PLAT-51732 [CZN] Unified BIOS - APCB support
+
+----------------------------------------------------------------------------
+
+ABL Delivery Release Notes
+
+Copyright 2019, Advanced Micro Devices, Inc.
+
+Version: MABLCZN9A166010 for Cezanne
+
+Date:   Oct 16, 2019
+
+----------------------------------------------------------------------------
+
+Content:
+Filename                              AGESA V9 Destination Folder         Description
+  AblPostCode.h                       AgesaModulePkg\Firmwares\CZN\       ABL Post Code Definitions
+  AgesaBLReleaseNotes.txt             AgesaModulePkg\Firmwares\CZN\       This Release notes file for AM4
+  AgesaBootloader_U_prod_CN.bin       AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  APCB.h                              Include\APCB.h                      AGESA PSP Configuration Block Definition
+  APOB.h                              Include\APOB.h                      AGESA PSP Output Block Definition
+
+
+Path to files:
+
+
+XML Path:
+  /BIOS/ec/Client/Components/AGESA/ABL-V2/manifest/Custom/MABLCZN9A166010.xml
+
+Based On:
+  master
+
+ABL Version String:
+  0x9A166010
+
+Features and Fixes:
+
+
+----------------------------------------------------------------------------
+
+ABL Delivery Release Notes
+
+Copyright 2019, Advanced Micro Devices, Inc.
+
+Version: MABLCZN99186010 for Cezanne
+
+Date:   Sep 18, 2019
+
+  PLAT-50393: [GN] Internal CBS option to stop after training failure (instead of disable the channel)
+  PLAT-52478: [RN] Update Static info table to support DP_dphy_tx_term_ctrl
+  PLAT-51967, [GN] Add an APCB token to enable/disable clock outputs by default
+  PLAT-52218: Add a new option to print ABL log only on normal boot or S3/S0i3 resume path
+  PLAT-52146: [RN] Update Static info table to support DP_dphy_tx_vboost_lvl
+  PLAT-49663 GN BIOS: SEV specific CBS option changes for Internal/Debug purpose
+  PLAT-51769: [Milan] Enable Post Package Repair Feature
+  PLAT-52506: [RN][LP4] ABL not setting PeriodicRetrainEn based on the setup option
+  PLAT-44754 BIOS: Provide BIOS setup option to Enable/Disable - PPIN
+  PLAT-52050: [VMR B0] add S3 image and CPUID for VMR B0
+  PLAT-51853: CPUID Not Reporting SNP Capability
+  PLAT-51207 Write Data Compression should be turned on in the Milan BIOS post bringup
+  PLAT-51200 Set SOCID in initpkg7 and DE_CTL appropriately
+  PLAT-51201 Init ChXiVmgCfg0 VmgMode
+  PLAT-52951: [RN] No UMA memory is allocated when UMA sets to specified mode and UMA size is 4GB
+  PLAT-52325 [GN] Please integrate DXIO FW version 45.630 into ABL
+  PLAT-52251: DsNpReqLimit should be 0 in GN
+  PLAT-52259 [GN] Integrate DXIO FW version 45.629
+  PLAT-51928: PIE register config changes for AVIC perf bug
+  PLAT-51846: DF register mismatch between PPR and system values
+  PLAT-51256 :[RN] DF registers init value fail
+  PLAT-51802: GN: BIOS fix needed for RMPUPDATE x86 instruction
+  PLAT-51732 [CZN] Unified BIOS - APCB support
+  PLAT-48723: [SSP] NVDIMM-N  failed training after warm reset (CF9_06)
+  PLAT-47922 [RN][LP4] Training Retries in BIOS to be updated for LPDDR4
+  PLAT-52290: [GN][Milan] Enable ABL Console log over SOL for CRBs
+  PLAT-50461 [Renoir_FP6_MP2] HP9DS1+HP2DC sensor does not work after cold boot
+  PLAT-51224: [RN][LP4] PHY Registers list for save/restore in LP4 mode
+  PLAT-51873: [VMR B0] Use C2P_MSG_97 & 98 as Env Flag
+  PLAT-51885 [RN][LP4] Locate max freq table failure with LPDDR4
+  PLAT-39433: Memory RAS CBS setting change
+  PLAT-53005 [RN] S3 resume failure with DR+DR and DR+SR
+  PLAT-51106 [RN] LPDDR4 Enable HW Thermal Throttling for 50% ThrottlePct (Fix ThermMrrCtrl)
+  PLAT-52953 [RN] [LPDDR4] Thermal Throttling Below Threshold
+  PLAT-52510 [RN][LPDDR4] Implement workaround for DFE issue in PMU FW for LP4x
+  PLAT-52914: [GN] UMC::Phy::ForceClkDisable and UMC::CH::BeqCtrl2[DfiDramClkDis] incorrect on some DIMM config
+  PLAT-52904: [GN] Missing UMC::DramTiming15[CmdParLatency] in TcksrxS & Tcksre calculation
+  PLAT-52852: Milan SP3 MEM - Enable TwoActEn for Milan A0 systems
+  PLAT-47246: System hang at 0xEE00001F with bad DIMM population
+  PLAT-44839: MCA_DESTAT address is wrong in AGESA memory tester
+  PLAT-51726: [RN] [LPDDR4] MBIST Connectivity Test
+  PLAT-52456: [GN] ABL does not configure DIMM temperature sensor, part 2
+  PLAT-51503 [RN DDR4] BIOS should disable ECC if either the Dram or Fuse DO NOT have ECC capability
+  PLAT-52438 [RN][LP4] Enable CA training with CA OPT option for non-terminating rank
+  PLAT-51966, [GN] SPD Optimized token - non-CBS
+  PLAT-50260: PC ee070001 When running S3/S4 on specific systems FR - 6/27
+  PLAT-51851 [RN][LP4] For memory speed 1600 MT/s, use Global Vref for power saving
+  PLAT-47132 CP: S3 replay buffer overwritten by unaligned sub-index
+  PLAT-43347: CBS setting to select different refresh modes All bank, Per bank, Per 2 bank refreshes
+  PLAT-46615 RN - Use Global Vref for speed 1600
+  PLAT-52209 [RN][LP4] Change VrefCA seed for LP4x SRx16
+  PLAT-51931 [RN][LP4x][DR][x8] Default BIOS settings for LP4x DRx8
+  PLAT-47520: Update bit field for UMC::Phy::SequencerOverride for Chl Disable
+  PLAT-52056: [GN] Incorrect ABL post code in the end of ABL0 execution
+  PLAT-51916: [GN] Remove RDIMM 2R speed cap DDR2666
+  PLAT-51892 [RN] Reduce program to program cross-influence
+  PLAT-51909: [GN] ColBit and BankBit incorrect on BankGroupSwapAlt enabled
+  PLAT-51560 [RN][LP4] ProcODT cannot be updated thru the existing CBS option
+  PLAT-51772 [RN] [LPDDR4] Update Trfc value in SPD for the default DRx16 LP4x device (issue fix)
+  PLAT-50882: [RN] [LPDDR4] Add high effort PMU for higher LPDDR4x speed operation
+  PLAT-51818: [GN] Correct two APCB tokens to match Rome BIOS behavior
+  PLAT-47672 [RN] Update DdrMaxRate/DdrMaxRateEnf definition for combo DDR4/LPDDR4 OPN (issue fix)
+  PLAT-50881 [RN] [LPDDR4] 3733/4266 BIOS recipe (Disable DFE by default)
+  PLAT-47385: [ABLv2] Halt ABL execution after ABL triggers warm reset for bad DIMM isolation
+  PLAT-52515: Memory Training not performed on all PStates
+  PLAT-48795: [RN][AM4] Add new data type in APCB 2.0 to support RV1/ PCO/ RV2 Bixby
+  PLAT-52519 [RN]: FW should save-restore CcdUnitIdMask in S0i3
+  PLAT-51970, [GN] Board ID cannot be read from EEPROM on socket 1
+  PLAT-51717: [CZN] use C2P_MSG_97 & 98 as environment flag
+  PLAT-51095: [CZN] C2PMSG_98 - AblVerboseMessaging support
+
+----------------------------------------------------------------------------
+
+Content:
+Filename                              AGESA V9 Destination Folder         Description
+  AblPostCode.h                       AgesaModulePkg\Firmwares\CZN\       ABL Post Code Definitions
+  AgesaBLReleaseNotes.txt             AgesaModulePkg\Firmwares\CZN\       This Release notes file for AM4
+  AgesaBootloader_U_prod_CN.bin       AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  APCB.h                              Include\APCB.h                      AGESA PSP Configuration Block Definition
+  APOB.h                              Include\APOB.h                      AGESA PSP Output Block Definition
+
+
+Path to files:
+
+
+XML Path:
+  /BIOS/ec/Client/Components/AGESA/ABL-V2/manifest/Custom/MABLCZN99186010.xml
+
+Based On:
+  master
+
+ABL Version String:
+  0x99186010
+
+Features and Fixes:
+  PLAT-50890: GN - Remove SP3 Package Motherboard Type 0 support from Milan BIOS
+  PLAT-51487 [RN] [LP4] Please add CBS options for all other MRs for LP4/LP4X
+  PLAT-51418 Enable APCB update through setup and sync with SSP production
+  PLAT-51415: [GN] Force SMU to Limit Highest, and more
+  PLAT-49517 [RN] ABL: move eSPI configuration init to AB Add APCB tokens.
+  PLAT-51341 [RN][LPDDR4] Need a CBS option to program MR22 individually per rank
+  PLAT-51330 [RN][LPDDR4]Need a CBS option to update phyvref for LP4/LP4x
+  PLAT-51337 [RN][LPDDR4]Need a CBS option to update CA and DQ ODT for LP4/LP4x MR11
+  PLAT-51328 [RN][LPDDR4]Need a CBS option to update a VrefDQ seed value for LP4/LP4x MR14
+  PLAT-51126 [RN][LPDDR4]Add a CBS option to update a vrefca seed value for LP4/LP4x MR12
+  PLAT-51200 Set SOCID in initpkg7 and DE_CTL appropriately
+  PLAT-51201 Init ChXiVmgCfg0 VmgMode
+  PLAT-51717: [CZN] use C2P_MSG_97 & 98 as environment flag
+  PLAT-51018 [RN] The Part Number shows Unknown in SMBIOS Type17
+  PLAT-51689: Init Value of CCMPerCluster missing in PPR
+  PLAT-51609: [VMR] Integrate DXIO FW v46.590 for Vermeer
+  PLAT-49958: [GN] Add 4K interleave size option
+  PLAT-51553: TargetRemap register programming constraint
+  PLAT-51565 [GN] Integrate DXIO FW version 45.624 into ABL
+  PLAT-49431: Request to consolidate MP0/MP1 privileged space at top of memory
+  PLAT-51177 [RN]: Update DF register CoherentSlaveModeCtrlA0[EncryptTMZWrites] in BIOS
+  PLAT-51759 [RN] [DDR4] PLL related PHY registers are not restored for S3
+  PLAT-50881 [RN] [LPDDR4] 3733/4266 BIOS recipe
+  PLAT-51325: Update ABL MEM Register Map for PwrDownDly and AggrPwrDownDly
+  PLAT-51617: update mmresume to fix issue with VMR S3
+  PLAT-51421: Update PIE to skip PPT correctly on DFI_FREQ = 0x1[3:0]
+  PLAT-51488 [RN] [LP4] Update PMU msg blk UseBroadcastMR to use per rank MR commands
+  PLAT-51469 [RN][LPDDR4] Update PHYVref and DQ Vref seeds for LPDDR4x/LPDDR4
+  PLAT-51433 [RN][LPDDR4] Update MR12 and MR14 CBS option back-end behavior
+  PLAT-51337 [RN][LPDDR4]Need a CBS option to update CA and DQ ODT for LP4/LP4x MR11
+  PLAT-51603:Set DFPState ModeSel to Normal by default
+  PLAT-51095: [CZN] C2PMSG_98 - AblVerboseMessaging support
+  PLAT-51357 Renoir 0072 bad word - ABL
+  PLAT-51406: [Milan] Update Makefile to enable ABL Console Logging at Serial Ports
+
+----------------------------------------------------------------------------
+
+ABL Delivery Release Notes
+
+Copyright 2019, Advanced Micro Devices, Inc.
+
+Version: MABLCZN99066010 for Cezanne
+
+Date:   Sep 06, 2019
+
+----------------------------------------------------------------------------
+
+Content:
+Filename                              AGESA V9 Destination Folder         Description
+  AblPostCode.h                       AgesaModulePkg\Firmwares\CZN\       ABL Post Code Definitions
+  AgesaBLReleaseNotes.txt             AgesaModulePkg\Firmwares\CZN\       This Release notes file for AM4
+  AgesaBootloader_U_prod_CN.bin       AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  APCB.h                              Include\APCB.h                      AGESA PSP Configuration Block Definition
+  APOB.h                              Include\APOB.h                      AGESA PSP Output Block Definition
+
+
+Path to files:
+
+
+XML Path:
+  /BIOS/ec/Client/Components/AGESA/ABL-V2/manifest/Custom/MABLCZN99066010.xml
+
+Based On:
+  master
+
+ABL Version String:
+  0x99066010
+
+Features and Fixes:
+  PLAT-46282: [RN] CBS options for LPDDR4/4x Periodic Retraining
+  PLAT-50373: [RN] LPDDR4 - BIOS to optimized FSP sequence in SRSM
+  PLAT-50988: [RN] CPPC bit of CPUID_Fn80000008_EBX should be set to 1 by default
+  PLAT-50697: [Renoir] clear SmmLock when S3 resume
+  PLAT-51130: [CZN] E010 at mem test requires DisOutgoingProbe set to 1b
+  PLAT-50849 [RN]: Incorrect memory info hob report if APCB_TOKEN_UID_UMAABOVE4G_VALUE disabled.
+  PLAT-50826: ABL dxioRegs SMN writes have unnecessary SMN read
+  PLAT-49784: [CZN] Use C2PMSG_97 for environment flag in ABL
+  PLAT-50929: [RN][LP4] CBS option for "WLS" is not working and default option needs to be correct as well
+  PLAT-50978 [RN] [LPDDR4] Add Max Frequency Support Table
+  PLAT-50889: [RN]LPDDR4] MBIST RRW Test does not capture read data on channel B
+  PLAT-48302 [Renoir][LP4] chiplet 7 instance of CA bus not being programmed correctly
+  PLAT-49326:  [RN][LP4] x8 LP4x DRAM fail training
+  PLAT-49768: [RN[[LPDDR4/4x] WDQS extension mode aka the Tphy_wrlat_early version of WDQS Extension"
+  PLAT-51062 MTS: ABL Release WABLVM99044010
+  PLAT-44441: [ABLv2] Remove redundant Smbus speed setting in BoardID Smbus method
+  PLAT-50991 RN: ABL Release WABLRN99033030
+
+----------------------------------------------------------------------------
+
+ABL Delivery Release Notes
+
+Copyright 2019, Advanced Micro Devices, Inc.
+
+Version: MABLCZN98286010 for Cezanne
+
+Date:   Aug 28, 2019
+
+----------------------------------------------------------------------------
+
+Content:
+Filename                              AGESA V9 Destination Folder         Description
+  AblPostCode.h                       AgesaModulePkg\Firmwares\CZN\       ABL Post Code Definitions
+  AgesaBLReleaseNotes.txt             AgesaModulePkg\Firmwares\CZN\       This Release notes file for AM4
+  AgesaBootloader_U_prod_CN.bin       AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  APCB.h                              Include\APCB.h                      AGESA PSP Configuration Block Definition
+  APOB.h                              Include\APOB.h                      AGESA PSP Output Block Definition
+
+
+Path to files:
+
+
+XML Path:
+  /BIOS/ec/Client/Components/AGESA/ABL-V2/manifest/Custom/MABLCZN98286010.xml
+
+Based On:
+  master
+
+ABL Version String:
+  0x98286010
+
+Features and Fixes:
+  PLAT-46987: Milan new feature support - 6 channel interleaving
+  PLAT-50477: [GN] Sync DF with latest production Rome
+  PLAT-50011 - Rep[Vermeer]ABL --> SMU message and CBS option to override the ChIdxHashEn fuse
+  PLAT-47264 [GN] Pre-memory link training
+  PLAT-48653: [Renoir] AGESA CPU Supports Boot From Rom
+  PLAT-50559: [CB] wrong address is used for L3CRB
+  PLAT-50405: [VMR] three registers have wrong value in S3 image
+  PLAT-49716: [GN] DSM workaround for multi-threaded cacheable scenario denied by CBA0 RTL
+  PLAT-49671: [VMR] DSM workaround for multi-threaded cachaeble scenario denied by CBA0 RTL
+  PLAT-50481: [GN] Integrate DXIO FW version 36.618
+  PLAT-50540: [VMR] update DXIO FW to 46.586
+  PLAT-50200: Vermeer DF to UMC request credit optimization
+  PLAT-45001: [MTS ABL] implement the function which provides BusBase/Limit
+  PLAT-49951: GN DF to UMC request credit optimization
+  PLAT-49946: [GN] Skip Phy RAM ECC workaround in emulation
+  PLAT-49872: [RN] Workaround for S0i3 resume DRAM access stuck
+  PLAT-49844: [VMR] update mp0 DXIO FW to v46.585
+  PLAT-42360: [ABLv2] ConsoleOutBasicCtrl should not depend on ConsoleOut filter
+  PLAT-50282: [CZN] Correct enabled Core/CCX bit mapping
+  PLAT-49819 [RN] ABL not sending S3Exit command to MP2 on S3Exit and S4 Resume
+  PLAT-49936: [VMR] Memory updates from MTS / Directory Restructure
+  PLAT-48946: [RN] [LPDDR4] Bank Swap
+  PLAT-48234 [RN] Update SrsmTiming0.Tcksrx Programming (following UclkDiv1Mode)
+  PLAT-49630: Rome [MEM] Support vendor-specific alternative frequency change sequence
+  PLAT-48028: Need additional debug data in ABL for CS and Rank for the DIMM failure
+  PLAT-50193 [RN[LPDDR4/4x] Update tRRD and tFAW settings based on LP4/4x device rated speed (base on native speed)
+  PLAT-49323 [RN] [LPDDR4] DDR-3733 and DDR-4267 not consider OC
+  PLAT-48954: [RN][LP4] Remove traffic Throttling from BU BIOS and update/fix TO timings
+  PLAT-50006: [RN] LPDDR4 Control Mappings
+  PLAT-50394: [RN] LPDDR4 MR13 Raw Hex Value should use FSP1/0 depending on MP State
+  PLAT-49103: [RN] [LPDDR4] SRSM VrefDQ Per SC, Per Rank
+  PLAT-48884: [RN] LPDDR4 MOP Array update for Raw Hex Values
+  PLAT-50291 [RN][LP4] Detect LPDDR4x via SPD byte 2
+  PLAT-49101 [RN] [LPDDR4] Remove Average VrefDQ Statements
+  PLAT-49766: [MILAN][MEM] Modify ABL based on Bump to Pin & ODT Pattern table
+  PLAT-48357: [RN] DDR4 ECC is not working properly in BIOS
+  PLAT-50671 [RN] GET_PMU_STAGE not returning MPState
+  PLAT-50577: GPU Host Translation Cache Registers to disable
+  PLAT-49980 [RN] VDDP voltage control option not working (New SMU MSG)
+  PLAT-49117 [RN] SET_MEM_FREQ call should update ConfigSocRail Speed
+  PLAT-50790: [CZN] disable serial port and enable IoRedirection for ABL
+  PLAT-50761: [CZN] update BootRomTable.h
+  PLAT-43520: [ABLV2] Incorrect port width used in BoardID IO method & PLAT-43985: [ABLV2] Incorrect PCI access function called to enable IO port decode in BoardId IO method
+  PLAT-49980: [RN] VDDP voltage control option not working
+  PLAT-50657 - ABL Build error on SMU message
+  PLAT-44041 [RN] Multiple APCB support selected thru EC RAM (Fix issue)
+  PLAT-50446: [RN] CCX1 per core/thread DF save incorrect
+  PLAT-50241: [VMR] enable serial log for ABL
+
+
+----------------------------------------------------------------------------
+
+ABL Delivery Release Notes
+
+Copyright 2019, Advanced Micro Devices, Inc.
+
+Version: MABLCZN98126010 for Cezanne
+
+Date:   Aug 12, 2019
+
+----------------------------------------------------------------------------
+
+Content:
+Filename                              AGESA V9 Destination Folder         Description
+  AblPostCode.h                       AgesaModulePkg\Firmwares\CZN\       ABL Post Code Definitions
+  AgesaBLReleaseNotes.txt             AgesaModulePkg\Firmwares\CZN\       This Release notes file for AM4
+  AgesaBootloader_U_prod_CN.bin       AgesaModulePkg\Firmwares\CZN\       Unified AGESA Bootloader
+  APCB.h                              Include\APCB.h                      AGESA PSP Configuration Block Definition
+  APOB.h                              Include\APOB.h                      AGESA PSP Output Block Definition
+
+
+Path to files:
+
+
+XML Path:
+  /BIOS/ec/Client/Components/AGESA/ABL-V2/manifest/Custom/MABLCZN98126010.xml
+
+Based On:
+  master
+
+ABL Version String:
+  0x98126010
+
+Features and Fixes:
+  Initial ABL release for E.0.1.0

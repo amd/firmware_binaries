@@ -1,0 +1,215 @@
++---------------------------------------+
+| SMU Firmware Release Notes - CEZANNE  |
++---------------------------------------+
+
++---------------------------+
+| Version 12                |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         09/01/20
+|
+| * Changelist
+|   - DXIO v55.715
+|   - Upgrade Cezanne SOC header to Pre-LSF (SOC fusedoc v1.09)
+|   - Port all Renoir changes upto v55.31.0
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.0.12.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.0.12.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 11                |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         13/12/19
+|
+| * Changelist
+|   - DXIO v55.713
+|   - Add placeholder for NVME trap to match Renoir BIOSSMC
+|   - Remove MTFmax
+|   - Port all Vermeer changes upto v56.13.0
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.0.11.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.0.11.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 10                |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         23/11/19
+|
+| * Changelist
+|   - DXIO v55.713
+|   - Upgrade Cezanne SOC header to LSD (SOC fusedoc v1.08)
+|   - Add new fuses for CKS and DLDO fuses
+|   - Update smu12_bios_if.h to sync with Renoir
+|   - Port all Vermeer changes upto v56.11.0
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.0.10.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.0.10.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 9                 |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         25/10/19
+|
+| * Changelist
+|   - DXIO v55.713
+|   - PMFW Kernel v17
+|   - Upgrade Cezanne SOC header to LSD (SOC fusedoc v1.04)
+|   - Port all Renoir changes upto v55.28.0
+|   - [WKA] Add RSMU core interrupt unit_id mapping
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.0.9.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.0.9.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 8                 |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         16/10/19
+|
+| * Changelist
+|   - DXIO v55.712
+|   - [DECZNEMU-32] MP1 initiates access to non-existing cores. Fix ccx component checker.
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.0.8.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.0.8.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 7                 |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         07/10/19
+|
+| * Changelist
+|   - DXIO v55.712
+|   - Port Vermeer changes selectively upto v56.9.0
+|   - Add MP1 fuses for MTFmax and HTFmax
+|
+| * Issues
+|   - Core CKS and DLDO are disabled due to missing fuses
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.0.7.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.0.7.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 6                 |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         22/09/19
+|
+| * Changelist
+|   - DXIO v55.709
+|   - Kernel v16
+|   - Update fuses.h using soc_fusedoc.csv v1.04
+|   - Port all Renoir changes upto v55.22.0
+|
+| * Issues
+|   - Core CKS and DLDO are disabled due to missing fuses
+|   - Latest SOC reg header file still contains duplicate pmreg_initkg struct
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.0.6.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.0.6.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 5                 |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         27/08/19
+|
+| * Changelist
+|   - DXIO v55.701
+|   - Porting PMFW-2034 - COH timer updates.
+|   - Remove RestoreCcxInterruptRegisters function. Not needed in CZN.
+|   - Porting PMFW-1120 - Add SMU message for "on the fly" CPU FMax Override and BIOS Fmax Override.
+|   - Remove hardcoded CCX mask.
+|
+| * Files
+|   -
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 4                 |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         26/08/19
+|
+| * Changelist
+|   - DXIO v55.701
+|   - Porting PMFW-2076 - Improve accuracy of pow_slow in core DLDO CI LUT calculations.
+|   - Porting PMFW-2061 - L3CLK AFLL. Remove L3 CKS.
+|   - Porting PMFW-2060 - EDC controller update to account for 50% core CKS.
+|   - Release 0.64.0.4. Porting PMFW-2402 - Add 16 new core DPM CAC weights to fill in the new reserved weights registers. Cleanup files.
+|
+| * Files
+|   -
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 3                 |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         19/08/19
+|
+| * Changelist
+|   - DXIO v55.701
+|   - Update CPU_EXT_FAMILY to 0x0A
+|
+| * Files
+|   -
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 2                 |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         16/08/19
+|
+| * Changelist
+|   - DXIO v55.701
+|   - Temporary workaround for simulation. Remove CCX1 content from RsmuJobTable.
+|
+| * Files
+|   -
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 1                 |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         14/08/19
+|
+| * Changelist
+|   - DXIO v55.701
+|   - Cezanne Initial Delivery
+|
+| * Files
+|   -
+|
++-----------------------------------------------------------------------------------------------------------

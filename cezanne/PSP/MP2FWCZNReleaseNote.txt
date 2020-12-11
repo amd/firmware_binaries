@@ -1,0 +1,78 @@
++-----------------------------------------+
+| MP2 SFH Firmware Release Notes - CEZANNE
++-----------------------------------------+
++----------------------------------------------------------------------------------------------
+| Version 7.0.0.1
++----------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           12/02/20
+|
+|   * Features enabled
+|       - Process 32 C2P Message Interupt
+|       - Process 6 GPIO Interupt
+|       - P2C Message Register is enabled
+|       - Support S3/S0ix Entry/Exit
+|       - Secondary Accelerometer Uses GPIO271
+|
+|   Jira ID : [PLAT-58706] [CZN] Secondary Accel uses GPIO271
+|
+|   * Limitation
+|
++----------------------------------------------------------------------------------------------
+| Version 7.0.0.3
++----------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           12/06/20
+|
+|   * Features enabled
+|       - Add Support for dual sensors using interrupt
+|       - ALS calibration and retrieval of calibration factor
+|
+|     Jira ID : [PLAT-65021] [CZN] Retrieving of calibration factor value after BIOS update
+|
+|   * Limitation
+|
++----------------------------------------------------------------------------------------------
+| Version 7.0.0.5
++----------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           17/07/20
+|
+|   * Features enabled
+|       - Add Support for "on-table" detection
+|       - Add new parameters in the config file
+|
+|     Jira ID : [PLAT-66692] [CZN] Add support for "on-table" detection
+|
+|   * Limitation
+|
++----------------------------------------------------------------------------------------------
+| Version 7.0.6.3
++----------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           15/09/20
+|
+|   * Features enabled
+|       - Add Support for "on-table" detection
+|       - Add new parameters in the config file
+|
+|     Jira ID : [PLAT-69915] [CZN] Support Boot with lid close and detect close mode
+|
+|   * Limitation
+|
++----------------------------------------------------------------------------------------------
+| Version 7.0.6.4
++----------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           29/09/20
+|
+|   * Features enabled
+|       - Add Support for "on-table" detection
+|       - Add new parameters in the config file
+|
+|     Jira ID : [PLAT-70227] [CZN_FP6][MP2 SFH] Sometimes sensors does not work after system
+|               reboot or cold boot
+|
+|   * Limitation
+|
++----------------------------------------------------------------------------------------------

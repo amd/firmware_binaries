@@ -1,0 +1,805 @@
++---------------------------------------+
+| SMU Firmware Release Notes - CEZANNE  |
++---------------------------------------+
+
++---------------------------+
+| Version 64.31.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         27/10/20
+|
+| * Changelist
+|   - DXIO v55.759
+|   - PMFW Kernel v21
+|   - aeaa11405 [PLAT-71484] [ETB] Hardlock occurred with PC: EF003342/ B0000CB6 while running 3DMark_Timespy in DC mode
+|   - 1602d3939 [PLAT-70957] [IMP] 35W Run to run and Part to Part Variance due to EDC --L3 EDC Floor
+|   - abc9fdc17 [PMFW-5929] [IMP] Change DID delta on CZN AM4
+|   - 6a3a73f44 [PMFW-5880] [IMP] Apply settings based on BIOS Interface Table values on S0i3 Resume
+|   - 5a1a274b5 [PMFW-5876] [IMP] Integrate DXIO-FW version 55.759.0 into SMU
+|   - 72c81591b [PLAT-67666] [WKA] Kernel debugger does not work via USB3 until late in the boot process
+|   - decd40980 [PLAT-70957] [IMP] 35W Run to run and Part to Part Variance due to EDC
+|   - e77cac9e6 [PMFW-5838] [IMP] CZN FP6 TmonNumAcq=0x2 and Curtemp Filtering (AlphaUp=0.001)
+|   - c8e482533 [PLAT-71037] [ETB]MI-A18S fails to enter S0I3 with NVMe KIOXIA (DC only)
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.31.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.31.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.30.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         16/10/20
+|
+| * Changelist
+|   - DXIO v55.757
+|   - PMFW Kernel v21
+|   - 5ec51c2ae [PMFW-5841] [IMP] New PHYCLK Lookup Table for HBR3 to DPM3
+|   - f31b3368e [PLAT-71136] [ETB] [AM4] System auto resume from S4 on S0i3 OS
+|   - a6c3b9259 [PMFW-5826] [ETB] Incorrect fuse read for unsigned AVFS Core Freq Offset fuse
+|   - 168d1dc14 [PMFW-5817] [IMP] Remove Message structure from RAI
+|   - a9b00ee2b [PLAT-70663] [IMP] VR PSI Control issue with single phase over-current
+|   - 1efbcaf3a [PMFW-5795] [IMP] Add patch generation support for test_package
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.30.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.30.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.29.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         08/10/20
+|
+| * Changelist
+|   - DXIO v55.757
+|   - PMFW Kernel v21
+|   - 12877ae40 [PMFW-4810] [ETB] CZN Add limiters to PPT, TDC and EDC - Update AM4 Unauthenticated default
+|   - 6d06db575 [PMFW-5780] [OPT] EDC Optimization to Improve CZN performance at 70A EDC Limit
+|   - c9f689765 [PMFW-5628] [IMP] Extend FidDid Table to support Overclocking Range to DDR8000 (4000MHz)
+|   - 83aaddd51 [PMFW-5732] [WKA] DPPCLK WKA for DENTIST_WDIVIDER field mismatch
+|   - fd5a4480b [PMFW-5701] [IMP] Lower DCN clock and Vmin if panel is in PSR
+|   - 4f7d05519 [PMFW-5738] [IMP] Coverity Scan For Cezanne 092020
+|   - 6d6556d19 [PMFW-5720] [OPT] CAC weights Minor Tuning
+|   - 2483a7d08 [PLAT-68974] [WKA] No PME_Turn_Off in the end of entering S3/S4/S5
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.29.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.29.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.28.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         29/09/20
+|
+| * Changelist
+|   - DXIO v55.757
+|   - PMFW Kernel v21
+|   - 7f1f7f366 [PMFW-4902] [NEW] Reset OC mode to default when entering DC Mode
+|   - e6debfab8 [PLAT-67499] [ETB] [CZN FP6] [Level3] SUT fails to automatically wake up from S0i3 AMDsuspend, fail rate 1/100 loops
+|   - 6d3aa8142 [PMFW-5531] [IMP] CZN FP6: Retain Memory / DF Pstates functionality during Memory Overclock
+|   - e9fbe2410 [PMFW-5712] [IMP] GTSC workaround optimization
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.28.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.28.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.27.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         25/09/20
+|
+| * Changelist
+|   - DXIO v55.757
+|   - PMFW Kernel v21
+|   - 67358c47b [PMFW-5702] [IMP] Allow debug version override in test FW creation
+|   - 36ee30457 [PMFW-5708] [OPT] CAC weights update to Rev15 - Updated for AVX discrepancy issue
+|   - 048c49e9a [PMFW-5666] [ETB] External Pcie FSDL coverity failure
+|   - 7865602b5 [PLAT-70083] [IMP] [AM4] Overclock setting is cleared after resume from S0i3
+|   - 15a9652da [PLAT-70223] [ITB] set combophystaticconfig to USB only mode fail
+|   - 11007ead6 [PMFW-5209] [WKA] New sequence in SetCoreLdo to ensure P-State change - part 2
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.27.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.27.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.26.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         21/09/20
+|
+| * Changelist
+|   - DXIO v55.757
+|   - PMFW Kernel v21
+|   - 6712f1bc8 [PMFW-5662] [WKA] 15W iDVT needs to match final DVT 2.1GHz GB
+|   - bc0a8ee98 [PLAT-69947] [OPT] CZN FP6 15W DVT low yield issue with Core DLDO enabled
+|   - aab3ebeb0 [PLAT-69969] [IMP] Setup option for CC1 Disable has no effect - Add CC1Dis check during enable
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.26.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.26.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.25.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         18/09/20
+|
+| * Changelist
+|   - DXIO v55.757
+|   - PMFW Kernel v21
+|   - 847048b2d [PMFW-4810] [ETB] CZN Add limiters to PPT, TDC and EDC - Update
+|   - 2abd9e421 [PMFW-5613] [IMP] VDDCR Startup Voltage Sequence Optimization
+|   - f38be37a2 [PMFW-5617] [OPT] [CZN] Update PriorityDeltaGain for STAPM, PPT and TDC Controllers
+|   - 3595e76b8 [PLAT-69969] [IMP] Setup option for CC1 Disable has no effect
+|   - f2e6d6c83 [PLAT-69695] [IMP] Boot at 1.2V instead of startup vid
+|   - 0b6808f02 [PMFW-5623] [IMP] CZN FP6 PPT, EDC, TDC Limit Adjustment for 45W Ryzen 7 and 5
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.25.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.25.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.24.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         14/09/20
+|
+| * Changelist
+|   - DXIO v55.757
+|   - PMFW Kernel v21
+|   - f579b6dd7 [PMFW-4841] [IMP] [CZN AM4] Alpha filter implementation for SBTSI filtering
+|   - 99da4ebfc [PLAT-67479] [IMP] disable/enable CLKB port at GFXOFF entry/exit
+|   - 50f58f74c [PMFW-5184] [IMP] SetArbiterHardMax_SOC for DcfclkDpm
+|   - 1e68b9b8b [PMFW-5620] [IMP] Integrate PMFW Kernel v21
+|   - 766e1f5c9 [PLAT-69752] [ETB] Customer LPDDR System Cannot Resume from S0i3 Modem standby
+|   - c23ebe7a8 [PMFW-5594] [WKA] Modify WKA for SOC voltages in SMU FW for Fast CLDO Bypass
+|   - 478c4a8ed [PLAT-69041] [ETB] [WHQL][CZN-FP6][Device][HLK 19041][20H2] Regression: D3D12 - SingleCommandListTimestampsDecode test fails.
+|   - 6c38af67a [PMFW-4783] [IMP] Adjust STT limit for SMU FW message PPSMC_MSG_SetPowerLimitPercentage when STT is in use
+|   - e0f3478f2 [PMFW-5596] [OPT] CZN EDC Parameter Update
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.24.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.24.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.23.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         03/09/20
+|
+| * Changelist
+|   - DXIO v55.757
+|   - PMFW Kernel v19
+|   - 7bee54b98 [PMFW-5564] [UTB] EDC GFX Iddmax needs to use target voltage when GFXDLDO in BYPASS
+|   - 8c1bd8fa2 [PMFW-5551] [IMP] Integrate dxio_fw v 55.757 into CZN PMFW release
+|   - 178dc62ce [PMFW-4794] [IMP] Gfxclk Overdrive need to set max EDC threshold
+|   - 303b06b64 [PMFW-5572] [ETB] Incorrect default sPPT time constant when BiosInterfaceTable.SLOW_PPT_TIME_CONSTANT is 0
+|   - da2b0f3b3 [PMFW-5200] [NEW] Overclocking state does not restore after S0i3 - Fix function prototype
+|   - e36df73fa [PMFW-5202] [NEW] CZN: Support LN2 mode on APU
+|   - cc73d0dee [PMFW-4840] [IMP] GFXVoltage does not get set after applying SOCVoltage
+|   - b8d839f19 [PMFW-4810] [IMP] CZN Add limiters to PPT, TDC and EDC - Add SmartShift Support
+|   - 456d6d292 [PMFW-5200] [NEW] Overclocking state does not restore after S0i3
+|   - 5bfe93943 [PMFW-4810] [ETB] CZN Add limiters to PPT, TDC and EDC - Fix FitLimitScalar MOC disabled case
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.23.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.23.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.22.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         28/08/20
+|
+| * Changelist
+|   - DXIO v55.755
+|   - PMFW Kernel v19
+|   - e44430407 [PLAT-68470] [IMP] Save/Restore the PMCSR of all external PCIE devices (except NVME) in the process of entering and exiting S0i3
+|   - 53d72d6e8 [PMFW-5451] [UTB] [CZN] Update Core C-States Timers (IRM) for AC Mode
+|   - 3749df7d0 [PMFW-5316] [UTB] DF P state 0 (1600/1067/2133) is not triggered in Cezanne 45W LPDDR4
+|   - 79bd34b78 [PLAT-68458] [ETB] Temperature turns to -49C while AC switch to DC immediately
+|   - d7cc6cb25 [PMFW-4810] [ETB] CZN Add limiters to PPT, TDC and EDC - Fix PBO disabled FP6 default
+|   - 387ca8627 [PMFW-5385] [ETB] RN-AM4 correct 10ms delay for DSM_B function
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.22.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.22.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.21.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         24/08/20
+|
+| * Changelist
+|   - DXIO v55.755
+|   - PMFW Kernel v19
+|   - 0e27fb8e8 [PLAT-67685] [ETB] Fix hang at ChangeCorePll due to VdciLowPwrDis
+|   - 2d19fd8f2 [PLAT-67825] [ETB] GFX FDD BTC tiles with incorrect -64 calibration value
+|   - 7c04529d9 [PMFW-4838] [NEW] Request to implement BTC for core mafdd - Update VR WKA
+|   - 89a2dbbe9 [PMFW-5397] [IMP] CZN GfxDEM optimization
+|   - 413503782 [PMFW-5377] [IMP] Shift function to EXT to make space in TEXT section
+|   - 0b373e4d4 [PMFW-5398] [IMP] Core DLDO parameter tuning
+|   - 155ee4a75 [PMFW-5411] [WKA] Apply 0.65V as minimum allowed SOC voltage
+|   - 4b81ca8b2 [PMFW-4408] [WKA] BSOD 0x20001 occured when running S4 with VBS
+|   - 2f315083f [PMFW-5199] [IMP] Update rule descriptions in PM log headers
+|   - 718ba8e9a [PMFW-5362] [ETB] [RyzenMaster][CZN-FP6] SMU does not allow to set Slow PPT to 100W in 45W OPN
+|   - 029798775 [PLAT-64297] [IMP] TSC counter stability on some platforms is sometimes not to expectations
+|   - f3ace50ab [PMFW-5006] [IMP] VoltageController - FMax Override Causes VoltageLimiters Problems
+|   - 51ebf543e [PMFW-4810] [ETB] CZN Add limiters to PPT, TDC and EDC - Fix PBO disabled default value
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.21.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.21.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.20.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         14/08/20
+|
+| * Changelist
+|   - DXIO v55.755
+|   - PMFW Kernel v19
+|   - b37235cec [PLAT-67656] [NEW] Increment SPL value to support firmware anti rollback feature for production
+|   - fa9f9cb46 [PMFW-5246] [NEW] Core CstateBoost PSM Adder
+|   - b8603fce5 [PMFW-5310] [IMP] Update Preferred Core ordering algorithm
+|   - 424a51817 [PMFW-5271] [IMP] Smartshift Incorrect SmuMetrics_StapmOriginalLimit
+|   - 47ea11375 [PLAT-67911] [ITB] IC_ENABLE bit doesn't disable when config USB only and DP mode
+|   - f163eebfc [PMFW-5317] [IMP] Integrate DXIO-FW version 55.755.0 into SMU
+|   - 6b5a94c78 [PMFW-5302] [IMP] FDDBTC not resetting dldo_fdd_config for each core
+|   - 9d46c376c [PMFW-5292] [IMP] Refactor InitSystemConfig to be used during BIOS override
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.20.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.20.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.19.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         10/08/20
+|
+| * Changelist
+|   - DXIO v55.749
+|   - PMFW Kernel v19
+|   - bd38f9423 [PMFW-5281] [IMP] Add FLLBTC to S0i3 save and restore
+|   - 5acf7b2e2 [PMFW-5284] [ETB] 45W EVT Sec OPNs fail to boot (AC95)
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.19.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.19.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.18.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         07/08/20
+|
+| * Changelist
+|   - DXIO v55.749
+|   - PMFW Kernel v19
+|   - 17bd6f0d3 [PMFW-4810] [IMP] CZN Add limiters to PPT TDC and EDC
+|   - 2ea7054fd PLAT-65470] [IMP] After S0I3 resume + DMAr enable will BSOD_0x101 sometimes - Fix spacing
+|   - a1bae3cd4 [PMFW-5248] [OPT] EDC CAC Weight Update
+|   - 5ea785446 [PLAT-67010] [ETB] FllEnable is not set on S0i3Resume
+|   - 0200792d6 [PLAT-67080] [ETB] B000A921 observed running s3 test in loop
+|   - 686693b57 [PLAT-65927] [IMP] System hang at Black Screen when run Restart+MSC w/ Hook (HVCI enable)
+|   - b12e98534 [PLAT-66428] [WKA] System hang when resume from S0i3 with Post Code Code: EA00E099
+|   - 396d6df1a [PLAT-66012] [IMP] Without GFX_OFF to cause CRB cannot enter MSC
+|   - 213272ace [PLAT-65780] [IMP] USB XHCI port0 can't disable on Type A Phy config
+|   - 6b40d167a [PLAT-65470] [IMP] After S0I3 resume + DMAr enable will BSOD_0x101 sometimes
+|   - c4417f4a1 [PMFW-4826] [IMP] PPT measured value is 0 when OS in P&D OC mode
+|   - a0f415593 [PLAT-65982] [WKA] CZN FP6 Processor power management test fail
+|   - d3ef561a3 [PMFW-4222] [IMP] Flush cache to SRAM on FwError, Updated SMU_SIZE usage
+|   - 321c5540f [PMFW-5241] [NEW] Add DXIO EXT Data Section
+|   - 8cd189e24 [PMFW-5209] [WKA] New sequence in SetCoreLdo to ensure P-State change
+|   - e769cf340 [PMFW-4947] [NEW] Add GFX HT Fmax Controller
+|   - 62e64b41e [PMFW-5239] [IMP] Shift more memory space from DATA to S0i3
+|   - a4a2bb0a8 Revert "[PMFW-4499] [IMP] Fix Makefile to accommodate Jenkins parallel build"
+|   - 29763edc3 [PMFW-5241] [NEW] Add DXIO EXT Data Section
+|   - fd16d42cf Revert "[PMFW-4027] [IMP] RN FP6: Memory OC Fusing diabled not being enforced"
+|   - 3c4f4f142 [PMFW-5195] [WKA] CPPC register values need to be restored after S0i3 resume
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.18.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.18.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.17.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         30/07/20
+|
+| * Changelist
+|   - DXIO v55.749
+|   - PMFW Kernel v19
+|   - 4ef62dbb4 [PLAT-67323] [WKA] SMU stuck at 20D0 when running S5/S4 on Majolica board - Revert dxio_fw v55.754
+|   - 5aa4a3ea2 [PMFW-5196] [IMP] FCH doesn't assert SLP_S3# in the end of S0i3 entry
+|   - 58564929e [PMFW-5021] [IMP] FCLK DPM Should Update L3FasterThanDF on CLK Change
+|   - 85d2277c9 [PMFW-5197] [ETB] PCR1 shadow copy incorrect with CPUOFF
+|   - 824e8ea18 [PMFW-5181] [IMP] Port the bugcheck EF and unsafe shutdown fixes from Winston
+|   - 9d9fa6944 [PLAT-67084] [IMP] L3 frequency is stuck at 4.125G on B6 proto part
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.17.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.17.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.16.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         28/07/20
+|
+| * Changelist
+|   - DXIO v55.754
+|   - PMFW Kernel v19
+|   - f7905ae56 [PMFW-5174] [UTB] Use the FddBTC calibrated value in Core FDD calculation
+|   - 5145c8aa5 [PMFW-4469] [UTB] CZN AM4 ConfigID swap
+|   - a0bb670e8 [PLAT-66600] [ETB] CZN SMU feature enable message takes longer time than RN
+|   - 1fe789108 [PMFW-5026] [NEW] Cezanne SmartShift with Navi14 Navi22 Navi23 DGPU
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.16.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.16.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.15.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         27/07/20
+|
+| * Changelist
+|   - DXIO v55.754
+|   - PMFW Kernel v19
+|   - 506bcaef0 [PMFW-4947] [NEW] Add GFX HT Fmax Controller -Add GFX HTFmax fuses and Core HTFmax slope fuse
+|   - ebcef5c5f [PMFW-5053] [IMP] CZN GfxDEM optimization
+|   - 35327481e [PMFW-5113] [IMP] CZN Core DLDO Tweaks For EVT
+|   - a7eaa1141 [PMFW-5084] [IMP] CZN TESTSMC Message Audit
+|   - de7e9b05a Revert "[PMFW-4912] [IVB] Port GN B0 SetCoreLdo Change"
+|   - ddd953f42 [PLAT-65353] [WKA] Tdiode-Tmon offset is violating spec on PlatSi/Proto
+|   - 91f3472ce [PMFW-5073][IMP] Change the function fSMC_MSG_SetGfxDldoFddScalar to include FDD Offset
+|   - 0f1cda96e [PMFW-5047] Integrate dxio_fw v55.754 into CZN PMFW release
+|   - 5eed8d23d [PLAT-64158] [WKA] System cannot entry S0i3 after S4 w/ dGPU config
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.15.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.15.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.14.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         23/07/20
+|
+| * Changelist
+|   - DXIO v55.749
+|   - PMFW Kernel v19
+|   - 3d778086c [PLAT-66763] [WKA] EVT 100-000000300-41/40 OPNs fail to boot running @ max FCLK/Mem Speed
+|   - 4550044a3 [PMFW-5074] [ETB] CZN RLC checking incorrect message mask
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.14.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.14.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.13.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         17/07/20
+|
+| * Changelist
+|   - DXIO v55.749
+|   - PMFW Kernel v19
+|   - 9d105cd26 [PMFW-4838] [NEW] Request to implement BTC for core mafdd
+|   - 261d532e0 [PLAT-64929] [WKA] Max MEMCLK over 1600Mhz needs to MemoryTrain 800Mhz states at 0.75v Dacref
+|   - 02dd86449 [PLAT-64929] [NEW] Update FastCldoBypass sequence
+|   - cd4fd5703 [PMFW-4845] [NEW] SVI2 Phase Shedding implementation in the PMFW
+|   - 7fc87cc9d [PMFW-4823] [UTB] DC BTC: SetVoltage
+|   - 770ea63e7 [PMFW-4983][IMP] ROC constant reduction
+|   - 79a60379b [PMFW-4821] [UTB] DC BTC: Change of operating voltage
+|   - fe1ce5308 [PMFW-4573] [IMP] Cleanup AM4 AC CPR0 Hyst workaround
+|   - 3470e8084 [PMFW-4997] [IMP] Cleanup VddioMemVoltage override in ConfigSocRail
+|   - 5ba587f67 [PMFW-4980] [IMP] FastDMA SMU RLC sequence update - Improvement
+|   - 9bc676c72 [PMFW-4912][IVB]Port GN B0 SetCoreLdo Change
+|   - 413f86fba [PMFW-4973] [IMP] Ignore SLVERR on SMN write
+|   - d0637b7b3 [PMFW-4977] [NEW] Port ACTON changes from RN to CZN
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.13.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.13.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.12.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         10/07/20
+|
+| * Changelist
+|   - DXIO v55.749
+|   - PMFW Kernel v19
+|   - fa38f268e [PMFW-4980] [IMP] FastDMA SMU RLC sequence update
+|   - f8f1ae09e [PLAT-63682] [IMP] [CZN AM4] Update STT parameters in AGM/AMD SystemDeck
+|   - 98de26faf [PMFW-4976] [UTB] STAPM Controller needs to use the MIN limit of OPN and MOC override
+|   - d317d1304 [PMFW-4942] [IMP] BIOSSMC_MSG_GetSustainedPowerAndThmLimit does not return SustainedPower correctly
+|   - 1fc759097 [PMFW-4974] [IMP] GFXDEM sensitivity model calculation
+|   - 20923b8bd [PLAT-66262] [ETB] [CZN] Unexpected Pstates when using 45W
+|   - e75bfd6d7 [PMFW-4869][IMP]Change bit definitions for CPUPWROK and CPUPWROKRAW
+|   - 13ce6c387 [PMFW-4968] [OPT] DDR Phy SIDD Area Scalar Update
+|   - a96612ff1 [PMFW-4877] [OPT] Update FIT COEFF_A To Match CZN Value
+|   - eb5866bc9 [PMFW-4963] [IMP] Test message to flush cache to SRAM
+|   - 6b26ffe28 [PMFW-4955] [IMP] FCLK DPM Should Update L3FasterThanDF on CLK Change
+|   - 1200a851f [PMFW-4628] [OPT] Update Cezanne FP6 Fan Policy and Alphaup Value
+|   - 0a832465d [PMFW-4869][IMP]PwrMgt_Status[0] should reflect CpuPwrOkRaw
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.12.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.12.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.11.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         26/06/20
+|
+| * Changelist
+|   - DXIO v55.749
+|   - PMFW Kernel v19
+|   - 4a217cec7 [PMFW-4532] [WKA] CZN AM4 and FP6: VDCI not being tuned after PC6 exit if fixed frequency
+|   - 1dcebfb1d [PMFW-4909] [IMP] Update PMC_PCR usage with union structures
+|   - 73a743b9d [PMFW-4903] [OPT] Alpha Filter Tuning for Metrics Table
+|   - 7673af76a [PLAT-65419] [IMP] NVME shutdown sequence improvement for S0i3 Unsafe Shutdown issue
+|   - fbb41e9fb [PLAT-65421] [WKA] PCIe Clock turn on after PERST# de-assert during S0i3 resume
+|   - 5d8c52486 [PMFW-4893] [UTB] Error in HARD_RESETB_COMING in all RSMU instances
+|   - cb002abcf [PMFW-4856] [IMP] Actually memory speed over target memory speed in AGM tool
+|   - 88d3ad456 [PMFW-4697] [IMP] Integrate DXIO-FW version 55.749.0 into SMU
+|   - 6bf04dc52 [PMFW-4900] [UTB] Update BandGap programming sequence
+|   - 067a74129 [PMFW-4890] [NEW] Update fuse header to add Enable_PRO_Check fuse
+|   - 9fb9485f7 [PMFW-4854] [ETB] [CZN] BIOSSMC_MSG_GetSustainedPowerAndThmLimit not returning SustainedPower correctly
+|   - 8bf10ed07 Revert "[PMFW-4862] [OPT] CZN Core DLDO Settings Rev3 Take1"
+|   - 6ce29038f [PMFW-4822] [IVB] DC BTC Failure of PSM range check not exiting with default output
+|   - 9a8795daf [PLAT-63797] [ETB] [CZN] System hangs at PC:B000AC95 on Majolica when enabled Fast CLDO Bypass
+|   - c37c2c5ca [PMFW-4866] [IMP] Save/Restore CPPC enable register as part of S0i3
+|   - 9b74e07bf [PMFW-4443] [IMP] Make package not copying Kernel src and DXIO header properly
+|   - dd8d5251f [PMFW-4779] [IMP] Remove PSR/1 reset to 0 on PC6 exit
+|   - 1d96f569e [PMFW-4847] [IMP] [CZN] Expose SMU Internal Registers for Core C-States
+|   - 69d9fe495 [PMFW-4871] [IVB] Allow Prochot Entry at S0i3 Resume
+|   - 371cceb38 [PMFW-4435] [IMP] Initial Coverity Scan For Cezanne
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.11.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.11.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.10.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         19/06/20
+|
+| * Changelist
+|   - DXIO v55.747
+|   - PMFW Kernel v19
+|   - 15b964135 [PMFW-4862] [OPT] CZN Core DLDO Settings Rev3 Take1
+|   - 0c6b0da55 [PMFW-4628] [OPT] Update Cezanne FP6 Fan Policy and Alphaup Value
+|   - af1f8588b [PMFW-4837] [WKA] Modify SmuMetrics_t table needs to be the same for Renoir and Cezanne
+|   - a1bfbed35 [PMFW-4686] [IMP] Remove Peak Temperature from AMD System Deck
+|   - 27dae9ce1 [PMFW-4818] [IMP] Wait for voltage decreases in DCBTC
+|   - 6aff8a2d9 [PMFW-4256] [NEW] Add VCN residency to AGM - Add back VcnBusy residency
+|   - 442f233fa [PLAT-64758] [IMP] ULV Voltage Offset Being Overwritten
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.10.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.10.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.9.0            |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         12/06/20
+|
+| * Changelist
+|   - DXIO v55.747
+|   - PMFW Kernel v19
+|   - 326719822 [PMFW-4808] [UTB] SuperVminmaxProg fuse is not being read with DLDO disabled
+|   - cb45da326 [PMFW-4802] [ETB] Update FT_rev for FP6 secure part
+|   - 3ed47b1e3 [PLAT-64634] [IMP] Fast PC6 restore(aka Divideby1) configuration issue
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.9.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.9.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.8.0            |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         10/06/20
+|
+| * Changelist
+|   - DXIO v55.747
+|   - PMFW Kernel v19
+|   - 173aa825f [PMFW-4561] [IMP] Considering floorplan thermals for preferred core feature
+|   - f4c25430d [PMFW-4588] [OPT] FLLDD residency is too high with current L3_FLL_SCALAR value
+|   - 8cb6f6893 [PMFW-4788] [IMP] Update FP6 EDC limits
+|   - 0d436ee80 [PMFW-4775] [IMP] Remove ReadGfxOffSavedState test message
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.8.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.8.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.7.0            |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         05/06/20
+|
+| * Changelist
+|   - DXIO v55.747
+|   - PMFW Kernel v19
+|   - dbdf639b9 [PLAT-63073] [IMP] Add SMU message to identify S0i3 resume state before unlock HDD password
+|   - 5f50ea26a [PMFW-4576] [IMP] Remove PC6 Postcodes from STB
+|   - 19d0532fd [PMFW-4552] [IMP] Add a DXIO API for PHY FW Transfer using DMA
+|   - 60411360f [PMFW-4696] [OPT] CZN Core DLDO Settings v2
+|   - b0e9a0f75 [PMFW-4685] [ETB] Correctly Send All GC RM Related Fuses During GFXOFF Exit
+|   - 28da33c06 [PLAT-64457] [ETB] Type-C functional fail on CZN FP6
+|   - 155b7616d [PMFW-4564] [WKA] Add 5 PSM to AC Guardband on PlatSi for CPPC battery saver stability
+|   - 1b54e6838 [PMFW-4480] [IMP] Add Interrupt Rate Monitor (IRM) to AGM
+|   - 5c51628c1 [PMFW-4544] [IMP] GfxDEM Changes and code cleanup for feature enablement - Update AGM header
+|   - de88b9f6a [PMFW-4625] [UTB] Update Temperature Alpha Filter - Remove thermal trip override sequence
+|   - 7d78ee33e [PMFW-4625] [UTB] Update Temperature Alpha Filter
+|   - fb1ad9115 [PMFW-4626] [ETB] CpbDisable paging error on bootup
+|   - 27296181c [PMFW-4589] [ETB] Core and L3 power calculation under reporting
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.7.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.7.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.6.0            |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         29/05/20
+|
+| * Changelist
+|   - DXIO v55.747
+|   - PMFW Kernel v19
+|   - f42a8b863 [PMFW-4569] [ETB] [CZN-AM4] Core C-state Timers Initialized to FP6 Values on AM4 Bootup
+|   - 5904a8396 [PMFW-4544] [IMP] GfxDEM changes and code cleanup for feature enablement
+|   - 563897a85 [PMFW-4469] [OPT] [CZN] Create a new OPN config for 65W AM4
+|   - ecb6a2ef7 [PMFW-4537] [UTB] Integrate DXIO-FW version 55.747.0 into SMU
+|   - 45a79cb93 [PMFW-4188] [WKA] Change MemClk to 667MHz for Wifi OTA
+|   - 3e2a6eae0 [PMFW-4409] [UTB] Add BypassCLDO to s0i3 exit
+|   - 6fe1d6495 [PLAT-63964][WKA]NVME Abrupt shutdown sequence improvement for S0i3 Unsafe Shutdown issue
+|   - 2cb76b45d [PMFW-4508] [NEW] Add PostCode Parser Script
+|   - 6a4711b5a [PMFW-4410] [NEW] Log error if a new message is sent to a busy message port
+|   - 456b5ac3c [PMFW-1833] [IMP] GfxClk Bypass Optimization
+|   - c6a2c157d [VMR Port] 0df568e8e [PMFW-4534] [IMP] APML static analysis bug fixes and improvements
+|   - 670fa09ab [VMR Port] 176327641 [PMFW-4487] [UTB] Initialize DroopSyncSelect settings
+|   - f95ad17c4 [PMFW-4563] [IMP] [AM4] Set VDDOFF voltage to 0V
+|   - aff90b06e [PLAT-63613] [OPT] [CZN] Disable Loadstep and Loadrelease in DF
+|   - 855de9726 [PMFW-4543] [OPT] CZN DC BTC: Upper bound to 100mV
+|   - 84bd91161 [PLAT-63493] [IMP] BIOS message to enable Walle-Lite dpm handler
+|   - 7145dbf4b [PMFW-4263] [UTB] Effective Frequency over reporting with PC6 enabled
+|   - 6984e2c0b [PMFW-4533] [ETB] AGM Reports High CPPC Max Values with default OS setting
+|   - 0d97cfc70 [PMFW-4505] [OPT] Update Cezanne Core EDC parameters to values from Vermeer
+|   - 6a85c4368 [PMFW-4524] [OPT] Update DC BTC PSM range
+|   - ae26d2405 [PLAT-63370] [WKA] New FSDL for external xHCI device to force enter to D3 during S0i3
+|   - 9098036c9 [PMFW-4432] [UTB] Integrate DXIO-FW version 55.745.0 into SMU
+|   - c497713a8 [PMFW-4119] [IMP] Add spi registers to s0i3 save/restore sequence
+|   - 22bd043c0 [PMFW-4403] [IMP] Cumulative SourceID update for RN
+|   - 1e7806ee4 [PMFW-4399] [IMP] Update fSMC_MSG_SetPptAndSplSoftMaxLimit limit from unit32_t to float
+|   - 0fba224e6 [PMFW-3875] [IMP] VDDOFF Entry and Exit sequence optimizing
+|   - 2e74661f7 [PMFW-4379] [UTB] Reset DCFCLK SoftMin 0 when monitor is off
+|   - 0b4e3eaf2 [PMFW-4245] [UTB] SocLevelToFclkDpmLookup initialize error
+|   - 93e4fa254 [VMR Port] 6c87854d6 [PMFW-4472] [IVB] Add core check for UpdateCoreCstates
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.6.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.6.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.5.0            |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         22/05/20
+|
+| * Changelist
+|   - DXIO v55.741
+|   - PMFW Kernel v19
+|   - 17d650593 [PMFW-4453] [OPT] Set VDDOFF voltage to 0V for FP6
+|   - aebf7fe5e [PMFW-4211] [IMP] Move few functions from TEXT to EXT1 section
+|   - d68a1ba1b [PMFW-4499] [IMP] Fix Makefile to accommodate Jenkins parallel build
+|   - d020765b2 [PMFW-4256] [NEW] Add VCN residency to AGM
+|   - a4637e018 [PMFW-4489] [IMP] Cleanup Cclk controller - Cleanup VminFrequency
+|   - 3fe333561 [PMFW-4489] [IMP] Cleanup Cclk controller - Move L3 check earlier in FLLBTC sequence
+|   - 053cede79 [PMFW-4489] [IMP] Cleanup Cclk controller - Move InitWLBAndL2SuperVmin to EnableDLDO
+|   - 819d6547f [PMFW-4489] [IMP] Cleanup Cclk controller - Remove WKA PLAT-52009 and unused variables
+|   - 19d8a7192 [PMFW-4489] [IMP] Cleanup Cclk controller - Remove CoreDis
+|   - c8e4445ee [PMFW-4441] [IMP] GFX FLL Vref should be overridden to 0V in OC mode
+|   - addbdf311 [PLAT-63844] [ETB] VDCI3 min_sync_depth must be 4 at low voltage
+|   - 7262d4e07 [PMFW-4474] [WKA] Set Per Core Vmin Based on FT_Rev Fuse
+|   - 1699989d7 [PMFW-4470] [ETB] Fix hardcored core mask values
+|   - 0e6f25389 [PMFW-4476] [IMP] Link SMU Versioning with AutoSMU
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.5.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.5.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.4.0            |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         15/05/20
+|
+| * Changelist
+|   - DXIO v55.741
+|   - PMFW Kernel v19
+|   - Update SOC header to CL#1211045
+|   - Port Renoir changes upto v55.63.0
+|   - Port Vermeer changes upto v56.22.0
+|   - [PMFW-4370] [UTB] Add CPPC registers to PC6 save/restore
+|   - [PMFW-4367] [IMP] Poll for OS Boost requests instead of interrupts
+|   - [PLAT-62729] [NEW] Add CBS option to override Fmin for Core and GFX
+|   - [PMFW-4174] [UTB] EDC SOC Iddmax Vcn Cac value too large
+|   - [PMFW-4123] [NEW] Program BG with CCX_BG_SlopeTrim during InitCldo
+|   - [PMFW-4213] [IMP] Tweaks to CZN Core DLDO Settings Based on RN Tuning
+|   - [PMFW-4434] [UTB] Add core enable check during UpdateOsCclkRequest
+|   - [PMFW-4357] [IMP] Implement stall when MP1 sees SLVERRs
+|   - [PMFW-4394] [IMP] Disable router ports for disabled cores
+|   - [PMFW-4454] [UTB] Adjust VDCI rounding
+|   - [PMFW-4439] [IMP] Update PPA owners for tuned parameters
+|   - [PMFW-4412] [OPT] [CZN] Update Core C-States Timers for DC Mode
+|   - [PMFW-4146] [IMP] Enable Thermal Test Mode for GFX
+|   - [PMFW-4413] [OPT] [CZN] Update IRM Tuning Settings for AC Mode
+|   - [PMFW-4446] [IMP] Adjust CPPC lowest non-linear performance calculation
+|   - [PMFW-4440] [IMP] Add FllBtcCompleted variable for L3
+|   - [PMFW-4447] [UTB] CPPC_SCALE_TO_FREQ needs to use CPPC_MAX_PERF
+|   - [PMFW-4461] [IMP] Enable DLDO Pseudo Bypass
+|   - [PLAT-63275] [ITB] CZN AM4 Memory OC stuck at post code E090 - Move Vddp and Vddm back to ucode0
+|   - [PMFW-4459] [IMP] DLDO Bypass program RVDD_PSM_PARAM_ADDR_LOW with updated ClkDiv value
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.4.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.4.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.3.0            |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         01/05/20
+|
+| * Changelist
+|   - DXIO v55.737
+|   - PMFW Kernel v19
+|   - Port Renoir changes upto v55.61.0
+|   - [PMFW-4179] [IMP] Initialize negative peak temperature after AGM clear table
+|   - [PMFW-4251] [UTB] Fix disabling of CCA throttler for A0
+|   - [PMFW-4250] [OPT] Scale L3 IDDMAX when in CstateBoost
+|   - [PMFW-4252] [UTB] Fix hang when OS programs CPBDis on Core7
+|   - [PMFW-4259] [IMP] Remove LDO_TIMING Hard Code in ConfigSocRail
+|   - Revert "[PMFW-4226] [IMP] Remove GPIO pin toggle in s0i3 resume" (Until DXIO fix is available)
+|   - [PMFW-3931] [UTB] Add SuperVminmax support - Add enablement through fuse
+|   - [PMFW-4271] [UTB] Change VDDM_0V sequence and go back to old LdoSel
+|   - [PMFW-4353] [UTB] Properly use TargRladr value when L3 AFLL is enabled
+|   - [PMFW-4253] [UTB] Restore Core PMI programming during CCXLateInit
+|   - [PMFW-4359] [UTB] L3 FLL BTC fixes
+|   - [PMFW-4360] [IMP] Make HTFMax limit equal FMax when disabled
+|   - [PMFW-4146] [IMP] Enable Thermal Test Mode for GFX
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.3.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.3.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.2.0            |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         26/04/20
+|
+| * Changelist
+|   - DXIO v55.737
+|   - PMFW Kernel v19
+|   - [PMFW-4241] [UTB] Update CLDO LdoSel EXT_CHAIN0 and 1 mask
+|   - [PMFW-4242] [IMP] Add workspace cleanup to SMU testFW building process
+|   - [PMFW-4244] [UTB] Fix Cclk Effective Frequency during DataCaclulation
+|   - [PLAT-54190] [WKA] SMU to configure DF_Pstate level (sets to max) based on fuse file on S0i3 resume - Pullup Voltage
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.2.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.2.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
+
++---------------------------+
+| Version 64.1.0            |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         24/04/20
+|
+| * Changelist
+|   - DXIO v55.737
+|   - PMFW Kernel v19
+|   - Port Renoir changes upto v55.59.0
+|   - Port Vermeer changes upto v56.21.0
+|   - [PMFW-4172] [NEW] Add CI_CORE entry to AGM table
+|   - [PMFW-4173] [IMP] Map CPPC lowest-non-linear performance to IdleFreq
+|   - [PMFW-4176] [OPT] EDC SOC Iddmax Vcn Cac value update
+|   - [PMFW-4184] [NEW] Implement Alpha Filter for Cezanne FP6 and AM4
+|   - [PMFW-4186] [OPT] Provide Initial Sidd Temperature Slope Values
+|   - [PMFW-4085] [IMP] STT 2.1 on CZN AM4 Update STT parameter table in BIOS FW
+|   - [PMFW-4193] [OPT] Verify and update RDI mapping for CZN
+|   - [PMFW-4155] [NEW] Add Items To SLT Logging
+|   - [PMFW-4199] [ETB] Write LDO_SEL Signals for CCX Chain1 During CLDO Programming
+|   - [PMFW-4222] [IMP] Flush cache to SRAM on FwError
+|   - [PMFW-4226] [IMP] Remove GPIO pin toggle in s0i3 resume
+|   - [PMFW-4194] [IMP] Use PendingDisable/EnableMask instead of Disable during ThermalTestMode
+|   - [PMFW-4239] [ETB] Fix hang when only FCLK DPM and DATA CALC are enabled
+|   - Remove ChXiCfg0 programming in ccx_reset
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.1.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.1.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------

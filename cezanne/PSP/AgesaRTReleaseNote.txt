@@ -1,0 +1,59 @@
+----------------------------------------------------------------------------
+ABL RT Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: ABL RT RABLRTCZN20081800 for Cezanne
+
+Date:   August 18 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                              AGESA V9 Destination Folder     Description
+  AblPostCode.h                         AgesaModulePkg\Firmwares\CZN\    ABL/ABL RT Post Code Definitions
+  AgesaRTReleaseNote.txt                AgesaModulePkg\Firmwares\CZN\    This Release notes file
+  TypeId0x2D_AgesaRunTimeDrv_CZN.sbin   AgesaModulePkg\Firmwares\CZN\    Main AGESA Runtime Driver
+
+Based On:
+  trunk_Cn
+
+ABL RT Version String:
+  0x08183030
+
+ABL RT Features and Fixes:
+  - PLAT-68151: [CZN] Increment SPL value to support firmware anti rollback feature for production
+
+Known Issue(s):
+
+----------------------------------------------------------------------------
+ABL RT Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: ABL RT RABLRTCZN20042100 for Cezanne
+
+Date:   April 21 2020
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                            AGESA V9 Destination Folder     Description
+  AblPostCode.h                       AgesaModulePkg\Firmwares\CZN\    ABL/ABL RT Post Code Definitions
+  AgesaRTReleaseNote.txt              AgesaModulePkg\Firmwares\CZN\    This Release notes file
+  TypeId0x2D_AgesaRunTimeDrv_CZN.sbin AgesaModulePkg\Firmwares\CZN\    Main AGESA Runtime Driver
+
+Based On:
+  Initial version
+
+ABL RT Version String:
+  0x04213030
+
+ABL RT Features and Fixes:
+
+  Initial ABL RT Modern Standby support
+
+Known Issue(s):
+
