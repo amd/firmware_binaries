@@ -76,3 +76,48 @@
 |   * Limitation
 |
 +----------------------------------------------------------------------------------------------
+| Version 7.0.6.6
++----------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           23/11/20
+|
+|   * Features enabled
+|       - Add WA to skip sample with BookMode Disabled
+|
+|     Jira ID : [PLAT-73231] [CZN_FP6][MP2 SFH] Screen auto rotated when flip the unit in Clamshell mode.
+|
+|   * Limitation
+|
++----------------------------------------------------------------------------------------------
+| Version 7.0.6.8
++----------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           16/12/20
+|
+|   * Features enabled
+|       - Add support for pre-calibrated gain from Config file
+|       - Add smart Trace buffer support
+|       - Enable Accel along with Op_mode
+|       - Update for Coverity scan fix
+|
+|     Jira ID : [PLAT-46860] [CZN_FP6][MP2 SFH] Enable MP2 Post Code Trace Buffer.
+|
+|   * Limitation
+|
++----------------------------------------------------------------------------------------------
+| Version 7.0.6.A
++----------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           21/01/21
+|
+|   * Features enabled
+|       - Use Sensor timer instead of Controller
+|       - A30S => Send Sci Interrupt
+|       - Reset usLastReportedAngle when device move from book mode to clamshell mode
+|       - MH Use sensor timer
+|
+|     Jira ID : [PLAT-76411] [CZN_FP6][MP2 SFH] Display inTablet mode enter MSC ,Switch display to flat mode and resume see cannot resume.
+|
+|   * Limitation
+|
++----------------------------------------------------------------------------------------------

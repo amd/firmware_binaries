@@ -1,8 +1,8 @@
 ﻿//----------------------------------------------------------------------------
 // PSP FW Delivery Release Note
 //
-// Copyright 2020, Advanced Micro Devices, Inc.
-// Date:   November 23, 2020
+// Copyright 2021, Advanced Micro Devices, Inc.
+// Date:   January 22, 2021
 //----------------------------------------------------------------------------
 
 Content:
@@ -12,24 +12,258 @@ Content:
 
 TODO: update list of files
 Files
- boot_loader_RN.bin                 [version: 0.11.2.63] - PSP off-chip Legacy Stage 2 BootLoader (entry type 0x1), signed with production key
- boot_loader_AB_RN.bin              [version: 0.11.2.63] - PSP off-chip A/B Stage 2 BootLoader (entry type 0x1), signed with production key
- boot_loader_stage1_RN.bin          [version: 0.11.2.63] - PSP off-chip Stage 1 BootLoader (entry type 0x1), signed with production key
- PspRecoveryBootLoader_RN.bin       [version: 0.11.2.63] - PSP off-chip Recovery BootLoader (entry type 0x3), signed with production key
- debug_unlock_RN.bin                [version: 0.11.2.63] - PSP secure unlock (entry type 0x13), signed with production key
- psp_os_combined_NV12.bin           [version: 0.11.2.63] - PSP secure OS (entry type 0x2), signed with production key
- drv_sys_RN.bin                     [version: 0.11.2.63] - PSP system driver (entry type 0x28), signed with production key
- dr_ftpm_prod_RN.csbin              [version: 3.51.0.5] - PSP fTPM (entry type 0xC), compressed and signed with production key
- dr_drtm_prod_RN.csbin              [version: 04.11.00.1D] - PSP DRTM (entry type 0x47), compressed and signed with production key
+ boot_loader_RN.bin                 [version: 0.11.0.68] - PSP off-chip Legacy Stage 2 BootLoader (entry type 0x1), signed with production key
+ boot_loader_AB_RN.bin              [version: 0.11.0.68] - PSP off-chip A/B Stage 2 BootLoader (entry type 0x1), signed with production key
+ boot_loader_stage1_RN.bin          [version: 0.11.0.68] - PSP off-chip Stage 1 BootLoader (entry type 0x1), signed with production key
+ PspRecoveryBootLoader_RN.bin       [version: 0.11.0.68] - PSP off-chip Recovery BootLoader (entry type 0x3), signed with production key
+ debug_unlock_RN.bin                [version: 0.11.0.68] - PSP secure unlock (entry type 0x13), signed with production key
+ psp_os_combined_NV12.bin           [version: 0.11.0.68] - PSP secure OS (entry type 0x2), signed with production key
+ drv_sys_RN.bin                     [version: 0.11.0.68] - PSP system driver (entry type 0x28), signed with production key
+ dr_ftpm_prod_RN.csbin              [version: 3.57.0.5] - PSP fTPM (entry type 0xC), compressed and signed with production key
+ dr_drtm_prod_RN.csbin              [version: 04.11.00.1E] - PSP DRTM (entry type 0x47), compressed and signed with production key
  rsmu_sec_policy.rn_L0.sbin         [version: B.9.0.78] - Security Gasket (entry type 0x24)
  rsmu_sec_policy.rn_L1.sbin         [version: B.9.1.78] - Security Policy for tOS (entry type 0x45)
  spl_table_RN.sbin                  [version: 5.11.0.5C] - Firmware Anti-rollback information file (entry type 0x55)
  spl_table_CZN.sbin                 [version: 5.11.1.63] - Firmware Anti-rollback information file (entry type 0x55)
 
-Release Version 0.11.1.63
------------------------------------
-* CZN SPL table updated to v05.11.01.63
 
+Release Version 0.11.0.68
+-----------------------------------
+Bootloader
+----------------
+PLAT-76138: [RN/CZN][RPMC]Disable Root Key Auto Provisioning
+PLAT-76349: Load the binary headers of ABL entries
+PLAT-67300: [RPMC]Support Configuring RPMC Counter Address Multiple Times
+PLAT-75744: [CZN]MP2 SRAM0 usage update for Walle-Lite PM logging.
+FEAT-33382: Modify structure to adapt more vendor's models
+PLAT-75821: Fix early unlock command reading
+FEAT-33382: Allow system to boot even with no spirom model
+
+Trusted OS
+----------------
+PLAT-75534: Update ROM-Armor enforcement status in HSTI-info
+PLAT-76347 RMB: Pass PSP-FTPM as TPM config when HSP Disabled
+PLAT-75884: System hangs in Storage-initialize loop
+PLAT-67300: [RPMC]Support Configuring RPMC Counter Address Multiple Times
+SWDEV-258122:[Navi2x] Correct the UMC channel numbers in the headers
+PLAT-73457: [RMB] Add Doxygen/Sphinix support for HSP - PSP Interfaces
+PLAT-75208: [RA2] Idle system hangs after resumed S0i3 successfully
+SWDEV-211107:RAS Recovery handling enabled only for RAS enable
+PLAT-75912: [RMB] Added Promontory V2 (PROM21) Device Authentication Key Set
+SWDEV-253219: Comment correction; includes RMB
+PLAT-75368: The screen will flicker black ... after resume from S4 while playing video...
+PLAT-75719: Add USB configuration command support for HC3/7
+PLAT-73964: New API to expose Host-OS-Down mode to TA
+PLAT-75491: [RMB] Change which unlock policy is applied in unlock flow
+PLAT-75305: [RMB] Send PMFW msg to enable smn routers during unlock
+SWDEV-257413 [AWS][Navi12] PSP load Driver Cap FW failure
+SWDEV-255756: Correct mailbox registers to not use IH (2)
+SWDEV-255756:[MI200] correct mailbox registers to not use IH
+
+fTPM
+-----
+N/A
+
+DRTM
+-----
+N/A
+
+
+Release Version 0.11.1.67
+-----------------------------------
+*fTPM updated to version 3.57.0.5
+
+Bootloader
+----------------
+PLAT-69795: Allow SMU to access L3 DSM
+PLAT-74123[BOOTLOADER] Add a SVC call to set the recovery type specified by ABL
+PLAT-72196 : PLAT-73352 [CZN_FP6] SUT boot fail with ROM XM25QU128C/XM25RU128C
+PLAT-67072:[RPMC]Adjust RPMC Root Key Programming Sequence
+
+Trusted OS
+----------------
+TIC-71607: Revert "PLAT-73494: [AER] Save/Restore VCN IP Data (stack/heap/vars) with FW in S3/S4"
+PLAT-69795: Allow SMU to access L3 DSM
+PLAT-75047: Load VCN FW before UVD is powered on
+PLAT-75292: Update RSMU timeout on RMB
+PLAT-74494: rollback  [VGH/AER] Enhance S3 performance in stage1 BL
+SWDEV-251833:[Navi2x] Prevent update of older USB PD Firmware
+SWDEV-249289:[Navi24] Add Navi24 case in RevertRapPolicy_DGPU in PSP System driver
+PLAT-74147: Restructure USB loading and validation (2)
+PLAT-74147: Restructure USB loading and validation (1)
+PLAT-74494: [VGH/AER] Enhance S3 performance in stage1 BL
+PLAT-74300:[MI200] GPCOM ring fails due to GPU is fenced off from CPU
+ MERO-944: Fix RSA OAEP encryption/decryption algorithms
+
+fTPM
+-----
+PLAT-75282 CZN: Code Cleanup
+
+DRTM
+-----
+N/A
+
+
+Release Version 0.11.0.66
+-----------------------------------
+*fTPM updated to version 3.56.0.5
+
+Bootloader
+----------------
+N/A
+
+Trusted OS
+----------------
+SWDEV-262608: [Mi200]VCN Front Door loading failure (SPG/DPG/DPG SRAM mode)
+SWDEV-264694: Fix Video playback issue after S3 resume
+PLAT-61278: [VN] [HSP] PCR Measurements in tOS
+SWDEV-260624 : [PSP TOS] validate RAP V2 logic
+SWDEV-260624 : [PSP TOS] validate L0_EARLY_NONSECURE
+PLAT-68230: Receive STB verbosity level through bios-cmd
+
+fTPM
+-----
+PLAT-73255 : Modify fTPM folder structure to include TPM138 and TPM162
+
+DRTM
+-----
+N/A
+
+
+Release Version 0.11.0.65
+-----------------------------------
+*fTPM updated to version 3.55.0.5
+*DRTM updated to version 04.11.00.1E
+
+Bootloader
+----------------
+FEAT-33382: Modify logic of searching spirom model
+PLAT-74020: Disable iGPU based on fuse value
+FEAT-33382: Cleanup of spi-rom related code
+PLAT-72860[BOOTLOADER]Prevent triggering recovery mode for entries 0x58/0x59
+PLAT-72837: [RPMC]Fused ASIC Provision Key on Test Key Programmed SPI-ROM
+FEAT-33382: Cleanup of spirom-config file
+
+Trusted OS
+----------------
+SWDEV-262471: Add Smart Trace Buffer log for RSMU Timeout in Trusted OS
+SWDEV-260624 : [PSP TOS][clean-up 6] fix sending SMU GFX On/Off
+SWDEV-260624 : [PSP TOS][clean-up 3] for handling GFXOFF_EXIT
+SWDEV-260624 : [PSP TOS][clean-up 2] move IsSecurityPolicyRequired() for common use
+PLAT-73808: Allow BIOS to retrieve SPL value of presently booted system
+SWDEV-260624 : [PSP TOS][clean-up 4] remove un-used argment
+PLAT-71326: [RMB] update to support unified A0/B0 PSP FW
+DERMBE-648:[RMB] Remove MP0_RSMU_CLK build flag
+SWDEV-260624 : [PSP TOS][clean-up 1] use "rap_if.h"
+SWDEV-264330: Update MI200 minimum BL version for SDU
+SWDEV-262608: [Mi200]VCN Front Door loading failure (SPG/DPG/DPG SRAM mode)
+SWDEV-249287:[Navi24] Add case to Identify Navi24 ASIC and set gAsicType
+SWDEV-260860 : [PSP TOS] fix DrMapSharedMemSyshubMmhub
+PLAT-65292: HSP S0i3 Support
+AER-426: increase idle stack size
+PLAT-71140: Enable ACP SRAM through mailbox
+FEAT-32948: Store first 4 bytes of TA Uuid instead of PID
+PLAT-73607: [AER] set registers before S3 entry
+PLAT-73600: Load, authenticate and decompress WLAN driver
+SWDEV-214841 - Update to Arm Compiler v6
+PLAT-73494: [AER] Save/Restore VCN IP Data (stack/heap/vars) with FW in S3/S4
+PLAT-7319: Remove FindEventId for pcr measurements buffer from BL
+SWDEV-251569 : [MI200][PSP TOS] fix RAP V2 validation to ignore bit[1:0]
+FEAT-33382: PLAT-64168: Consume spirom-config data in tOS
+SWDEV-248568 : [MI200][PSP TOS][RAP V2] add supprt for MI200 unroll
+PLAT-73428: Add support for compressed FW
+SWDEV-262759 : [navi21][PSP TOS] RAP TA validation of L1 policy fails after VF_FLR
+PLAT-70272: Add MP0_RSMU_CLK build flag to RMB
+
+fTPM
+-----
+PLAT-73379 CZN: Update Makefile and dependencies.txt to build with Conan
+PLAT-73263 CZN: Smart Trace in FTPM
+PLAT-71169 CZN: Port backward compatible changes in TPM 1.38 Errata 1.4
+
+DRTM
+-----
+SWDEV-256928: [SCPC] HVCI gets disabled when SMM Isolation gets disabled in the BIOS
+
+
+Release Version 0.11.0.64
+-----------------------------------
+Bootloader
+----------------
+PLAT-72744: Allow initial SPL fuse value to be set during FAR enablement
+FEAT-33382: Refactoring of spirom-config-binary related code
+PLAT-73064: [RPMC]Using RPMC State Structure to Store RPMC Global Variables
+PLAT-72860[BOOTLOADER]AB recovery cannot work when binary type 0x59 corrupted
+SWDEV-220087: fix Coverity issue - HFA
+PLAT-72909: Remove PLATFORM_MODEL_ID check for PSB enable
+SWDEV-259407: Make TMZ_Key count ASIC specific
+FEAT-33381: Pass appropriate information of SPI-ROM configuration to PSP tOS.
+LWPQA-588: fix Coverity issues
+
+Trusted OS
+----------------
+SWDEV-262269: [VGH/AER] S3 entry flow should save MSMU DRAM
+PLAT-72744: Allow initial SPL fuse value to be set during FAR enablement
+SWDEV-251895 [NV][SRIOV] Add SRIOV mailbox rate limiting in PSP.
+SWDEV-262133: [NV23] Enable STB in PSP FW
+SWDEV-253219-PSP-Gfx driver interface documentation
+PLAT-73181: Applies unlocked sec. pol. for UVD
+PLAT-73313: Change the Base address of HSP_PSP_COMM_BUF
+PLAT-73316: [CZN] Checking size for IP FW Save/Restore breaks S3 suspend/resume
+PLAT-73303: created RdrandThread for RMB
+PLAT-72686: Organize use of shared DRAM - TOS
+RTGPLAT-6123: [Navi12][AWS][SRIOV]: Disable VF Mailbox access to Trusted Applications
+PLAT-67970: Setup Sec Interrupt FIFO on S3 exit
+SWLSD-41: Porting AGA-03 and AGA-01 to amd-tee2.0
+RTGPLAT-6111: [NV21]: Fix issue related to wrong check of device and revision id
+PLAT-73202: Refactoring of code around STB
+PLAT-72504: Enable RSMU interrupt for GFX (2)
+PLAT-69424: PLAT-72841: [CZN] System hangs with post code A5F0 in stress test
+SWLSD-40: Port over AGA-04 fix to amd-tee2.0
+RTGPLAT-6086: Navi21 : MP1 need to access UMC MISC6 registers
+FEAT-32948: Firmware Attestation Report NV23 TA support
+PLAT-72744: Fix tOS builds
+PLAT-58313: Add USB4 PHY loading
+SWDEV-261431: [NV22] Enable STB in PSP FW
+PLAT-72761: Add API to read from/write to MPM SRAM
+PLAT-72949: [AER] Separate PSP FW tOS build targets AER from VGH
+PLAT-72909: Remove PLATFORM_MODEL_ID check for PSB enable
+PLAT-61278: [RMB] [HSP] PCR Measurements in tOS
+PLAT-70811: Notify ASD driver of zstate entry and exit
+SWDEV-260586: [MI200] Enable Trace Log in TOS
+PLAT-72890: Reduce allocated stack sizes in System Driver
+DERMBE-563: Enable posted writes for bootrom z-state exit
+SWDEV-259407: Make TMZ_Key count ASIC specific
+SWDEV-260011:Update MI200 TOS sign function
+AER-355: [A1] Unsecure part will hang when entering S3/S4/reboot/shutdown
+SWDEV-257413 [AWS][Navi12] PSP load Driver Cap FW failure
+PLAT-68882: Add offset in MPM DRAM for AEPP buffer
+PLAT-72504: Enable RSMU interrupt for GFX
+PLAT-68881: Add functionality for WLAN access API
+PLAT-67214: Enable FW Att on TOS for RMB
+PLAT-67214: FWAR always maps SYSHUB on APU
+FEAT-35003: Renaming Fw Att DB feature from fwar to fwatt
+PLAT-64168: ROM Armor v2 for clients - phase10
+SWDEV-249286:[Navi24] Add Navi24 register headers and enable compilation for Navi24.
+SWDEV-249290:[Navi24] Use the right number of UMC channels
+PLAT-67214: FWAR uses SYSHUB if no GPUVA
+PLAT-71511: [RPMC] Report Current RPMC Counter Addresses to BIOS
+PLAT-71181: [RMB] Update A0 fuse addresses
+PLAT-67970: [RMB] Skip RSMU programming for sec interrupts
+PLAT-70276: Save Mp0 status regs across z-state
+PLAT-71707:[RMB] Set S3 bit in MP2 OVERRIDE on S3 entry
+PLAT-72299: Remove MFD_VALIDATED check for BIOS cmd 0x49
+
+fTPM
+-----
+N/A
+
+DRTM
+-----
+N/A
+
+Release Version 0.11.2.63
+-----------------------------------
 Bootloader
 ----------------
 NA

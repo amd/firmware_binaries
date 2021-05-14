@@ -1,0 +1,27 @@
+//----------------------------------------------------------------------------
+// SPIROM-CONFIG binary Release Notes
+//
+// Copyright 2021, Advanced Micro Devices, Inc.
+// Date:   January 25, 2020
+//----------------------------------------------------------------------------
+
+NOTES: This binary can be used along with PSPFW v0.11.0.68 or higher to enable ROM-Armor v2 feature.
+
+Release Version 0.11.0.1
+-----------------------------------
+Initial version.
+Add WINBOND W25Q128JW, W74M12JW support.
+Add WINBOND W25Q256JW, W74M25JW support.
+Add MACRONIX MX25U12832F, MX25U12835F, MX25U12872F support.
+Add MACRONIX MX25U25645G, MX25U25673G, MX77U25650F.
+Add MACRONIX MX25U51245G support.
+Add MICRON MT25QU128ABA support.
+Add MICRON MT25QU128ABB support.
+Add MICRON MT25QU256ABA support.
+Add XMC XM25QU128B support.
+Add XMC XM25QU256B support.
+Add XMC XM25QU128C, XM25RU128C support.
+Add XMC XM25QU256C, XM25RU256C support.
+Add CYPRESS S25FS128S support.
+Add GIGADEVICE GD25LQ128E, GD25LQ128D, GD25LR128D, GD25LB128D support.
+Add GIGADEVICE GD25LB256E, GD25LR256E support.

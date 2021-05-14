@@ -1,0 +1,19 @@
++-----------------------------------------+
+| MP2 I2C Walle Firmware Release Notes - CEZANNE
++-----------------------------------------+
++----------------------------------------------------------------------------------------------
+| Version 2.1.2.0
++----------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           24/12/20
+|
+|   * Features enabled
+|       - Support Walle sensor power measurement
+|       - PM logging MP2 FW support for OchreDAP
+|       - enable PAC1934 SMBus timeout
+|
+|   Jira ID : [PLAT-74339] [IMP] Walle-lite sensors enable SMBus timeout
+|
+|   * Limitation
+|
++----------------------------------------------------------------------------------------------

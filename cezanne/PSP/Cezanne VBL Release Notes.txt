@@ -1,3 +1,12 @@
+============================ Cezanne 17.10.0.27 VBL release  ========================================
+Cezanne generic  VBL 17.10.0.27
+Cezanne A0 0x1636 105_D27000_00A
+
+The VbiosBootLoader_prod.sbin is the FW sign.
+
+Major feature:
+1. Update register DAGB0_WR_DATA_CREDIT setting to 0x68626078 for TIC-67618.
+
 ============================ Cezanne 17.10.0.26 VBL release  ========================================
 Cezanne generic  VBL 17.10.0.26
 Cezanne A0 0x1636 105_D27000_00A
