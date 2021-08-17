@@ -6,7 +6,6 @@
 //----------------------------------------------------------------------------
 
 Content:
-	*FOR INTERNAL USE ONLY*
 	PSP FW Deliverables for Renoir.
 	This Build is compiled using the ARM license from the AMD license server.
 
