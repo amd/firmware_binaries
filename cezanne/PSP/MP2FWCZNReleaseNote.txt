@@ -121,3 +121,29 @@
 |   * Limitation
 |
 +----------------------------------------------------------------------------------------------
+| Version 7.0.6.C
++----------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           23/02/21
+|
+|   * Features enabled
+|       -  WA to ignore wrong angles for Dell_watchman
+|
+|     Jira ID : [PLAT-78400] [CZN_FP6][MP2 SFH] [Watchmen AMD]Incorrect Book mode behavior when rotate screen quickly.
+|
+|   * Limitation
+|
++----------------------------------------------------------------------------------------------
+| Version 7.0.6.D
++----------------------------------------------------------------------------------------------
+|   * Date (dd/mm/yy)
+|           19/04/21
+|
+|   * Features enabled
+|       -  WA to ignore wrong angles for Dell_watchman
+|
+|     Jira ID : [PLAT-81197]  [CZN_FP6][MP2 SFH] Moving SUT Tablet -> Tent/Stand -> Clamshell mode and angle is reported wrong.
+|
+|   * Limitation
+|
++----------------------------------------------------------------------------------------------

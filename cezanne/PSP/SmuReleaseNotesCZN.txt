@@ -3,6 +3,71 @@
 +---------------------------------------+
 
 +---------------------------+
+| Version 64.48.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         30/06/21
+|
+| * Changelist
+|   - DXIO v55.769
+|   - PMFW Kernel v22
+|   - 9aeb6a758 [PMFW-7841] [IMP] Optimize FLL boot time calibration to 1 time
+|   - 8b5d30ae1 [PMFW-7819] [IMP] Potential FWError when STT Sensor Reporting enabled in BIOS
+|   - d25dabf1f [PMFW-7645] [IMP] Disable Prochot functionality is not working for EnableOC message
+|   - a43a254ed [PMFW-7627] [IMP] STAPM not match fPPT when STT enable
+|   - c1f07d596 [PLAT-84153] [IMP] CZN dp_usb_mux_sel value
+|   - 4dd465426 [PMFW-7376] [IMP] AGM is showing incorrect SMU Skip Counter
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.48.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.48.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.47.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         18/05/21
+|
+| * Changelist
+|   - DXIO v55.769
+|   - PMFW Kernel v22
+|   - d1503d384 [PMFW-7314] [IMP] Integrate DXIO-FW version 55.769.0 into SMU
+|   - 28d1e52f2 [PMFW-6728] [OPT] Show CC1 Residency 0% in AGM PM Log when CC1Dis is set
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.47.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.47.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.46.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         26/04/21
+|
+| * Changelist
+|   - DXIO v55.759
+|   - PMFW Kernel v22
+|   - 2b6ffa2e7 [PMFW-7139] [IMP] SBRMI mailbox usage sequence improvement
+|   - 0911648e2 [PMFW-7040] [IMP] Integrate PMFW Kernel v22
+|   - 2904b3183 [PMFW-6997] [ETB] CPPC request need to be serviced before system enter PC6
+|   - 0d8b72f23 [PMFW-6604] [IMP] Add GFX Curve Optimizer support
+|   - 38116bb3f [PMFW-7067] [IMP] DfCstateDisable PSP message priority increase
+|   - 4b7612f3e [PMFW-6987] [IMP] Optimize L3 CAC Weight Transfer - continue
+|   - 866d2a5b1 [PMFW-7004] [IMP] Configure DfCstateDisable bit when enabling DFCstate to match DFCState request
+|   - f5165c326 [PMFW-6987] [IMP] Optimize L3 CAC Weight Transfer
+|   - b32477ff7 [PMFW-6961] [UTB] EDC L3 SoftMax is not reported to infrastructure limits
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.46.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.46.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
 | Version 64.45.0           |
 +---------------------------+-------------------------------------------------------------------------------
 | * Date (dd/mm/yy)

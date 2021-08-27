@@ -4,7 +4,7 @@ Cezanne A0 0x1638 105_D27000_00A  CZNGenericVbios.018   02/28/21,08:58:46 226762
 
 Major changes:
 1. WA for DCN block Pstate change @SMU when set mode
-2. Update rlc_gpu_timer_refclk to correct SW delay timer 
+2. Update rlc_gpu_timer_refclk to correct SW delay timer
 
 ============================ Cezanne 017 VBIOS release ========================================
 Cezanne generic Baseline VBIOS 017
@@ -75,7 +75,7 @@ Major feature:
        AUX_MODE_DET_CHECK_DELAY = 2 (no change)
        AUXn_AUX_CTRL = 2 (added)
        AUXn_VOD_TUNE = 2 (added)
-       
+
 ============================ Cezanne 009 VBIOS release ========================================
 Cezanne generic Baseline VBIOS 009
 Cezanne A0 0x1638 105_D27000_00A  CZNGenericVbios.009  07/01/20,02:03:02 2139194@17.10.0.21  ATOMBuild#520539
@@ -90,7 +90,7 @@ Cezanne A0 0x1638 105_D27000_00A  CZNGenericVbios.008  06/22/20,05:50:17 2135205
 Major feature:
 1. Remove the bit "RDPCS_PHY_TEST_POWERDOWN" from CZN/LCN VBIOS, it needs re-load PHY FW for programming
    RDPCS_PHY_TEST_POWERDOWN from 1 to 0.
-2. Update the LANEx_ANA_TX_LP_ATT setting to improve SI. 
+2. Update the LANEx_ANA_TX_LP_ATT setting to improve SI.
 
 ============================ Cezanne 007 VBIOS release ========================================
 Cezanne generic Baseline VBIOS 007
@@ -119,8 +119,8 @@ Cezanne generic Baseline VBIOS 004
 Cezanne A0 0x1638 105_D27000_00A  CZNGenericVbios.004  05/11/20,13:23:11 2113274@17.10.0.17  ATOMBuild#515297
 
 Major feature:
-1. PLAT-63233 - Hangs in VBIOS when POST if boot w/ DP2HDMI dongle 
-2. PLAT-63243 -System hang 0000217 when connect KVM, Failrate:5/5 
+1. PLAT-63233 - Hangs in VBIOS when POST if boot w/ DP2HDMI dongle
+2. PLAT-63243 -System hang 0000217 when connect KVM, Failrate:5/5
 3. DIAG-7542 - can't be booted without connecting to the monitor
 
 ============================ Cezanne 003 VBIOS release ========================================
