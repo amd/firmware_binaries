@@ -3,83 +3,36 @@ ABL Delivery Release Notes
 
 Copyright 2021, Advanced Micro Devices, Inc.
 
-Version: RABLCZN17016070 for Cezanne
+Version: RABLCZN19036070 for Cezanne
 
-Date:   July 01 2021
-
-----------------------------------------------------------------------------
-
-Content:
-
-  Filename                          AGESA V9 Destination Folder      Description
-  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
-  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
-  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
-
-Repo Manifest Info:
-  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN17016070.xml
-
-Based On:
-  trunk_Cn
-
-ABL Version String:
-  0x17016070
-
-Features and Fixes:
-project Lib/
-  Revert "PLAT-84256 [CZN] Use new service call to map SMN window with size parameter"
-  Revert "PLAT-84256 [CZN] Use new service call to map SMN window with size parameter"
-
-project Program/
-  PLAT-86134 CZN: ABL Release RABLCZN17016070
-  Revert "PLAT-84256 [CZN] Use new service call to map SMN window with size parameter"
-
-----------------------------------------------------------------------------
-ABL Delivery Release Notes
-
-Copyright 2021, Advanced Micro Devices, Inc.
-
-Version: RABLCZN16226070 for Cezanne
-
-Date:   June 23 2021
+Date:   September 3 2021
 
 ----------------------------------------------------------------------------
 
 Content:
 
-  Filename                          AGESA V9 Destination Folder      Description
-  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
-  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
-  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+  Filename                                     AGESA V9 Destination Folder          Description
+  AgesaBLReleaseNotes.txt                      AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  TypeId0x30_AgesaBootloaderU_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  TypeId0x30_AgesaBootloaderU_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
 
 Repo Manifest Info:
-  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN16226070.xml
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN19036070.xml
 
-Based On:
-  trunk_Cn
+Based On: Chrome_CZN
 
 ABL Version String:
-  0x16226070
+  0x19036070
 
 Features and Fixes:
-project APCB/
-  PLAT-85149 [BRC] svc call to PSP that allows for the system to block all future provisioning RPMC request calls until a cold/warm reset occurs
-
-project CCX/
-  PLAT-83696: [CZN]Set PPIN support as disabled
-
-project DF/
-  PLAT-84141: [CZN]Fix trace2Dram VC8 token allocation
-
-project FCH/
-  PLAT-84899 [CZN] eSPI initialization sequence update
-
 project Lib/
-  PLAT-84256 [CZN] Use new service call to map SMN window with size parameter
-  PLAT-84256 [CZN] Use new service call to map SMN window with size parameter
+  PLAT-90194: [CZN] Reduce ABL Memory Boot Time
+
+project Memory/
+  PLAT-90194: [CZN] Reduce ABL Memory Boot Time
 
 project Program/
-  PLAT-85616 CZN: ABL Release RABLCZN16226070
+  PLAT-90196: [CZN] ABL Release RABLCZN19036070
 
 ----------------------------------------------------------------------------
 ABL Delivery Release Notes
