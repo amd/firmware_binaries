@@ -3,6 +3,90 @@
 +---------------------------------------+
 
 +---------------------------+
+| Version 64.52.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         13/08/21
+|
+| * Changelist
+|   - DXIO v55.771
+|   - PMFW Kernel v22
+|   - a13699a3b [PMFW-8014] [IMP] The PMCSR of the EP device in the approved list was not saved/restored during s0i3
+|   - 837127fc5 [PMFW-8156] [WKA] Cezanne AM4 set default GFX PSM margin to 15
+|   - a643bbe9a Revert "[PMFW-7933] [IMP] Update AM4 GFX DLDO Setting"
+|   - 13c195b7f [PMFW-8142] [IMP] S0i3 Entry and Exit Timestamp Changes
+|   - adcebec48 [PMFW-8022] [IMP] Cleanup for Lint Errors (script uploaded)
+|   - c1de2a7cf [PMFW-8022] [IMP] Cleanup for Lint Errors
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.52.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.52.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.51.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         01/08/21
+|
+| * Changelist
+|   - DXIO v55.771
+|   - PMFW Kernel v22
+|   - 0dcb55411 [PLAT-84462] [IMP] Fix release notes
+|   - 241712181 [PMFW-8096] [IMP] Disable STB logging for RLC messages
+|   - 37130e139 [PLAT-84893] [ETB] MCA status register not restored correctly after PC6 exit
+|   - 75de13ca7 [PMFW-8078] [WKA] Cezanne AM4 set default GFX PSM margin
+|   - 484856b5a [PLAT-71756] [IMP] Suppress GPIO interrupt at s0i3 wake-up by timer
+|   - 998a1d8af [PMFW-8093] [NEW] Add Cezanne + Navi24 SmartShift Support
+|   - 462f9d3cb [PLAT-85538] STT parameter can't be restore after s0i3 resume
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.51.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.51.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.50.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         21/07/21
+|
+| * Changelist
+|   - DXIO v55.771
+|   - PMFW Kernel v22
+|   - 05454d0db [PMFW-8041] [IMP] Integrate DXIO-FW version 55.771.0 into SMU
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.50.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.50.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.49.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         19/07/21
+|
+| * Changelist
+|   - DXIO v55.769
+|   - PMFW Kernel v22
+|   - ac1004814 [PMFW-7933] [IMP] Update AM4 GFX DLDO Setting
+|   - 1b5ab10e7 [PMFW-7969] [IMP] Update RAI script to check unalignment structure
+|   - 98769b570 [PMFW-7973] [IMP] Cezanne Coverity Fixes
+|   - cbd3ea86c [PMFW-7942] [IMP] Erase DXIO .macros and .preproc files with make myclean
+|   - 9b02b8570 [PLAT-85538] [IMP] STT parameter can't be restore after s0i3 resume
+|   - 0c064b6ae [PMFW-7918] [IMP] Revert PLAT-84153 CZN dp_usb_mux_sel value change
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.49.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.49.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
 | Version 64.48.0           |
 +---------------------------+-------------------------------------------------------------------------------
 | * Date (dd/mm/yy)
@@ -77,7 +161,7 @@
 |   - DXIO v55.759
 |   - PMFW Kernel v21
 |   - c4ba27a98 [PMFW-6941] [IMP] SmartShift Optimization
-|   - e8a3a1a28 [PLAT-78878][ETB] [Linux s0i3] USB host D3 exit failed during s0i3 resume
+|   - e8a3a1a28 [PLAT-78878][ETB] USB host D3 exit failed during s0i3 resume
 |   - 8bbca8dc8 [PMFW-6929] [IMP] SmartShift Power Limits Should Not be Reset on DC Transitions
 |   - a73678ff1 [PMFW-6780] [IMP] Adding test message UnforceEdcThrottler for Core and GFX
 |   - e65b50d72 [PMFW-6879] [ETB] dGPU Mailbox read/write policy update
@@ -211,7 +295,7 @@
 |   - PMFW Kernel v21
 |   - 189625bbb [PMFW-6254] [IMP] Need Curve Optimizer status and current PSM count of each core
 |   - 145d8c11e [PMFW-3890] [IMP] SMU Hang caused by CoreInCC6Prep stuck
-|   - 052dedc8b [PLAT-72377] [ETB] HP Pepper F10 disable/enable USB ports and cannot detect USB3 device - continue
+|   - 052dedc8b [PLAT-72377] [ETB] F10 disable/enable USB ports and cannot detect USB3 device - continue
 |   - 47f0d2d07 [PMFW-6459] [ETB] HTFmax Rounding Error
 |   - 1946b82bb [PMFW-6454] [IMP] Enable L3 DSM AEB for AM4 only
 |   - 9d8357ef7 [PLAT-75097] [ETB] Check temperature fail when factory run in process
@@ -312,7 +396,7 @@
 |   - 25e2f2f68 [PMFW-6200] [ITB] [CZN AM4] VDDCR_SOC voltage margin does not take effect - continue
 |   - b936bd512 [PMFW-5940] [ETB] [CZN AM4] Apply GFX OD cause system hang
 |   - 49c491ee6 [PMFW-6230] [ETB] C-State Latency tracker is not enabled in DC mode
-|   - 989e5b8d0 [PLAT-72377] [ETB] HP Pepper F10 disable/enable USB ports and cannot detect USB3 device
+|   - 989e5b8d0 [PLAT-72377] [ETB] F10 disable/enable USB ports and cannot detect USB3 device
 |   - cc8583979 [PMFW-6200] [ITB] [CZN AM4] VDDCR_SOC voltage margin does not take effect
 |   - 281ccb37d [PMFW-5886] [IMP] Change AGM to long absolute EDC CAC
 |   - 2bd5842b5 [PMFW-6119] [ETB] SMU firmware version can not be read after exiting S0i3
