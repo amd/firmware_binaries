@@ -3,6 +3,97 @@
 +---------------------------------------+
 
 +---------------------------+
+| Version 64.57.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         15/10/21
+|
+| * Changelist
+|   - DXIO v55.775
+|   - PMFW Kernel v22
+|   - 5212e3191 [PMFW-8544] [IMP] Integrate DXIO-FW version 55.775.0 into SMU
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.57.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.57.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.56.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         07/10/21
+|
+| * Changelist
+|   - DXIO v55.771
+|   - PMFW Kernel v22
+|   - 90d3cb607 [PMFW-8475] [WKA] BRC FT_rev WA cleanup
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.56.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.56.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.55.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         07/10/21
+|
+| * Changelist
+|   - DXIO v55.771
+|   - PMFW Kernel v22
+|   - ff4c63c27 [PLAT-71756] [IMP] Suppress GPIO interrupt at s0i3 wake-up by timer - revert WHQL failure
+|   - 13f880f91 [PMFW-8417] [IMP] Datashift in Data structure
+|   - 22fb02f88 [PMFW-8424] [IMP] Code Cleanup Remove Acton Specific codes
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.55.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.55.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.54.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         01/10/21
+|
+| * Changelist
+|   - DXIO v55.771
+|   - PMFW Kernel v22
+|   - d2610ab1e [PMFW-4474] [WKA] Set Per Core Vmin Based on FT_Rev Fuse (reverted)
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.54.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.54.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.53.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         24/09/21
+|
+| * Changelist
+|   - DXIO v55.771
+|   - PMFW Kernel v22
+|   - 443eb7e19 [PMFW-8204] [IMP] STAPM Controller not converging to the limit
+|   - 5e7acef9f [PMFW-8345] [IMP] PM Log External Fields for SystemDeck/AGT
+|   - 2fb1fcb2d [PMFW-8029] [IMP] Need support for wake on RTC timer
+|   - d2ec579ef [PMFW-7974] [IMP] F2V curve shows voltage drop around 2.1GHz
+|   - caf84619a [PLAT-86702] [IMP] Walle value report incorrect in AGM during runtest
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.53.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.53.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
 | Version 64.52.0           |
 +---------------------------+-------------------------------------------------------------------------------
 | * Date (dd/mm/yy)
