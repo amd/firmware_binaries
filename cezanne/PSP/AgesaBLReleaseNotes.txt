@@ -5,6 +5,38 @@ Copyright 2021, Advanced Micro Devices, Inc.
 
 Version: RABLCZN1A296070 for Cezanne
 
+Date:   November 9 2021
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                                     AGESA V9 Destination Folder          Description
+  AgesaBLReleaseNotes.txt                      AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  TypeId0x30_AgesaBootloaderU_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  TypeId0x30_AgesaBootloaderU_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN1B096070.xml
+
+Based On: Chrome_CZN
+
+ABL Version String:
+  0x1B096070
+
+Features and Fixes:
+
+project Program/
+  PLAT-90194: Reverted previous change that had bypassed board ID code.
+  [CZN] ABL Release RABLCZN1A296070
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2021, Advanced Micro Devices, Inc.
+
+Version: RABLCZN1A296070 for Cezanne
+
 Date:   October 29 2021
 
 ----------------------------------------------------------------------------
