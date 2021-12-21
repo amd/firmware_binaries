@@ -1,6 +1,41 @@
 +---------------------------------------+
 | SMU Firmware Release Notes - CEZANNE  |
 +---------------------------------------+
++---------------------------+
+| Version 64.60.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         29/11/21
+|
+| * Changelist
+|   - DXIO v55.775
+|   - PMFW Kernel v22
+|   - cc7bd27ba [PLAT-87621] [ETB] New PSP message fSMC_MSG_RomGpioSaveRestore
+|   - 4a7587175 [PLAT-92024] [ETB] Add timestamp protection in LogOsHint with 0 as argument value
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.60.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.60.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.59.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         16/11/21
+|
+| * Changelist
+|   - DXIO v55.775
+|   - PMFW Kernel v22
+|   - bfda20736 [PMFW-8694] NBif FSDL update for SFH driver Memory Mapping lost
+|   - 3552267cd [PMFW-8620] [ETB] Enable/disable SMU features if not enabled/disabled
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.59.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.59.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
 
 +---------------------------+
 | Version 64.58.0           |
