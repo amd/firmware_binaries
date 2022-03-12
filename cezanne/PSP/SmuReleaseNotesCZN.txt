@@ -2,6 +2,41 @@
 | SMU Firmware Release Notes - CEZANNE  |
 +---------------------------------------+
 +---------------------------+
+| Version 64.62.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         11/03/22
+|
+| * Changelist
+|   - 96125b03f [PMFW-9633]  add gpio2 to s0i3 save/restore list based on rev ID
+|   - 8b3e9d177 [PMFW-9245]  add gpio67 to s0i3 save/restore list based on rev ID
+|   - 30485d6db [PMFW-9245]  add rev ID check
+|   - 498afdd2f [PLAT-97359] Save and restore controllers value for Modern Standby
+|   - ce7ab8977 [PMFW-9243]  Broke AllCorePsm Adder
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.62.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.62.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
++---------------------------+
+| Version 64.61.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         07/01/22
+|
+| * Changelist
+|   - DXIO v55.775
+|   - PMFW Kernel v22
+|   - f83299a08 [PMFW-8203] [OPT] DC BTC: PSMs not tracking aging
+|   - 64f1df982 [PMFW-8935] Change Makefile to include missing source files for Cezanna tar.gz package
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.61.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.61.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
++---------------------------+
 | Version 64.60.0           |
 +---------------------------+-------------------------------------------------------------------------------
 | * Date (dd/mm/yy)
