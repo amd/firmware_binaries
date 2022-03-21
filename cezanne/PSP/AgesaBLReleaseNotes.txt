@@ -1,11 +1,11 @@
 ----------------------------------------------------------------------------
 ABL Delivery Release Notes
 
-Copyright 2021, Advanced Micro Devices, Inc.
+Copyright 2022, Advanced Micro Devices, Inc.
 
-Version: RABLCZN17016070 for Cezanne
+Version: RABLCZN1C276070 for Cezanne
 
-Date:   February 14 2021
+Date:   March 21 2022
 
 ----------------------------------------------------------------------------
 
@@ -17,19 +17,593 @@ Content:
   AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
 
 Repo Manifest Info:
-  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN22146070.xml
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN23216070.xml
 
 Based On:
-  RABLCZN17016070_Chrome
+  Chrome_Cezanne/feature/clane/cache_clear
 
 ABL Version String:
-  0x22146070
+  0x23216070
+
+Features and Fixes:
+project Lib/
+  Google Issue CZN 195078214: APOB Invalidated by Memory Changes
+
+project Memory/
+  Google Issue CZN 195078214: APOB Invalidated by Memory Changes
 
 project Program/
-  PLAT-PLAT-101362 CZN: ABL Release RABLCZN22146070
-  Restore functionality to fix s0i3 retrain bug.
+  PLAT-103899 CZN: ABL Release RABLCZN23216070
 
 ----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2021, Advanced Micro Devices, Inc.
+
+Version: RABLCZN1C276070 for Cezanne
+
+Date:   December 27 2021
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN1C276070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x1C276070
+
+Features and Fixes:
+project Program/
+  PLAT-98464 CZN: ABL Release RABLCZN1C276070
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2021, Advanced Micro Devices, Inc.
+
+Version: RABLCZN1C236070 for Cezanne
+
+Date:   December 23 2021
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN1C236070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x1C236070
+
+Features and Fixes:
+project NBIO/
+  Revert "[CZN] Bypassing warm reset to address audio rate issue."
+
+project Program/
+  PLAT-98326 CZN: ABL Release RABLCZN1C236070
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2021, Advanced Micro Devices, Inc.
+
+Version: RABLCZN1C216070 for Cezanne
+
+Date:   December 21 2021
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN1C216070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x1C216070
+
+Features and Fixes:
+project Lib/
+  PLAT-97566: [RN/CZN/RMB] Strings typos in AblPostCode.h comment
+
+project Program/
+  PLAT-98168 CZN: ABL Release RABLCZN1C216070
+  PLAT-90712 System Hang 0x060d after sleep S3 with Cezanne CPU, the OC settings and disabled iGPU
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2021, Advanced Micro Devices, Inc.
+
+Version: RABLCZN1C136070 for Cezanne
+
+Date:   December 13 2021
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN1C136070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x1C136070
+
+Features and Fixes:
+project Lib/
+  PLAT-91776 [RN-FP6]SUT hang b000A90d with corrupted APCB file (Update code logic)
+
+project Program/
+  PLAT-97574 CZN: ABL Release RABLCZN1C136070
+  PLAT-97255: [CZN] ABL RT Release RABLRTCZN1C086070
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2021, Advanced Micro Devices, Inc.
+
+Version: RABLCZN1C066070 for Cezanne
+
+Date:   December 06 2021
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN1C066070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x1C066070
+
+Features and Fixes:
+project NBIO/
+  [CZN] Bypassing warm reset to address audio rate issue.
+
+project Program/
+  PLAT-97080 CZN: ABL Release RABLCZN1C066070
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2021, Advanced Micro Devices, Inc.
+
+Version: RABLCZN1C016070 for Cezanne
+
+Date:   December 01 2021
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN1C016070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x1C016070
+
+Features and Fixes:
+project CCX/
+  "PLAT-93314: [CZN] BIOS: include S3 Image (19500642) to the CZN BIOS""
+
+project Lib/
+  "PLAT-93314: [CZN] BIOS: include S3 Image (19500642) to the CZN BIOS""
+
+project Program/
+  PLAT-96631 CZN: ABL Release RABLCZN1C016070
+  "PLAT-93314: [CZN] BIOS: include S3 Image (19500642) to the CZN BIOS""
+
+project Tools/
+  PLAT-95547: [CZN] Release the ABL Runtime driver with FwType populated
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2021, Advanced Micro Devices, Inc.
+
+Version: RABLCZN1B236070 for Cezanne
+
+Date:   November 23 2021
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN1B236070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x1B236070
+
+Features and Fixes:
+project NBIO/
+  PLAT-92063:Replicate to RN-Unsafe Parsing of SMU PState Count in ABLs
+
+project Program/
+  PLAT-96070 CZN: ABL Release RABLCZN1B236070
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2021, Advanced Micro Devices, Inc.
+
+Version: RABLCZN1B086070 for Cezanne
+
+Date:   November 08 2021
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN1B086070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x1B086070
+
+Features and Fixes:
+project CCX/
+  Revert "PLAT-93314: [CZN] BIOS: include S3 Image (19500642) to the CZN BIOS"
+  PLAT-93314: [CZN] BIOS: include S3 Image (19500642) to the CZN BIOS
+
+project Lib/
+  Revert "PLAT-93314: [CZN] BIOS: include S3 Image (19500642) to the CZN BIOS"
+  PLAT-93314: [CZN] BIOS: include S3 Image (19500642) to the CZN BIOS
+
+project Program/
+  PLAT-94811 CZN: ABL Release RABLCZN1B086070
+  Revert "PLAT-93314: [CZN] BIOS: include S3 Image (19500642) to the CZN BIOS"
+  PLAT-94377 [LCN/CZN/BRC-FP6][Cezanne-PI] Memory context save restore no functional after resume from S0i3 (Patch)
+  PLAT-94377 [LCN/CZN/BRC-FP6][Cezanne-PI] Memory context save restore no functional after resume from S0i3
+  PLAT-93314: [CZN] BIOS: include S3 Image (19500642) to the CZN BIOS
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2021, Advanced Micro Devices, Inc.
+
+Version: RABLCZN1A116070 for Cezanne
+
+Date:   October 11 2021
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN1A116070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x1A116070
+
+Features and Fixes:
+project Lib/
+  PLAT-92675 [CZN]SUT hang b000A90d with corrupted APCB file
+
+project Program/
+  PLAT-92680 CZN: ABL Release RABLCZN1A116070
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2021, Advanced Micro Devices, Inc.
+
+Version: RABLCZN19136070 for Cezanne
+
+Date:   September 13 2021
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN19136070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x19136070
+
+Features and Fixes:
+project Lib/
+  PLAT-90308 Memory serial number information in type 17 will not change after swapping the same model memory device
+
+project Program/
+  PLAT-90781 CZN: ABL Release RABLCZN19136070
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2021, Advanced Micro Devices, Inc.
+
+Version: RABLCZN18236070 for Cezanne
+
+Date:   August 23 2021
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN18236070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x18236070
+
+Features and Fixes:
+project Memory/
+  PLAT-82750: [CZN_Majolica]: System failed to boot hang on EEC5000d after set SMT + iGPU Disable
+
+project Program/
+  PLAT-89341 CZN: ABL Release RABLCZN18236070
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2021, Advanced Micro Devices, Inc.
+
+Version: RABLCZN18166070 for Cezanne
+
+Date:   August 16 2021
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN18166070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x18166070
+
+Features and Fixes:
+project DF/
+  PLAT-88278: [CZN]Avoid UMA size set as 0 after seting UMA_SPECIFIED without setting UMA_SIZE
+
+project Program/
+  PLAT-88823 CZN: ABL Release RABLCZN18166070
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2021, Advanced Micro Devices, Inc.
+
+Version: RABLCZN18096070 for Cezanne
+
+Date:   August 09 2021
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN18096070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x18096070
+
+Features and Fixes:
+project Lib/
+  PLAT-87692 Memory serial number information in type 17 will not change after swapping the same model memory devices into the same memory DIMM slots
+
+project Memory/
+  PLAT-85876 Unsafe Parsing of SMU PState Count in ABLs
+
+project Program/
+  PLAT-88349 CZN: ABL Release RABLCZN18096070
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2021, Advanced Micro Devices, Inc.
+
+Version: RABLCZN17266070 for Cezanne
+
+Date:   July 26 2021
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN17266070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x17266070
+
+Features and Fixes:
+project APCB/
+  PLAT-83432 CZN FP6: CheckVersion (USB port cannot be detect) and USB_Detect_3_1_CTRL0 fail -- add routines to confiure I2C4 I2CRxSel
+
+project FCH/
+  PLAT-83432 CZN FP6: CheckVersion (USB port cannot be detect) and USB_Detect_3_1_CTRL0 fail -- add routines to confiure I2C4 I2CRxSel
+
+project Program/
+  PLAT-87391 CZN: ABL Release RABLCZN17266070
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2021, Advanced Micro Devices, Inc.
+
+Version: RABLCZN17196070 for Cezanne
+
+Date:   July 19 2021
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN17196070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x17196070
+
+Features and Fixes:
+project Lib/
+  PLAT-84256 [CZN] Use new service call to map SMN window with size parameter (Restore)
+
+project Program/
+  PLAT-86981 CZN: ABL Release RABLCZN17196070
+  PLAT-84256 [CZN] Use new service call to map SMN window with size parameter (Restore)
+  PLAT-86838 [CZN] Need to check smbus read status when GetBoardId by smbus
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2021, Advanced Micro Devices, Inc.
+
+Version: RABLCZN17126070 for Cezanne
+
+Date:   July 12 2021
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                          AGESA V9 Destination Folder      Description
+  AgesaBLReleaseNotes.txt                AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN17126070.xml
+
+Based On:
+  trunk_Cn
+
+ABL Version String:
+  0x17126070
+
+Features and Fixes:
+project DF/
+  PLAT-84141: [CZN]Fix trace2Dram VC8 token allocation (Patch 2)
+
+project Program/
+  PLAT-86601 CZN: ABL Release RABLCZN17126070
+
+----------------------------------------------------------------------------
+
 ABL Delivery Release Notes
 
 Copyright 2021, Advanced Micro Devices, Inc.
