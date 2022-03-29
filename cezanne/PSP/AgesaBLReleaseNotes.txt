@@ -3,7 +3,52 @@ ABL Delivery Release Notes
 
 Copyright 2022, Advanced Micro Devices, Inc.
 
-Version: RABLCZN1C276070 for Cezanne
+Version: RABLCZN23216071 for Cezanne
+
+Date:   March 21 2022
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                                AGESA V9 Destination Folder          Description
+  AgesaBLReleaseNotes.txt                 AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m Chrome_Cezanne_feature_clane_cache_clear.xml
+
+Based On:
+  Chrome_Cezanne/feature/clane/cache_clear
+  Manifest revision :
+    APCB: a139847df5e588f581d2314e377e7ca249a3c2ad
+    APOB: a6fa03f1725b2bff8c929425ea84151d9adbbc50
+    CCX: bd148de9d780be7fe6fdaa803753f21e0cd70173
+    DF: 69d68fa8d13a63821b116de3a4dd3a08be3e103a
+    FCH: fda58e6c4b4cf22df858419dd9aa421e05abc584
+    Lib: 20f5889e29c7962f7849d1ac99cf98ca08e64d41
+    Memory: a2fbed9c0aa9648887f32d797ab42ccda88c71c2
+    NBIO: 3347370c74e66ed6323e8eb7d1079d13734d7527
+    Program: ce16a2e7d7932db132e5a0986b47ec999effec1f
+    Tools: ff292962a83cde9681ccc3089f9159ad719a2aab
+
+ABL Version String:
+  0x23216071
+
+Features and Fixes:
+project Lib/
+  PLAT-99990 [CZN] LP4x - Changing ProcODT and CA Vref seed for MGCL B-die
+
+project Memory/
+  PLAT-99990 [CZN] LP4x - Changing ProcODT and CA Vref seed for MGCL B-die
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2022, Advanced Micro Devices, Inc.
+
+Version: RABLCZN23216070 for Cezanne
 
 Date:   March 21 2022
 
