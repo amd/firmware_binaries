@@ -1,3 +1,0 @@
-The files in this directory are provided as placeholders for sabrina.  These
-are duplicates of Cezanne and will be replaced after Sabrina reaches 1.0.
-
