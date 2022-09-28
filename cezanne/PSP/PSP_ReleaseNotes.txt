@@ -1,8 +1,8 @@
 ﻿//----------------------------------------------------------------------------
 // PSP FW Delivery Release Note
 //
-// Copyright 2021, Advanced Micro Devices, Inc.
-// Date:   January 22, 2021
+// Copyright 2020-21, Advanced Micro Devices, Inc.
+// Date:  July 27, 2022
 //----------------------------------------------------------------------------
 
 Content:
@@ -11,19 +11,1129 @@ Content:
 
 TODO: update list of files
 Files
- boot_loader_RN.bin                 [version: 0.11.0.68] - PSP off-chip Legacy Stage 2 BootLoader (entry type 0x1), signed with production key
- boot_loader_AB_RN.bin              [version: 0.11.0.68] - PSP off-chip A/B Stage 2 BootLoader (entry type 0x1), signed with production key
- boot_loader_stage1_RN.bin          [version: 0.11.0.68] - PSP off-chip Stage 1 BootLoader (entry type 0x1), signed with production key
- PspRecoveryBootLoader_RN.bin       [version: 0.11.0.68] - PSP off-chip Recovery BootLoader (entry type 0x3), signed with production key
- debug_unlock_RN.bin                [version: 0.11.0.68] - PSP secure unlock (entry type 0x13), signed with production key
- psp_os_combined_NV12.bin           [version: 0.11.0.68] - PSP secure OS (entry type 0x2), signed with production key
- drv_sys_RN.bin                     [version: 0.11.0.68] - PSP system driver (entry type 0x28), signed with production key
- dr_ftpm_prod_RN.csbin              [version: 3.57.0.5] - PSP fTPM (entry type 0xC), compressed and signed with production key
- dr_drtm_prod_RN.csbin              [version: 04.11.00.1E] - PSP DRTM (entry type 0x47), compressed and signed with production key
- rsmu_sec_policy.rn_L0.sbin         [version: B.9.0.78] - Security Gasket (entry type 0x24)
- rsmu_sec_policy.rn_L1.sbin         [version: B.9.1.78] - Security Policy for tOS (entry type 0x45)
+ boot_loader_prod__CZN.sbin         [version: 0.11.E.75] - PSP off-chip Stage 2 BootLoader (entry type 0x73), signed with production key
+ boot_loader_stage1_prod_CZN.sbin   [version: 0.11.E.75] - PSP off-chip Stage 1 BootLoader (entry type 0x1), signed with production key
+ debug_unlock_prod_CZN.sbin         [version: 0.11.E.75] - PSP secure unlock (entry type 0x13), signed with production key
+ psp_os_prod_combined_CZN.sbin      [version: 0.11.E.75] - PSP secure OS (entry type 0x2), signed with production key
+ drv_sys_prod_CZN.sbin              [version: 0.11.E.75] - PSP system driver (entry type 0x28), signed with production key
+ dr_ftpm_prod_RN.csbin              [version: 3.76.0.5] - PSP fTPM (entry type 0xC), compressed and signed with production key
+ dr_drtm_prod_RN.csbin              [version: 04.11.00.2B] - PSP DRTM (entry type 0x47), compressed and signed with production key
+ rsmu_sec_policy.rn_L0.sbin         [version: B.10.0.20] - Security Gasket (entry type 0x24)
+ rsmu_sec_policy.rn_L1.sbin         [version: B.10.1.20] - Security Policy for tOS (entry type 0x45)
  spl_table_RN.sbin                  [version: 5.11.0.5C] - Firmware Anti-rollback information file (entry type 0x55)
  spl_table_CZN.sbin                 [version: 5.11.1.63] - Firmware Anti-rollback information file (entry type 0x55)
+
+Release Version 0.11.0E.75
+-------------------------------------------------------
+Trusted OS
+----------
+PLAT-111361: Relinquish control of locality before Request for Use
+PLAT-111558: Avoid Possible race condition if I2c3RsmuFencing fails
+PLAT-112056: Reduce the timeout for TPM get status
+PLAT-112060: Add postcodes and STB traces in error paths
+PLAT-112506: Fix I2CReadData issue when NACK from TPM
+PLAT-112526: Poll on GPIO interrupt status for TPM ready
+
+Release Version 0.11.0D.75
+-------------------------------------------------------
+Trusted OS
+----------
+PLAT-107404: Do not power ON-OFF I2C3 during DTPM Arbitration
+
+Release Version 0.11.0C.75
+-------------------------------------------------------
+Trusted OS
+----------
+PLAT-106455: Correct I2C3 RSMU fence settings
+PLAT-106756: Fix for I2C3 Bus Arbitration Issue
+PLAT-106756: reduce the timeout inside tpm_wait_burststs to 1000ms
+
+Release Version 0.11.0B.75
+-------------------------------------------------------
+Trusted OS
+----------
+PLAT-104872: Fix ACP-PSP Mailbox issue on S0i3 resume
+PLAT-106102: Port80 logging while I2C3 bus is acquired or released
+
+Release Version 0.11.0A.75
+-------------------------------------------------------
+Trusted OS
+----------
+PLAT-104403:[Chrome]: Enable Sram access for Widevine
+
+Release Version 0.11.09.75
+-------------------------------------------------------
+Bootloader
+----------
+PLAT-85878:[Chrome]: espi base address should be checked before use
+
+Trusted OS
+----------
+PLAT-102568:[Chrome]: Handle ACP f/w qualification via ACP-PSP mailbox
+
+Release Version 0.11.08.75
+-------------------------------------------------------
+Trusted OS
+----------
+PLAT-99113:[Chrome]: Bug fix for random timeout in I2CWriteData
+
+Release Version 0.11.07.75
+-------------------------------------------------------
+Bootloader
+----------
+PLAT-100646:[Chrome]: Boot to unsigned verstage mode when spl table not found
+PLAT-98146: [Chrome]: On chromebook enforce SPL only when boot from RW
+PLAT-98146: [Chrome]: Restructure function detecting chromebook boot partition
+
+Release Version 0.11.06.75
+-------------------------------------------------------
+Bootloader
+----------
+PLAT-98838:  [Chrome]: Don't allow set boot mode for unsigned verstage
+PLAT-100656: [Chrome]: Add test case to access UART 0
+PLAT-100656: [Chrome]: Add UART 0/1 device to SVC_MAP_FCH_IO_DEVICE
+PLAT-99929:  [Chrome]: Add test case to port80 postcode write
+PLAT-99929:  [Chrome]: Add svc support to write post code to port 80
+
+Release Version 0.11.05.75
+-------------------------------------------------------
+Bootloader
+----------
+PLAT-99944: [Chrome]: Stage2 rename the g_chrome_mode variable
+PLAT-99944: [Chrome]: Port chrome_set_mode in Stage2
+PLAT-99944: [Chrome]: Stage1 prevent clear_lsb_slot if already done
+PLAT-99944: [Chrome]: Enter to developer mode on rollback
+
+Trusted OS
+----------
+PLAT-100146: Control I2C enable/disable before sending command
+
+Release Version 0.11.04.75
+-------------------------------------------------------
+PLAT-98300:[Chrome]: Skip copy of workbuf to dram when 6B entry not found
+PLAT-98838:[Chrome]: Set Chrome Bootmode provided by the verstage
+PLAT-98838:[Chrome]: Align value of Chrome Bootmodes with verstage
+PLAT-98838:[Chrome]: Rename the Chromebook Boot Mode
+Trusted OS
+----------
+PLAT-85059:[Chrome]: Optimizing the I2C3 powering sequence
+PLAT-98838:[Chrome]: Drv Sys implementation to get chrome Bootmode
+PLAT-85059:[Chrome]: Optimizing the I2CReadData workaround to 250us
+
+Release Version 0.11.03.75
+-------------------------------------------------------
+Bootloader
+----------
+PLAT-98934:[Chrome]: Add SVC call to get bootmode from verstage
+
+Trusted OS
+----------
+PLAT-85066:[Chrome]: On chromebook add ASD,WV,HDCP uuids as mandatory
+PLAT-96340:[Chrome]: Add I2C fencing during PSP access of I2C3 bus
+PLAT-85059:[Chrome]: Change the defined widevine TA Unique ID
+
+Release Version 0.11.02.75
+-------------------------------------------------------
+Bootloader
+----------
+PLAT-95774:[Chrome]: Add softfuse bit to control load of verstage in S0i3
+
+Trusted OS
+----------
+PLAT-85059: Implement the TPM commands for secure counter
+PLAT-85059: Implementation of Secure Counter in drv sys
+PLAT-97400:[Chrome]: Add support for power management of I2C3 bus
+PLAT-97691: Correct the BIOS mbox command ID for I2C arbitration
+PLAT-97400:[Chrome]: Power ON or OFF I2C3 Bus during arbitration
+PLAT-85059:[Chrome]: Optimizing the I2CReadData workaround
+
+Release Version 0.11.01.75
+-------------------------------------------------------
+Bootloader
+----------------
+PLAT-95780:[Chrome]: Add svc call to get the fw hash table
+PLAT-83301:[Chrome]: Rebase to amd-staging till 00.11.00.75
+Trusted OS
+----------------
+PLAT-83301:[Chrome]: Rebase to amd-staging till 00.11.00.75
+PLAT-92745:[Chrome]: Add BIOS-PSP command for DTPM I2C Bus req
+
+Release Version 0.11.0.75
+-----------------------------------
+** This version is fixing version number only
+
+Bootloader
+----------------
+N/A
+
+Trusted OS
+----------------
+
+fTPM
+-----
+N/A
+
+DRTM
+-----
+N/A
+
+Release Version 0.11.0.74
+-----------------------------------
+Bootloader
+----------------
+PLAT-92329: Revert the stack protection change in the stage1 bootloader
+PLAT-91331: Remove internal urls and names from the code
+PLAT-92243: Fix possible underflow in load_binary
+PLAT-92242: Fix possible overflow in VerifyBiosRTM
+
+Trusted OS
+----------------
+SWDEV-284518 Fix rate-limiting mailbox double-counts.
+FWDEV-5215: Fuse Burn sequence in PSP code is not matching SMU HW
+PLAT-92364: [RAv3] Avoid deadlock situation with PMFW
+FWDEV-5233: Fix DF_PIE_AON/DF_CS_UMC to use the _alt_2 register address.
+FWDEV-5100: [PHX] Update system instance ID for DF Components
+PLAT-91589: Add check to verify if MPM FW versions match
+FWDEV-4990:[PHX] Add support to Restoring ISP security policies
+FWDEV-5151:[PHX] Grant MPIPU read access to IPU FW TMR region
+FWDEV-4989: Apply IPU's RSMUs security policies
+FWDEV-4605: Remove dep from lp_control
+PLAT-69017: Kernel-to-SMM-mode privilege escalation via racy SMM check
+FWDEV-4721:Fix the build failure caused by AMD-TEE_API_LIB Patch (2)
+SWDEV-283282: [NV31] Implement the Trusted SPI Update main sequence in PSP TOS
+FWDEV-4721:Fix the build failure caused by AMD-TEE_API_LIB Patch
+PLAT-85849: Privilege Check in SVC_UNMAP_PAGES
+FWDEV-4862: PSP read HSP buffer after SUSPEND cmd
+FWDEV-2558: Validate system physical addresses are in DRAM map
+PLAT-92160: Add PROM A320 support for RN
+PLAT-91933 Fix PSP reporting TMR size requirement as 0.
+PLAT-90967: Add DMCUB message for APERTURE_B
+PLAT-92389: MPM WLAN access in x86 not release mode
+PLAT-90535: [RAv3]Send PSPSMC_MSG_ReadRom2Rom3BaseAddr only on RA2 Enforce
+DEPHXE-238: [PHX] Fix load vector location in RLC TOC
+SWDEV-283282: [NV31] Implement the Trusted SPI Update main sequence in PSP TOS
+FWDEV-5055: Fix TOCTOU issue on TeeProcessRingCmd
+PLAT-91331: Remove internal urls and names from the code
+FWDEV-5056: L1_MapPageTable may be called twice in RunScheduler
+FWDEV-4997: [PHX] Reload GFX IMU after receiving doorbell interrupt after LP exits
+PLAT-89963 Prevent intermittent PSP hang on HDP Flush
+FWDEV-4685:[Navi31]Disable PreSetIpFw function call for RLC-V
+FWDEV-5049: Adjust kernel scatter file in amd-tee2.0
+FWDEV-4985 [MDN] Update Fabric ID of MMHUB for mendocino
+FEAT-38663[Navi21] Remove fw att file and replace with fw manifest.
+FWDEV-4573: Fix for BIOS PT21 Loading CMD
+RTGPLAT-7179: [PSP TOS] fix RAP_VALIDATE_ROLLBACK_L0 mismatch
+FEAT-37454: [NV31 BL] -copy scpm status to Secure mp1 general dram map region.
+
+fTPM
+-----
+N/A
+
+DRTM
+-----
+N/A
+
+Release Version 0.11.0.73
+-----------------------------------
+** AMD FIPS certification is pending
+*FTPM updated to version 3.76.0.5 / 3.76.2.5 (for BRC)
+
+Bootloader
+----------------
+PLAT-92079: Fix stack protector initialization
+PLAT-85835: Use Stack Protector to defense against stackbased buffer overflow attacks.
+PLAT-85820: Validate SizeFWSigned in Image Header before use
+PLAT-90934: SHUBCLK does not enter deep sleep
+PLAT-90969: Disable BootRom access after stage 1 is done
+
+Trusted OS
+----------------
+DEPHXE-275:[PHX] Release IPU RSMU Hard Resets before accessing CRU
+PLAT-88066:[RAv3] Add Error Handlings when Disable MMIO Trap
+FWDEV-4840: Consolidate RAPv2 DF & FCH policy
+PLAT-89413: Support ROM Armor v2 in Project X
+DEPHXE-258: [PHX] Fixed TMR issue while loading GFX IMU IRAM FW
+PLAT-69017: Kernel-to-SMM-mode privilege escalation via racy SMM check
+PLAT-87120: Enhance exception sequence to handle syncflood errors
+FEAT-37545: [PSP TOS] fix error in merging RAP GC_TMR
+FWDEV-4605: Update LP_CONTROL fuse in tOS
+PLAT-91528: [RAv3] Refactoring of ROM-Armor related code
+DEPHXE-261: [PHX] Enable RlcAutoLoad for GFX11 FWs
+FWDEV-4697: Update Intf for Dmcu timeout smart trace
+FEAT-38663: Rebranding fw attestation to fw manifest (2)
+DEPHXE-250:[PHX] Fix SPACE AxUSER value for Frame Buffer Addresses
+FEAT-38663:[NAVI21][SRIOV] Rebranding fw attestation to fw manifest for TOS
+FWDEV-4828: Apply GC_VDDGFX_POLICY and GFX_DLDO_VDDGFX_POLICY
+FWDEV-4697: Add both smart Trace buffer and FW_STATUS to track for DMCUB_PREPARE_TIMEOUT expiry
+PLAT-90219: Allow DPG power-up after z9 exit V9 DPG SRAM restore
+DEPHXE-243:[PHX] Set IpuEnable of MiscClientsEnable
+Revert "DEPHXE-85: [PHX] Disable MP0 clock gating and mem deep sleep"
+FWDEV-3806: Clean up the usage of SMN_ADDR_UNDEFINED (2)
+FEAT-37545: [navi3x][PSP TOS] detect GFX PowerState
+FWDEV-4056: [PSP_TOS] navi3x FW loading sequence
+FEAT-37545: [PSP TOS] fix error in RAP validate GC_TMR
+
+fTPM
+-----
+PLAT-89586 fTPM: Enable ARM V6 Compiler Support
+
+DRTM
+-----
+N/A
+
+Release Version 0.11.0.72
+-----------------------------------
+** AMD FIPS certification is pending
+*FTPM updated to version 3.75.0.5 / 3.75.2.5 (for BRC)
+*DRTM updated to version 4.11.0.2B
+
+Bootloader
+----------------
+PLAT-85816: Sanitizing the parameters in Debug Print Syscalls
+PLAT-90753: Move RPMC Macro Definitions to Shared file
+PLAT-85861: Unmapping the Syshub map before Load_Run_DiagFw returns
+PLAT-89539: Fix recovery reason reported for unified FW
+PLAT-85860: Fixing unsafe assumptions in FWLeafTokenValidation
+PLAT-88038: Avoid multiple calling of SVC_SET_PSP_RESERVED_ADDR
+PLAT-88647: [RPMC] Fix RPMC Available Counter Addresses
+PLAT-85868: Ensure malformed MP2 RAM1 region can't Violate Memory Safety
+PLAT-85861: Unmapping the Syshub mapped address on Error Paths
+
+Trusted OS
+----------------
+FWDEV-4718: [PHX] B.0.3.0a LSD change list alignment CL# 1500199
+PLAT-90535:[RAv3] Add MSG Notify SMU to Read ROM2/3 Base Address
+PLAT-90975: [PJX] Fix Security violation logging
+FWDEV-2790:[PHX] Fix a bug on ISP TMR layout
+FWDEV-4693:[PHX] Split CRU public registers structure
+DEPHXE-201: Set 1 in SOC_GAP_PWROK before resetting IMU
+FWDEV-4696: [PHX] Update RLC TOC size, load vector location and Firmware ID
+FWDEV-4056: [PSP_TOS][TMR setup] Remove check for DrQuerySriovState()
+FWDEV-4078:[Navi3x] Enable debug mode of IMU boot
+FWDEV-4685:[Navi31]Disable PreSetIpFw function call for RLC-V
+PLAT-90864: Add DMCUB mailbox commands for iUSB4
+PLAT-89961: Disable CCP PG on WFI entry
+PLAT-88557: ACP SHA DMA clears interrupt then acknowledge
+FWDEV-4695:[PHX] Fix size of TMR region returned by Load TOC command
+PLAT-69017: Kernel-to-SMM-mode privilege escalation via racy SMM check
+FWDEV-4498:FWDEV-3831:[Navi3x] Update TOC and add support for CP MES_KIQ
+FWDEV-4476: [Navi 33]: Migrate to LSD SOCCL - 5090167
+PLAT-85816: Sanitizing the parameters in Debug Print Syscalls
+FEAT-37545: [PSP TOS] RAP validate new features for navi31/navi33
+FWDEV-4694:[PHX] Update IPU interface registers according to spec
+PLAT-90753: Move RPMC Macro Definitions to Shared file
+PLAT-85105:[RMB]DynamicBoost2.0 Feature Implementation
+FWDEV-4599:[Navi3x] Disable SMU DF Cstate calls till PM FW is ready
+FWDEV-4600:[Navi] The burst operation needs 256 byte aligned address
+PLAT-89906: [RMB][Level3]Failed to enable FW protection with HSP+fTPM+RA enable mode.
+FWDEV-4433: Remove HSP_S0I3_ENABLE flag
+FWDEV-3245: Add PAD to RPL - tOS
+FWDEV-3944: [RPL] RAS enable
+PLAT-88285: [RMB] DeriveHmacKey once per boot.
+DERPLE-342: WaitToSaveMpioSram is only required for S0i3.
+FWDEV-4567 [MDN] Update MDN ASIC detection
+PLAT-77943: [SP] [RAS] Support SMN/MP1 Fatal Error Handling
+PLAT-77055: [SP]: Add support for TWIX error handling
+FWDEV-4627: [RPL] Update CS-SEED-based KDF and Key Unwrapping
+FWDEV-4056: [PSP_TOS] fix TMR size calculation for VCN_RAM
+FWDEV-4056: [PSP_TOS][navi33] Enable seprarate VCN_RAM_TMR for navi33
+FWDEV-328: Enable MP0CLK_DPM_UPDATE for RPL
+PLAT-89221 RMB: Disable SMI triggering to x86 when FLAG_ID_DISABLE_SMM_ACCESS set.
+FWDEV-4575: Add MFD Pre-Si key to API permissions
+PLAT-85841: Prevent memory corruption in kernel syscalls
+FEAT-37545: [PSP TOS] RAP apply new features for navi31/navi33
+PLAT-89221 RMB: Disable SMI triggering to x86 when FLAG_ID_DISABLE_SMM_ACCESS set.
+FEAT-37454: [NV31 BL] -copy scpm status to Secure mp1 general dram map region.
+FWDEV-4109: [PSP TOS] fix core chiplet API
+FWDEV-4451: Update for getting the size of gRsmuPresentId[]
+PLAT-89160: [SP] Enable STB support
+FWDEV-4109:[MI300] add core struct to TOS mailbox
+FWDEV-3981: [PHX] Add IPU interface initialization to RsmuIntrptThread
+FWDEV-2790: Fix the event order in ISP interface thread
+FWDEV-3831:[Navi3x] Fix a typo error
+SCSW-7672: Enable SMI and disable RAP loading in PJX
+PLAT-87137: Clear RomArmorV2 enable flag when system enters S3
+PLAT-85843: Validating the Param0 in SVC_MAP_MMHUB
+FWDEV-4191: Update Current BIOS CMD
+PLAT-85868: Ensure malformed MP2 RAM1 region can't Violate Memory Safety
+PLAT-85837: Prevent out-of-bound read in SMI Mailbox CalulateCheckSum
+PLAT-85844: Prevent Integer Overflow in SVC_ALLOC_PROCESS_SPACE
+FWDEV-3981: [PHX] Fix IPU loading and Releasing code
+FEAT-37454: [NV31 BL] -copy board config table along with pptable to Secure mp1 general dram map region.
+PLAT-77943: [SP]: Enable RAS support
+PLAT-86560: Move gRsmuPresentId to .c file
+PLAT-84484: [RMB-B0] Updated CS-SEED-based KDF and Key Unwrapping
+PLAT-87963: [SP]: Extend upper bits in SMM Mask value
+FWDEV-2790: [PHX] Update C2P_MSG registers for the VTL1 interface
+FWDEV-4346: Add PSPSMC_MSG_SaveZscState message to S3 Entry flow
+PLAT-85831: Check for Integer Overflow when verifying TMR address
+FEAT-38652: [PSP TOS] Add empty function for VCN0/VCN1 Power-On
+FEAT-38655: [TOS]Configuration of system firmware features through SFFS(System Firmware Feature Enablement) binary
+FEAT-38652: [navi3x][PSP TOS] (8) handle SMU to PSP message for VCN0/VCN1 Power-On
+FWDEV-2790: [PHX] Disable FMR setup when RAP is disabled
+FWDEV-3335:[NAVI31][RAS]Enable MSMU SRAM Data Parity Handling
+SCSW-7672: Add support for Project X
+FWDEV-3967 Update MDN RSMU config
+DEPHXE-137: RAP subsection can have no register settings.
+FWDEV-303: [RPL] Smart Trace Buffer
+FWDEV-4050:[NAVI31][SRIOV] Enabled SRIOV flag and set supported VFs to 15
+FWDEV-2790: [PHX] Add support to ISP in PHX
+
+fTPM
+-----
+PLAT-86622: [RMB]Z-state Entry and Exit notification Handling in FTPM
+PLAT-87770: [RV/Fremont]Support Hmac Validation  and Unwrapping with Legacy Key
+PLAT-87251: [RMB]Fix a bug in debug code logging in MP0 C2PMSG8
+PLAT-64173: [VGH]Fix a bug in computing total HSP NV data in HSP mode
+PLAT-80506: [RMB]Wait for RPMC Inc to finish after SMC Inc when RA2 enabled
+
+DRTM
+-----
+PLAT-88160: Remove build warning with ARM V6
+PLAT-87437: Doxygen documentation for DRTM TA code
+PLAT-89221: [RMB] Disable SMI triggering of PSP to x86 when Drtm commands are in progress
+PLAT-89221: [RMB] Add DRTM commands DRTM_CMD_SMM_DISABLE and DRTM_CMD_SMM_ENABLE for PSP to x86 Smi trigger diable/enable
+
+Release Version 0.11.0.71
+-----------------------------------
+** AMD FIPS certification is pending
+*FTPM updated to version 3.73.0.5 / 3.73.2.5 (for BRC)
+*DRTM updated to version 4.11.0.27
+
+Bootloader
+----------------
+PLAT-85867: Validating pointer argument in SVC_ADD_ENTRY_MP2_RAM1
+PLAT-86518, PLAT-86519: Do not clear KDR on unlock
+PLAT-85847: Add a check for integer overflow in IS_OUTSIDE_SRAM
+PLAT-85871: Validate L1 BIOS Directory Header before use
+PLAT-85851: Adding validations in SVC_MAP_USER_STACK
+PLAT-85870: Validate the argument in SVC_SET_DEBUG_UNLOCK_INFO
+PLAT-85866: Memory Corruption In Debug Unlock Syscalls
+
+Trusted OS
+----------------
+PLAT-77354: Add BIOS command to handle Intrusion detection config
+PLAT-85826: Prevent TOCTOU when persisting Data to MP2 SRAM
+PLAT-87161: [SP]: Revert security policy as part of secure debug unlock
+FWDEV-3960:[RPL] Wait on MPIO save request on s3/s0i3 entry
+PLAT-83902: [SP]: Enable TMR Support
+FWDEV-4306: Increase PSP OS SRAM size
+PLAT-79871: Verifying late PSB fusing
+FEAT-37545: [PSP TOS] (5) Load RAP L1 to a separate DRAM space
+FWDEV-4304: Invalidate TLBs while mapping process' L2 page table
+FWDEV-4199: [RPL] Apply suspend RAP policy on S0i3 entry
+SWDEV-295031: [NV31] Transition SDU protocol signatures to HMAC - TOS
+PLAT-85828: Prevent TOCTOU when verifying Manageability OS
+PLAT-87185: RMB increment SPL=1 for psp_os and drv_sys
+SWDEV-272821: [NV31] Implement the ROM Image Parser in the PSP Sys Drv
+RTGPLAT-7179: [PSP TOS] fix DEBUG_UNLOCK logic for RAP V1.0
+PLAT-83460: [PSP_TOS] Support DEBUG_UNLOCK after NP RegUnroll
+PLAT-85110: System hangs with 0x8052 on BOOT_DONE while S3 resume
+PLAT-86519: [PSP TOS] Do not clear KDR and SSA bits oni DEBUG_UNLOCK
+PLAT-88066:[RAv3] Reduce Wait Time for PSP2SMU Messages
+FWDEV-3990: [PHX] LSD- change list alignment CL# 1476284
+FEAT-37545: [PSP TOS] (4) On RAP VALIDATION, check GFX power_state
+PLAT-70906: Add fw-sign support for AER
+PLAT-70906: Add fw-sign support for RPL/RMB/PHX (2)
+FEAT-37545: [PSP TOS] (3) write IMU register to consume GC_RAP_TMR
+FWDEV-4200:[NAVI31][RAS]Enable SMN Slave Timeout, SMN Data Parity, MP1 ECC Error, Sync Flood error handling
+PLAT-83538:[MI200]Add new command to respond MP1 query for allowing access for Diags
+PLAT-87031: Remove MBOX_TOS_RECOVERY_MASK for validate binary in memory
+PLAT-87352:[RAv3] Fix SMU MSG TimeOut Issue
+PLAT-86622: Notify drivers of z-state entry/exit
+FEAT-37545: [PSP TOS] (2) add GC_TMR to BL_TMR_INFO
+FWDEV-2666: [PHX] Erase GFX IMU iRAM and dRAM contents when hash validation fails
+PLAT-70906: Add fw-sign support for RPL/RMB/PHX
+FWDEV-3581 Initial version of MDN code
+FWDEV-318: [RPL] RAS Features - Twix
+PLAT-87352:[RAv3] Enable MMIO Access with RomArmorV2
+FWDEV-4104:[Navi31] Fix the IMU reset code
+FWDEV-3819: Added PROM21 key for RPL
+FWDEV-4068: [PHX] Save ZSC/DF/UMC MSMUs on S3
+PLAT-85859: Prevent Out Of Bounds Write in SetLoadVectorAndCopyToc
+FWDEV-4045: [Navi31] Migrate to LSD regspec
+FWDEV-3831:[Navi3x] Add support for RS64 MES/KIQ and SDMA THx
+PLAT-85839: [Chrome]: Return error for BIOS_CMD_START_KVM
+PLAT-85862: Changing the ReqKeyUsage value passed to KeyDbFindKey
+FWDEV-3981: [PHX] Add Inference Processing Unit (IPU) - PSP FW Support
+PLAT-86518, PLAT-86519: Do not clear KDR on unlock
+[FWDEV-2666] Add support for saving/restoring GFX IMU on S0i3 sequence
+FWDEV-2768: Save S5 RAM contents to DRAM on s3/s0i3 entry
+PLAT-85853: Avoid Double Fetch in BIOS_CMD_BOOT_SPI_ROM Handler
+PLAT-85291: Return appropriate error codes in ACP Firmware Validation
+SWDEV-295922: Locked in enums for DFC feature for other asics
+FWDEV-3958: Add missing flags for RPL in tOS
+SWDEV-292789:[Navi2x][SecAudit] Fix issue of buffer overflow in Load Module
+SWDEV-293896: [Navi 33]: [Porting] [Fix] Correct the CRU structure as per PPR
+PLAT-85854: Avoiding PanicFinal function to return
+PLAT-86850 Correct DF register definitions
+PLAT-85834: Prevent TOCTOU attack in BIOS_CMD_SET_RPMC_ADDRESS
+PLAT-78078: [SP]: Update Axuser bits in the MapSyshub Address
+PLAT-72423: Add implementation for dUSB4 DrvSys call
+PLAT-86720 RMB: Enablement of RA1 under ENABLE_ROM_ARMOR_v1 flag
+SWDEV-295031: [NV31] Transition SDU protocol signatures to HMAC - TOS
+FWDEV-3925: Add HSP_ENABLE flag for RPL in TOS
+PLAT-85897: [SP] Support AES-256 UMC keys
+FWDEV-3824: [PHX] Move MSMU dRAM save to new 1 MB section in DRAM
+PLAT-85856: Validating the size of parameter in SVC_TA_DRIVER_CALL
+PLAT-85700: [SP]: Reserve unused Secure DRAM for S5
+PLAT-86663: Increase system driver memory size
+PLAT-85846: Check for integer overflow in SVC_SET_TMR
+PLAT-83460 : [Navi24][PSP_TOS][NPM] add SmuGfxOn to Non-Prod RegUnroll
+PLAT-83460 : [navi2x][PSP_TOS] On disallow GFXOFF from PSP, wait GFXOFF_EXIT
+FWDEV-3806: Clean up the usage of SMN_ADDR_UNDEFINED
+FEAT-37545 : [PSP_TOS][Navi3x] define asic_types: NV31, NV33
+SWDEV-294010 MI200: Set mmUVD_POWER_STATUS_alt_1 for VCN1 on MMSCH FW load.
+PLAT-84331 Add separate VCN RAM support for SRIOV.
+FWDEV-3282: [PHX] LSC+ change list alignment CL# 1454132
+PLAT-86295: [SP]: update the RSMU Timeout register address definitions
+PLAT-86147: Update in SPI write for x86 not released case
+DEPHXE-112: update mmDF_PSP_MISC_MODE address
+SWDEV-291800:[Navi2x][SecAudit]Fix issue with signature address for multi-header case
+PLAT-84331 Wrap SetNumOfVfs in SRIOV build flag.
+PLAT-84331 Make setting VF Num return required TMR size to driver. Fix naming.
+SWDEV-287185 Fix mailbox status and FW version reporting in vfgate.
+RTGPLAT-7252 : [PSP TOS] fix RAP L1 mismatch failures
+PLAT-84000: [TOS]Enable compiler errors on use of an uninitialized variable
+FWDEV-2171: [PHX] Skip z-state MPIO FW restore if entry aborted
+SWDEV-293709:[Navi31] Correct the CRU structure as per Navi31 PPR
+SWDEV-293771: [Navi 33]: Update AxUser.space encoding on MMHUB AXI interface
+FEAT-37454: [PSP BL] - only DGPU support Place SCPM Authorization result in Boot time TMR for KMD
+SWDEV-262656: [Navi31] Update AxUser.space encoding on MMHUB AXI interface
+FWDEV-2171: [PHX] Fix z9 exit MPIO restore hash check
+PLAT-81894: PSB Disablement
+FWDEV-3322:[RPL] Align to LSE CL
+PLAT-85957: Removed Stress_Test Related Code
+PLAT-85129: Added support to write postcode from MPM without 0xEF prefix
+FWDEV-2171: [PHX] Restore MPIO on z9/z10 exit
+SWDEV-292630: [Navi 33]: Add dummy fuse_defs.h for build fix
+SWDEV-289828: [Navi 33]: Add Build support
+SWDEV-289828: [Navi 33]: Add DGPU Family ID to drv_sys header
+SWDEV-289828: [Navi 33]: Add header binary
+SWDEV-289828: [Navi 33]: Add header files [SOCCL - 4935075]
+PLAT-83652: Clear SMNCLOCK in S5_MISC_CTRL register
+FEAT-37456: [PSP TOS] - Allow Soft PPTable front-door loading from KMD
+FWDEV-1201: [PHX] SKINIT support for HSP-fTPM
+LWPTEE30-104: Make apu-bl be able to build with amd-tee3.0
+SWDEV-291600:[Navi31] Skip Encrypt/Decrypt operation on Simnow
+SWDEV-287120:[Navi3x] Reserve GFX FW TYPE values for SDMA TH0/TH1
+FWDEV-3271: Add function to write POSTCODE using full 32-bit value
+PLAT-85222: Update USB4_0/1 SRAM address
+FWDEV-3216: [RPL] Update fuses to align with B010
+PLAT-59672[RMB][DRTM]: Update DRTM InitTPM for HSP-fTPM case
+Revert "FWDEV-3153: [PHX] Remove dmcub TMR on non-secure"
+PLAT-79838 : [PSP TOS] fix RSMU Violation Logging (legacy scheme)
+PLAT-59672: HSP-fTPM Locality control support.
+PLAT-85147: Apply unlock policy on whitelist case
+PLAT-83477: Intrusion Detection
+PLAT-84499:[RMB] memcpy to replace CCP as a temporary patch.
+PLAT-84684: PSP Unlock failure on RMB FP7/FP7r2 with RA2 enabled
+FWDEV-1523: [RPL] Enable default use of iKEK_TA in tOS
+FWDEV-3211: Move s5 sram functions to s5sram.c
+FWDEV-2993: Move S5RamHashInfo struct to shared_bl2os folder
+PLAT-83995: Add SysDriver support for Widevine Device ID
+FEAT-37454: [PSP BL] - load pptable from mp0 secure dram to mp1 secure dram.
+
+fTPM
+-----
+PLAT-86622 RMB: Z-state Entry and Exit notification Handling in FTPM
+PLAT-87770 RV: [Fremont ]Support Hmac Validation  and Unwrapping with Legacy Key
+PLAT-87251 RMB: Fix a bug in debug code logging in MP0 C2PMSG8
+PLAT-64173 VGH: Fix a bug in computing total HSP NV data in HSP mode
+PLAT-80506 RMB: Wait for RPMC Inc to finish after SMC Inc when RA2 enabled
+
+DRTM
+-----
+PLAT-78536: Migrate to DRTM build using connan
+PLAT-74088: [RMB][HSP]SKINIT/uCode doorbell interface to support HSP-fTPM-based DRTM
+PLAT-85240: TMR release change
+
+Release Version 0.11.06.70
+-----------------------------------
+Bootloader
+----------------
+PLAT-92313: Increase MP0 clk to max at stage1 boot
+Trusted OS
+----------------
+PLAT-82622: [Chrome]: Qualify unsigned ACP FW on chrome OPN
+
+Release Version 0.11.05.70
+-----------------------------------
+Bootloader
+----------------
+PLAT-91331:[Chrome]: Remove internal urls and names from the code
+PLAT-92119:[Chrome]: Use MP2 Ram1 to save verstage provided info
+PLAT-92553:[Chrome]: Support cache clean of unaligned address
+PLAT-92553:[Chrome]: Unaligned access test case for ccp dma
+PLAT-92554:[Chrome]: Skip re-cofig of spi speed in stage 2 BL
+PLAT-93361: WA fix in setting max memory clock
+Trusted OS
+----------------
+PLAT-92119:[Chrome]: Introduce build flag BUILD_CHROME in TOS
+
+Release Version 0.11.04.70
+-----------------------------------
+Bootloader
+----------------
+PLAT-85816:[Chrome]: Sanitizing the parameters in Debug Print Syscall
+PLAT-90934: SHUBCLK does not enter deep sleep
+PLAT-86412: Perform cache operations after remapping mmu for TOS.
+FWDEV-2944: Enable cache for stage2 BL code and RO data
+PLAT-91464:[Chrome]: Remove fuse support from stage 1 BL
+PLAT-91464:[Chrome]: Pass vendor id info to stage 2 BL
+PLAT-85820:[Chrome]: Validate SizeFWSigned in Image Header before use
+PLAT-91464:[Chrome]: Perform vendor id fusing in stage 2 BL
+PLAT-91464:[Chrome]: Coverity fix for chrome.c and kdf.c files
+
+Release Version 0.11.03.70
+-----------------------------------
+Bootloader
+----------------
+PLAT-85819:[Chrome]: Validate the SPI flash Address
+PLAT-89496:[Chrome]: Load and execute psp verstage in S3 resume
+PLAT-89950:[Chrome]: cache clean invalidate during ccp passthrough
+PLAT-85861:[Chrome]: Unmapping the Syshub mapped address on Error Paths
+PLAT-85848:[Chrome]: Validate the psp & bios directory Address
+PLAT-90311:[Chrome]: Pass Axi address in unmap_smn of ccp dma svc
+PLAT-90074: Add smart trace support to BL
+PLAT-90311:[Chrome]: Handle error if map or unmap of smn fails
+PLAT-90072: Increase MP0 clock frequency after MP1 f/w load
+
+Release Version 0.11.02.70
+-----------------------------------
+Bootloader
+----------------
+PLAT-85756:[Chrome]: Do not load Verstage in S0i3 path
+PLAT-85818:[Chrome]: Validate L2 directory table TotalEntries
+PLAT-85822:[Chrome]: Avoid integer overflow in SVC Call Input Validation
+
+Release Version 0.11.01.70
+-----------------------------------
+Bootloader
+----------------
+PLAT-79422:[Chrome]: Remove workaround in init of secure debug unlock
+PLAT-88041: Set SPIROM speed in stage1 bootloader
+PLAT-88085:[Chrome]: Add support for CCP pass through in stage 1 BL
+PLAT-88085:[Chrome]: Add svc call for ccp dma
+PLAT-88085:[Chrome]: Add test case for spi rom copy using ccp dma
+PLAT-87526:[Chrome]: Update boot time stamps in MP0 C2PMSG registers
+
+Trusted OS
+----------------
+PLAT-81023:[Chrome]: Remove unused keys from TOS and system driver
+PLAT-83301:[Chrome]: Rebase to amd-staging till 00.11.00.70
+
+Release Version 0.11.0.70
+-----------------------------------
+*FTPM updated to version 3.68.0.5
+
+Bootloader
+----------------
+PLAT-83850: Add RPMC provisioning check for <specific customer> system
+FEAT-33383: [SPIROM-CONFIG] Avoid overwriting few bits in Addr32Ctrl2
+PLAT-82078: [SPIROM-CONFIG] Bug fix in correction of dummy-cycles
+
+Trusted OS
+----------------
+PLAT-85001: Bug fix in SaveMsmuToS5Sram
+PLAT-64168: [RA2] Handle error conditions appropriately
+FWDEV-2682:[RPL] Debug unlock with CCD support
+PLAT-84486: Added Promontory V2 (PROM21) key for RMB B0
+PLAT-83850: Add RPMC provisioning check for <specific customer> system
+FWDEV-2782: Authenticate and load Lite-SDMA FW
+DEPHXE-85: [PHX] Disable MP0 clock gating and mem deep sleep
+PLAT-74080: Add command to validate binary in memory
+FWDEV-3011: [PHX][TOS] CPU deep sleep from MP0 FSDL
+FWDEV-3153: [PHX] Remove dmcub TMR on non-secure
+SWDEV-289683:[Navi3x} Use SMN mapped address for CCP base
+PLAT-79838 : [PSP_TOS] fix RSMU Violation Logging C2P_26
+PLAT-83767: Add function to pass FW Attestation info to MPM
+FWDEV-2761: [PHX] Remove S3-only S5 RAM entries on s0i3 entry
+FWDEV-2766: Move Segment MSMU dRAM hash to secure DRAM
+FWDEV-3142: Add MapSmn failure check in MapFwDestAddr
+PLAT-83851: [RMB] New PSP -> HSP command for error handling
+FWDEV-2664: Fix MI200 mpio.c compile warning
+FWDEV-3143: Swtich Rom Armor HMAC comparison to constant time
+PLAT-82589: Increase size of MPM DRAM to 16 MB
+PLAT-84479: [SP] update Number of UMC channels
+PLAT-84391: Add handler for Signal Thread
+FWDEV-2551: Modulo bias in ecdsa_sign_rdata nonce generation.
+PLAT-81752: RMB Chipset Authentication Requirements
+FWDEV-1242: [PHX] USB3.1 Support - PSP FW
+FWDEV-2668: [PHX] Remove MP0 only registers from S0i3 flow
+PLAT-82396: Drv_sys interface to check if platform is chromebook
+PLAT-83460 : [Navi24][PSP_TOS][NPM] block RegUnroll only for Headless
+PLAT-83910: [SP]: update the MP1 P2SMSG register
+PLAT-83921: [SP]: Update SMN addresses of FICAAR/FICADR
+SWDEV-283451: Update maximum XGMI link record
+FWDEV-2651: [RPL] [TOS] CPU deep sleep from MP0 FSDL
+SWDEV-283300: Update TMZ Config on Rembrandt
+SWDEV-274044 : [Navi2x] Fix Priv_PassThrough which skips copying some bytes
+PLAT-83902: [SP]: TMR Support
+PLAT-64173 VGH: Add HSP Persistent Storage Commands
+FWDEV-1470: Key usage flag for GFX IMU firmware
+PLAT-82453: Apply GC internal policy on APU
+FWDEV-2714:[RPL] Enable SW SHA implementation
+SWDEV-286518:[Navi24] Fix DF_PIE_AON_LinkTgtMode__SrcRspLnkBiasMode_MASK value
+PLAT-83765 RMB: Add function for DRV_SYS_CMD_ID_FTPM_TPM_CLK_NV_UPDATE_INTERVAL API
+SWDEV-282659:[Navi31] Migrate to v31 regspec
+PLAT-81640 : [PSP TOS] Revert change for ConfigureRSMUTimeout(Id)
+SWDEV-285742:[Navi] Add build flag to aggregate over Navi family
+PLAT-82662 RMB: Terminate HSPNVHandlerthread when HSP not enabled
+PLAT-83460 : [Navi24][PSP_TOS][NPM] Apply RAP_V1 EntryType for NP_MINIMAL_UVD0
+FWDEV-2794: [PHX] Update MMHUB FID0
+SWDEV-285742:[Navi3x] Enable Navi3x flags for the relevant code
+FWDEV-2741:[RPL] Save MPIO sram on S0i3 entry
+SWDEV-285606:[Navi31] Use the correct TOC header
+SWDEV-271189 [MI200][SR-IOV]: Move MEC VF FW into TMR
+AER-717: Enable SW SHA implementation
+SWDEV-251569 : [PSP TOS[RAP] RAP_VALIDATION should fail if no entry found
+PLAT-83460 : [Navi24][PSP_TOS][NPM] Apply RAP_V! EntryType for NP_MINIMAL
+SWDEV-271190 [MI200][SR-IOV][Azure]: Enable DFC and CAP loading (GFX 9)
+PLAT-72423: Setup API for dUSB4/PT21 loading
+FWDEV-2665: Fix reserved DRAM address for MSMU dRAM
+PLAT-60775: [RMB][HSP][DRTM]HSP-fTPM CRB interface support for DRTM use
+FWDEV-2665: Save MSMU dRAM context for S0i3
+FWDEV-2739: Write RAP V2 to CCD
+PLAT-82593 : [PSP TOS][NPM] fix typo when applying NP_MINIMAL lock
+FWDEV-2664: Add MPIO command to save SRAM for s0i3
+PLAT-81599:  [RMB][Mayan\Lilac][00.28.00.2B]Secure Debug Unlock pop-up shows error, but status is unlocked
+SWDEV-251569 : [PSP TOS[RAP TA] fix RAP_VALIDATION double-counting mismatch
+SWDEV-285216 [MI200][SR-IOV][Azure]: Fix drv_sys BSS zeroing.
+FWDEV-2656: Add function to save S5 SRAM and TMRs on suspend
+PLAT-82172: Unbootable partition register checks current partition
+FWDEV-2710: [PHX] Enable SW SHA implementation
+PLAT-74088: [RMB][DRTM]Added SKINIT/PSP Interface change to Support HSP-fTPM DRTM
+SWDEV-262225 : [PSP TOS][RAP][SRIOV] Fix RAP detection of SRIOV-enabled
+PLAT-74088: [RMB][DRTM]Added SKINIT/PSP Interface change to Support HSP-fTPM DRTM
+SWDEV-247336: Use UUID to remove TA records
+FWDEV-2402: [RPL] RDRAND support
+FWDEV-2402: Update PMFW supported message for RPL and CSTATE defines
+FEAT-38248: [NV31] [PSP TOS] - [PSP TOS] Enable MP0 TOS trace log.
+SWDEV-285059:[Navi31] Include FWID in the sysdrv binary
+FWDEV-2635: Enable RAP V2 for APU
+FWDEV-2663: [RPL] Align to LSD 1428363
+SWDEV-283282: [NV31] Implement the Trusted SPI Update main sequence in PSP TOS
+PLAT-82599:[tOS] Set UNLOCK STATUS bit of mmMP0_FW_OVERRIDE for secure unlock.
+PLAT-81640 : [PSP TOS] fix issue with SMN Data Parity Handling
+SWDEV-257759: DC Debug: Fix encryption buffering for PSP SOC Snapshot
+FWDEV-317: SKINIT support for RPL
+FWDEV-2593: [PHX] Initialize TOS KeyDB
+SWDEV-284554: [NV31] Enable STB
+PLAT-82174: Add SVC Call to Control PSP-eSPI Feature
+PLAT-79859: Add SMU2PSP message to apply suspend RAP policy
+FWDEV-2382: [PHX] E.0.1.1 LSC change list alignment Cl# 1414803
+FEAT-37545 : [PSP TOS] Enable RAP Validation support for NV31
+PLAT-82593 : [PSP TOS][NPM] Bypass RAP rollback and NP Lock on non-secure parts
+FWDEV-1266: [PHX] Disable STB
+SWDEV-275378:[MI200] Retrieve total number of direct links between peer dies
+SWDEV-272821: [NV31] Implement the ROM Image Parser in the PSP Sys Drv
+SWDEV-283282: [NV31] Implement the Trusted SPI Update main sequence in PSP TOS
+FWDEV-308: [RPL] Save MSMU GFX dRAM in PSP DRAM
+RTGPLAT-6864 : [NV24] MP0 unable to enter deep sleep after enter WFI
+SWDEV-278013 : [PSP TOS][NPM-mode] clear XGMI keys on Non-Prod RegUnroll
+FWDEV-2352: Update TMR_MMHUB_FID0 for Raphael
+PLAT-82276:Skip HSP suspend command
+PLAT-82155: Create FW Att mutex for all asics that use it
+FWDEV-362: Add USB support for RPL
+SWDEV-280155: [NV31] Implement SPI control sequences (write) in PSP TOS
+PLAT-81630: Fix compile warning with MFD
+SWDEV-278013 : [PSP TOS] Apply RAP NP_MINIMAL
+PLAT-81641:[MI200][RAS] Writing to CPU DF RAS Interrupt control register for WAFL Err Overflows
+
+fTPM
+-----
+PLAT-82265: Port Errata 1.12 Changes with BUILD flag
+PLAT-83771: Correct CONTEXT_SLOT definition
+PLAT-83765: Obtain NV update interval of TPM clock from PSP
+PLAT-84169: Update coppyright header for Palamida scan
+PLAT-64173: HSP Persistent storage in PSP-FTPM mode
+
+DRTM
+-----
+N/A
+
+Release Version 0.11.3.6E
+-----------------------------------
+
+Bootloader
+----------------
+PLAT-82503:[Chrome]: Remove the svc_enter test case
+PLAT-82503:[Chrome]: Remove the test svc_enter svc
+PLAT-81046:[Chrome]: Add tests for SHA 256/384 operation
+PLAT-81046:[Chrome]: Add svc call for SHA operation
+PLAT-81046:[Chrome]: Add support for SHA operation in stage 1 BL
+PLAT-81046:[Chrome]: Extend bootrom interface to support multipass SHA
+PLAT-81046:[Chrome]: Add support to call bootrom SHA and CcpSHAKeySetup
+
+Release Version 0.11.2.6E
+-----------------------------------
+
+Bootloader
+----------------
+PLAT-84890:[Chrome]: Update stage2 boot time in public scratch register
+PLAT-84851:[Chrome]: execute unsigned verstage with authenticated verstage key
+PLAT-84854:[Chrome]: Fix build warnings
+
+Trusted OS
+----------------
+PLAT-81523: [Chrome]: Do not load fTPM and DRTM driver if chrome opn
+PLAT-85001: Bug fix in SaveMsmuToS5Sram
+
+Release Version 0.11.1.6E
+-----------------------------------
+
+Bootloader
+----------------
+PLAT-84453:[Chrome]: Update PSP BL to verstage info
+PLAT-81960:[Chrome]: Fix in verstage key validation
+PLAT-83301:[Chrome]: Rebase to amd-staging till 00.11.00.6E
+
+Trusted OS
+----------------
+PLAT-83995:[Chrome]: Add SysDriver support for Widevine Device ID
+PLAT-82396: Drv_sys interface to check if platform is chromebook
+
+Release Version 0.11.0.6E
+-----------------------------------
+*FTPM updated to version 3.61.0.5
+*DRTM updated to version 04.11.00.22
+
+Bootloader
+----------------
+PLAT-81867: [SPIROM-CONFIG] Different UID in warm & cold boot
+PLAT-81103: Fix ASF remote power down issue.
+PLAT-72713: Clear PMIODEBUG:cf9rstdisable bit before triggering warm reset (CF9 shadow reset).
+FEAT-33382: Align CS definition to PPR document
+
+Trusted OS
+----------------
+PLAT-64168: Fix enabling SPI Locking hardware feature
+FEAT-37545 : [PSP TOS] Enable asic_types: NV31
+FWDEV-2562: Skip ClearSMMLock for RPL
+PLAT-73559 fixing compiler warning
+PLAT-81708: Revert multi-block Decryption commits
+FWDEV-2538: Add RPL to support A/B partition.
+PLAT-81630: Configure IOMMU Bypass when MFD restores MPM
+SWDEV-282358 [MI200][SRIOV]PSP can't program MC registers for VF
+SWDEV-281753: Clear XGMI AES keys after SDU
+PLAT-73559 [CZN Manageability] Expose "Skip Pro Check" API for Manageability TA
+PLAT-81641:[MI200][RAS]Correct logic to increment ErrCnt for WAFL Correctable error
+PLAT-81487: [RMB] - Unblock TCG Logs Query command (BIOS to PSP) when HSP is failed
+SWDEV-278013 : [PSP TOS][RAP] Clean-Up RAP V1 & V2 defines
+PLAT-72541: Exposed TPM Type selection for broader use
+FEAT-37545 : [navi31][PSP TOS] Enable basic support for navi31 RAP V2
+FEAT-33382: Align CS definition to PPR document
+FWDEV-1266, FWDEV-2427: [PHX] Enable STB and HSP
+PLAT-81566: SW SHA Support unaligned accesses
+FWDEV-2398: Support TMR and FMR
+PLAT-81548: Add Manageability Functional Driver Id
+
+fTPM
+-----
+PLAT-72541: Select PSP-FTPM as default TPM mode
+
+DRTM
+-----
+PLAT-72541: Added TPM Type Selection
+
+Release Version 0.11.0.6D - Cancelled
+-----------------------------------
+*FTPM updated to version 3.59.0.5
+
+Bootloader
+----------------
+PLAT-80494: Select APU/NPU security policy dynamically
+PLAT-77759: DRTM launch failure when RA2 enabled
+
+Trusted OS
+----------------
+SWDEV-273505: Support decryption FW with size of more than 4KB
+FWDEV-2426: SMN addresses of FICAAR/FICADR in DF v4
+PLAT-78580: Boot fail when swap CPU with RAv2 enabled
+SWDEV-273884:[NP] Search for non-prod keyID in secure mode properly
+SWDEV-280155: [NV31] Implement SPI control sequences (write) in PSP TOS
+PLAT-79711: Fix debug unlock on NPU
+PLAT-78434: [RMB] Use SW SHA in TEE interface
+PLAT-80468: fixing the issue with RDRAND re-seeding in RMB and PHX
+SWDEV-263509:[Navi3x] Authenticate and load IMU firmware
+PLAT-80944: Enable_PRO_Check for FW to check and control L3 security feature
+FWDEV-310: Share hsti_def.h between BL and TOS
+SWDEV-275348:[Navi3x] Load IMU GTS  offset registers
+SWDEV-278387:[Navi3x] Keep the TOC FW ID table separate
+SWDEV-273413:[Navi3x] Load GFX configuration settings to RLC Transfer RAM
+SWDEV-278387:[Navi3x] Add GFX_11 support on the tOS
+PLAT-77759: DRTM launch failure when RA2 enabled
+FWDEV-329: Disable IKEK_TA support for TOS on RPL.
+SWDEV-259320 : [PSP TOS] DC Debuggability: dump MP0 TraceLogs
+PLAT-80792: [RMB] Enable HSP by default
+FWDEV-1239: [PHX] Add z-state support
+FWDEV-307: Directly access TMR/FMR regs for DF v4
+PLAT-80267:[RPMC]Add RPMC report version to make rpmctool backwards compatible.
+PLAT-64168: Addition of flag to enable CS switching
+PLAT-80449: Add MPM deep sleep ready condition
+
+fTPM
+-----
+PLAT-80107: Make TPM1.38 Errata 1.4 fully compliant with BUILD flag
+
+DRTM
+-----
+N/A
+
+Release Version 0.11.0.6C - Cancelled
+-----------------------------------
+Bootloader
+----------------
+PLAT-64168: Remove hardcoded opcode2 info
+PLAT-79445: Fix NPU detection in bootloader
+PLAT-70421: FIPS RN Development BootRom Func Support
+
+Trusted OS
+----------------
+PLAT-64168: Enable SPI Locking hardware feature
+PLAT-79198:MI200[RAS] - RAS SMU Fatal error is level triggered
+SWDEV-257759 : [PSP TOS] DC Debuggability: Add Encryption Library
+SWDEV-253904: Update runtime TMR setup for A+A
+SWDEV-279046:MI200[RAS] - WAFLC Correctable error need to increment ErrCnt in MCA register
+SWDEV-255822 MI200-SRIOV Ucodes Frontdoor Loading
+FWDEV-350: Add S3 support for RPL
+FWDEV-297: Align TOS fuse offset to CL1398554
+SWDEV-277081 : [PSP TOS] Propagate "IsHeadless" flag for navi24 RAP TA
+PLAT-78753: Enable EC-eSPI-PSP SPI-ROM Access Interface
+SWDEV-273884: [Mi200][NP] Cripple AQL entry in ME Jump Table
+FWDEV-319: Add support for saving data to MSMU DRAM
+PLAT-80242: Add ENABLE_USB4 in build flags
+PLAT-64168: Remove hardcoded opcode2 info
+FWDEV-1258: [PHX] support RAP v2
+FWDEV-313: [RPL] Enable S0i3
+PLAT-80370 RMB: Map RA2 status to Flag FLAG_ID_RA2_STATUS
+DERMBE-868: Increase USB max size in secure DRAM (2)
+PLAT-80155: fix DFP registers on AER(VGH)/RMB/PHX
+PLAT-80242: [PHX] Exclude ENABLE_USB4
+PLAT-79651: Update conditions for MPM PCI WLAN sequence
+DERMBE-868: Increase USB max size in secure DRAM
+PLAT-60131: Add functions for MPM deep sleep
+PLAT-64168: ROM-Armor v2 for clients - phase11
+PLAT-80051: Remove AEPP buffer in MPM restore API
+SWDEV-273505:[MI200] - BUILD_CCP_CTRL_SMN Kconfig aligned for CCP related features
+SWDEV-272821: [NV31] Implement the ROM Image Parser in the PSP Sys Drv
+SWDEV-274838 : [PSP TOS] Use RAP Policy Alternate List
+PLAT-64168: Cleanup of RA2 for RMB program
+PLAT-80121: Increase size of stacks in psp kernel of amd-tee2.0
+SWDEV-273505: Decrypt image before loading into the destination
+PLAT-79203: [RMB] DRTM security policy applied causes violation
+PLAT-79201: [RMB] DRTM TMRs not set up correctly
+FWDEV-1676: [PHX] E.0.0.8 LSCm change list alignment CL# 1399276
+SWDEV-277606: [Navi24] Block NP RAP rollback functionality on headless SKUs
+SWDEV-253227: PSP Secure Kernel SVC Call - User guide
+AER-519: Send PSPSMU_MSG_DFCSTATE_DISABLE before accessing TMR registers
+PLAT-75500: Update anti rollback support for 64-bit SPL fuse
+SWDEV-266668 : [PSP TOS] MP0_C2PMSG_62 dump SlaveErrorAddr
+SWDEV-263509:[Navi3x] Allocate a FW TYPE ID for IMU FW
+PLAT-79866: Increase the size of stacks in amd-tee2.0
+PLAT-79386: [RMB] Remove SDMA FW restore on s0i3 exit
+
+fTPM
+-----
+N/A
+
+DRTM
+-----
+N/A
+
+Release Version 0.11.0.6B
+-----------------------------------
+Bootloader
+----------------
+PLAT-79509: [HSTI]Updated HSTI Status Bitmap Definition
+PLAT-70421: FIPS implementation
+
+Trusted OS
+----------------
+SWDEV-274746:[MI200][RAS] - Rectified the MP0 registers for RAS Recovery handling
+SWDEV-264802 : [PSP TOS] return ERROR if no RSMU AEB validated
+PLAT-79509: [HSTI]Updated HSTI Status Bitmap Definition
+SWDEV-276359 : [PSP TOS] Properly Initialize RAP internal variables
+PLAT-70421: FIPS implementation
+PLAT-79472: Map MPM FMR memory for MFD
+FWDEV-370 - [RPL] Support for PMM: Disable CCP Power Gating
+SWDEV-276392 : [PSP TOS] initialize DRV_SYS_GET_ASIC_TYPE_PARAMS
+SWDEV-260860 : [PSP TOS] sanity-check VF memory address
+
+fTPM
+-----
+N/A
+
+DRTM
+-----
+N/A
+
+Release Version 0.11.0.6A
+-----------------------------------
+*FTPM updated to version 3.58.0.5
+*DRTM updated to version 04.11.00.21
+
+Bootloader
+----------------
+PLAT-73271: Implement MBAT programming on CZN
+PLAT-78234 : RPMC not enabled with XMC SPIROM
+PLAT-78554:[RPMC] provision fails at the first time on brand new SPI-ROM.
+PLAT-78274: Pass stage1 FAR test status to TOS
+FWDEV-319: Merge headers for MP2 SRAM and MSMU DRAM
+
+Trusted OS
+----------------
+FWDEV-1229: [PHX] Initialize ToS (2)
+FWDEV-1230: [PHX] Power features
+FWDEV-1228: [PHX] RDRAND speedup support
+FWDEV-1720: [RPL] Add check for Asic Type using RevID
+FWDEV-353 - [RPL] [tOS] Power features
+SWDEV-272140 : [PSP TOS] fix Security Violation log progagation
+SWDEV-273505: [Mi200] Enable FW Decryption support RWL
+PLAT-79079:[MI200]RAS - Corrected mask bit for Ras Err Inj enablement
+PLAT-76910: Add support of 16 RPMC fuse slots for RMB - tOS
+FWDEV-1229: [PHX] Initialize ToS
+PLAT-78920: ACP secure regions are reprogrammable
+PLAT-78434: Minor change to Svc_TryAcquireMutex() behavior.
+SWDEV-272822: Remove MillerRabinTest side-channel protection
+FWDEV-330: [RPL] Fixes for TOS initialization
+SWDEV-272140 : [PSP TOS] Propagate Security Violation log from PSP BL to TOS
+SWDEV-271190 [MI200][SR-IOV][Azure]: Enable DFC and CAP loading (GFX 9)
+SWDEV-271189 [MI200][SR-IOV]: Move MEC VF FW into TMR
+PLAT-78434: Add new SVC call Svc_TryAcquireMutex() which does not wait for mutex to be free.
+SWDEV-263116:[Navi23] Add support for MACO resume in TOS
+SWDEV-274746 : MI200[RAS] - Enable MP1 RAS Error and WAFLC correctable RAS error handling
+PLAT-78823: [RMB] handle ACP DMA complete through RSMU
+AER-581: New PMFW message for GFX TDR reset event
+SWDEV-271188 [MI200][SR-IOV]: Decouple MM-SCH from VCN TMR and move to seperate TMR
+SWDEV-270845:[Navi31]Add Navi31 register header files and enable compilation
+SWDEV-273883: [Mi200] Disable SRIOV in non-production mode
+FWDEV-328: Update PSP SMC message on RPL
+PLAT-78140: AM5-stop execution on bixby/prom auth failure (2)
+PLAT-78140: AM5- stop execution on bixby/prom auth failure
+PLAT-76264: Hash 64K RO region on S3/S0i3 cycle
+FWDEV-328: RPL - initialize TOS
+PLAT-73721: Add debug unlock support with HSP
+AER-577: Revert of "Remove setting ROMBIST_BYPASS while entering S3"
+SWDEV-271909: Restore RLCV enable register
+SWDEV-271194 [MI200][SR-IOV]: Enhance DFC to support TA whitelisting
+SWDEV-272821: [NV31] Implement the ROM Image Parser in the PSP Sys Drv
+PLAT-78366: Add zstate build flag
+FWDEV-1271: [PHX] Power Management Firmware Interface FW Support
+Revert "PLAT-75283: Add CCP Passthrough destination alignment checks"
+SWDEV-211340:Rectify RAS Recovery handling in rsmu handling
+RTGPLAT-5677 : [NAVI21][SRIOV][non_prod] Set DEBUG_UNLOCK after RegUnroll
+SWDEV-273664: [NV21] Falcon display corruption - intermittent
+FWDEV-319: Merge headers for MP2 SRAM and MSMU DRAM
+SWDEV-271190 [MI200][SR-IOV][Azure]: Enable DFC and CAP loading (GFX 9)
+SWDEV-253227: PSP Secure Kernel SVC Call - Interface Definition with Doxygen
+SWDEV-270495:[Navi2x] Set TMZ registers as per HW recommendation in PSP TOS
+SWDEV-271192 [MI200][SRIOV]: Disable MEC VF FW periodic validation
+AER-577: Remove setting ROMBIST_BYPASS while entering S3
+SWDEV-272635:MI200[RAS] - Added check for Ras Err Inj status for RAS TA
+SWDEV-271191 [MI200][SR-IOV]: Disable Setup VMR/Destroy VMR support
+
+fTPM
+-----
+PLAT-78364 [CZN]: Migrate to FTPM build using Conan
+
+DRTM
+-----
+PLAT-78536: Migrate to DRTM build using connan
+
+
+Release Version 0.11.0.69
+-----------------------------------
+*DRTM updated to version 04.11.00.20
+
+Bootloader
+----------------
+PLAT-77348 [RA2] Add addr check for writable region absolute address for AB layout
+PLAT-67300: [RN][RPMC]Enable Multiple Fuse Slots on MXIC Part
+FEAT-33382: Consume spirom-configuration data
+
+Trusted OS
+----------------
+SWDEV-272141: Update LIVMIN command for mode 2 reset
+SWDEV-272178:[Navi2x] Remove unused structure from dGPU header
+SWDEV-272086: Fix VCN counter address in RAM TMR
+RTGPLAT-6510:Navi21:UMC MISC6 registers need to be accessed by MP1
+SWDEV-270310: Update GCM Enable setting on mode 2 reset
+PLAT-76263: Update fwatt loc table on S3/S0i3
+PLAT-60779:[VN][HSP][DRTM] Send Hash Data to HSP-fTPM
+PLAT-71773: Support PMFW command to clear only GC enable
+PLAT-76558: [SP]: Add support for Stormpeak target in TOS
+SWDEV-268766: Check last TA entry point type in LoadTa() before returning status
+SWDEV-211340 : [PSP TOS][RSMU Violation logging] Revert change to legacy code
+PLAT-66844: load iKEK TA into LSB4
+SWDEV-211340 : [PSP TOS] RSMU Violation logging - avoid collision
+PLAT-59672: [HSP][DRTM]HSP-fTPM Locality Control
+AER-487: [AER] Disable TMZ
+SWDEV-211340 : [PSP TOS] fix RSMU Violation logging
+SWDEV-211340 : [MI200][PSP TOS] enable BUILD_RAP_V2 in SVL
+SWDEV-270346:MI200 - Update the xgmi link records to pass to TA
+SWDEV-211340 : [PSP TOS] Implement new RSMU Security Violation logging Scheme
+PLAT-75283: Add CCP Passthrough destination alignment checks
+SWDEV-270535: [Mi200] Enable SysHub Support
+PLAT-76991: Rename PAGE_SIZE to ROM_PAGE_SIZE
+PLAT-76887: Map USB config buffer using BiosMapSharedMemSmm
+FEAT-33382: Enhance validation of spirom-config info in tOS
+PLAT-64168: Handle SMI_SpiGetBlockInfo properly with enabled RA2
+SWDEV-267746:MI200 - Enable DS_ENB bits for MP0, MPIO and MP1 in MP0 to allow SOCLK DS entry
+SWDEV-264802 : [PSP TOS] validate RSMU AEB
+PLAT-76251: Update bit configurations for MPM PCIe access
+
+fTPM
+-----
+N/A
+
+DRTM
+-----
+PLAT-59672: HSP-fTPM Locality Control Support
+PLAT-74210: Conan Support Enabled
+
+Release Version 0.11.03.68
+----------------------------------
+Bootloader
+----------------
+PLAT-84174:[Chrome]: Invalidate D-cache before ccp passthrough
+PLAT-83939:[Chrome]: Add tests related to timer delay
+PLAT-83939:[Chrome]: Add svc support for delay in micro seconds
+PLAT-81600:[Chrome]: Reload coreboot from spirom in S3 resume
+
+Trusted OS
+----------------
+PLAT-81601:[Chrome]: Skip initializing base offset for BSP
+PLAT-84119: Workaround for HDT error during debug unlock
+
+Release Version 0.11.02.68
+----------------------------------
+Bootloader
+----------------
+PLAT-83506: Determine and pass boot partition info to stage2 BL
+PLAT-81879: Add support to invalidate cache in stage 1 BL
+PLAT-81045: Add support to call bootrom RSA from stage 1
+PLAT-81045: Add support to ccp_mod_exp operation in stage 1
+PLAT-81045: Add svc call for ccp_mod_exp
+PLAT-81045: Add ccp mod exp test case
+PLAT-82508: Add secure rtc read and timer tick read support
+PLAT-82508: Add svc call to get timer ticks
+PLAT-82508: Add test case to read timer raw value
+PLAT-83154: Reserve a field in amdtee mailbox for chrome info
+PLAT-80978: Pass chrome info from bootloader to TOS
+
+Trusted OS
+----------------
+PLAT-80978: Do not load TA in PSP chromebook developer mode
+
+Release Version 00.11.01.68
+---------------------------
+PLAT-81044:[Chrome]: System reset SVC call in stage 1 BL
+PLAT-81044:[Chrome]: Support warm and cold reset in stage 1 BL
+PLAT-83047:[Chrome]: Use mapsyshub with ccp on dram addr for crypto operation
+PLAT-82987:[Chrome]: Revert security policy applied in stage1
+PLAT-83301:[Chrome]: Rebase to amd-staging till 00.11.00.68
 
 
 Release Version 0.11.0.68
