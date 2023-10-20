@@ -1,27 +1,84 @@
 ﻿//----------------------------------------------------------------------------
 // PSP FW Delivery Release Note
 //
-// Copyright 2020-21, Advanced Micro Devices, Inc.
-// Date:  July 27, 2022
+// Copyright 2020-23, Advanced Micro Devices, Inc.
 //----------------------------------------------------------------------------
 
 Content:
-	PSP FW Deliverables for Renoir.
-	This Build is compiled using the ARM license from the AMD license server.
+    PSP FW Deliverables for Renoir.
+    This Build is compiled using the ARM license from the AMD license server.
 
 TODO: update list of files
 Files
- boot_loader_prod__CZN.sbin         [version: 0.11.E.75] - PSP off-chip Stage 2 BootLoader (entry type 0x73), signed with production key
- boot_loader_stage1_prod_CZN.sbin   [version: 0.11.E.75] - PSP off-chip Stage 1 BootLoader (entry type 0x1), signed with production key
- debug_unlock_prod_CZN.sbin         [version: 0.11.E.75] - PSP secure unlock (entry type 0x13), signed with production key
- psp_os_prod_combined_CZN.sbin      [version: 0.11.E.75] - PSP secure OS (entry type 0x2), signed with production key
- drv_sys_prod_CZN.sbin              [version: 0.11.E.75] - PSP system driver (entry type 0x28), signed with production key
- dr_ftpm_prod_RN.csbin              [version: 3.76.0.5] - PSP fTPM (entry type 0xC), compressed and signed with production key
- dr_drtm_prod_RN.csbin              [version: 04.11.00.2B] - PSP DRTM (entry type 0x47), compressed and signed with production key
- rsmu_sec_policy.rn_L0.sbin         [version: B.10.0.20] - Security Gasket (entry type 0x24)
- rsmu_sec_policy.rn_L1.sbin         [version: B.10.1.20] - Security Policy for tOS (entry type 0x45)
- spl_table_RN.sbin                  [version: 5.11.0.5C] - Firmware Anti-rollback information file (entry type 0x55)
- spl_table_CZN.sbin                 [version: 5.11.1.63] - Firmware Anti-rollback information file (entry type 0x55)
+ boot_loader_prod__CZN.sbin         [version: 0.11.11.75] - PSP off-chip Stage 2 BootLoader (entry type 0x73), signed with production key
+ boot_loader_stage1_prod_CZN.sbin   [version: 0.11.11.75] - PSP off-chip Stage 1 BootLoader (entry type 0x1), signed with production key
+ debug_unlock_prod_CZN.sbin         [version: 0.11.11.75] - PSP secure unlock (entry type 0x13), signed with production key
+ psp_os_prod_combined_CZN.sbin      [version: 0.11.11.75] - PSP secure OS (entry type 0x2), signed with production key
+ drv_sys_prod_CZN.sbin              [version: 0.11.11.75] - PSP system driver (entry type 0x28), signed with production key
+ dr_ftpm_prod_RN.csbin              [version: 3.76.0.5]   - PSP fTPM (entry type 0xC), compressed and signed with production key
+ dr_drtm_prod_RN.csbin              [version: 4.11.00.2B] - PSP DRTM (entry type 0x47), compressed and signed with production key
+ rsmu_sec_policy.rn_L0.sbin         [version: B.10.0.20]  - Security Gasket (entry type 0x24)
+ rsmu_sec_policy.rn_L1.sbin         [version: B.10.1.20]  - Security Policy for tOS (entry type 0x45)
+ spl_table_RN.sbin                  [version: 5.11.0.5C]  - Firmware Anti-rollback information file (entry type 0x55)
+ spl_table_CZN.sbin                 [version: 5.11.1.63]  - Firmware Anti-rollback information file (entry type 0x55)
+
+
+Release Version 0.11.11.75
+-------------------------------------------------------
+Date: Auguest 21, 2023
+
+amd-tee2.0      at commit 5f1411d32dd8c3e4d3a6df220cf6eb6487de7877
+amd-tee-api-lib at commit 9e1b49f16ff584d9abb56f1e050e0c71e43b07fc
+tools           at commit de87a0b13d4ecf5b5fa3d366141233894c626b0f
+
+Bootloader
+----------
+PLAT-137922:  [Chrome][MI][CVE-2023-20543] Security Fixes
+PLAT-135996:  [Chrome][MI][CVE-2021-26312] Security Fixes
+PLAT-85864:   [Chrome][MI][CVE-2021-26362] Security Fixes
+PLAT-124482:  [Chrome][MI][CVE-2023-20518] Security Fixes
+FWDEV-54219:  [Chrome][MI][CVE-2023-20572] Security Fixes
+
+Trusted OS
+----------
+FWDEV-17672: [Chrome][MI][CVE-2023-20507] Security Fixes
+FWDEV-54219: [Chrome][MI][CVE-2023-20572] Security Fixes
+
+
+Release Version 0.11.10.75
+-------------------------------------------------------
+Date: October 24, 2022
+
+amd-tee2.0      at commit d3905e1ccd71edbd7d4633b06108b8336efaef88
+amd-tee-api-lib at commit 9a49413ff8a08cae3a5a8728a50daa2635644987
+tools           at commit 5066544f4c7edd5b29c456ca1bfbd73b73f0b6c1
+
+Bootloader
+----------
+PLAT-85863:  [Chrome][MI][CVE-2021-26387] Security Fixes
+PLAT-118431: [Chrome][MI][CVE-2021-26387] Security Fixes
+
+Trusted OS
+----------
+FWDEV-15354: [Chrome][MI][CVE-2022-23817] Security Fixes
+FWDEV-11870: [Chrome][MI][CVE-2022-23817] Security Fixes
+FWDEV-11870: [Chrome][MI][CVE-2022-23817] Security Fixes
+FWDEV-11870: [Chrome][MI][CVE-2022-23817] Security Fixes
+FWDEV-11870: [Chrome][MI][CVE-2022-23817] Security Fixes
+FWDEV-5613:  [Chrome][MI][CVE-2021-26392] Security Fixes
+FWDEV-5614:  [Chrome][MI][CVE-2021-26393] Security Fixes
+FWDEV-5989:  [Chrome][MI][CVE-2022-23826] Security Fixes
+FWDEV-5736:  [Chrome][MI][CVE-2022-23826] Security Fixes
+
+
+Release Version 0.11.0F.75
+-------------------------------------------------------
+Trusted OS
+----------
+PLAT-114023: Introduce the GPIO0 bank SMN register offset
+PLAT-115077: Remove check for the widevine ta in secure counter APIs
+PLAT-114023: Repurpose the mailbox command to get DTPM info
+
 
 Release Version 0.11.0E.75
 -------------------------------------------------------
