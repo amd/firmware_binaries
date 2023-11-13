@@ -1,142 +1,25 @@
 ﻿//----------------------------------------------------------------------------
 // PSP FW Delivery Release Note
-//
-// Copyright 2016-2023, Advanced Micro Devices, Inc.
-// Date:   Aug 23, 2023
+// 
+// Copyright 2016-2020, Advanced Micro Devices, Inc.
+// Date:   Oct 29, 2020
 //----------------------------------------------------------------------------
 
 Content:
-    PSP FW Deliverables for Raven Ridge. Sync-up to HW register to RTL CL#570439
-    This Build is compiled using the ARM license from the AMD license server.
+	PSP FW Deliverables for Raven Ridge. Sync-up to HW register to RTL CL#570439
+	This Build is compiled using the ARM license from the AMD license server.
 
 Files:
- PspBootLoader_prod_RV.sbin                      [version: 0.8.13.7B] - PSP off-chip BootLoader (entry type 0x1), signed with production key
- PspRecoveryBootLoader_prod_RV.sbin              [version: 0.8.13.7B] - PSP off-chip Recovery BootLoader (entry type 0x3), signed with production key
- secure_unlock_prod_RV.sbin                      [version: 0.8.13.7B] - PSP secure unlock (entry type 0x13), signed with production key
- psp_os_combined_prod_{RV, VG, VG12, VG20}.sbin  [version: 0.8.13.7B] - PSP secure OS (entry type 0x2), signed with production key
- drv_sys_prod_{RV, VG, VG12, VG20}.sbin          [version: 0.8.13.7B] - PSP system driver (entry type 0x28), signed with production key
- dr_ftpm_prod_RV.csbin                           [version: 3.26.0.4]  - PSP fTPM (entry type 0xC), compressed and signed with production key
- security_policy_RV1_FP5_AM4.sbin                [version: A.2.3.2]   - Raven1 APU Security Policy for Raven1 APU programs (entry type 0x24), signed with production key
- security_policy_RV1_NPU_FP5_AM4.sbin            [version: A.2.5.23]  - Raven1 NPU Security Policy for Raven1 NPU programs (entry type 0x8024), signed with production key
- security_policy_PCO_FP5_AM4.sbin                [version: A.2.3.D2]  - Raven1 APU Security Policy for Picasso APU programs (entry type 0x224), signed with production key
- security_policy_RV2_FP5_AM4.sbin                [version: A.2.4.26]  - Raven2 APU Security Policy for Raven2 APU programs (entry type 0x124), signed with production key
-
-
-ver 00.08.13.7B
-------------------------------
-Date: Aug 23, 2023
-amd-tee-api-lib at commit 83b2ae4d997566dd3c76e83b38c8777b03939706
-tools           at commit d782beef9e9dbd518e94c1667de019e2d5427dca
-smu10-psp-fw    at commit c6101d4d99ac7e7f3dac13966e4cce9732ccb5fa
-
-Changes
-----------------------------------------------
-PLAT-92611:[Chrome][Zork][CVE-2021-26388] Security fix
-PLAT-92397:[Chrome][Zork][CVE-2020-12944] Security Fix
-PLAT-85863:[Chrome][Zork][CVE-2021-26387] Security Fix
-PLAT-85868:[Chrome][Zork][CVE-2021-46753] Security Fix
-PLAT-85867:[Chrome][Zork][CVE-2021-46754] Security Fix
-PLAT-106656:[Chrome][Zork][CVE-2021-46759] Security Fix
-FWDEV-54219:[Chrome][Zork][CVE-2023-20572] Security Fix
-PLAT-135484:[Chrome][Zork][CVE-2023-20543] Security Fix
-PLAT-92929:[Chrome][Zork][CVE-2021-26368] Security Fix
-
-
-ver 00.08.12.7B
-------------------------------
-Date: Oct 06, 2022
-amd-tee-api-lib at commit 9a49413ff8a08cae3a5a8728a50daa2635644987
-tools           at commit d6554767f15157b8e3dd33e30ea3f18cff62fd5b
-smu10-psp-fw    at commit 26c339cdd230e37e4d2b1d124a38b7aa9ec586ce
-
-Changes
-----------------------------------------------
-PLAT-108303: [Chrome][Zork][CVE-2022-23817] Security Fixes
-PLAT-108017: [Chrome][Zork][CVE-2022-23826] Security Fixes
-FWDEV-5613:  [Chrome][Zork][CVE-2021-26392] Security Fixes
-FWDEV-5705:  [Chrome][Zork][CVE-2021-26393] Security Fixes
-
-
-ver 00.08.11.7B
-------------------------------
-Date: Sep 23, 2022
-amd-tee-api-lib at commit 35a1930f4e217e3838abfecd3113d8365466d07d
-tools           at commit b9a74fe53f1a126dac4b2c25308e4ff13a1c0934
-smu10-psp-fw    at commit 61d3f33088f53983f893f5309f47e5003c3706eb
-
-Changes
-----------------------------------------------
-PLAT-106656: [Chrome][Zork][CVE-2021-46759] Security Fixes
-PLAT-108666: [Chrome][Zork][CVE-2021-46759] Security Fixes
-PLAT-107909: [Chrome][Zork][CVE-2021-46759] Security Fixes
-PLAT-85867 : [Chrome][Zork][CVE-2021-46754] Security Fixes
-PLAT-85868 : [Chrome][Zork][CVE-2021-46753] Security Fixes
-PLAT-85863 : [Chrome][Zork][CVE-2021-26387] Security Fixes
-PLAT-116251: [Chrome][Zork][CVE-2021-26381] Security Fixes
-
-
-ver 00.08.10.7B
-------------------------------
-Date: Sep 12, 2022
-amd-tee-api-lib at commit 35a1930f4e217e3838abfecd3113d8365466d07d
-tools           at commit 314732b7aa16db891f6b7eda69fc895ec97757b5
-smu10-psp-fw    at commit 099600b2e254574f44b00ad1528d0bb38c0ac513
-
-Changes
-----------------------------------------------
-PLAT-115903: [chrome]Fix Compiling Error
-
-
-ver 00.08.0F.7B
-------------------------------
-Date: Sep 9, 2022
-amd-tee-api-lib at commit 35a1930f4e217e3838abfecd3113d8365466d07d
-tools           at commit 314732b7aa16db891f6b7eda69fc895ec97757b5
-smu10-psp-fw    at commit 2d311c1b989f99b53f9e69b60415c6fc26b7d5e5
-
-Changes
-----------------------------------------------
-PLAT-106422: [Chrome][Zork][CVE-2021-26410] Security Fixes
-PLAT-85856 : [chrome][Zork][CVE-2021-26380] Security Fixes
-PLAT-115839: [Chrome][Zork][CVE-2021-46747] Security Fixes
-PLAT-105285: [Chrome][Zork][CVE-2021-26377] Security Fixes
-PLAT-85837 : [Chrome][Zork][CVE-2021-46749] Security Fixes
-PLAT-92824 : [Chrome][Zork][CVE-2021-26367] Security Fixes
-PLAT-105095: [Chrome][Zork][CVE-2021-46750] Security Fixes
-PLAT-105093: [Chrome][Zork][CVE-2021-46794] Security Fixes
-PLAT-115428: [Chrome][Zork][CVE-2020-12956] Security Fixes
-PLAT-115428: [Chrome][Zork][CVE-2020-12956] Security Fixes
-
-
-ver 00.08.0E.7B
-------------------------------
-Date: Aug 22, 2022
-amd-tee-api-lib at commit 35a1930f4e217e3838abfecd3113d8365466d07d
-tools           at commit 2a22aa1ff2811624e67e83cc12c380645735bab3
-smu10-psp-fw    at commit f2de92e64f43f4b3d08b45fd027129ef5489ec4d
-
-Changes
-----------------------------------------------
-PLAT-93307: [Chrome][Zork]Security fixes,
-PLAT-92397: [Chrome][Zork]Security fixes,
-PLAT-92611: [Chrome][Zork]Security fixes,
-
-
-ver 0.8.D.7B
-------------------------------
-Date: July 28, 2022
-amd-tee-api-lib at commit 35a1930f4e217e3838abfecd3113d8365466d07d
-tools           at commit ae6ddb671d14006d55da031c2e9e14b018b7797a
-smu10-psp-fw    at commit 0ab7496ca47fbfbd260f478492de8835b22a794a
-
-Changes
-----------------------------------------------
-PLAT-106942: Change address validation logic,
-PLAT-106939: Add validation of pDomain pointer for ECC point multiplication,
-PLAT-106395: Fix address validation in DrvSys,
-PLAT-106920: Fix possible TOCTOU issues in DrvSys interface,
-PLAT-109978: [Chrome][PSP Sys drv]Fix psp drv_sys build issue,
-
+ PspBootLoader_prod_RV.sbin                      [version: 0.8.C.7B] - PSP off-chip BootLoader (entry type 0x1), signed with production key
+ PspRecoveryBootLoader_prod_RV.sbin              [version: 0.8.C.7B] - PSP off-chip Recovery BootLoader (entry type 0x3), signed with production key
+ secure_unlock_prod_RV.sbin                      [version: 0.8.C.7B] - PSP secure unlock (entry type 0x13), signed with production key
+ psp_os_combined_prod_{RV, VG, VG12, VG20}.sbin  [version: 0.8.C.7B] - PSP secure OS (entry type 0x2), signed with production key
+ drv_sys_prod_{RV, VG, VG12, VG20}.sbin          [version: 0.8.C.7B] - PSP system driver (entry type 0x28), signed with production key
+ dr_ftpm_prod_RV.csbin                           [version: 3.26.0.4] - PSP fTPM (entry type 0xC), compressed and signed with production key
+ security_policy_RV1_FP5_AM4.sbin                [version: A.2.3.2]  - Raven1 APU Security Policy for Raven1 APU programs (entry type 0x24), signed with production key
+ security_policy_RV1_NPU_FP5_AM4.sbin            [version: A.2.5.23] - Raven1 NPU Security Policy for Raven1 NPU programs (entry type 0x8024), signed with production key
+ security_policy_PCO_FP5_AM4.sbin                [version: A.2.3.D2] - Raven1 APU Security Policy for Picasso APU programs (entry type 0x224), signed with production key
+ security_policy_RV2_FP5_AM4.sbin                [version: A.2.4.26] - Raven2 APU Security Policy for Raven2 APU programs (entry type 0x124), signed with production key
 
 ver 0.8.C.7B
 PLAT-71327:[Chrome]: Validate Agesa while wait for SMU interrupt to be ready
