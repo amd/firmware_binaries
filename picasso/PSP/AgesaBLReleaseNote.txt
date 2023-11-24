@@ -2,6 +2,333 @@
 ----------------------------------------------------------------------------
 ABL Delivery Release Notes
 
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: ABL CABLRV21080200 for Raven
+
+Date:   August 02 2021
+
+----------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                    AGESA V9 Destination Folder     Description
+  AblPostCode.h               AgesaModulePkg\Firmwares\RV\    ABL Post Code Definitions
+  AgesaBLReleaseNote.txt      AgesaModulePkg\Firmwares\RV\    This Release notes file
+  AgesaBootloader0_prod_RV    AgesaModulePkg\Firmwares\RV\    Main AGESA Bootloader
+  AgesaBootloader1_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 1 AGESA Bootloader
+  AgesaBootloader2_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 2 AGESA Bootloader
+  AgesaBootloader3_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 3 AGESA Bootloader
+  AgesaBootloader4_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 4 AGESA Bootloader
+  AgesaBootloader5_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 5 AGESA Bootloader
+  AgesaBootloader6_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 6 AGESA Bootloader
+  AgesaBootloader7_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 7 AGESA Bootloader
+  APCB.h                      Include\APCB.h                  AGESA PSP Configuration Block Definition
+  APOB.h                      Include\APOB.h                  AGESA PSP Output Block Definition
+
+Based On:
+  Chrome-RV
+
+ABL Version String:
+  0x21080200
+
+ABL Features and Fixes:
+  PLAT-87951 [RV] Resume path hang due to invalid replay data
+  PLAT-68240 RV ABL Release CABLRV20081800 (Fix Assert)
+  Revert "PLAT-53978 Update ABL to use different SPDs based on GPIO straps"
+
+APOB Features and Fixes:
+
+Known Issue(s):
+
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: ABL CABLRV20081800 for Raven
+
+Date:   August 18 2020
+
+----------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                    AGESA V9 Destination Folder     Description
+  AblPostCode.h               AgesaModulePkg\Firmwares\RV\    ABL Post Code Definitions
+  AgesaBLReleaseNote.txt      AgesaModulePkg\Firmwares\RV\    This Release notes file
+  AgesaBootloader0_prod_RV    AgesaModulePkg\Firmwares\RV\    Main AGESA Bootloader
+  AgesaBootloader1_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 1 AGESA Bootloader
+  AgesaBootloader2_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 2 AGESA Bootloader
+  AgesaBootloader3_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 3 AGESA Bootloader
+  AgesaBootloader4_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 4 AGESA Bootloader
+  AgesaBootloader5_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 5 AGESA Bootloader
+  AgesaBootloader6_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 6 AGESA Bootloader
+  AgesaBootloader7_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 7 AGESA Bootloader
+  APCB.h                      Include\APCB.h                  AGESA PSP Configuration Block Definition
+  APOB.h                      Include\APOB.h                  AGESA PSP Output Block Definition
+
+Based On:
+  Chrome-RV
+
+ABL Version String:
+  0x20081800
+
+ABL Features and Fixes:
+  160139799 Zork: Reduce time taken by Agesa druing boot with saved APOB
+  PLAT-67823 [PCO] Remove WL workaround for PMU FW
+  PLAT-53978 Update ABL to use different SPDs based on GPIO straps
+
+APOB Features and Fixes:
+  Revert "PLAT-53978 Update ABL to use different SPDs based on GPIO straps"
+
+Known Issue(s):
+
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: ABL WABLRV20032700 for Raven
+
+Date:   March 27 2020
+
+----------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                    AGESA V9 Destination Folder     Description
+  AblPostCode.h               AgesaModulePkg\Firmwares\RV\    ABL Post Code Definitions
+  AgesaBLReleaseNote.txt      AgesaModulePkg\Firmwares\RV\    This Release notes file
+  AgesaBootloader0_prod_RV    AgesaModulePkg\Firmwares\RV\    Main AGESA Bootloader
+  AgesaBootloader1_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 1 AGESA Bootloader
+  AgesaBootloader2_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 2 AGESA Bootloader
+  AgesaBootloader3_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 3 AGESA Bootloader
+  AgesaBootloader4_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 4 AGESA Bootloader
+  AgesaBootloader5_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 5 AGESA Bootloader
+  AgesaBootloader6_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 6 AGESA Bootloader
+  AgesaBootloader7_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 7 AGESA Bootloader
+  APCB.h                      Include\APCB.h                  AGESA PSP Configuration Block Definition
+  APOB.h                      Include\APOB.h                  AGESA PSP Output Block Definition
+
+Based On:
+  WABLRV20022400
+
+ABL Version String:
+  0x20032700
+
+ABL Features and Fixes:
+
+  PLAT-60851 RV ABL Release WABLRV20032700
+  Chrome b:137123167 Check ApobDataVersion (ABL version) in APOB
+  Chrome b:149811317 b:141434940 Use AGPIO84 to disable CH1
+
+APOB Features and Fixes:
+
+  Chrome b:137123167 Check ApobDataVersion (ABL version) in APOB
+
+Known Issue(s):
+
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: ABL WABLRV20022400 for Raven
+
+Date:   February 24 2020
+
+----------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                    AGESA V9 Destination Folder     Description
+  AblPostCode.h               AgesaModulePkg\Firmwares\RV\    ABL Post Code Definitions
+  AgesaBLReleaseNote.txt      AgesaModulePkg\Firmwares\RV\    This Release notes file
+  AgesaBootloader0_prod_RV    AgesaModulePkg\Firmwares\RV\    Main AGESA Bootloader
+  AgesaBootloader1_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 1 AGESA Bootloader
+  AgesaBootloader2_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 2 AGESA Bootloader
+  AgesaBootloader3_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 3 AGESA Bootloader
+  AgesaBootloader4_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 4 AGESA Bootloader
+  AgesaBootloader5_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 5 AGESA Bootloader
+  AgesaBootloader6_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 6 AGESA Bootloader
+  AgesaBootloader7_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 7 AGESA Bootloader
+  APCB.h                      Include\APCB.h                  AGESA PSP Configuration Block Definition
+  APOB.h                      Include\APOB.h                  AGESA PSP Output Block Definition
+
+Based On:
+  WABLRV20011300
+
+ABL Version String:
+  0x20022400
+
+ABL Features and Fixes:
+
+  PLAT-59046 RV ABL Release WABLRV20022400
+  PLAT-57894 [Pollock FT5] System shows Slots used 1 of 2 in task manager and windows OS, actual pollock only have one slot for memory
+  PLAT-56806 [Pollock_FT5]BIOS BankGroupSwapAlt feature does not work.
+
+APOB Features and Fixes:
+
+
+Known Issue(s):
+
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2020, Advanced Micro Devices, Inc.
+
+Version: ABL WABLRV20011300 for Raven
+
+Date:   January 13 2020
+
+----------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                    AGESA V9 Destination Folder     Description
+  AblPostCode.h               AgesaModulePkg\Firmwares\RV\    ABL Post Code Definitions
+  AgesaBLReleaseNote.txt      AgesaModulePkg\Firmwares\RV\    This Release notes file
+  AgesaBootloader0_prod_RV    AgesaModulePkg\Firmwares\RV\    Main AGESA Bootloader
+  AgesaBootloader1_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 1 AGESA Bootloader
+  AgesaBootloader2_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 2 AGESA Bootloader
+  AgesaBootloader3_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 3 AGESA Bootloader
+  AgesaBootloader4_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 4 AGESA Bootloader
+  AgesaBootloader5_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 5 AGESA Bootloader
+  AgesaBootloader6_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 6 AGESA Bootloader
+  AgesaBootloader7_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 7 AGESA Bootloader
+  APCB.h                      Include\APCB.h                  AGESA PSP Configuration Block Definition
+  APOB.h                      Include\APOB.h                  AGESA PSP Output Block Definition
+
+Based On:
+  WABLRV19110900
+
+ABL Version String:
+  0x20011300
+
+ABL Features and Fixes:
+
+  PLAT-57440 RV ABL Release WABLRV20011300
+  EMBSWDEV-8199: CRC verification not working on Raven
+  PLAT-56878: [Dali] S0i3 support - ABL DF
+  PLAT-46881: Pinnacle Ridge UMA Frame Buffer Size Issue
+  PLAT-32008: [Picasso Modern Standby] CBS Sync Flood on MCA doesn't work
+
+APOB Features and Fixes:
+
+
+Known Issue(s):
+
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2019, Advanced Micro Devices, Inc.
+
+Version: ABL WABLRV19110900 for Raven
+
+Date:   November 09 2019
+
+----------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                    AGESA V9 Destination Folder     Description
+  AblPostCode.h               AgesaModulePkg\Firmwares\RV\    ABL Post Code Definitions
+  AgesaBLReleaseNote.txt      AgesaModulePkg\Firmwares\RV\    This Release notes file
+  AgesaBootloader0_prod_RV    AgesaModulePkg\Firmwares\RV\    Main AGESA Bootloader
+  AgesaBootloader1_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 1 AGESA Bootloader
+  AgesaBootloader2_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 2 AGESA Bootloader
+  AgesaBootloader3_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 3 AGESA Bootloader
+  AgesaBootloader4_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 4 AGESA Bootloader
+  AgesaBootloader5_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 5 AGESA Bootloader
+  AgesaBootloader6_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 6 AGESA Bootloader
+  AgesaBootloader7_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 7 AGESA Bootloader
+  APCB.h                      Include\APCB.h                  AGESA PSP Configuration Block Definition
+  APOB.h                      Include\APOB.h                  AGESA PSP Output Block Definition
+
+Based On:
+  WABLRV19081200
+
+ABL Version String:
+  0x19110900
+
+ABL Features and Fixes:
+
+  PLAT-54435 RV ABL Release WABLRV19110900
+  PLAT-51951 [Pollock] ABL: move eSPI configuration init to ABL
+
+APOB Features and Fixes:
+
+
+Known Issue(s):
+
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
+Copyright 2019, Advanced Micro Devices, Inc.
+
+Version: ABL WABLRV19081200 for Raven
+
+Date:   August 12 2019
+
+----------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                    AGESA V9 Destination Folder     Description
+  AblPostCode.h               AgesaModulePkg\Firmwares\RV\    ABL Post Code Definitions
+  AgesaBLReleaseNote.txt      AgesaModulePkg\Firmwares\RV\    This Release notes file
+  AgesaBootloader0_prod_RV    AgesaModulePkg\Firmwares\RV\    Main AGESA Bootloader
+  AgesaBootloader1_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 1 AGESA Bootloader
+  AgesaBootloader2_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 2 AGESA Bootloader
+  AgesaBootloader3_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 3 AGESA Bootloader
+  AgesaBootloader4_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 4 AGESA Bootloader
+  AgesaBootloader5_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 5 AGESA Bootloader
+  AgesaBootloader6_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 6 AGESA Bootloader
+  AgesaBootloader7_prod_RV    AgesaModulePkg\Firmwares\RV\    Phase 7 AGESA Bootloader
+  APCB.h                      Include\APCB.h                  AGESA PSP Configuration Block Definition
+  APOB.h                      Include\APOB.h                  AGESA PSP Output Block Definition
+
+Based On:
+  WABLRV19071700
+
+ABL Version String:
+  0x19081200
+
+ABL Features and Fixes:
+
+  PLAT-49810 RV ABL Release WABLRV19081200
+  PLAT-43166: Hang in ABL when we MBIST Test status Data Eye status Modeas modeset
+
+APOB Features and Fixes:
+
+
+Known Issue(s):
+
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
 Copyright 2019, Advanced Micro Devices, Inc.
 
 Version: ABL WABLRV19071700 for Raven
