@@ -8,7 +8,6 @@ Content:
     PSP FW Deliverables for Renoir.
     This Build is compiled using the ARM license from the AMD license server.
 
-TODO: update list of files
 Files
  boot_loader_prod__CZN.sbin         [version: 0.11.11.75] - PSP off-chip Stage 2 BootLoader (entry type 0x73), signed with production key
  boot_loader_stage1_prod_CZN.sbin   [version: 0.11.11.75] - PSP off-chip Stage 1 BootLoader (entry type 0x1), signed with production key
@@ -3256,7 +3255,6 @@ PLAT-52575: [RN] Block DCN firmware DMCU_ERAM & DMCU_ISR loading via Gfx interfa
 Release Version 0.11.0.2B
 -----------------------------------
 *Requires updated gfx driver and security policy
-*GFX Driver: http://osibuilds.amd.com/#/job/917386
 *rsmu_sec_policy.rn_L0.sbin updated to version: B.9.0.36*
 *rsmu_sec_policy.rn_L1.sbin updated to version: B.9.1.36*
 
@@ -3975,7 +3973,6 @@ Content:
 	PSP FW Deliverables for Renoir.
 	This Build is compiled using the ARM license from the AMD license server.
 
-TODO: update list of files
 Files
  boot_loader_RN.bin                 [version: 0.11.0.70] - PSP off-chip Legacy Stage 2 BootLoader (entry type 0x1), signed with production key
  boot_loader_AB_RN.bin              [version: 0.11.0.70] - PSP off-chip A/B Stage 2 BootLoader (entry type 0x1), signed with production key
@@ -6489,7 +6486,6 @@ PLAT-52575: [RN] Block DCN firmware DMCU_ERAM & DMCU_ISR loading via Gfx interfa
 Release Version 0.11.0.2B
 -----------------------------------
 *Requires updated gfx driver and security policy
-*GFX Driver: http://osibuilds.amd.com/#/job/917386
 *rsmu_sec_policy.rn_L0.sbin updated to version: B.9.0.36*
 *rsmu_sec_policy.rn_L1.sbin updated to version: B.9.1.36*
 
