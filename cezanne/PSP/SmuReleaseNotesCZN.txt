@@ -1,6 +1,139 @@
 +---------------------------------------+
 | SMU Firmware Release Notes - CEZANNE  |
 +---------------------------------------+
+
++---------------------------+
+| Version 64.72.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         10/08/23
+|
+| * Changelist
+|   -7025de69cc [PMFW-13877] Update the per-core voltages for DLDO regulation after all iterations of voltage checker are done - Fix for low CPU speed with FIT
+|   -8ac92d420e [PLAT-127975] Ignore SPL change when STT is enabled
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.71.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         08/12/22
+|
+| * Changelist
+|   -5df0e526b [PMFW-11998] Remove EntrySuccessMonitor from PC6 entry
+|   -09b09f526 Revert "[PLAT-120067] BRC R5 and R3 frequency update (all)"
++-----------------------------------------------------------------------------------------------------------
+
+
++---------------------------+
+| Version 64.70.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         23/11/22
+|
+| * Changelist
+|   -b93972965 [PLAT-120067] BRC R5 and R3 frequency update3
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.69.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         17/11/22
+|
+| * Changelist
+|   -8b7af51eb [PLAT-120067] BRC R5 and R3 frequency update2
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.68.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         11/11/22
+|
+| * Changelist
+|   - b5be6ae4a [PLAT-120067] BRC R5 and R3 frequency update
+|   - 78b5f7387 [PLAT-102099] Protection for STT interrupt period (update)
+|   - ac891ee79 [PLAT-114440] USB FSDL update -- Remove USB init flow in s0i3 Resume
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.67.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         20/09/22
+|
+| * Changelist
+|   - 0228a9551 [PLAT-87574] Barcelo, TSC is marked unstable (update)
+|   - ed7b9738f [PLAT-102099] Protection for STT interrupt period
+|   - 867868d84 [PLAT-112759] Processor goes into Boost mode after resume from S0i3
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.67.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.67.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
+
++---------------------------+
+| Version 64.66.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         12/08/22
+|
+| * Changelist
+|   - 34ccf2dd6 Revert "[PLAT-112759] Save and restore CPB status in S0i3"
+|   - dcb57a855 [PLAT-112759] Save and restore CPB status in S0i3
+|   - 345a5c7bd [PLAT-113002] A spurious IRQ1 is observed on S0i3 exit with LPC EC
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.66.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.66.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
++---------------------------+
+| Version 64.65.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         04/07/22
+|
+| * Changelist
+|   - c6620f784 [PLAT-110209] EGPIO 140 and 142 Register Changed after S0i3 Resume
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.65.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.65.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
++---------------------------+
+| Version 64.64.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         25/05/22
+|
+| * Changelist
+|   - ed75fc70f [PLAT-87574] Barcelo, TSC is marked unstable
+|   - b4b76b4ef [PMFW-10052] Core RAPL registers incorrectly updated after S0i3
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.64.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.64.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
++---------------------------+
+| Version 64.63.0           |
++---------------------------+-------------------------------------------------------------------------------
+| * Date (dd/mm/yy)
+|         22/03/22
+|
+| * Changelist
+|   - 640a46b7b [PLAT-96687] Set idlemask for disabled USB controllers
+|   - f8cb7feb8 [PMFW-9614] [IMP] Update GFX DLDO Setting
+|
+| * Files
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne.rev64.63.0.zip
+|   - \\atlvsmb1\smu_rel\smu12\cezanne\cezanne_sources.rev64.63.0.tar.gz
+|
++-----------------------------------------------------------------------------------------------------------
 +---------------------------+
 | Version 64.62.0           |
 +---------------------------+-------------------------------------------------------------------------------
