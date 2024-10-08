@@ -10,6 +10,10 @@ eliminates any unique agreements previously provided for individual products.
 By cloning the repo, you will be agreeing to the license agreement
 contained there.
 
+## Security Vulnerability Reporting ##
+
+**To report any vulnerabilities, please email psirt@amd.com.**
+
 ## Text of License Agreement
 
 The language of the agreement is duplicated below for your reference.  The
