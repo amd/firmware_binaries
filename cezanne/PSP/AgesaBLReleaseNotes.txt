@@ -1,6 +1,40 @@
 ----------------------------------------------------------------------------
 ABL Delivery Release Notes
 
+Copyright 2025, Advanced Micro Devices, Inc.
+
+Version: RABLCZN23216072 for Cezanne
+
+Date:   January 22 2025
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                                AGESA V9 Destination Folder          Description
+  AgesaBLReleaseNotes.txt                 AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN.csbin        AgesaModulePkg\Firmwares\CZN\        ABL Binary for DDR4
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN23216072.xml
+
+Based On:
+  Chrome_Cezanne/feature/clane/cache_clear
+
+project CCX/
+  FWDEV-117181: [CZN A0][Chromebook] Integrate S3 Image: 19501ac9
+
+project Lib/
+  FWDEV-117181: [CZN A0][Chromebook] Integrate S3 Image: 19501ac9
+
+project Program/
+  FWDEV-117181: [CZN A0][Chromebook] Integrate S3 Image: 19501ac9
+  FWDEV-117189: [CZN][Chromebook] ABL Release RABLCZN23216072
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
 Copyright 2022, Advanced Micro Devices, Inc.
 
 Version: RABLCZN23216071 for Cezanne
@@ -17,7 +51,7 @@ Content:
   AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
 
 Repo Manifest Info:
-  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m Chrome_Cezanne_feature_clane_cache_clear.xml
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN23216071.xml
 
 Based On:
   Chrome_Cezanne/feature/clane/cache_clear
