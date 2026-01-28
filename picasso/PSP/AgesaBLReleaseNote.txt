@@ -2,6 +2,38 @@
 ----------------------------------------------------------------------------
 ABL Delivery Release Notes
 
+Copyright 2026, Advanced Micro Devices, Inc.
+
+Version: ABL CABLRV26012800 for Raven
+
+Date:   January 28 2026
+
+----------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                    AGESA V9 Destination Folder     Description
+  GnbEarlyAblRV.c             Proc/GNB/Modules/GnbInitRV/     Fix unsafe
+
+Based On:
+  Chrome-RV
+
+ABL Version String:
+  0x26012800
+
+ABL Features and Fixes:
+  PLAT-87951 [Chromebook] - Unsafe Parsing of SMU PState Count in ABLs
+
+APOB Features and Fixes:
+
+Known Issue(s):
+
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
 Copyright 2020, Advanced Micro Devices, Inc.
 
 Version: ABL CABLRV21080200 for Raven
