@@ -1,6 +1,35 @@
 ----------------------------------------------------------------------------
 ABL Delivery Release Notes
 
+Copyright 2026, Advanced Micro Devices, Inc.
+
+Version: RABLCZN23216073 for Cezanne
+
+Date:   February 22 2026
+
+----------------------------------------------------------------------------
+
+Content:
+
+  Filename                                AGESA V9 Destination Folder          Description
+  AgesaBLReleaseNotes.txt                 AgesaModulePkg\Firmwares\CZN\        This Release notes file for FP6
+  AgesaBootloader_U_prod_CZN_LPDDR4.csbin AgesaModulePkg\Firmwares\CZN\        ABL Binary for LPDDR4
+
+Repo Manifest Info:
+  repo init -u ssh://gerritgit/BIOS/ec/Client/Components/AGESA/ABL-V2/manifest -b Custom -m RABLCZN23216073.xml
+
+Based On:
+  Chrome_Cezanne/feature/clane/cache_clear
+
+project NBIO/
+  SWSPLAT-6443: [CZN][Chromebook] Unsafe Parsing of SMU PState Count in ABLs
+
+project Program/
+  SWSPLAT-6443: [CZN][Chromebook] ABL Release RABLCZN23216073
+
+----------------------------------------------------------------------------
+ABL Delivery Release Notes
+
 Copyright 2025, Advanced Micro Devices, Inc.
 
 Version: RABLCZN23216072 for Cezanne
